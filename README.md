@@ -1,5 +1,5 @@
 # HotelManagement
-Ailenei Ioana
-Chelemen Antonia 
-Anton Laura
-Ambarus Victor
+- Ailenei Ioana <br></br>
+- Chelemen Antonia  <br></br>
+- Anton Laura <br></br>
+- Ambarus Victor <br></br>
