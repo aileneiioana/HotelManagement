@@ -16,5 +16,18 @@ namespace HotelManagement
         {
             InitializeComponent();
         }
+
+        private void LoginPagecancelBtn_Click(object sender, EventArgs e)
+        {
+            UsernameLogInTxtBox.Clear();
+            PasswordLogInTxtBox.Clear();
+        }
+
+        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show(); 
+            this.Hide();
+        }
     }
 }

@@ -29,6 +29,21 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.AdressRegisterTxtBox = new System.Windows.Forms.TextBox();
+            this.AdressLbl = new System.Windows.Forms.Label();
+            this.PhoneNrRegisterTxtBox = new System.Windows.Forms.TextBox();
+            this.PhoneNrLbl = new System.Windows.Forms.Label();
+            this.LastNameLbl = new System.Windows.Forms.Label();
+            this.PasswordRegisterTxtBox = new System.Windows.Forms.TextBox();
+            this.PasswordLbl = new System.Windows.Forms.Label();
+            this.LastNameRegisterTextBox = new System.Windows.Forms.TextBox();
+            this.LoginPagecancelBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.LoginPageLogInbtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.EmailRegisterLbl = new System.Windows.Forms.Label();
+            this.FirstNameRegisterTxtBox = new System.Windows.Forms.TextBox();
+            this.FirstNameLbl = new System.Windows.Forms.Label();
+            this.EmailRegisterTextBox = new System.Windows.Forms.TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -40,21 +55,6 @@
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.LogInUsernameLbl = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.LoginPagecancelBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.LoginPageLogInbtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.EmailRegisterLbl = new System.Windows.Forms.Label();
-            this.FirstNameRegisterTxtBox = new System.Windows.Forms.TextBox();
-            this.FirstNameLbl = new System.Windows.Forms.Label();
-            this.EmailRegisterTextBox = new System.Windows.Forms.TextBox();
-            this.LastNameLbl = new System.Windows.Forms.Label();
-            this.PasswordRegisterTxtBox = new System.Windows.Forms.TextBox();
-            this.PasswordLbl = new System.Windows.Forms.Label();
-            this.LastNameRegisterTextBox = new System.Windows.Forms.TextBox();
-            this.PhoneNrRegisterTxtBox = new System.Windows.Forms.TextBox();
-            this.PhoneNrLbl = new System.Windows.Forms.Label();
-            this.AdressRegisterTxtBox = new System.Windows.Forms.TextBox();
-            this.AdressLbl = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -89,6 +89,169 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1090, 845);
             this.guna2Panel1.TabIndex = 27;
+            // 
+            // AdressRegisterTxtBox
+            // 
+            this.AdressRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AdressRegisterTxtBox.Location = new System.Drawing.Point(606, 577);
+            this.AdressRegisterTxtBox.Multiline = true;
+            this.AdressRegisterTxtBox.Name = "AdressRegisterTxtBox";
+            this.AdressRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
+            this.AdressRegisterTxtBox.TabIndex = 36;
+            // 
+            // AdressLbl
+            // 
+            this.AdressLbl.AutoSize = true;
+            this.AdressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdressLbl.Location = new System.Drawing.Point(612, 549);
+            this.AdressLbl.Name = "AdressLbl";
+            this.AdressLbl.Size = new System.Drawing.Size(80, 25);
+            this.AdressLbl.TabIndex = 37;
+            this.AdressLbl.Text = "Adress";
+            // 
+            // PhoneNrRegisterTxtBox
+            // 
+            this.PhoneNrRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PhoneNrRegisterTxtBox.Location = new System.Drawing.Point(97, 577);
+            this.PhoneNrRegisterTxtBox.Multiline = true;
+            this.PhoneNrRegisterTxtBox.Name = "PhoneNrRegisterTxtBox";
+            this.PhoneNrRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
+            this.PhoneNrRegisterTxtBox.TabIndex = 34;
+            // 
+            // PhoneNrLbl
+            // 
+            this.PhoneNrLbl.AutoSize = true;
+            this.PhoneNrLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNrLbl.Location = new System.Drawing.Point(103, 549);
+            this.PhoneNrLbl.Name = "PhoneNrLbl";
+            this.PhoneNrLbl.Size = new System.Drawing.Size(102, 25);
+            this.PhoneNrLbl.TabIndex = 35;
+            this.PhoneNrLbl.Text = "Phone Nr";
+            // 
+            // LastNameLbl
+            // 
+            this.LastNameLbl.AutoSize = true;
+            this.LastNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameLbl.Location = new System.Drawing.Point(612, 277);
+            this.LastNameLbl.Name = "LastNameLbl";
+            this.LastNameLbl.Size = new System.Drawing.Size(115, 25);
+            this.LastNameLbl.TabIndex = 33;
+            this.LastNameLbl.Text = "Last Name";
+            // 
+            // PasswordRegisterTxtBox
+            // 
+            this.PasswordRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordRegisterTxtBox.Location = new System.Drawing.Point(606, 438);
+            this.PasswordRegisterTxtBox.Multiline = true;
+            this.PasswordRegisterTxtBox.Name = "PasswordRegisterTxtBox";
+            this.PasswordRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
+            this.PasswordRegisterTxtBox.TabIndex = 31;
+            // 
+            // PasswordLbl
+            // 
+            this.PasswordLbl.AutoSize = true;
+            this.PasswordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLbl.Location = new System.Drawing.Point(612, 410);
+            this.PasswordLbl.Name = "PasswordLbl";
+            this.PasswordLbl.Size = new System.Drawing.Size(106, 25);
+            this.PasswordLbl.TabIndex = 32;
+            this.PasswordLbl.Text = "Password";
+            // 
+            // LastNameRegisterTextBox
+            // 
+            this.LastNameRegisterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LastNameRegisterTextBox.Location = new System.Drawing.Point(606, 305);
+            this.LastNameRegisterTextBox.Multiline = true;
+            this.LastNameRegisterTextBox.Name = "LastNameRegisterTextBox";
+            this.LastNameRegisterTextBox.Size = new System.Drawing.Size(385, 60);
+            this.LastNameRegisterTextBox.TabIndex = 30;
+            // 
+            // LoginPagecancelBtn
+            // 
+            this.LoginPagecancelBtn.AutoRoundedCorners = true;
+            this.LoginPagecancelBtn.BorderRadius = 21;
+            this.LoginPagecancelBtn.BorderThickness = 1;
+            this.LoginPagecancelBtn.CheckedState.Parent = this.LoginPagecancelBtn;
+            this.LoginPagecancelBtn.CustomImages.Parent = this.LoginPagecancelBtn;
+            this.LoginPagecancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LoginPagecancelBtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.LoginPagecancelBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LoginPagecancelBtn.ForeColor = System.Drawing.Color.Black;
+            this.LoginPagecancelBtn.HoverState.Parent = this.LoginPagecancelBtn;
+            this.LoginPagecancelBtn.Location = new System.Drawing.Point(547, 729);
+            this.LoginPagecancelBtn.Name = "LoginPagecancelBtn";
+            this.LoginPagecancelBtn.ShadowDecoration.Parent = this.LoginPagecancelBtn;
+            this.LoginPagecancelBtn.Size = new System.Drawing.Size(180, 45);
+            this.LoginPagecancelBtn.TabIndex = 29;
+            this.LoginPagecancelBtn.Text = "Cancel";
+            this.LoginPagecancelBtn.Click += new System.EventHandler(this.LoginPagecancelBtn_Click);
+            // 
+            // LoginPageLogInbtn
+            // 
+            this.LoginPageLogInbtn.AutoRoundedCorners = true;
+            this.LoginPageLogInbtn.BorderRadius = 21;
+            this.LoginPageLogInbtn.BorderThickness = 1;
+            this.LoginPageLogInbtn.CheckedState.Parent = this.LoginPageLogInbtn;
+            this.LoginPageLogInbtn.CustomImages.Parent = this.LoginPageLogInbtn;
+            this.LoginPageLogInbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LoginPageLogInbtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.LoginPageLogInbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LoginPageLogInbtn.ForeColor = System.Drawing.Color.Black;
+            this.LoginPageLogInbtn.HoverState.Parent = this.LoginPageLogInbtn;
+            this.LoginPageLogInbtn.Location = new System.Drawing.Point(342, 729);
+            this.LoginPageLogInbtn.Name = "LoginPageLogInbtn";
+            this.LoginPageLogInbtn.ShadowDecoration.Parent = this.LoginPageLogInbtn;
+            this.LoginPageLogInbtn.Size = new System.Drawing.Size(180, 45);
+            this.LoginPageLogInbtn.TabIndex = 28;
+            this.LoginPageLogInbtn.Text = "Sign In";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(309, 120);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(472, 84);
+            this.guna2HtmlLabel1.TabIndex = 27;
+            this.guna2HtmlLabel1.Text = "Register Page";
+            // 
+            // EmailRegisterLbl
+            // 
+            this.EmailRegisterLbl.AutoSize = true;
+            this.EmailRegisterLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailRegisterLbl.Location = new System.Drawing.Point(103, 410);
+            this.EmailRegisterLbl.Name = "EmailRegisterLbl";
+            this.EmailRegisterLbl.Size = new System.Drawing.Size(65, 25);
+            this.EmailRegisterLbl.TabIndex = 26;
+            this.EmailRegisterLbl.Text = "Email";
+            // 
+            // FirstNameRegisterTxtBox
+            // 
+            this.FirstNameRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FirstNameRegisterTxtBox.Location = new System.Drawing.Point(97, 305);
+            this.FirstNameRegisterTxtBox.Multiline = true;
+            this.FirstNameRegisterTxtBox.Name = "FirstNameRegisterTxtBox";
+            this.FirstNameRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
+            this.FirstNameRegisterTxtBox.TabIndex = 24;
+            // 
+            // FirstNameLbl
+            // 
+            this.FirstNameLbl.AutoSize = true;
+            this.FirstNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameLbl.Location = new System.Drawing.Point(103, 277);
+            this.FirstNameLbl.Name = "FirstNameLbl";
+            this.FirstNameLbl.Size = new System.Drawing.Size(116, 25);
+            this.FirstNameLbl.TabIndex = 25;
+            this.FirstNameLbl.Text = "First Name";
+            // 
+            // EmailRegisterTextBox
+            // 
+            this.EmailRegisterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmailRegisterTextBox.Location = new System.Drawing.Point(97, 438);
+            this.EmailRegisterTextBox.Multiline = true;
+            this.EmailRegisterTextBox.Name = "EmailRegisterTextBox";
+            this.EmailRegisterTextBox.Size = new System.Drawing.Size(385, 60);
+            this.EmailRegisterTextBox.TabIndex = 23;
             // 
             // guna2Button1
             // 
@@ -217,7 +380,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(52, 305);
+            this.guna2TextBox1.Location = new System.Drawing.Point(50, 305);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -243,6 +406,7 @@
             this.btnBack.Size = new System.Drawing.Size(331, 70);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // LogInUsernameLbl
             // 
@@ -263,168 +427,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // LoginPagecancelBtn
-            // 
-            this.LoginPagecancelBtn.AutoRoundedCorners = true;
-            this.LoginPagecancelBtn.BorderRadius = 21;
-            this.LoginPagecancelBtn.BorderThickness = 1;
-            this.LoginPagecancelBtn.CheckedState.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.CustomImages.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LoginPagecancelBtn.FillColor2 = System.Drawing.Color.LightGray;
-            this.LoginPagecancelBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.LoginPagecancelBtn.ForeColor = System.Drawing.Color.Black;
-            this.LoginPagecancelBtn.HoverState.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.Location = new System.Drawing.Point(547, 729);
-            this.LoginPagecancelBtn.Name = "LoginPagecancelBtn";
-            this.LoginPagecancelBtn.ShadowDecoration.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.Size = new System.Drawing.Size(180, 45);
-            this.LoginPagecancelBtn.TabIndex = 29;
-            this.LoginPagecancelBtn.Text = "Cancel";
-            // 
-            // LoginPageLogInbtn
-            // 
-            this.LoginPageLogInbtn.AutoRoundedCorners = true;
-            this.LoginPageLogInbtn.BorderRadius = 21;
-            this.LoginPageLogInbtn.BorderThickness = 1;
-            this.LoginPageLogInbtn.CheckedState.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.CustomImages.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LoginPageLogInbtn.FillColor2 = System.Drawing.Color.LightGray;
-            this.LoginPageLogInbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.LoginPageLogInbtn.ForeColor = System.Drawing.Color.Black;
-            this.LoginPageLogInbtn.HoverState.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.Location = new System.Drawing.Point(342, 729);
-            this.LoginPageLogInbtn.Name = "LoginPageLogInbtn";
-            this.LoginPageLogInbtn.ShadowDecoration.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.Size = new System.Drawing.Size(180, 45);
-            this.LoginPageLogInbtn.TabIndex = 28;
-            this.LoginPageLogInbtn.Text = "Sign In";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(309, 120);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(472, 84);
-            this.guna2HtmlLabel1.TabIndex = 27;
-            this.guna2HtmlLabel1.Text = "Register Page";
-            // 
-            // EmailRegisterLbl
-            // 
-            this.EmailRegisterLbl.AutoSize = true;
-            this.EmailRegisterLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailRegisterLbl.Location = new System.Drawing.Point(103, 410);
-            this.EmailRegisterLbl.Name = "EmailRegisterLbl";
-            this.EmailRegisterLbl.Size = new System.Drawing.Size(65, 25);
-            this.EmailRegisterLbl.TabIndex = 26;
-            this.EmailRegisterLbl.Text = "Email";
-            // 
-            // FirstNameRegisterTxtBox
-            // 
-            this.FirstNameRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FirstNameRegisterTxtBox.Location = new System.Drawing.Point(97, 305);
-            this.FirstNameRegisterTxtBox.Multiline = true;
-            this.FirstNameRegisterTxtBox.Name = "FirstNameRegisterTxtBox";
-            this.FirstNameRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
-            this.FirstNameRegisterTxtBox.TabIndex = 24;
-            // 
-            // FirstNameLbl
-            // 
-            this.FirstNameLbl.AutoSize = true;
-            this.FirstNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameLbl.Location = new System.Drawing.Point(103, 277);
-            this.FirstNameLbl.Name = "FirstNameLbl";
-            this.FirstNameLbl.Size = new System.Drawing.Size(116, 25);
-            this.FirstNameLbl.TabIndex = 25;
-            this.FirstNameLbl.Text = "First Name";
-            // 
-            // EmailRegisterTextBox
-            // 
-            this.EmailRegisterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailRegisterTextBox.Location = new System.Drawing.Point(97, 438);
-            this.EmailRegisterTextBox.Multiline = true;
-            this.EmailRegisterTextBox.Name = "EmailRegisterTextBox";
-            this.EmailRegisterTextBox.Size = new System.Drawing.Size(385, 60);
-            this.EmailRegisterTextBox.TabIndex = 23;
-            // 
-            // LastNameLbl
-            // 
-            this.LastNameLbl.AutoSize = true;
-            this.LastNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameLbl.Location = new System.Drawing.Point(612, 277);
-            this.LastNameLbl.Name = "LastNameLbl";
-            this.LastNameLbl.Size = new System.Drawing.Size(115, 25);
-            this.LastNameLbl.TabIndex = 33;
-            this.LastNameLbl.Text = "Last Name";
-            // 
-            // PasswordRegisterTxtBox
-            // 
-            this.PasswordRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordRegisterTxtBox.Location = new System.Drawing.Point(606, 438);
-            this.PasswordRegisterTxtBox.Multiline = true;
-            this.PasswordRegisterTxtBox.Name = "PasswordRegisterTxtBox";
-            this.PasswordRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
-            this.PasswordRegisterTxtBox.TabIndex = 31;
-            // 
-            // PasswordLbl
-            // 
-            this.PasswordLbl.AutoSize = true;
-            this.PasswordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLbl.Location = new System.Drawing.Point(612, 410);
-            this.PasswordLbl.Name = "PasswordLbl";
-            this.PasswordLbl.Size = new System.Drawing.Size(106, 25);
-            this.PasswordLbl.TabIndex = 32;
-            this.PasswordLbl.Text = "Password";
-            // 
-            // LastNameRegisterTextBox
-            // 
-            this.LastNameRegisterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LastNameRegisterTextBox.Location = new System.Drawing.Point(606, 305);
-            this.LastNameRegisterTextBox.Multiline = true;
-            this.LastNameRegisterTextBox.Name = "LastNameRegisterTextBox";
-            this.LastNameRegisterTextBox.Size = new System.Drawing.Size(385, 60);
-            this.LastNameRegisterTextBox.TabIndex = 30;
-            // 
-            // PhoneNrRegisterTxtBox
-            // 
-            this.PhoneNrRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhoneNrRegisterTxtBox.Location = new System.Drawing.Point(97, 577);
-            this.PhoneNrRegisterTxtBox.Multiline = true;
-            this.PhoneNrRegisterTxtBox.Name = "PhoneNrRegisterTxtBox";
-            this.PhoneNrRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
-            this.PhoneNrRegisterTxtBox.TabIndex = 34;
-            // 
-            // PhoneNrLbl
-            // 
-            this.PhoneNrLbl.AutoSize = true;
-            this.PhoneNrLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNrLbl.Location = new System.Drawing.Point(103, 549);
-            this.PhoneNrLbl.Name = "PhoneNrLbl";
-            this.PhoneNrLbl.Size = new System.Drawing.Size(102, 25);
-            this.PhoneNrLbl.TabIndex = 35;
-            this.PhoneNrLbl.Text = "Phone Nr";
-            // 
-            // AdressRegisterTxtBox
-            // 
-            this.AdressRegisterTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.AdressRegisterTxtBox.Location = new System.Drawing.Point(606, 577);
-            this.AdressRegisterTxtBox.Multiline = true;
-            this.AdressRegisterTxtBox.Name = "AdressRegisterTxtBox";
-            this.AdressRegisterTxtBox.Size = new System.Drawing.Size(385, 60);
-            this.AdressRegisterTxtBox.TabIndex = 36;
-            // 
-            // AdressLbl
-            // 
-            this.AdressLbl.AutoSize = true;
-            this.AdressLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdressLbl.Location = new System.Drawing.Point(612, 549);
-            this.AdressLbl.Name = "AdressLbl";
-            this.AdressLbl.Size = new System.Drawing.Size(80, 25);
-            this.AdressLbl.TabIndex = 37;
-            this.AdressLbl.Text = "Adress";
             // 
             // Register
             // 
