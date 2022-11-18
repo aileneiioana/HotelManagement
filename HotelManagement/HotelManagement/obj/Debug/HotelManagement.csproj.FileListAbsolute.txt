@@ -26,3 +26,4 @@ C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debu
 C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
 C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
