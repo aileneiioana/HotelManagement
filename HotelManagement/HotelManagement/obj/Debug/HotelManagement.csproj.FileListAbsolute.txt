@@ -80,3 +80,4 @@ C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagemen
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
