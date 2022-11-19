@@ -44,5 +44,15 @@ namespace HotelManagement
                 MessageBox.Show("Wrong username or password");
             }
         }
+
+        private void RegisterGpBx_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelRegisterbtn_Click(object sender, EventArgs e)
+        {
+            RegisterGpBx.Hide();
+        }
     }
 }

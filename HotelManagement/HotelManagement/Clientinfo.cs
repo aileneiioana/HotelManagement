@@ -25,11 +25,12 @@ namespace HotelManagement
 
         void Clear()
         {
-            clientidtbl.Text = "Client Id";
+            clientIdTxtbox.Text = "Client Id";
             clientnametbl.Text = "Client Name";
             clientphonetb.Text = "Client Phone";
             clientctrytb.Text = "Country";
-            model.ClientId = 0;
+            passwordTb.Text = "Password";
+           // model.ClientId = 0;
         }
 
         private void Clientinfo_Load(object sender, EventArgs e)
@@ -44,10 +45,10 @@ namespace HotelManagement
         {
             //facade design
             Facade facade = new Facade();
-            model.ClientId = Convert.ToInt32(clientidtbl.Text.Trim());
             model.ClientName = clientnametbl.Text.Trim();
             model.ClientPhone = clientphonetb.Text.Trim();
             model.ClientCountry = clientctrytb.Text.Trim();
+            model.Password = passwordTb.Text.Trim();
 
             //facade design
             facade.addClient(model);
@@ -70,10 +71,11 @@ namespace HotelManagement
             {
                 model.ClientId = Convert.ToInt32(ClientGridview.CurrentRow.Cells["ClientID"].Value);
                 model = clientServices.GetClientById(model.ClientId);
-                clientidtbl.Text = model.ClientId.ToString();
+                clientIdTxtbox.Text = model.ClientId.ToString();
                 clientnametbl.Text = model.ClientName.ToString();
                 clientphonetb.Text = model.ClientPhone.ToString();
                 clientctrytb.Text = model.ClientCountry.ToString();
+                passwordTb.Text = model.Password.ToString();
             }
         }
 
@@ -91,10 +93,10 @@ namespace HotelManagement
         private void EditBtn_Click(object sender, EventArgs e)
         {
 
-            model.ClientId = Convert.ToInt32(clientidtbl.Text.Trim());
             model.ClientName = clientnametbl.Text.Trim();
             model.ClientPhone = clientphonetb.Text.Trim();
             model.ClientCountry = clientctrytb.Text.Trim();
+            model.Password = passwordTb.Text.Trim();
             clientServices.UpdateClient(model);
             Clear();
             MessageBox.Show("Client Successfully Updated");

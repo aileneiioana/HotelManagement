@@ -54,6 +54,14 @@
             this.btnDespreHotel = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LogInEmailLbl = new System.Windows.Forms.Label();
+            this.confirmPasstxtbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.clientNametxtBox = new System.Windows.Forms.TextBox();
+            this.countryTxtbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.registerBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.cancelRegisterbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -190,27 +198,35 @@
             // 
             // RegisterGpBx
             // 
+            this.RegisterGpBx.Controls.Add(this.cancelRegisterbtn);
+            this.RegisterGpBx.Controls.Add(this.registerBtn);
+            this.RegisterGpBx.Controls.Add(this.countryTxtbox);
+            this.RegisterGpBx.Controls.Add(this.label5);
+            this.RegisterGpBx.Controls.Add(this.label4);
+            this.RegisterGpBx.Controls.Add(this.clientNametxtBox);
+            this.RegisterGpBx.Controls.Add(this.confirmPasstxtbox);
+            this.RegisterGpBx.Controls.Add(this.label3);
             this.RegisterGpBx.Controls.Add(this.guna2HtmlLabel2);
             this.RegisterGpBx.Controls.Add(this.label1);
             this.RegisterGpBx.Controls.Add(this.textBox1);
             this.RegisterGpBx.Controls.Add(this.label2);
             this.RegisterGpBx.Controls.Add(this.textBox2);
-            this.RegisterGpBx.Location = new System.Drawing.Point(624, 84);
+            this.RegisterGpBx.Location = new System.Drawing.Point(201, 96);
             this.RegisterGpBx.Name = "RegisterGpBx";
             this.RegisterGpBx.Size = new System.Drawing.Size(541, 454);
             this.RegisterGpBx.TabIndex = 25;
             this.RegisterGpBx.TabStop = false;
-            this.RegisterGpBx.Text = "groupBox1";
             this.RegisterGpBx.Visible = false;
+            this.RegisterGpBx.Enter += new System.EventHandler(this.RegisterGpBx_Enter);
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(84, 73);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(219, 36);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(259, 78);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(102, 31);
             this.guna2HtmlLabel2.TabIndex = 11;
             this.guna2HtmlLabel2.Text = "Register";
             // 
@@ -218,7 +234,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 205);
+            this.label1.Location = new System.Drawing.Point(123, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 10;
@@ -227,18 +243,18 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(107, 334);
+            this.textBox1.Location = new System.Drawing.Point(117, 277);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(342, 48);
+            this.textBox1.Size = new System.Drawing.Size(342, 31);
             this.textBox1.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(112, 311);
+            this.label2.Location = new System.Drawing.Point(122, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 9;
@@ -247,11 +263,11 @@
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(107, 227);
+            this.textBox2.Location = new System.Drawing.Point(114, 158);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(342, 48);
+            this.textBox2.Size = new System.Drawing.Size(342, 31);
             this.textBox2.TabIndex = 7;
             // 
             // linkRegister
@@ -400,6 +416,99 @@
             this.LogInEmailLbl.TabIndex = 5;
             this.LogInEmailLbl.Text = "Phone Number";
             // 
+            // confirmPasstxtbox
+            // 
+            this.confirmPasstxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.confirmPasstxtbox.Location = new System.Drawing.Point(114, 343);
+            this.confirmPasstxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confirmPasstxtbox.Multiline = true;
+            this.confirmPasstxtbox.Name = "confirmPasstxtbox";
+            this.confirmPasstxtbox.Size = new System.Drawing.Size(342, 31);
+            this.confirmPasstxtbox.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(119, 321);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Confirm Password";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(123, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Name";
+            // 
+            // clientNametxtBox
+            // 
+            this.clientNametxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clientNametxtBox.Location = new System.Drawing.Point(114, 103);
+            this.clientNametxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.clientNametxtBox.Multiline = true;
+            this.clientNametxtBox.Name = "clientNametxtBox";
+            this.clientNametxtBox.Size = new System.Drawing.Size(342, 31);
+            this.clientNametxtBox.TabIndex = 14;
+            // 
+            // countryTxtbox
+            // 
+            this.countryTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.countryTxtbox.Location = new System.Drawing.Point(114, 214);
+            this.countryTxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.countryTxtbox.Multiline = true;
+            this.countryTxtbox.Name = "countryTxtbox";
+            this.countryTxtbox.Size = new System.Drawing.Size(342, 31);
+            this.countryTxtbox.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(119, 192);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 20);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Country";
+            // 
+            // registerBtn
+            // 
+            this.registerBtn.AutoRoundedCorners = true;
+            this.registerBtn.BorderRadius = 17;
+            this.registerBtn.BorderThickness = 1;
+            this.registerBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.registerBtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.registerBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.registerBtn.ForeColor = System.Drawing.Color.Black;
+            this.registerBtn.Location = new System.Drawing.Point(95, 394);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(160, 36);
+            this.registerBtn.TabIndex = 22;
+            this.registerBtn.Text = "Register";
+            // 
+            // cancelRegisterbtn
+            // 
+            this.cancelRegisterbtn.AutoRoundedCorners = true;
+            this.cancelRegisterbtn.BorderRadius = 17;
+            this.cancelRegisterbtn.BorderThickness = 1;
+            this.cancelRegisterbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cancelRegisterbtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.cancelRegisterbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.cancelRegisterbtn.ForeColor = System.Drawing.Color.Black;
+            this.cancelRegisterbtn.Location = new System.Drawing.Point(299, 394);
+            this.cancelRegisterbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cancelRegisterbtn.Name = "cancelRegisterbtn";
+            this.cancelRegisterbtn.Size = new System.Drawing.Size(160, 36);
+            this.cancelRegisterbtn.TabIndex = 23;
+            this.cancelRegisterbtn.Text = "Cancel";
+            this.cancelRegisterbtn.Click += new System.EventHandler(this.cancelRegisterbtn_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -452,6 +561,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.LinkLabel linkRegister;
+        private System.Windows.Forms.TextBox countryTxtbox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox clientNametxtBox;
+        private System.Windows.Forms.TextBox confirmPasstxtbox;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2GradientButton cancelRegisterbtn;
+        private Guna.UI2.WinForms.Guna2GradientButton registerBtn;
     }
 }
 
