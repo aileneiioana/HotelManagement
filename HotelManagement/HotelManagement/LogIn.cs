@@ -27,5 +27,22 @@ namespace HotelManagement
             this.Hide();
             new FirstPage().Show();
         }
+        Client_tbl model = new Client_tbl();
+        private void LoginPageLogInbtn_Click(object sender, EventArgs e)
+        {
+            ClientServices ClientServices = new ClientServices();
+            var dataset = ClientServices.validate(PhoneNrTxtbox.Text, PasswordLogInTxtBox.Text);
+            if (dataset != null)
+            {
+                //Main mf = new Main();
+                //mf.Show();
+                //this.Hide();
+                MessageBox.Show("Log in succesfull!");
+            }
+            else
+            {
+                MessageBox.Show("Wrong username or password");
+            }
+        }
     }
 }

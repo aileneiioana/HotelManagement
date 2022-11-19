@@ -18,5 +18,6 @@ namespace HotelManagement
         public string ClientName { get; set; }
         public string ClientPhone { get; set; }
         public string ClientCountry { get; set; }
+        public string Password { get; set; }
     }
 }

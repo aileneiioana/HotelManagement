@@ -13,6 +13,7 @@
           <Property Name="ClientName" Type="varchar" MaxLength="30" />
           <Property Name="ClientPhone" Type="varchar" MaxLength="30" />
           <Property Name="ClientCountry" Type="varchar" MaxLength="30" />
+          <Property Name="Password" Type="varchar" MaxLength="30" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'Hoteldb.dbo.Reservation_tbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -67,6 +68,7 @@ warning 6002: The table/view 'Hoteldb.dbo.Staff_tbl' does not have a primary key
           <Property Name="ClientName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="ClientPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="ClientCountry" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false"/>
         </EntityType>
         <EntityType Name="Room_tbl">
           <Key>
@@ -115,6 +117,7 @@ warning 6002: The table/view 'Hoteldb.dbo.Staff_tbl' does not have a primary key
                 <ScalarProperty Name="ClientName" ColumnName="ClientName" />
                 <ScalarProperty Name="ClientPhone" ColumnName="ClientPhone" />
                 <ScalarProperty Name="ClientCountry" ColumnName="ClientCountry" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

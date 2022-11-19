@@ -10,6 +10,13 @@ using System.Data;
 namespace HotelManagement { 
     public class ClientServices
     {
+        public Client_tbl validate(string phoneNr, string pass)
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Client_tbl.Where(x => x.ClientPhone == phoneNr && x.Password == pass).FirstOrDefault();
+            }
+        }
 
         public void AddClient(Client_tbl client)
         {

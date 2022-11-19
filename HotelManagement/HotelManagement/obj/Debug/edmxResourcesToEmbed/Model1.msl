@@ -8,6 +8,7 @@
           <ScalarProperty Name="ClientName" ColumnName="ClientName" />
           <ScalarProperty Name="ClientPhone" ColumnName="ClientPhone" />
           <ScalarProperty Name="ClientCountry" ColumnName="ClientCountry" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

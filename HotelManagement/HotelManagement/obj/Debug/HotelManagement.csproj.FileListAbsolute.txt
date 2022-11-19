@@ -81,3 +81,12 @@ C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagemen
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources

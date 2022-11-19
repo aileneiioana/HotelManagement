@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UsernameLogInTxtBox = new System.Windows.Forms.TextBox();
+            this.PhoneNrTxtbox = new System.Windows.Forms.TextBox();
             this.PasswordLogInTxtBox = new System.Windows.Forms.TextBox();
             this.LogInUsernameLbl = new System.Windows.Forms.Label();
             this.LogInPasswordLabel = new System.Windows.Forms.Label();
@@ -37,6 +37,12 @@
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.RegisterGpBx = new System.Windows.Forms.GroupBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.linkRegister = new System.Windows.Forms.LinkLabel();
             this.LoginPagecancelBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.LoginPageLogInbtn = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -48,27 +54,21 @@
             this.btnDespreHotel = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LogInEmailLbl = new System.Windows.Forms.Label();
-            this.RegisterGpBx = new System.Windows.Forms.GroupBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.RegisterGpBx.SuspendLayout();
             this.SuspendLayout();
             // 
-            // UsernameLogInTxtBox
+            // PhoneNrTxtbox
             // 
-            this.UsernameLogInTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UsernameLogInTxtBox.Location = new System.Drawing.Point(288, 287);
-            this.UsernameLogInTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UsernameLogInTxtBox.Multiline = true;
-            this.UsernameLogInTxtBox.Name = "UsernameLogInTxtBox";
-            this.UsernameLogInTxtBox.Size = new System.Drawing.Size(342, 48);
-            this.UsernameLogInTxtBox.TabIndex = 1;
+            this.PhoneNrTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PhoneNrTxtbox.Location = new System.Drawing.Point(288, 287);
+            this.PhoneNrTxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PhoneNrTxtbox.Multiline = true;
+            this.PhoneNrTxtbox.Name = "PhoneNrTxtbox";
+            this.PhoneNrTxtbox.Size = new System.Drawing.Size(342, 48);
+            this.PhoneNrTxtbox.TabIndex = 1;
             // 
             // PasswordLogInTxtBox
             // 
@@ -109,15 +109,12 @@
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(48, 225);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
@@ -125,7 +122,6 @@
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.SelectionStart = 10;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(213, 97);
             this.guna2TextBox1.TabIndex = 17;
             // 
@@ -145,16 +141,12 @@
             // btnBack
             // 
             this.btnBack.BorderThickness = 2;
-            this.btnBack.CheckedState.Parent = this.btnBack;
-            this.btnBack.CustomImages.Parent = this.btnBack;
             this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.HoverState.Parent = this.btnBack;
             this.btnBack.Location = new System.Drawing.Point(0, 570);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.ShadowDecoration.Parent = this.btnBack;
             this.btnBack.Size = new System.Drawing.Size(294, 56);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
@@ -163,10 +155,10 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
+            this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(62, 68);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(184, 150);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
@@ -189,190 +181,12 @@
             this.guna2Panel1.Controls.Add(this.LogInEmailLbl);
             this.guna2Panel1.Controls.Add(this.PasswordLogInTxtBox);
             this.guna2Panel1.Controls.Add(this.LogInPasswordLabel);
-            this.guna2Panel1.Controls.Add(this.UsernameLogInTxtBox);
+            this.guna2Panel1.Controls.Add(this.PhoneNrTxtbox);
             this.guna2Panel1.Location = new System.Drawing.Point(296, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(969, 678);
             this.guna2Panel1.TabIndex = 9;
-            // 
-            // linkRegister
-            // 
-            this.linkRegister.AutoSize = true;
-            this.linkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkRegister.LinkColor = System.Drawing.Color.Black;
-            this.linkRegister.Location = new System.Drawing.Point(260, 606);
-            this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(406, 24);
-            this.linkRegister.TabIndex = 24;
-            this.linkRegister.TabStop = true;
-            this.linkRegister.Text = "Are you a new client? Please register here";
-            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
-            // 
-            // LoginPagecancelBtn
-            // 
-            this.LoginPagecancelBtn.AutoRoundedCorners = true;
-            this.LoginPagecancelBtn.BorderRadius = 17;
-            this.LoginPagecancelBtn.BorderThickness = 1;
-            this.LoginPagecancelBtn.CheckedState.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.CustomImages.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LoginPagecancelBtn.FillColor2 = System.Drawing.Color.LightGray;
-            this.LoginPagecancelBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.LoginPagecancelBtn.ForeColor = System.Drawing.Color.Black;
-            this.LoginPagecancelBtn.HoverState.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.Location = new System.Drawing.Point(470, 502);
-            this.LoginPagecancelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LoginPagecancelBtn.Name = "LoginPagecancelBtn";
-            this.LoginPagecancelBtn.ShadowDecoration.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.Size = new System.Drawing.Size(160, 36);
-            this.LoginPagecancelBtn.TabIndex = 22;
-            this.LoginPagecancelBtn.Text = "Cancel";
-            // 
-            // LoginPageLogInbtn
-            // 
-            this.LoginPageLogInbtn.AutoRoundedCorners = true;
-            this.LoginPageLogInbtn.BorderRadius = 17;
-            this.LoginPageLogInbtn.BorderThickness = 1;
-            this.LoginPageLogInbtn.CheckedState.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.CustomImages.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LoginPageLogInbtn.FillColor2 = System.Drawing.Color.LightGray;
-            this.LoginPageLogInbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.LoginPageLogInbtn.ForeColor = System.Drawing.Color.Black;
-            this.LoginPageLogInbtn.HoverState.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.Location = new System.Drawing.Point(288, 502);
-            this.LoginPageLogInbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LoginPageLogInbtn.Name = "LoginPageLogInbtn";
-            this.LoginPageLogInbtn.ShadowDecoration.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.Size = new System.Drawing.Size(160, 36);
-            this.LoginPageLogInbtn.TabIndex = 21;
-            this.LoginPageLogInbtn.Text = "Log In";
-            // 
-            // btnContact
-            // 
-            this.btnContact.BorderThickness = 2;
-            this.btnContact.CheckedState.Parent = this.btnContact;
-            this.btnContact.CustomImages.Parent = this.btnContact;
-            this.btnContact.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnContact.ForeColor = System.Drawing.Color.White;
-            this.btnContact.HoverState.Parent = this.btnContact;
-            this.btnContact.Location = new System.Drawing.Point(804, 0);
-            this.btnContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnContact.Name = "btnContact";
-            this.btnContact.ShadowDecoration.Parent = this.btnContact;
-            this.btnContact.Size = new System.Drawing.Size(160, 49);
-            this.btnContact.TabIndex = 20;
-            this.btnContact.Text = "Contact";
-            // 
-            // btnTarife
-            // 
-            this.btnTarife.BorderThickness = 2;
-            this.btnTarife.CheckedState.Parent = this.btnTarife;
-            this.btnTarife.CustomImages.Parent = this.btnTarife;
-            this.btnTarife.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTarife.ForeColor = System.Drawing.Color.White;
-            this.btnTarife.HoverState.Parent = this.btnTarife;
-            this.btnTarife.Location = new System.Drawing.Point(644, 0);
-            this.btnTarife.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTarife.Name = "btnTarife";
-            this.btnTarife.ShadowDecoration.Parent = this.btnTarife;
-            this.btnTarife.Size = new System.Drawing.Size(160, 49);
-            this.btnTarife.TabIndex = 19;
-            this.btnTarife.Text = "Tarife";
-            // 
-            // btnGalerie
-            // 
-            this.btnGalerie.BorderThickness = 2;
-            this.btnGalerie.CheckedState.Parent = this.btnGalerie;
-            this.btnGalerie.CustomImages.Parent = this.btnGalerie;
-            this.btnGalerie.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnGalerie.ForeColor = System.Drawing.Color.White;
-            this.btnGalerie.HoverState.Parent = this.btnGalerie;
-            this.btnGalerie.Location = new System.Drawing.Point(483, 0);
-            this.btnGalerie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGalerie.Name = "btnGalerie";
-            this.btnGalerie.ShadowDecoration.Parent = this.btnGalerie;
-            this.btnGalerie.Size = new System.Drawing.Size(160, 49);
-            this.btnGalerie.TabIndex = 18;
-            this.btnGalerie.Text = "Galerie";
-            // 
-            // btnFacilitati
-            // 
-            this.btnFacilitati.BorderThickness = 2;
-            this.btnFacilitati.CheckedState.Parent = this.btnFacilitati;
-            this.btnFacilitati.CustomImages.Parent = this.btnFacilitati;
-            this.btnFacilitati.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFacilitati.ForeColor = System.Drawing.Color.White;
-            this.btnFacilitati.HoverState.Parent = this.btnFacilitati;
-            this.btnFacilitati.Location = new System.Drawing.Point(322, 0);
-            this.btnFacilitati.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFacilitati.Name = "btnFacilitati";
-            this.btnFacilitati.ShadowDecoration.Parent = this.btnFacilitati;
-            this.btnFacilitati.Size = new System.Drawing.Size(160, 49);
-            this.btnFacilitati.TabIndex = 17;
-            this.btnFacilitati.Text = "Facilitati";
-            // 
-            // btnCamere
-            // 
-            this.btnCamere.BorderThickness = 2;
-            this.btnCamere.CheckedState.Parent = this.btnCamere;
-            this.btnCamere.CustomImages.Parent = this.btnCamere;
-            this.btnCamere.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCamere.ForeColor = System.Drawing.Color.White;
-            this.btnCamere.HoverState.Parent = this.btnCamere;
-            this.btnCamere.Location = new System.Drawing.Point(161, 0);
-            this.btnCamere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCamere.Name = "btnCamere";
-            this.btnCamere.ShadowDecoration.Parent = this.btnCamere;
-            this.btnCamere.Size = new System.Drawing.Size(160, 49);
-            this.btnCamere.TabIndex = 16;
-            this.btnCamere.Text = "Camere";
-            // 
-            // btnDespreHotel
-            // 
-            this.btnDespreHotel.BorderThickness = 2;
-            this.btnDespreHotel.CheckedState.Parent = this.btnDespreHotel;
-            this.btnDespreHotel.CustomImages.Parent = this.btnDespreHotel;
-            this.btnDespreHotel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDespreHotel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDespreHotel.ForeColor = System.Drawing.Color.White;
-            this.btnDespreHotel.HoverState.Parent = this.btnDespreHotel;
-            this.btnDespreHotel.Location = new System.Drawing.Point(0, 0);
-            this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDespreHotel.Name = "btnDespreHotel";
-            this.btnDespreHotel.ShadowDecoration.Parent = this.btnDespreHotel;
-            this.btnDespreHotel.Size = new System.Drawing.Size(160, 49);
-            this.btnDespreHotel.TabIndex = 15;
-            this.btnDespreHotel.Text = "Despre Hotel";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(265, 133);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(373, 78);
-            this.guna2HtmlLabel1.TabIndex = 6;
-            this.guna2HtmlLabel1.Text = "Log In Page";
-            // 
-            // LogInEmailLbl
-            // 
-            this.LogInEmailLbl.AutoSize = true;
-            this.LogInEmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInEmailLbl.Location = new System.Drawing.Point(293, 265);
-            this.LogInEmailLbl.Name = "LogInEmailLbl";
-            this.LogInEmailLbl.Size = new System.Drawing.Size(56, 20);
-            this.LogInEmailLbl.TabIndex = 5;
-            this.LogInEmailLbl.Text = "Email";
             // 
             // RegisterGpBx
             // 
@@ -381,7 +195,7 @@
             this.RegisterGpBx.Controls.Add(this.textBox1);
             this.RegisterGpBx.Controls.Add(this.label2);
             this.RegisterGpBx.Controls.Add(this.textBox2);
-            this.RegisterGpBx.Location = new System.Drawing.Point(470, 133);
+            this.RegisterGpBx.Location = new System.Drawing.Point(624, 84);
             this.RegisterGpBx.Name = "RegisterGpBx";
             this.RegisterGpBx.Size = new System.Drawing.Size(541, 454);
             this.RegisterGpBx.TabIndex = 25;
@@ -406,9 +220,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(112, 205);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Email";
+            this.label1.Text = "Phone Number";
             // 
             // textBox1
             // 
@@ -440,6 +254,152 @@
             this.textBox2.Size = new System.Drawing.Size(342, 48);
             this.textBox2.TabIndex = 7;
             // 
+            // linkRegister
+            // 
+            this.linkRegister.AutoSize = true;
+            this.linkRegister.BackColor = System.Drawing.Color.Transparent;
+            this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegister.LinkColor = System.Drawing.Color.Black;
+            this.linkRegister.Location = new System.Drawing.Point(260, 606);
+            this.linkRegister.Name = "linkRegister";
+            this.linkRegister.Size = new System.Drawing.Size(406, 24);
+            this.linkRegister.TabIndex = 24;
+            this.linkRegister.TabStop = true;
+            this.linkRegister.Text = "Are you a new client? Please register here";
+            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
+            // 
+            // LoginPagecancelBtn
+            // 
+            this.LoginPagecancelBtn.AutoRoundedCorners = true;
+            this.LoginPagecancelBtn.BorderRadius = 17;
+            this.LoginPagecancelBtn.BorderThickness = 1;
+            this.LoginPagecancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LoginPagecancelBtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.LoginPagecancelBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LoginPagecancelBtn.ForeColor = System.Drawing.Color.Black;
+            this.LoginPagecancelBtn.Location = new System.Drawing.Point(470, 502);
+            this.LoginPagecancelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LoginPagecancelBtn.Name = "LoginPagecancelBtn";
+            this.LoginPagecancelBtn.Size = new System.Drawing.Size(160, 36);
+            this.LoginPagecancelBtn.TabIndex = 22;
+            this.LoginPagecancelBtn.Text = "Cancel";
+            // 
+            // LoginPageLogInbtn
+            // 
+            this.LoginPageLogInbtn.AutoRoundedCorners = true;
+            this.LoginPageLogInbtn.BorderRadius = 17;
+            this.LoginPageLogInbtn.BorderThickness = 1;
+            this.LoginPageLogInbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LoginPageLogInbtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.LoginPageLogInbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LoginPageLogInbtn.ForeColor = System.Drawing.Color.Black;
+            this.LoginPageLogInbtn.Location = new System.Drawing.Point(288, 502);
+            this.LoginPageLogInbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LoginPageLogInbtn.Name = "LoginPageLogInbtn";
+            this.LoginPageLogInbtn.Size = new System.Drawing.Size(160, 36);
+            this.LoginPageLogInbtn.TabIndex = 21;
+            this.LoginPageLogInbtn.Text = "Log In";
+            this.LoginPageLogInbtn.Click += new System.EventHandler(this.LoginPageLogInbtn_Click);
+            // 
+            // btnContact
+            // 
+            this.btnContact.BorderThickness = 2;
+            this.btnContact.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnContact.ForeColor = System.Drawing.Color.White;
+            this.btnContact.Location = new System.Drawing.Point(804, 0);
+            this.btnContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnContact.Name = "btnContact";
+            this.btnContact.Size = new System.Drawing.Size(160, 49);
+            this.btnContact.TabIndex = 20;
+            this.btnContact.Text = "Contact";
+            // 
+            // btnTarife
+            // 
+            this.btnTarife.BorderThickness = 2;
+            this.btnTarife.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTarife.ForeColor = System.Drawing.Color.White;
+            this.btnTarife.Location = new System.Drawing.Point(644, 0);
+            this.btnTarife.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTarife.Name = "btnTarife";
+            this.btnTarife.Size = new System.Drawing.Size(160, 49);
+            this.btnTarife.TabIndex = 19;
+            this.btnTarife.Text = "Tarife";
+            // 
+            // btnGalerie
+            // 
+            this.btnGalerie.BorderThickness = 2;
+            this.btnGalerie.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGalerie.ForeColor = System.Drawing.Color.White;
+            this.btnGalerie.Location = new System.Drawing.Point(483, 0);
+            this.btnGalerie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGalerie.Name = "btnGalerie";
+            this.btnGalerie.Size = new System.Drawing.Size(160, 49);
+            this.btnGalerie.TabIndex = 18;
+            this.btnGalerie.Text = "Galerie";
+            // 
+            // btnFacilitati
+            // 
+            this.btnFacilitati.BorderThickness = 2;
+            this.btnFacilitati.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFacilitati.ForeColor = System.Drawing.Color.White;
+            this.btnFacilitati.Location = new System.Drawing.Point(322, 0);
+            this.btnFacilitati.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFacilitati.Name = "btnFacilitati";
+            this.btnFacilitati.Size = new System.Drawing.Size(160, 49);
+            this.btnFacilitati.TabIndex = 17;
+            this.btnFacilitati.Text = "Facilitati";
+            // 
+            // btnCamere
+            // 
+            this.btnCamere.BorderThickness = 2;
+            this.btnCamere.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCamere.ForeColor = System.Drawing.Color.White;
+            this.btnCamere.Location = new System.Drawing.Point(161, 0);
+            this.btnCamere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCamere.Name = "btnCamere";
+            this.btnCamere.Size = new System.Drawing.Size(160, 49);
+            this.btnCamere.TabIndex = 16;
+            this.btnCamere.Text = "Camere";
+            // 
+            // btnDespreHotel
+            // 
+            this.btnDespreHotel.BorderThickness = 2;
+            this.btnDespreHotel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDespreHotel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDespreHotel.ForeColor = System.Drawing.Color.White;
+            this.btnDespreHotel.Location = new System.Drawing.Point(0, 0);
+            this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDespreHotel.Name = "btnDespreHotel";
+            this.btnDespreHotel.Size = new System.Drawing.Size(160, 49);
+            this.btnDespreHotel.TabIndex = 15;
+            this.btnDespreHotel.Text = "Despre Hotel";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(265, 133);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(373, 78);
+            this.guna2HtmlLabel1.TabIndex = 6;
+            this.guna2HtmlLabel1.Text = "Log In Page";
+            // 
+            // LogInEmailLbl
+            // 
+            this.LogInEmailLbl.AutoSize = true;
+            this.LogInEmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogInEmailLbl.Location = new System.Drawing.Point(293, 265);
+            this.LogInEmailLbl.Name = "LogInEmailLbl";
+            this.LogInEmailLbl.Size = new System.Drawing.Size(132, 20);
+            this.LogInEmailLbl.TabIndex = 5;
+            this.LogInEmailLbl.Text = "Phone Number";
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -466,7 +426,7 @@
         #endregion
 
         private System.Windows.Forms.Label Login;
-        private System.Windows.Forms.TextBox UsernameLogInTxtBox;
+        private System.Windows.Forms.TextBox PhoneNrTxtbox;
         private System.Windows.Forms.TextBox PasswordLogInTxtBox;
         private System.Windows.Forms.Label LogInUsernameLbl;
         private System.Windows.Forms.Label LogInPasswordLabel;
