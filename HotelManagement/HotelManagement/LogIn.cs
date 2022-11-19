@@ -16,5 +16,16 @@ namespace HotelManagement
         {
             InitializeComponent();
         }
+
+        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FirstPage().Show();
+        }
     }
 }

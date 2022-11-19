@@ -26,3 +26,16 @@ C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debu
 C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
 C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb

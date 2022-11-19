@@ -48,35 +48,44 @@
             this.btnDespreHotel = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LogInEmailLbl = new System.Windows.Forms.Label();
+            this.RegisterGpBx = new System.Windows.Forms.GroupBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            this.RegisterGpBx.SuspendLayout();
             this.SuspendLayout();
             // 
             // UsernameLogInTxtBox
             // 
             this.UsernameLogInTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UsernameLogInTxtBox.Location = new System.Drawing.Point(324, 359);
+            this.UsernameLogInTxtBox.Location = new System.Drawing.Point(288, 287);
+            this.UsernameLogInTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UsernameLogInTxtBox.Multiline = true;
             this.UsernameLogInTxtBox.Name = "UsernameLogInTxtBox";
-            this.UsernameLogInTxtBox.Size = new System.Drawing.Size(385, 60);
+            this.UsernameLogInTxtBox.Size = new System.Drawing.Size(342, 48);
             this.UsernameLogInTxtBox.TabIndex = 1;
             // 
             // PasswordLogInTxtBox
             // 
             this.PasswordLogInTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordLogInTxtBox.Location = new System.Drawing.Point(324, 492);
+            this.PasswordLogInTxtBox.Location = new System.Drawing.Point(288, 394);
+            this.PasswordLogInTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PasswordLogInTxtBox.Multiline = true;
             this.PasswordLogInTxtBox.Name = "PasswordLogInTxtBox";
-            this.PasswordLogInTxtBox.Size = new System.Drawing.Size(385, 60);
+            this.PasswordLogInTxtBox.Size = new System.Drawing.Size(342, 48);
             this.PasswordLogInTxtBox.TabIndex = 2;
             // 
             // LogInUsernameLbl
             // 
             this.LogInUsernameLbl.AutoSize = true;
-            this.LogInUsernameLbl.Location = new System.Drawing.Point(79, 335);
+            this.LogInUsernameLbl.Location = new System.Drawing.Point(70, 268);
             this.LogInUsernameLbl.Name = "LogInUsernameLbl";
-            this.LogInUsernameLbl.Size = new System.Drawing.Size(48, 20);
+            this.LogInUsernameLbl.Size = new System.Drawing.Size(41, 16);
             this.LogInUsernameLbl.TabIndex = 3;
             this.LogInUsernameLbl.Text = "Email";
             // 
@@ -84,16 +93,16 @@
             // 
             this.LogInPasswordLabel.AutoSize = true;
             this.LogInPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInPasswordLabel.Location = new System.Drawing.Point(330, 464);
+            this.LogInPasswordLabel.Location = new System.Drawing.Point(293, 371);
             this.LogInPasswordLabel.Name = "LogInPasswordLabel";
-            this.LogInPasswordLabel.Size = new System.Drawing.Size(106, 25);
+            this.LogInPasswordLabel.Size = new System.Drawing.Size(91, 20);
             this.LogInPasswordLabel.TabIndex = 4;
             this.LogInPasswordLabel.Text = "Password";
             // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BorderRadius = 59;
+            this.guna2TextBox1.BorderRadius = 47;
             this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "LIAV Hotel";
@@ -109,14 +118,15 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(54, 281);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.guna2TextBox1.Location = new System.Drawing.Point(48, 225);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.SelectionStart = 10;
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(240, 121);
+            this.guna2TextBox1.Size = new System.Drawing.Size(213, 97);
             this.guna2TextBox1.TabIndex = 17;
             // 
             // panel1
@@ -127,8 +137,9 @@
             this.panel1.Controls.Add(this.LogInUsernameLbl);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(331, 848);
+            this.panel1.Size = new System.Drawing.Size(294, 678);
             this.panel1.TabIndex = 7;
             // 
             // btnBack
@@ -140,20 +151,23 @@
             this.btnBack.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.HoverState.Parent = this.btnBack;
-            this.btnBack.Location = new System.Drawing.Point(0, 713);
+            this.btnBack.Location = new System.Drawing.Point(0, 570);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
             this.btnBack.ShadowDecoration.Parent = this.btnBack;
-            this.btnBack.Size = new System.Drawing.Size(331, 70);
+            this.btnBack.Size = new System.Drawing.Size(294, 56);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(70, 85);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(62, 68);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(207, 188);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(184, 150);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
@@ -161,6 +175,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2Panel1.Controls.Add(this.RegisterGpBx);
             this.guna2Panel1.Controls.Add(this.linkRegister);
             this.guna2Panel1.Controls.Add(this.LoginPagecancelBtn);
             this.guna2Panel1.Controls.Add(this.LoginPageLogInbtn);
@@ -175,10 +190,11 @@
             this.guna2Panel1.Controls.Add(this.PasswordLogInTxtBox);
             this.guna2Panel1.Controls.Add(this.LogInPasswordLabel);
             this.guna2Panel1.Controls.Add(this.UsernameLogInTxtBox);
-            this.guna2Panel1.Location = new System.Drawing.Point(333, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(296, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1090, 848);
+            this.guna2Panel1.Size = new System.Drawing.Size(969, 678);
             this.guna2Panel1.TabIndex = 9;
             // 
             // linkRegister
@@ -187,17 +203,18 @@
             this.linkRegister.BackColor = System.Drawing.Color.Transparent;
             this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegister.LinkColor = System.Drawing.Color.Black;
-            this.linkRegister.Location = new System.Drawing.Point(293, 757);
+            this.linkRegister.Location = new System.Drawing.Point(260, 606);
             this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(462, 26);
+            this.linkRegister.Size = new System.Drawing.Size(406, 24);
             this.linkRegister.TabIndex = 24;
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "Are you a new client? Please register here";
+            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
             // 
             // LoginPagecancelBtn
             // 
             this.LoginPagecancelBtn.AutoRoundedCorners = true;
-            this.LoginPagecancelBtn.BorderRadius = 21;
+            this.LoginPagecancelBtn.BorderRadius = 17;
             this.LoginPagecancelBtn.BorderThickness = 1;
             this.LoginPagecancelBtn.CheckedState.Parent = this.LoginPagecancelBtn;
             this.LoginPagecancelBtn.CustomImages.Parent = this.LoginPagecancelBtn;
@@ -206,17 +223,18 @@
             this.LoginPagecancelBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.LoginPagecancelBtn.ForeColor = System.Drawing.Color.Black;
             this.LoginPagecancelBtn.HoverState.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.Location = new System.Drawing.Point(529, 627);
+            this.LoginPagecancelBtn.Location = new System.Drawing.Point(470, 502);
+            this.LoginPagecancelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginPagecancelBtn.Name = "LoginPagecancelBtn";
             this.LoginPagecancelBtn.ShadowDecoration.Parent = this.LoginPagecancelBtn;
-            this.LoginPagecancelBtn.Size = new System.Drawing.Size(180, 45);
+            this.LoginPagecancelBtn.Size = new System.Drawing.Size(160, 36);
             this.LoginPagecancelBtn.TabIndex = 22;
             this.LoginPagecancelBtn.Text = "Cancel";
             // 
             // LoginPageLogInbtn
             // 
             this.LoginPageLogInbtn.AutoRoundedCorners = true;
-            this.LoginPageLogInbtn.BorderRadius = 21;
+            this.LoginPageLogInbtn.BorderRadius = 17;
             this.LoginPageLogInbtn.BorderThickness = 1;
             this.LoginPageLogInbtn.CheckedState.Parent = this.LoginPageLogInbtn;
             this.LoginPageLogInbtn.CustomImages.Parent = this.LoginPageLogInbtn;
@@ -225,10 +243,11 @@
             this.LoginPageLogInbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.LoginPageLogInbtn.ForeColor = System.Drawing.Color.Black;
             this.LoginPageLogInbtn.HoverState.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.Location = new System.Drawing.Point(324, 627);
+            this.LoginPageLogInbtn.Location = new System.Drawing.Point(288, 502);
+            this.LoginPageLogInbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginPageLogInbtn.Name = "LoginPageLogInbtn";
             this.LoginPageLogInbtn.ShadowDecoration.Parent = this.LoginPageLogInbtn;
-            this.LoginPageLogInbtn.Size = new System.Drawing.Size(180, 45);
+            this.LoginPageLogInbtn.Size = new System.Drawing.Size(160, 36);
             this.LoginPageLogInbtn.TabIndex = 21;
             this.LoginPageLogInbtn.Text = "Log In";
             // 
@@ -241,10 +260,11 @@
             this.btnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnContact.ForeColor = System.Drawing.Color.White;
             this.btnContact.HoverState.Parent = this.btnContact;
-            this.btnContact.Location = new System.Drawing.Point(905, 0);
+            this.btnContact.Location = new System.Drawing.Point(804, 0);
+            this.btnContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnContact.Name = "btnContact";
             this.btnContact.ShadowDecoration.Parent = this.btnContact;
-            this.btnContact.Size = new System.Drawing.Size(180, 61);
+            this.btnContact.Size = new System.Drawing.Size(160, 49);
             this.btnContact.TabIndex = 20;
             this.btnContact.Text = "Contact";
             // 
@@ -257,10 +277,11 @@
             this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTarife.ForeColor = System.Drawing.Color.White;
             this.btnTarife.HoverState.Parent = this.btnTarife;
-            this.btnTarife.Location = new System.Drawing.Point(724, 0);
+            this.btnTarife.Location = new System.Drawing.Point(644, 0);
+            this.btnTarife.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTarife.Name = "btnTarife";
             this.btnTarife.ShadowDecoration.Parent = this.btnTarife;
-            this.btnTarife.Size = new System.Drawing.Size(180, 61);
+            this.btnTarife.Size = new System.Drawing.Size(160, 49);
             this.btnTarife.TabIndex = 19;
             this.btnTarife.Text = "Tarife";
             // 
@@ -273,10 +294,11 @@
             this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGalerie.ForeColor = System.Drawing.Color.White;
             this.btnGalerie.HoverState.Parent = this.btnGalerie;
-            this.btnGalerie.Location = new System.Drawing.Point(543, 0);
+            this.btnGalerie.Location = new System.Drawing.Point(483, 0);
+            this.btnGalerie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGalerie.Name = "btnGalerie";
             this.btnGalerie.ShadowDecoration.Parent = this.btnGalerie;
-            this.btnGalerie.Size = new System.Drawing.Size(180, 61);
+            this.btnGalerie.Size = new System.Drawing.Size(160, 49);
             this.btnGalerie.TabIndex = 18;
             this.btnGalerie.Text = "Galerie";
             // 
@@ -289,10 +311,11 @@
             this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFacilitati.ForeColor = System.Drawing.Color.White;
             this.btnFacilitati.HoverState.Parent = this.btnFacilitati;
-            this.btnFacilitati.Location = new System.Drawing.Point(362, 0);
+            this.btnFacilitati.Location = new System.Drawing.Point(322, 0);
+            this.btnFacilitati.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFacilitati.Name = "btnFacilitati";
             this.btnFacilitati.ShadowDecoration.Parent = this.btnFacilitati;
-            this.btnFacilitati.Size = new System.Drawing.Size(180, 61);
+            this.btnFacilitati.Size = new System.Drawing.Size(160, 49);
             this.btnFacilitati.TabIndex = 17;
             this.btnFacilitati.Text = "Facilitati";
             // 
@@ -305,10 +328,11 @@
             this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCamere.ForeColor = System.Drawing.Color.White;
             this.btnCamere.HoverState.Parent = this.btnCamere;
-            this.btnCamere.Location = new System.Drawing.Point(181, 0);
+            this.btnCamere.Location = new System.Drawing.Point(161, 0);
+            this.btnCamere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCamere.Name = "btnCamere";
             this.btnCamere.ShadowDecoration.Parent = this.btnCamere;
-            this.btnCamere.Size = new System.Drawing.Size(180, 61);
+            this.btnCamere.Size = new System.Drawing.Size(160, 49);
             this.btnCamere.TabIndex = 16;
             this.btnCamere.Text = "Camere";
             // 
@@ -322,9 +346,10 @@
             this.btnDespreHotel.ForeColor = System.Drawing.Color.White;
             this.btnDespreHotel.HoverState.Parent = this.btnDespreHotel;
             this.btnDespreHotel.Location = new System.Drawing.Point(0, 0);
+            this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDespreHotel.Name = "btnDespreHotel";
             this.btnDespreHotel.ShadowDecoration.Parent = this.btnDespreHotel;
-            this.btnDespreHotel.Size = new System.Drawing.Size(180, 61);
+            this.btnDespreHotel.Size = new System.Drawing.Size(160, 49);
             this.btnDespreHotel.TabIndex = 15;
             this.btnDespreHotel.Text = "Despre Hotel";
             // 
@@ -332,9 +357,10 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(298, 166);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(265, 133);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(439, 93);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(373, 78);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Log In Page";
             // 
@@ -342,20 +368,87 @@
             // 
             this.LogInEmailLbl.AutoSize = true;
             this.LogInEmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInEmailLbl.Location = new System.Drawing.Point(330, 331);
+            this.LogInEmailLbl.Location = new System.Drawing.Point(293, 265);
             this.LogInEmailLbl.Name = "LogInEmailLbl";
-            this.LogInEmailLbl.Size = new System.Drawing.Size(65, 25);
+            this.LogInEmailLbl.Size = new System.Drawing.Size(56, 20);
             this.LogInEmailLbl.TabIndex = 5;
             this.LogInEmailLbl.Text = "Email";
             // 
+            // RegisterGpBx
+            // 
+            this.RegisterGpBx.Controls.Add(this.guna2HtmlLabel2);
+            this.RegisterGpBx.Controls.Add(this.label1);
+            this.RegisterGpBx.Controls.Add(this.textBox1);
+            this.RegisterGpBx.Controls.Add(this.label2);
+            this.RegisterGpBx.Controls.Add(this.textBox2);
+            this.RegisterGpBx.Location = new System.Drawing.Point(470, 133);
+            this.RegisterGpBx.Name = "RegisterGpBx";
+            this.RegisterGpBx.Size = new System.Drawing.Size(541, 454);
+            this.RegisterGpBx.TabIndex = 25;
+            this.RegisterGpBx.TabStop = false;
+            this.RegisterGpBx.Text = "groupBox1";
+            this.RegisterGpBx.Visible = false;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(84, 73);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(259, 78);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.Text = "Register";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(112, 205);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Email";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(107, 334);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(342, 48);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(112, 311);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Password";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(107, 227);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(342, 48);
+            this.textBox2.TabIndex = 7;
+            // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1414, 844);
+            this.ClientSize = new System.Drawing.Size(1257, 675);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -364,6 +457,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.RegisterGpBx.ResumeLayout(false);
+            this.RegisterGpBx.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -390,7 +485,13 @@
         private Guna.UI2.WinForms.Guna2Button btnFacilitati;
         private Guna.UI2.WinForms.Guna2Button btnCamere;
         private Guna.UI2.WinForms.Guna2Button btnDespreHotel;
-        private System.Windows.Forms.LinkLabel linkRegister;
+        private System.Windows.Forms.GroupBox RegisterGpBx;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.LinkLabel linkRegister;
     }
 }
 
