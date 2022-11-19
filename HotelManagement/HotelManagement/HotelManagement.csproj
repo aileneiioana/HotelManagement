@@ -117,6 +117,12 @@
     <Compile Include="Reservation_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="RoomInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomInfo.Designer.cs">
+      <DependentUpon>RoomInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Room_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -153,6 +159,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoomInfo.resx">
+      <DependentUpon>RoomInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffInfo.resx">
       <DependentUpon>StaffInfo.cs</DependentUpon>
     </EmbeddedResource>
