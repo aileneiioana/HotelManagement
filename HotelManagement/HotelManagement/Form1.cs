@@ -40,6 +40,9 @@ namespace HotelManagement
 
         }
 
-
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

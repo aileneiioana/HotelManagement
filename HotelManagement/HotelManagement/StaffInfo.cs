@@ -44,7 +44,6 @@ namespace HotelManagement
             Clear();
             MessageBox.Show("Staff Successfully Added");
             PopulateDataGridView();
-            //s.printLoggInfo("Staff Added " + model.Staffname);
 
         }
          void PopulateDataGridView()
@@ -97,9 +96,9 @@ namespace HotelManagement
 
         private void Backbtn_Click(object sender, EventArgs e)
         {
-            //Main main = new Main();
-            //main.Show();
-            //this.Hide();
+            Main main = new Main();
+            main.Show();
+            this.Hide();
         }
 
         private void Search_Click(object sender, EventArgs e)
@@ -114,9 +113,9 @@ namespace HotelManagement
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //Main main = new Main();
-            //main.Show();
-            //this.Hide();
+            Main main = new Main();
+            main.Show();
+            this.Hide();
         }
     }
 }

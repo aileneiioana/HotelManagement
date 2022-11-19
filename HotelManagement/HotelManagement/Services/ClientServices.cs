@@ -59,6 +59,13 @@ namespace HotelManagement {
             }
         }
 
+        public Client_tbl GetClientByPhone(String nr)
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Client_tbl.Where(x => x.ClientPhone == nr).FirstOrDefault();
+            }
+        }
         public void DeleteClient(Client_tbl model)
         {
             using (HoteldbEntities db = new HoteldbEntities())

@@ -30,7 +30,6 @@ namespace HotelManagement
             clientphonetb.Text = "Client Phone";
             clientctrytb.Text = "Country";
             passwordTb.Text = "Password";
-           // model.ClientId = 0;
         }
 
         private void Clientinfo_Load(object sender, EventArgs e)
@@ -106,9 +105,9 @@ namespace HotelManagement
 
         private void back_btn_Click(object sender, EventArgs e)
         {
-            //Main main = new Main();
-            //main.Show();
-            //this.Hide();
+            Main main = new Main();
+            main.Show();
+            this.Hide();
         }
 
         private void refreshpb_Click(object sender, EventArgs e)
@@ -129,9 +128,9 @@ namespace HotelManagement
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-          //  Main main = new Main();
-         //   main.Show();
-         //   this.Hide();
+           Main main = new Main();
+           main.Show();
+           this.Hide();
         }
     }
 }

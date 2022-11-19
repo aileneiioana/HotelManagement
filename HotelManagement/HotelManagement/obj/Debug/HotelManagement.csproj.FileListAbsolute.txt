@@ -90,3 +90,4 @@ C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManageme
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
