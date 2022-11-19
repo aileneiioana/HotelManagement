@@ -58,3 +58,4 @@ C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagem
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources

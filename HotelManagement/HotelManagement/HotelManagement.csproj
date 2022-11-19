@@ -113,6 +113,12 @@
     <Compile Include="Services\ReservationServices.cs" />
     <Compile Include="Services\RoomServices.cs" />
     <Compile Include="Services\StaffServices.cs" />
+    <Compile Include="StaffInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffInfo.Designer.cs">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -135,6 +141,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StaffInfo.resx">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -170,6 +179,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\back.png" />
     <None Include="Properties\refresh.png" />
   </ItemGroup>
   <ItemGroup>
