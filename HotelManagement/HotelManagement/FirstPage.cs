@@ -24,7 +24,8 @@ namespace HotelManagement
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            staffGB.Show();     
+            Form1 mf = new Form1();
+            mf.Show();
         }
 
         private void staffCancelbtn_Click(object sender, EventArgs e)

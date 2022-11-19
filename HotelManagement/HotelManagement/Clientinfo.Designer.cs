@@ -267,6 +267,7 @@ namespace HotelManagement
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::HotelManagement.Properties.Resources.back;
             this.pictureBox1.Location = new System.Drawing.Point(43, 493);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

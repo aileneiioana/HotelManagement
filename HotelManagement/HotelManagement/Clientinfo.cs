@@ -15,14 +15,12 @@ namespace HotelManagement
     {
         Client_tbl model= new Client_tbl();
         ClientServices clientServices = new ClientServices();
-       // Singleton s = Singleton.Instance;
 
         public Clientinfo()
         {
             InitializeComponent();
             PopulateDataGridView();
             Datelbl.Text = DateTime.Today.Day.ToString() + " - " + DateTime.Today.Month.ToString() + " - " + DateTime.Today.Year.ToString();
-           // Singleton s = Singleton.Instance;
         }
 
         void Clear()
@@ -57,7 +55,6 @@ namespace HotelManagement
             Clear();
             PopulateDataGridView();
             MessageBox.Show("Submitted Successfully");
-           // s.printLoggInfo("Client Added " + model.ClientName);
 
         }
 
@@ -88,9 +85,7 @@ namespace HotelManagement
                 PopulateDataGridView();
                 Clear();
                 MessageBox.Show("Client Successfully Deleted");
-                //s.printLoggInfo("Client deleted " + model.ClientName);
             }
-           // else s.printLoggError("Client can't be deleted " + model.ClientName);
         }
 
         private void EditBtn_Click(object sender, EventArgs e)
@@ -104,7 +99,6 @@ namespace HotelManagement
             Clear();
             MessageBox.Show("Client Successfully Updated");
             PopulateDataGridView();
-          //  s.printLoggInfo("Client Eddited " + model.ClientName);
 
         }
 

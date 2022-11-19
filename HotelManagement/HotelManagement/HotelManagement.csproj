@@ -79,11 +79,23 @@
     <Compile Include="FirstPage.Designer.cs">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -179,6 +191,15 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\username.jpeg" />
+    <None Include="Properties\staff.png" />
+    <None Include="Properties\room.png" />
+    <None Include="Properties\reservation.png" />
+    <None Include="Properties\password.jpeg" />
+    <None Include="Properties\log_out.png" />
+    <None Include="Properties\hotel.jpeg" />
+    <None Include="Properties\close.png" />
+    <None Include="Properties\client.png" />
     <None Include="Properties\back.png" />
     <None Include="Properties\refresh.png" />
   </ItemGroup>

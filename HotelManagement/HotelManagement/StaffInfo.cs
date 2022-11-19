@@ -15,7 +15,6 @@ namespace HotelManagement
     {
         Staff_tbl model = new Staff_tbl();
         StaffServices staffService = new StaffServices();
-       // Singleton s = Singleton.Instance;
 
         public StaffInfo()
         {
@@ -78,7 +77,6 @@ namespace HotelManagement
             staffService.EditStaff(model);
             Clear();
             MessageBox.Show("Staff Successfully Updated");
-            //s.printLoggInfo("Staff Eddited " + model.Staffname);
             PopulateDataGridView();
         }
 
@@ -89,9 +87,7 @@ namespace HotelManagement
             PopulateDataGridView();
             Clear();
             MessageBox.Show("Staff Successfully Deleted");
-            //s.printLoggInfo("Staff Deleted " + model.Staffname);
             }
-           // else s.printLoggError("Staff can't be deleted " + model.Staffname);
         }
 
         private void refreshpb_Click(object sender, EventArgs e)
