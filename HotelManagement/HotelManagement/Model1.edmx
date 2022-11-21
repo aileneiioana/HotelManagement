@@ -50,23 +50,9 @@ warning 6002: The table/view 'Hoteldb.dbo.Staff_tbl' does not have a primary key
         <EntityContainer Name="HoteldbModelStoreContainer">
           <EntitySet Name="Client_tbl" EntityType="Self.Client_tbl" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Room_tbl" EntityType="Self.Room_tbl" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Reservation_tbl" EntityType="Self.Reservation_tbl" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Reservation_tbl].[ResId] AS [ResId], 
-    [Reservation_tbl].[Client] AS [Client], 
-    [Reservation_tbl].[Room] AS [Room], 
-    [Reservation_tbl].[DateIn] AS [DateIn], 
-    [Reservation_tbl].[DateOut] AS [DateOut]
-    FROM [dbo].[Reservation_tbl] AS [Reservation_tbl]</DefiningQuery>
+          <EntitySet Name="Reservation_tbl" EntityType="Self.Reservation_tbl" store:Type="Tables" Schema="dbo">
           </EntitySet>
-          <EntitySet Name="Staff_tbl" EntityType="Self.Staff_tbl" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Staff_tbl].[StaffId] AS [StaffId], 
-    [Staff_tbl].[Staffname] AS [Staffname], 
-    [Staff_tbl].[Staffphone] AS [Staffphone], 
-    [Staff_tbl].[Gender] AS [Gender], 
-    [Staff_tbl].[Staffpassword] AS [Staffpassword]
-    FROM [dbo].[Staff_tbl] AS [Staff_tbl]</DefiningQuery>
+          <EntitySet Name="Staff_tbl" EntityType="Self.Staff_tbl" store:Type="Tables" Schema="dbo">
           </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>

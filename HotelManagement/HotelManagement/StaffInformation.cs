@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class StaffInfo : Form
+    public partial class StaffInformation : Form
     {
         Staff_tbl model = new Staff_tbl();
         StaffServices staffService = new StaffServices();
 
-        public StaffInfo()
+        public StaffInformation()
         {
             InitializeComponent();
             PopulateDataGridView();

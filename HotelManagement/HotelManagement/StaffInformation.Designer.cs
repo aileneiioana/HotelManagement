@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 namespace HotelManagement
 {
-    partial class StaffInfo
+    partial class StaffInformation
     {
         /// <summary>
         /// Required designer variable.
