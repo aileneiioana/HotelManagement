@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class RoomInfo : Form
+    public partial class RoomInformation : Form
     {
         Room_tbl model = new Room_tbl();
         RoomServices roomServices = new RoomServices();
-        public RoomInfo()
+        public RoomInformation()
         {
             InitializeComponent();
             PopulateDataGridView();

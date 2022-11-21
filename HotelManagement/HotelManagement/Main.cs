@@ -59,7 +59,7 @@ namespace HotelManagement
 
         private void roompb_Click(object sender, EventArgs e)
         {
-            RoomInfo res = new RoomInfo();
+            RoomInformation res = new RoomInformation();
             res.Show();
             this.Hide();
         }
