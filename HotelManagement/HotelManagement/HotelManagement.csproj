@@ -137,11 +137,11 @@
     <Compile Include="Services\ReservationServices.cs" />
     <Compile Include="Services\RoomServices.cs" />
     <Compile Include="Services\StaffServices.cs" />
-    <Compile Include="StaffInfo.cs">
+    <Compile Include="StaffInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StaffInfo.Designer.cs">
-      <DependentUpon>StaffInfo.cs</DependentUpon>
+    <Compile Include="StaffInformation.Designer.cs">
+      <DependentUpon>StaffInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -174,8 +174,8 @@
     <EmbeddedResource Include="RoomInfo.resx">
       <DependentUpon>RoomInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StaffInfo.resx">
-      <DependentUpon>StaffInfo.cs</DependentUpon>
+    <EmbeddedResource Include="StaffInformation.resx">
+      <DependentUpon>StaffInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

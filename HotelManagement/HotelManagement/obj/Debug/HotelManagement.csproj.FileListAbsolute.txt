@@ -58,7 +58,6 @@ C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagem
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
-C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
@@ -91,3 +90,7 @@ C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManageme
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources

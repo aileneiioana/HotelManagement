@@ -33,7 +33,7 @@ namespace HotelManagement
 
         private void staffpb_Click(object sender, EventArgs e)
         {
-            StaffInfo staff = new StaffInfo();
+            StaffInformation staff = new StaffInformation();
             staff.Show();
             this.Hide();
         }
