@@ -72,13 +72,11 @@ C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagemen
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
-C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
-C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
 C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
@@ -94,3 +92,6 @@ C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagem
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
 C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources

@@ -1,6 +1,6 @@
 ﻿namespace HotelManagement
 {
-    partial class RoomInfo
+    partial class RoomInformation
     {
         /// <summary>
         /// Required designer variable.

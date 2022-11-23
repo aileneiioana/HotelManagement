@@ -123,11 +123,11 @@
     <Compile Include="Reservation_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="RoomInfo.cs">
+    <Compile Include="RoomInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomInfo.Designer.cs">
-      <DependentUpon>RoomInfo.cs</DependentUpon>
+    <Compile Include="RoomInformation.Designer.cs">
+      <DependentUpon>RoomInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Room_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -171,8 +171,8 @@
     <EmbeddedResource Include="ReservationInfo.resx">
       <DependentUpon>ReservationInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomInfo.resx">
-      <DependentUpon>RoomInfo.cs</DependentUpon>
+    <EmbeddedResource Include="RoomInformation.resx">
+      <DependentUpon>RoomInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffInformation.resx">
       <DependentUpon>StaffInformation.cs</DependentUpon>
