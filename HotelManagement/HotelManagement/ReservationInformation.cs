@@ -15,13 +15,13 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class ReservationInfo : Form
+    public partial class ReservationInformation : Form
     {
         Reservation_tbl model = new Reservation_tbl();
         ReservationServices resServices = new ReservationServices();
         RoomServices roomServices = new RoomServices();
 
-        public ReservationInfo()
+        public ReservationInformation()
         {
             InitializeComponent();
             PopulateDataGridView();
