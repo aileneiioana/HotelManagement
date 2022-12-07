@@ -141,5 +141,48 @@ namespace HotelManagement
             main.Show();
             this.Hide();
         }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            string isfree;
+            if (Yesbtn.Checked == true)
+                isfree = "free";
+            else
+                isfree = "busy";
+            model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+            model.RoomPhone = roomphonetbl.Text.Trim();
+            model.RoomFree = isfree;
+            roomServices.AddRoom(model);
+            Clear();
+            PopulateDataGridView();
+            MessageBox.Show("Submitted Successfully");
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+            string isfree;
+            if (Yesbtn.Checked == true)
+                isfree = "free";
+            else
+                isfree = "busy";
+            model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+            model.RoomPhone = roomphonetbl.Text.Trim();
+            model.RoomFree = isfree;
+            roomServices.EditRoom(model);
+            Clear();
+            MessageBox.Show("Room Successfully Updated");
+            PopulateDataGridView();
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this Record?", "Room Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                roomServices.DeleteRoom(model);
+                PopulateDataGridView();
+                Clear();
+                MessageBox.Show("Room Successfully Deleted");
+            }
+        }
     }
 }

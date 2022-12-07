@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class FirstPage : Form
+    public partial class ClientLogIn : Form
     {
-        public FirstPage()
+        public ClientLogIn()
         {
             InitializeComponent();
         }
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-           new LogIn().Show();
+           new Register().Show();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            Form1 mf = new Form1();
+            StaffLogin mf = new StaffLogin();
             mf.Show();
         }
 
