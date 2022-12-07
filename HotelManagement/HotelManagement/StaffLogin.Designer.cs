@@ -2,7 +2,7 @@
 
 namespace HotelManagement
 {
-    partial class Form1
+    partial class StaffLogin
     {
         /// <summary>
         ///  Required designer variable.

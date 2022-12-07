@@ -11,11 +11,11 @@ using HotelManagement.Services;
 
 namespace HotelManagement
 {
-    public partial class LogIn : Form
+    public partial class Register : Form
     { 
             Client_tbl model = new Client_tbl();
             ClientServices clientServices = new ClientServices();
-        public LogIn()
+        public Register()
         {
             InitializeComponent();
            
@@ -30,7 +30,7 @@ namespace HotelManagement
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new FirstPage().Show();
+            new ClientLogIn().Show();
         }
         private void LoginPageLogInbtn_Click(object sender, EventArgs e)
         {

@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 namespace HotelManagement
 {
-    partial class Main
+    partial class MainStaff
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@ namespace HotelManagement
             this.roompb = new System.Windows.Forms.PictureBox();
             this.clientpb = new System.Windows.Forms.PictureBox();
             this.staffpb = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.singoutpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationpb)).BeginInit();
@@ -51,53 +51,62 @@ namespace HotelManagement
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(109, 118);
+            this.label3.Location = new System.Drawing.Point(181, 161);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 36);
+            this.label3.Size = new System.Drawing.Size(180, 66);
             this.label3.TabIndex = 8;
             this.label3.Text = "Client";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(109, 284);
+            this.label4.Location = new System.Drawing.Point(387, 419);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 36);
+            this.label4.Size = new System.Drawing.Size(180, 66);
             this.label4.TabIndex = 9;
             this.label4.Text = "Room";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(449, 118);
+            this.label5.Location = new System.Drawing.Point(1101, 161);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 36);
+            this.label5.Size = new System.Drawing.Size(142, 66);
             this.label5.TabIndex = 10;
             this.label5.Text = "Staff";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(402, 284);
+            this.label6.Location = new System.Drawing.Point(810, 419);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 36);
+            this.label6.Size = new System.Drawing.Size(320, 66);
             this.label6.TabIndex = 11;
             this.label6.Text = "Reservation";
             // 
             // exit
             // 
             this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(554, 11);
+            this.exit.Location = new System.Drawing.Point(1387, 4);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(31, 29);
+            this.exit.Size = new System.Drawing.Size(46, 45);
             this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.exit.TabIndex = 6;
             this.exit.TabStop = false;
@@ -106,9 +115,10 @@ namespace HotelManagement
             // singoutpb
             // 
             this.singoutpb.Image = global::HotelManagement.Properties.Resources.log_out;
-            this.singoutpb.Location = new System.Drawing.Point(271, 401);
+            this.singoutpb.Location = new System.Drawing.Point(625, 689);
+            this.singoutpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.singoutpb.Name = "singoutpb";
-            this.singoutpb.Size = new System.Drawing.Size(61, 62);
+            this.singoutpb.Size = new System.Drawing.Size(207, 166);
             this.singoutpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.singoutpb.TabIndex = 5;
             this.singoutpb.TabStop = false;
@@ -117,9 +127,10 @@ namespace HotelManagement
             // reservationpb
             // 
             this.reservationpb.Image = global::HotelManagement.Properties.Resources.reservation;
-            this.reservationpb.Location = new System.Drawing.Point(448, 323);
+            this.reservationpb.Location = new System.Drawing.Point(861, 490);
+            this.reservationpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reservationpb.Name = "reservationpb";
-            this.reservationpb.Size = new System.Drawing.Size(61, 62);
+            this.reservationpb.Size = new System.Drawing.Size(207, 166);
             this.reservationpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.reservationpb.TabIndex = 4;
             this.reservationpb.TabStop = false;
@@ -128,9 +139,10 @@ namespace HotelManagement
             // roompb
             // 
             this.roompb.Image = global::HotelManagement.Properties.Resources.room;
-            this.roompb.Location = new System.Drawing.Point(123, 323);
+            this.roompb.Location = new System.Drawing.Point(372, 490);
+            this.roompb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roompb.Name = "roompb";
-            this.roompb.Size = new System.Drawing.Size(61, 62);
+            this.roompb.Size = new System.Drawing.Size(207, 166);
             this.roompb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.roompb.TabIndex = 3;
             this.roompb.TabStop = false;
@@ -139,9 +151,10 @@ namespace HotelManagement
             // clientpb
             // 
             this.clientpb.Image = global::HotelManagement.Properties.Resources.client;
-            this.clientpb.Location = new System.Drawing.Point(123, 170);
+            this.clientpb.Location = new System.Drawing.Point(170, 232);
+            this.clientpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.clientpb.Name = "clientpb";
-            this.clientpb.Size = new System.Drawing.Size(61, 62);
+            this.clientpb.Size = new System.Drawing.Size(207, 166);
             this.clientpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.clientpb.TabIndex = 2;
             this.clientpb.TabStop = false;
@@ -150,32 +163,48 @@ namespace HotelManagement
             // staffpb
             // 
             this.staffpb.Image = global::HotelManagement.Properties.Resources.staff;
-            this.staffpb.Location = new System.Drawing.Point(455, 170);
+            this.staffpb.Location = new System.Drawing.Point(1076, 232);
+            this.staffpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.staffpb.Name = "staffpb";
-            this.staffpb.Size = new System.Drawing.Size(54, 62);
+            this.staffpb.Size = new System.Drawing.Size(196, 166);
             this.staffpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.staffpb.TabIndex = 1;
             this.staffpb.TabStop = false;
             this.staffpb.Click += new System.EventHandler(this.staffpb_Click);
             // 
-            // label1
+            // guna2TextBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 22.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(224, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 37);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "IA-AC Hotel";
+            this.guna2TextBox1.AutoRoundedCorners = true;
+            this.guna2TextBox1.BorderRadius = 81;
+            this.guna2TextBox1.BorderThickness = 0;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "LIAV Hotel";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(465, 23);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(10, 14, 10, 14);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.SelectionStart = 10;
+            this.guna2TextBox1.Size = new System.Drawing.Size(563, 165);
+            this.guna2TextBox1.TabIndex = 18;
             // 
-            // Main
+            // MainStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(602, 521);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1436, 900);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -187,7 +216,8 @@ namespace HotelManagement
             this.Controls.Add(this.clientpb);
             this.Controls.Add(this.staffpb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Main";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "MainStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
@@ -212,6 +242,6 @@ namespace HotelManagement
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

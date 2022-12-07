@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class Main : Form
+    public partial class MainStaff : Form
     {
-        public Main()
+        public MainStaff()
         {
             InitializeComponent();
         }

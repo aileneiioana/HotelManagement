@@ -1,6 +1,6 @@
 ﻿namespace HotelManagement
 {
-    partial class LogIn
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.

@@ -13,10 +13,10 @@ using HotelManagement.Services;
 
 namespace HotelManagement
 {
-    public partial class Form1 : Form
+    public partial class StaffLogin : Form
     {
         Staff_tbl model = new Staff_tbl();
-        public Form1()
+        public StaffLogin()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace HotelManagement
             var dataset = staffServices.validate(usernametb.Text, passwordtb.Text);
             if (dataset != null)
             {
-                Main mf = new Main();
+                MainStaff mf = new MainStaff();
                 mf.Show();
                 this.Hide();
 

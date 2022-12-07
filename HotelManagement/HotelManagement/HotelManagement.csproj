@@ -152,6 +152,9 @@
     <EmbeddedResource Include="ClientLogIn.resx">
       <DependentUpon>ClientLogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainStaff.resx">
+      <DependentUpon>MainStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffLogin.resx">
       <DependentUpon>StaffLogin.cs</DependentUpon>
     </EmbeddedResource>
