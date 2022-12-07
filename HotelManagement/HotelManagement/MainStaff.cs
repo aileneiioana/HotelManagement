@@ -21,7 +21,7 @@ namespace HotelManagement
 
         private void singoutpb_Click(object sender, EventArgs e)
         {
-            Form1 login = new Form1();
+            StaffLogin login = new StaffLogin();
             login.Show();
             this.Hide();
         }

@@ -105,7 +105,7 @@ namespace HotelManagement
 
         private void back_btn_Click(object sender, EventArgs e)
         {
-            Main main = new Main();
+            MainStaff main = new MainStaff();
             main.Show();
             this.Hide();
         }
@@ -128,7 +128,7 @@ namespace HotelManagement
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           Main main = new Main();
+           MainStaff main = new MainStaff();
            main.Show();
            this.Hide();
         }

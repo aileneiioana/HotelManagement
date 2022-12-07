@@ -73,29 +73,29 @@
     <Compile Include="Client_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="FirstPage.cs">
+    <Compile Include="ClientLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FirstPage.Designer.cs">
-      <DependentUpon>FirstPage.cs</DependentUpon>
+    <Compile Include="ClientLogIn.Designer.cs">
+      <DependentUpon>ClientLogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="StaffLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="StaffLogin.Designer.cs">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.cs">
+    <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogIn.Designer.cs">
-      <DependentUpon>LogIn.cs</DependentUpon>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="MainStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="MainStaff.Designer.cs">
+      <DependentUpon>MainStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -149,14 +149,14 @@
     <EmbeddedResource Include="Clientinfo.resx">
       <DependentUpon>Clientinfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FirstPage.resx">
-      <DependentUpon>FirstPage.cs</DependentUpon>
+    <EmbeddedResource Include="ClientLogIn.resx">
+      <DependentUpon>ClientLogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="StaffLogin.resx">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogIn.resx">
-      <DependentUpon>LogIn.cs</DependentUpon>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
