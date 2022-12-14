@@ -31,16 +31,13 @@ namespace HotelManagement
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffInformation));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Datelb = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.StaffIdtb = new System.Windows.Forms.TextBox();
             this.StaffNametb = new System.Windows.Forms.TextBox();
             this.PhoneNumbertb = new System.Windows.Forms.TextBox();
             this.Gendercb = new System.Windows.Forms.ComboBox();
-            this.AddStaffBtn = new System.Windows.Forms.Button();
-            this.EditStaffBtn = new System.Windows.Forms.Button();
-            this.DeleteStaffBtn = new System.Windows.Forms.Button();
             this.Searchtb = new System.Windows.Forms.TextBox();
             this.Search = new System.Windows.Forms.Button();
             this.Passwordtb = new System.Windows.Forms.TextBox();
@@ -53,6 +50,10 @@ namespace HotelManagement
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Staffpassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnDeleteStaff = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.BtnAddStaff = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaffView)).BeginInit();
@@ -61,15 +62,15 @@ namespace HotelManagement
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Datelb);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1409, 133);
+            this.panel1.Size = new System.Drawing.Size(1436, 133);
             this.panel1.TabIndex = 0;
             // 
             // Datelb
@@ -79,133 +80,80 @@ namespace HotelManagement
             this.Datelb.Location = new System.Drawing.Point(1138, 81);
             this.Datelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Datelb.Name = "Datelb";
-            this.Datelb.Size = new System.Drawing.Size(57, 25);
+            this.Datelb.Size = new System.Drawing.Size(84, 37);
             this.Datelb.TabIndex = 1;
             this.Datelb.Text = "Date";
             this.Datelb.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label1.Location = new System.Drawing.Point(563, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Staff Information";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // StaffIdtb
             // 
-            this.StaffIdtb.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.StaffIdtb.Location = new System.Drawing.Point(276, 221);
+            this.StaffIdtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StaffIdtb.Location = new System.Drawing.Point(95, 266);
             this.StaffIdtb.Margin = new System.Windows.Forms.Padding(4);
+            this.StaffIdtb.Multiline = true;
             this.StaffIdtb.Name = "StaffIdtb";
-            this.StaffIdtb.Size = new System.Drawing.Size(203, 26);
+            this.StaffIdtb.Size = new System.Drawing.Size(321, 52);
             this.StaffIdtb.TabIndex = 1;
             this.StaffIdtb.Text = "Staff Id";
             // 
             // StaffNametb
             // 
-            this.StaffNametb.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.StaffNametb.Location = new System.Drawing.Point(276, 272);
+            this.StaffNametb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StaffNametb.Location = new System.Drawing.Point(95, 342);
             this.StaffNametb.Margin = new System.Windows.Forms.Padding(4);
+            this.StaffNametb.Multiline = true;
             this.StaffNametb.Name = "StaffNametb";
-            this.StaffNametb.Size = new System.Drawing.Size(203, 26);
+            this.StaffNametb.Size = new System.Drawing.Size(321, 52);
             this.StaffNametb.TabIndex = 2;
             this.StaffNametb.Text = "Staff Name";
             // 
             // PhoneNumbertb
             // 
-            this.PhoneNumbertb.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.PhoneNumbertb.Location = new System.Drawing.Point(276, 325);
+            this.PhoneNumbertb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PhoneNumbertb.Location = new System.Drawing.Point(95, 425);
             this.PhoneNumbertb.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneNumbertb.Multiline = true;
             this.PhoneNumbertb.Name = "PhoneNumbertb";
-            this.PhoneNumbertb.Size = new System.Drawing.Size(203, 26);
+            this.PhoneNumbertb.Size = new System.Drawing.Size(321, 52);
             this.PhoneNumbertb.TabIndex = 3;
             this.PhoneNumbertb.Text = "Phone Number";
             // 
             // Gendercb
             // 
-            this.Gendercb.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Gendercb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Gendercb.FormattingEnabled = true;
             this.Gendercb.Items.AddRange(new object[] {
             "MALE",
             "FEMALE"});
-            this.Gendercb.Location = new System.Drawing.Point(276, 426);
+            this.Gendercb.Location = new System.Drawing.Point(95, 580);
             this.Gendercb.Margin = new System.Windows.Forms.Padding(4);
             this.Gendercb.Name = "Gendercb";
-            this.Gendercb.Size = new System.Drawing.Size(203, 28);
+            this.Gendercb.Size = new System.Drawing.Size(321, 37);
             this.Gendercb.TabIndex = 4;
             this.Gendercb.Text = "Gender";
             // 
-            // AddStaffBtn
-            // 
-            this.AddStaffBtn.FlatAppearance.BorderSize = 0;
-            this.AddStaffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddStaffBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.AddStaffBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.AddStaffBtn.Location = new System.Drawing.Point(241, 501);
-            this.AddStaffBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.AddStaffBtn.Name = "AddStaffBtn";
-            this.AddStaffBtn.Size = new System.Drawing.Size(70, 38);
-            this.AddStaffBtn.TabIndex = 6;
-            this.AddStaffBtn.Text = "ADD";
-            this.AddStaffBtn.UseVisualStyleBackColor = true;
-            this.AddStaffBtn.Click += new System.EventHandler(this.AddStaffBtn_Click);
-            // 
-            // EditStaffBtn
-            // 
-            this.EditStaffBtn.FlatAppearance.BorderSize = 0;
-            this.EditStaffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditStaffBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.EditStaffBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.EditStaffBtn.Location = new System.Drawing.Point(319, 501);
-            this.EditStaffBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.EditStaffBtn.Name = "EditStaffBtn";
-            this.EditStaffBtn.Size = new System.Drawing.Size(70, 38);
-            this.EditStaffBtn.TabIndex = 7;
-            this.EditStaffBtn.Text = "EDIT";
-            this.EditStaffBtn.UseVisualStyleBackColor = true;
-            this.EditStaffBtn.Click += new System.EventHandler(this.EditStaffBtn_Click);
-            // 
-            // DeleteStaffBtn
-            // 
-            this.DeleteStaffBtn.FlatAppearance.BorderSize = 0;
-            this.DeleteStaffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteStaffBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.DeleteStaffBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.DeleteStaffBtn.Location = new System.Drawing.Point(397, 501);
-            this.DeleteStaffBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.DeleteStaffBtn.Name = "DeleteStaffBtn";
-            this.DeleteStaffBtn.Size = new System.Drawing.Size(105, 38);
-            this.DeleteStaffBtn.TabIndex = 8;
-            this.DeleteStaffBtn.Text = "DELETE";
-            this.DeleteStaffBtn.UseVisualStyleBackColor = true;
-            this.DeleteStaffBtn.Click += new System.EventHandler(this.DeleteStaffBtn_Click);
-            // 
             // Searchtb
             // 
-            this.Searchtb.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Searchtb.Location = new System.Drawing.Point(924, 173);
+            this.Searchtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Searchtb.Location = new System.Drawing.Point(42, 158);
             this.Searchtb.Margin = new System.Windows.Forms.Padding(4);
+            this.Searchtb.Multiline = true;
             this.Searchtb.Name = "Searchtb";
-            this.Searchtb.Size = new System.Drawing.Size(203, 26);
+            this.Searchtb.Size = new System.Drawing.Size(238, 44);
             this.Searchtb.TabIndex = 9;
             this.Searchtb.Text = "Staff Name";
             // 
             // Search
             // 
-            this.Search.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Search.FlatAppearance.BorderSize = 0;
             this.Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Search.ForeColor = System.Drawing.Color.White;
-            this.Search.Location = new System.Drawing.Point(1135, 167);
+            this.Search.Location = new System.Drawing.Point(288, 158);
             this.Search.Margin = new System.Windows.Forms.Padding(4);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(91, 41);
+            this.Search.Size = new System.Drawing.Size(159, 45);
             this.Search.TabIndex = 10;
             this.Search.Text = "Search";
             this.Search.UseVisualStyleBackColor = false;
@@ -213,27 +161,28 @@ namespace HotelManagement
             // 
             // Passwordtb
             // 
-            this.Passwordtb.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Passwordtb.Location = new System.Drawing.Point(276, 375);
+            this.Passwordtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Passwordtb.Location = new System.Drawing.Point(95, 510);
             this.Passwordtb.Margin = new System.Windows.Forms.Padding(4);
+            this.Passwordtb.Multiline = true;
             this.Passwordtb.Name = "Passwordtb";
-            this.Passwordtb.Size = new System.Drawing.Size(203, 26);
+            this.Passwordtb.Size = new System.Drawing.Size(321, 52);
             this.Passwordtb.TabIndex = 11;
             this.Passwordtb.Text = "Password";
             // 
             // refreshpb
             // 
-            this.refreshpb.Image = global::HotelManagement.Properties.Resources.refresh;
-            this.refreshpb.Location = new System.Drawing.Point(1233, 173);
+            this.refreshpb.Image = ((System.Drawing.Image)(resources.GetObject("refreshpb.Image")));
+            this.refreshpb.Location = new System.Drawing.Point(454, 158);
             this.refreshpb.Name = "refreshpb";
-            this.refreshpb.Size = new System.Drawing.Size(35, 32);
+            this.refreshpb.Size = new System.Drawing.Size(47, 52);
+            this.refreshpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.refreshpb.TabIndex = 12;
             this.refreshpb.TabStop = false;
             this.refreshpb.Click += new System.EventHandler(this.refreshpb_Click);
             // 
             // StaffView
             // 
-            this.StaffView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.StaffView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StaffView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StaffId,
@@ -241,12 +190,12 @@ namespace HotelManagement
             this.Staffphone,
             this.Gender,
             this.Staffpassword});
-            this.StaffView.Location = new System.Drawing.Point(590, 221);
+            this.StaffView.Location = new System.Drawing.Point(524, 158);
             this.StaffView.Margin = new System.Windows.Forms.Padding(4);
             this.StaffView.Name = "StaffView";
             this.StaffView.RowHeadersWidth = 51;
             this.StaffView.RowTemplate.Height = 25;
-            this.StaffView.Size = new System.Drawing.Size(678, 410);
+            this.StaffView.Size = new System.Drawing.Size(870, 710);
             this.StaffView.TabIndex = 5;
             this.StaffView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StaffView_DoubleClick);
             // 
@@ -292,28 +241,90 @@ namespace HotelManagement
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HotelManagement.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 592);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(33, 791);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(89, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // StaffInfo
+            // BtnDeleteStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.BtnDeleteStaff.AutoRoundedCorners = true;
+            this.BtnDeleteStaff.BorderRadius = 27;
+            this.BtnDeleteStaff.BorderThickness = 1;
+            this.BtnDeleteStaff.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnDeleteStaff.FillColor2 = System.Drawing.Color.LightGray;
+            this.BtnDeleteStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnDeleteStaff.ForeColor = System.Drawing.Color.Black;
+            this.BtnDeleteStaff.Location = new System.Drawing.Point(337, 710);
+            this.BtnDeleteStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnDeleteStaff.Name = "BtnDeleteStaff";
+            this.BtnDeleteStaff.Size = new System.Drawing.Size(117, 56);
+            this.BtnDeleteStaff.TabIndex = 33;
+            this.BtnDeleteStaff.Text = "Delete";
+            this.BtnDeleteStaff.Click += new System.EventHandler(this.BtnDeleteStaff_Click);
+            // 
+            // BtnEditStaff
+            // 
+            this.BtnEditStaff.AutoRoundedCorners = true;
+            this.BtnEditStaff.BorderRadius = 27;
+            this.BtnEditStaff.BorderThickness = 1;
+            this.BtnEditStaff.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnEditStaff.FillColor2 = System.Drawing.Color.LightGray;
+            this.BtnEditStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnEditStaff.ForeColor = System.Drawing.Color.Black;
+            this.BtnEditStaff.Location = new System.Drawing.Point(207, 710);
+            this.BtnEditStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnEditStaff.Name = "BtnEditStaff";
+            this.BtnEditStaff.Size = new System.Drawing.Size(117, 56);
+            this.BtnEditStaff.TabIndex = 32;
+            this.BtnEditStaff.Text = "Edit";
+            this.BtnEditStaff.Click += new System.EventHandler(this.BtnEditStaff_Click);
+            // 
+            // BtnAddStaff
+            // 
+            this.BtnAddStaff.AutoRoundedCorners = true;
+            this.BtnAddStaff.BorderRadius = 27;
+            this.BtnAddStaff.BorderThickness = 1;
+            this.BtnAddStaff.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnAddStaff.FillColor2 = System.Drawing.Color.LightGray;
+            this.BtnAddStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnAddStaff.ForeColor = System.Drawing.Color.Black;
+            this.BtnAddStaff.Location = new System.Drawing.Point(77, 710);
+            this.BtnAddStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnAddStaff.Name = "BtnAddStaff";
+            this.BtnAddStaff.Size = new System.Drawing.Size(117, 56);
+            this.BtnAddStaff.TabIndex = 31;
+            this.BtnAddStaff.Text = "Add";
+            this.BtnAddStaff.Click += new System.EventHandler(this.BtnAddStaff_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(428, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(581, 85);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Staff Information";
+            // 
+            // StaffInformation
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1409, 690);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1436, 900);
+            this.Controls.Add(this.BtnDeleteStaff);
+            this.Controls.Add(this.BtnEditStaff);
+            this.Controls.Add(this.BtnAddStaff);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.refreshpb);
             this.Controls.Add(this.Passwordtb);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.Searchtb);
-            this.Controls.Add(this.DeleteStaffBtn);
-            this.Controls.Add(this.EditStaffBtn);
-            this.Controls.Add(this.AddStaffBtn);
             this.Controls.Add(this.StaffView);
             this.Controls.Add(this.Gendercb);
             this.Controls.Add(this.PhoneNumbertb);
@@ -323,9 +334,10 @@ namespace HotelManagement
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "StaffInfo";
+            this.Name = "StaffInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Staff";
+            this.Load += new System.EventHandler(this.StaffInformation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).EndInit();
@@ -340,13 +352,9 @@ namespace HotelManagement
         #endregion
 
         private Panel panel1;
-        private Label label1;
         private TextBox StaffNametb;
         private TextBox PhoneNumbertb;
         private ComboBox Gendercb;
-        private Button AddStaffBtn;
-        private Button EditStaffBtn;
-        private Button DeleteStaffBtn;
         private TextBox Searchtb;
         private Button Search;
         private TextBox Passwordtb;
@@ -361,5 +369,9 @@ namespace HotelManagement
         private DataGridViewTextBoxColumn Gender;
         private DataGridViewTextBoxColumn Staffpassword;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton BtnDeleteStaff;
+        private Guna.UI2.WinForms.Guna2GradientButton BtnEditStaff;
+        private Guna.UI2.WinForms.Guna2GradientButton BtnAddStaff;
+        private Label label2;
     }
 }

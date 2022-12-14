@@ -117,5 +117,47 @@ namespace HotelManagement
             main.Show();
             this.Hide();
         }
+
+        private void BtnAddStaff_Click(object sender, EventArgs e)
+        {
+            model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
+            model.Staffname = StaffNametb.Text.Trim();
+            model.Staffphone = PhoneNumbertb.Text.Trim();
+            model.Staffpassword = Passwordtb.Text.Trim();
+            model.Gender = Gendercb.Text.Trim();
+            staffService.AddStaff(model);
+            Clear();
+            MessageBox.Show("Staff Successfully Added");
+            PopulateDataGridView();
+        }
+
+        private void BtnEditStaff_Click(object sender, EventArgs e)
+        {
+            model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
+            model.Staffname = StaffNametb.Text.Trim();
+            model.Staffphone = PhoneNumbertb.Text.Trim();
+            model.Staffpassword = Passwordtb.Text.Trim();
+            model.Gender = Gendercb.Text.Trim();
+            staffService.EditStaff(model);
+            Clear();
+            MessageBox.Show("Staff Successfully Updated");
+            PopulateDataGridView();
+        }
+
+        private void BtnDeleteStaff_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this Record?", "Staff Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                staffService.DeleteStaff(model);
+                PopulateDataGridView();
+                Clear();
+                MessageBox.Show("Staff Successfully Deleted");
+            }
+        }
+
+        private void StaffInformation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
