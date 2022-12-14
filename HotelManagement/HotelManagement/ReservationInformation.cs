@@ -207,5 +207,12 @@ namespace HotelManagement
             MessageBox.Show("Reservation Successfully Edited");
             PopulateDataGridView();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            MainStaff main = new MainStaff();
+            main.Show();
+            this.Hide();
+        }
     }
 }

@@ -82,5 +82,140 @@ namespace HotelManagement
             }
             else MessageBox.Show("Please enter value in all fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void PhoneNrTxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PasswordLogInTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogInUsernameLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogInPasswordLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClientCountryTxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientNametxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void confirmPasstxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClientPassTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientPhoneNr_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTarife_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGalerie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFacilitati_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCamere_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDespreHotel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogInEmailLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

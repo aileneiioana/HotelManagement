@@ -76,5 +76,12 @@ namespace HotelManagement
                 MessageBox.Show("Wrong username or password");
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            ClientLogIn login = new ClientLogIn();
+            login.Show();
+            this.Hide();
+        }
     }
 }
