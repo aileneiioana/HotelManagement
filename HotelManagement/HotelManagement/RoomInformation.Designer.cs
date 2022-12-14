@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Datelbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.RoomGridview = new System.Windows.Forms.DataGridView();
             this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +51,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.refreshpb = new System.Windows.Forms.PictureBox();
-            this.Datelbl = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.BtnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -73,6 +73,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1436, 125);
             this.panel1.TabIndex = 1;
+            // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelbl.Location = new System.Drawing.Point(1267, 68);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(130, 57);
+            this.Datelbl.TabIndex = 1;
+            this.Datelbl.Text = "Date";
             // 
             // label1
             // 
@@ -299,16 +309,6 @@
             this.refreshpb.TabIndex = 14;
             this.refreshpb.TabStop = false;
             this.refreshpb.Click += new System.EventHandler(this.refreshpb_Click);
-            // 
-            // Datelbl
-            // 
-            this.Datelbl.AutoSize = true;
-            this.Datelbl.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datelbl.Location = new System.Drawing.Point(1267, 68);
-            this.Datelbl.Name = "Datelbl";
-            this.Datelbl.Size = new System.Drawing.Size(130, 57);
-            this.Datelbl.TabIndex = 1;
-            this.Datelbl.Text = "Date";
             // 
             // guna2BorderlessForm1
             // 

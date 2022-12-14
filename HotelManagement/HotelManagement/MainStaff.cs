@@ -40,7 +40,7 @@ namespace HotelManagement
 
         private void reservationpb_Click(object sender, EventArgs e)
         {
-            ReservationInfo res = new ReservationInfo();
+            ReservationInformation res = new ReservationInformation();
             res.Show();
             this.Hide();
         }

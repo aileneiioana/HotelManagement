@@ -44,5 +44,37 @@ namespace HotelManagement
         {
             this.Hide();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernametb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registerBtn_Click(object sender, EventArgs e)
+        {
+            StaffServices staffServices = new StaffServices();
+            var dataset = staffServices.validate(usernametb.Text, passwordtb.Text);
+            if (dataset != null)
+            {
+                MainStaff mf = new MainStaff();
+                mf.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Wrong username or password");
+            }
+        }
     }
 }
