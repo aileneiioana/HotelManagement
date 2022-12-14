@@ -143,5 +143,69 @@ namespace HotelManagement
             main.Show();
             this.Hide();
         }
+
+        private void ReservationInformation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddResBtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAddRes_Click(object sender, EventArgs e)
+        {
+            var model = new Reservation_tbl
+            {
+                ResId = int.Parse(ReservationIdtb.Text),
+                Client = clientcb.Text,
+                Room = int.Parse(roomnumbercb.Text),
+                DateIn = dateInTimePicker.Text,
+                DateOut = dateOutTimePicker.Text
+            };
+            resServices.AddRes(model);
+            Clear();
+            MessageBox.Show("Reservation Successfully Added");
+            int.TryParse(model.Room.ToString(), out int id);
+            roomServices.updateRoomState(id, "busy");
+            fillRoomcb();
+            PopulateDataGridView();
+        }
+
+        private void EditResfBtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDeleteRes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this Record?", "Reservation Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                resServices.DeleteRes(model);
+                PopulateDataGridView();
+                Clear();
+                MessageBox.Show("Reservation Successfully Deleted");
+                int.TryParse(model.Room.ToString(), out int id);
+                roomServices.updateRoomState(id, "free");
+                fillRoomcb();
+            }
+        }
+
+        private void BtnEditRes_Click(object sender, EventArgs e)
+        {
+            var model = new Reservation_tbl
+            {
+                ResId = int.Parse(ReservationIdtb.Text),
+                Client = clientcb.Text,
+                Room = int.Parse(roomnumbercb.Text),
+                DateIn = dateInTimePicker.Text,
+                DateOut = dateOutTimePicker.Text
+            };
+            resServices.EditRes(model);
+            Clear();
+            MessageBox.Show("Reservation Successfully Edited");
+            PopulateDataGridView();
+        }
     }
 }

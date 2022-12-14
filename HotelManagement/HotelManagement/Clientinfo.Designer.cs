@@ -77,7 +77,7 @@ namespace HotelManagement
             // 
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.Datelbl.Location = new System.Drawing.Point(1284, 61);
+            this.Datelbl.Location = new System.Drawing.Point(1196, 68);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(84, 37);
             this.Datelbl.TabIndex = 1;
