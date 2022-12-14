@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomInformation));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Datelbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,9 +46,6 @@
             this.Noradio = new System.Windows.Forms.RadioButton();
             this.Yesradio = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.DeleteBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
-            this.AddBtn = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.refreshpb = new System.Windows.Forms.PictureBox();
@@ -102,12 +100,12 @@
             this.RoomNumber,
             this.RoomPhone,
             this.RoomFree});
-            this.RoomGridview.Location = new System.Drawing.Point(567, 291);
+            this.RoomGridview.Location = new System.Drawing.Point(527, 179);
             this.RoomGridview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RoomGridview.Name = "RoomGridview";
             this.RoomGridview.RowHeadersWidth = 51;
             this.RoomGridview.RowTemplate.Height = 29;
-            this.RoomGridview.Size = new System.Drawing.Size(645, 448);
+            this.RoomGridview.Size = new System.Drawing.Size(870, 689);
             this.RoomGridview.TabIndex = 6;
             this.RoomGridview.DoubleClick += new System.EventHandler(this.RoomGridview_DoubleClick);
             // 
@@ -137,12 +135,12 @@
             // 
             // Search
             // 
-            this.Search.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Search.FlatAppearance.BorderSize = 0;
             this.Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Search.Location = new System.Drawing.Point(1100, 212);
+            this.Search.Location = new System.Drawing.Point(292, 190);
             this.Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(159, 45);
@@ -154,8 +152,8 @@
             // RoomSearchtbl
             // 
             this.RoomSearchtbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoomSearchtbl.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.RoomSearchtbl.Location = new System.Drawing.Point(855, 212);
+            this.RoomSearchtbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RoomSearchtbl.Location = new System.Drawing.Point(47, 190);
             this.RoomSearchtbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RoomSearchtbl.Name = "RoomSearchtbl";
             this.RoomSearchtbl.Size = new System.Drawing.Size(238, 44);
@@ -165,22 +163,22 @@
             // roomphonetbl
             // 
             this.roomphonetbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomphonetbl.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.roomphonetbl.Location = new System.Drawing.Point(176, 387);
+            this.roomphonetbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.roomphonetbl.Location = new System.Drawing.Point(102, 496);
             this.roomphonetbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roomphonetbl.Name = "roomphonetbl";
-            this.roomphonetbl.Size = new System.Drawing.Size(238, 40);
+            this.roomphonetbl.Size = new System.Drawing.Size(321, 67);
             this.roomphonetbl.TabIndex = 16;
             this.roomphonetbl.Text = "Room Phone";
             // 
             // roomidtbl
             // 
             this.roomidtbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomidtbl.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.roomidtbl.Location = new System.Drawing.Point(176, 291);
+            this.roomidtbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.roomidtbl.Location = new System.Drawing.Point(102, 385);
             this.roomidtbl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roomidtbl.Name = "roomidtbl";
-            this.roomidtbl.Size = new System.Drawing.Size(238, 40);
+            this.roomidtbl.Size = new System.Drawing.Size(321, 67);
             this.roomidtbl.TabIndex = 15;
             this.roomidtbl.Text = "Room Number";
             // 
@@ -188,8 +186,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(159, 474);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(136, 594);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 32);
             this.label2.TabIndex = 17;
@@ -198,7 +196,7 @@
             // Yesbtn
             // 
             this.Yesbtn.AutoSize = true;
-            this.Yesbtn.Location = new System.Drawing.Point(258, 484);
+            this.Yesbtn.Location = new System.Drawing.Point(235, 604);
             this.Yesbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Yesbtn.Name = "Yesbtn";
             this.Yesbtn.Size = new System.Drawing.Size(21, 20);
@@ -208,7 +206,7 @@
             // Noradio
             // 
             this.Noradio.AutoSize = true;
-            this.Noradio.Location = new System.Drawing.Point(343, 484);
+            this.Noradio.Location = new System.Drawing.Point(320, 604);
             this.Noradio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Noradio.Name = "Noradio";
             this.Noradio.Size = new System.Drawing.Size(21, 20);
@@ -219,8 +217,8 @@
             // 
             this.Yesradio.AutoSize = true;
             this.Yesradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Yesradio.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Yesradio.Location = new System.Drawing.Point(284, 478);
+            this.Yesradio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Yesradio.Location = new System.Drawing.Point(261, 598);
             this.Yesradio.Name = "Yesradio";
             this.Yesradio.Size = new System.Drawing.Size(55, 29);
             this.Yesradio.TabIndex = 20;
@@ -230,57 +228,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(369, 478);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(346, 598);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 29);
             this.label4.TabIndex = 21;
             this.label4.Text = "No";
-            // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.FlatAppearance.BorderSize = 0;
-            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.DeleteBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.DeleteBtn.Location = new System.Drawing.Point(453, 787);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(138, 51);
-            this.DeleteBtn.TabIndex = 24;
-            this.DeleteBtn.Text = "DELETE";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
-            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
-            // 
-            // EditBtn
-            // 
-            this.EditBtn.FlatAppearance.BorderSize = 0;
-            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.EditBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.EditBtn.Location = new System.Drawing.Point(308, 787);
-            this.EditBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(90, 51);
-            this.EditBtn.TabIndex = 23;
-            this.EditBtn.Text = "EDIT";
-            this.EditBtn.UseVisualStyleBackColor = true;
-            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.FlatAppearance.BorderSize = 0;
-            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.AddBtn.Location = new System.Drawing.Point(182, 787);
-            this.AddBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(90, 51);
-            this.AddBtn.TabIndex = 22;
-            this.AddBtn.Text = "ADD";
-            this.AddBtn.UseVisualStyleBackColor = true;
-            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // timer1
             // 
@@ -288,24 +241,24 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HotelManagement.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 800);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(33, 791);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(102, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(89, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // refreshpb
             // 
-            this.refreshpb.Image = global::HotelManagement.Properties.Resources.refresh;
-            this.refreshpb.Location = new System.Drawing.Point(1266, 205);
+            this.refreshpb.Image = ((System.Drawing.Image)(resources.GetObject("refreshpb.Image")));
+            this.refreshpb.Location = new System.Drawing.Point(458, 183);
             this.refreshpb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.refreshpb.Name = "refreshpb";
             this.refreshpb.Size = new System.Drawing.Size(47, 52);
-            this.refreshpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.refreshpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.refreshpb.TabIndex = 14;
             this.refreshpb.TabStop = false;
             this.refreshpb.Click += new System.EventHandler(this.refreshpb_Click);
@@ -325,7 +278,7 @@
             this.BtnAdd.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnAdd.ForeColor = System.Drawing.Color.Black;
-            this.BtnAdd.Location = new System.Drawing.Point(106, 708);
+            this.BtnAdd.Location = new System.Drawing.Point(74, 718);
             this.BtnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(117, 56);
@@ -342,7 +295,7 @@
             this.BtnEdit.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnEdit.ForeColor = System.Drawing.Color.Black;
-            this.BtnEdit.Location = new System.Drawing.Point(236, 708);
+            this.BtnEdit.Location = new System.Drawing.Point(204, 718);
             this.BtnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(117, 56);
@@ -359,7 +312,7 @@
             this.BtnDelete.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnDelete.ForeColor = System.Drawing.Color.Black;
-            this.BtnDelete.Location = new System.Drawing.Point(366, 708);
+            this.BtnDelete.Location = new System.Drawing.Point(334, 718);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(117, 56);
@@ -376,9 +329,6 @@
             this.Controls.Add(this.BtnEdit);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.EditBtn);
-            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Yesradio);
             this.Controls.Add(this.Noradio);
@@ -422,9 +372,6 @@
         private System.Windows.Forms.RadioButton Noradio;
         private System.Windows.Forms.Label Yesradio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button DeleteBtn;
-        private System.Windows.Forms.Button EditBtn;
-        private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomFree;
