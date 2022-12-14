@@ -132,5 +132,47 @@ namespace HotelManagement
            main.Show();
            this.Hide();
         }
+
+        private void BtnAddStaff_Click(object sender, EventArgs e)
+        {
+            //facade design
+            Facade facade = new Facade();
+            model.ClientName = clientnametbl.Text.Trim();
+            model.ClientPhone = clientphonetb.Text.Trim();
+            model.ClientCountry = clientctrytb.Text.Trim();
+            model.Password = passwordTb.Text.Trim();
+
+            //facade design
+            facade.addClient(model);
+
+            Clear();
+            PopulateDataGridView();
+            MessageBox.Show("Submitted Successfully");
+
+        }
+
+        private void BtnEditStaff_Click(object sender, EventArgs e)
+        {
+
+            model.ClientName = clientnametbl.Text.Trim();
+            model.ClientPhone = clientphonetb.Text.Trim();
+            model.ClientCountry = clientctrytb.Text.Trim();
+            model.Password = passwordTb.Text.Trim();
+            clientServices.UpdateClient(model);
+            Clear();
+            MessageBox.Show("Client Successfully Updated");
+            PopulateDataGridView();
+        }
+
+        private void BtnDeleteStaff_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this Record?", "Client Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                clientServices.DeleteClient(model);
+                PopulateDataGridView();
+                Clear();
+                MessageBox.Show("Client Successfully Deleted");
+            }
+        }
     }
 }
