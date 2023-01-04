@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientinfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,11 @@
     </Compile>
     <Compile Include="ClientLogIn.Designer.cs">
       <DependentUpon>ClientLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="StaffLogin.cs">
       <SubType>Form</SubType>
@@ -146,6 +157,9 @@
     <Compile Include="Staff_tbl.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientinfo.resx">
       <DependentUpon>Clientinfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,14 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ReservationInformation.resx">
       <DependentUpon>ReservationInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +214,13 @@
     <None Include="imagini\hotel icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="imagini\pexels-nadi-lindsay-2672886.jpg" />
+    <None Include="imagini\pexels-victoria-akvarel-3315291.jpg" />
+    <None Include="imagini\room.png" />
+    <None Include="imagini\room1.png" />
+    <None Include="imagini\room2.png" />
+    <None Include="imagini\spa.png" />
+    <None Include="imagini\terrace.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

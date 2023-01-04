@@ -42,5 +42,11 @@ namespace HotelManagement
         {
 
         }
+
+        private void btnDespreHotel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AboutForm().Show();
+        }
     }
 }
