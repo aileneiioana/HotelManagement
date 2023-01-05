@@ -66,6 +66,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(295, 678);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // guna2TextBox1
             // 
@@ -92,6 +93,7 @@
             this.guna2TextBox1.SelectionStart = 10;
             this.guna2TextBox1.Size = new System.Drawing.Size(248, 97);
             this.guna2TextBox1.TabIndex = 18;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // btnBooking
             // 
@@ -132,6 +134,7 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2Panel1
             // 
@@ -148,6 +151,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(969, 676);
             this.guna2Panel1.TabIndex = 8;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // staffGB
             // 
@@ -169,6 +173,7 @@
             this.staffGB.TabIndex = 15;
             this.staffGB.TabStop = false;
             this.staffGB.Visible = false;
+            this.staffGB.Enter += new System.EventHandler(this.staffGB_Enter);
             // 
             // guna2TextBox2
             // 
@@ -205,6 +210,7 @@
             this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 30;
             this.label2.Text = "Password:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -214,6 +220,7 @@
             this.label1.Size = new System.Drawing.Size(73, 16);
             this.label1.TabIndex = 29;
             this.label1.Text = "Username:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // staffCancelbtn
             // 
@@ -241,6 +248,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(314, 33);
             this.textBox1.TabIndex = 26;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // UsernameLogInTxtBox
             // 
@@ -251,6 +259,7 @@
             this.UsernameLogInTxtBox.Name = "UsernameLogInTxtBox";
             this.UsernameLogInTxtBox.Size = new System.Drawing.Size(314, 33);
             this.UsernameLogInTxtBox.TabIndex = 25;
+            this.UsernameLogInTxtBox.TextChanged += new System.EventHandler(this.UsernameLogInTxtBox_TextChanged);
             // 
             // staffLogInbtn
             // 
@@ -267,6 +276,7 @@
             this.staffLogInbtn.Size = new System.Drawing.Size(143, 36);
             this.staffLogInbtn.TabIndex = 22;
             this.staffLogInbtn.Text = "Log In";
+            this.staffLogInbtn.Click += new System.EventHandler(this.staffLogInbtn_Click);
             // 
             // btnContact
             // 
@@ -280,6 +290,7 @@
             this.btnContact.Size = new System.Drawing.Size(160, 49);
             this.btnContact.TabIndex = 14;
             this.btnContact.Text = "Contact";
+            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
             // 
             // btnTarife
             // 
@@ -293,6 +304,7 @@
             this.btnTarife.Size = new System.Drawing.Size(160, 49);
             this.btnTarife.TabIndex = 13;
             this.btnTarife.Text = "Tarife";
+            this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
             // 
             // btnGalerie
             // 
@@ -306,6 +318,7 @@
             this.btnGalerie.Size = new System.Drawing.Size(160, 49);
             this.btnGalerie.TabIndex = 12;
             this.btnGalerie.Text = "Galerie";
+            this.btnGalerie.Click += new System.EventHandler(this.btnGalerie_Click);
             // 
             // btnFacilitati
             // 
@@ -319,6 +332,7 @@
             this.btnFacilitati.Size = new System.Drawing.Size(160, 49);
             this.btnFacilitati.TabIndex = 11;
             this.btnFacilitati.Text = "Facilitati";
+            this.btnFacilitati.Click += new System.EventHandler(this.btnFacilitati_Click);
             // 
             // btnCamere
             // 
@@ -332,6 +346,7 @@
             this.btnCamere.Size = new System.Drawing.Size(160, 49);
             this.btnCamere.TabIndex = 10;
             this.btnCamere.Text = "Camere";
+            this.btnCamere.Click += new System.EventHandler(this.btnCamere_Click);
             // 
             // btnDespreHotel
             // 
@@ -351,7 +366,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 676);
+            this.ClientSize = new System.Drawing.Size(1255, 676);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

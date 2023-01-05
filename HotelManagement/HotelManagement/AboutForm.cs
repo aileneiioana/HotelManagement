@@ -22,5 +22,11 @@ namespace HotelManagement
             this.Hide();
             new ClientLogIn().Show();
         }
+
+        private void btnTarife_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new PricesPage().Show();
+        }
     }
 }

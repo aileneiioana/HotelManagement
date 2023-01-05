@@ -48,5 +48,81 @@ namespace HotelManagement
             this.Hide();
             new AboutForm().Show();
         }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTarife_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new PricesPage().Show();
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void staffGB_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameLogInTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void staffLogInbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGalerie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFacilitati_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCamere_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

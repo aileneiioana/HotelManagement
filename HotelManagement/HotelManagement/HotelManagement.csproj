@@ -85,6 +85,12 @@
     <Compile Include="ClientLogIn.Designer.cs">
       <DependentUpon>ClientLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="PricesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PricesPage.Designer.cs">
+      <DependentUpon>PricesPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainStaff.resx">
       <DependentUpon>MainStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PricesPage.resx">
+      <DependentUpon>PricesPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffLogin.resx">
       <DependentUpon>StaffLogin.cs</DependentUpon>

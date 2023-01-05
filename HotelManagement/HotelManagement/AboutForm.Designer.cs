@@ -152,6 +152,7 @@
             this.btnTarife.Size = new System.Drawing.Size(163, 49);
             this.btnTarife.TabIndex = 25;
             this.btnTarife.Text = "Tarife";
+            this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
             // 
             // btnGalerie
             // 
@@ -293,6 +294,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AboutForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AboutForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
