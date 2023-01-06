@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class PricesPage : Form
+    public partial class Galerie : Form
     {
-        public PricesPage()
+        public Galerie()
         {
             InitializeComponent();
         }
@@ -31,25 +31,23 @@ namespace HotelManagement
 
         private void btnCamere_Click(object sender, EventArgs e)
         {
-               
-        }
-
-        private void btnFacilitati_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGalerie_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            new ClientLogIn().Show();
         }
 
         private void btnTarife_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new PricesPage().Show();
         }
 
-        private void btnContact_Click(object sender, EventArgs e)
+        private void btnGalerie_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Galerie().Show();
+        }
+
+        private void btnFacilitati_Click(object sender, EventArgs e)
         {
 
         }

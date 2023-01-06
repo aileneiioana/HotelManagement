@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HotelManagement",
+    "\\HotelManagement\\HotelManagement",
+    "\\HotelManagement\\HotelManagement\\obj",
+    "\\HotelManagement\\HotelManagement\\Properties"
   ],
-  "SelectedNode": "\\uml.pdf",
+  "SelectedNode": "\\HotelManagement\\HotelManagement.sln",
   "PreviewInSolutionExplorer": false
 }
