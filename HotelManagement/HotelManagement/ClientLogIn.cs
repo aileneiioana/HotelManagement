@@ -51,7 +51,8 @@ namespace HotelManagement
 
         private void btnContact_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new ContactForm().Show();
         }
 
         private void btnTarife_Click(object sender, EventArgs e)
@@ -117,10 +118,16 @@ namespace HotelManagement
 
         private void btnFacilitati_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new FacilitatiForrm().Show();
         }
 
         private void btnCamere_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClientLogIn_Load(object sender, EventArgs e)
         {
 
         }

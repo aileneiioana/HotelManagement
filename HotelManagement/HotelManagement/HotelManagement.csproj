@@ -85,6 +85,18 @@
     <Compile Include="ClientLogIn.Designer.cs">
       <DependentUpon>ClientLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactForm.Designer.cs">
+      <DependentUpon>ContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacilitatiForrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacilitatiForrm.Designer.cs">
+      <DependentUpon>FacilitatiForrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Galerie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +189,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientLogIn.resx">
       <DependentUpon>ClientLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactForm.resx">
+      <DependentUpon>ContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacilitatiForrm.resx">
+      <DependentUpon>FacilitatiForrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Galerie.resx">
       <DependentUpon>Galerie.cs</DependentUpon>
