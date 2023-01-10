@@ -49,7 +49,14 @@ namespace HotelManagement
 
         private void btnFacilitati_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new FacilitatiForrm().Show();
+        }
 
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ContactForm().Show();
         }
     }
 }

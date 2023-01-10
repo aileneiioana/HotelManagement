@@ -40,5 +40,10 @@ namespace HotelManagement
             this.Hide();
             new AboutForm().Show();
         }
+
+        private void btnFacilitati_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

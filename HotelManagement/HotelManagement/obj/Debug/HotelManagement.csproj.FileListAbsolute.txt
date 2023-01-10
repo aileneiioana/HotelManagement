@@ -199,3 +199,7 @@ C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManageme
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ContactForm.resources
 C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FacilitatiForrm.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.CamereForm.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EASendMail.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.xml

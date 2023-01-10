@@ -38,5 +38,28 @@ namespace HotelManagement
         {
 
         }
+
+        private void btnDespreHotel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFacilitati_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FacilitatiForrm().Show();
+        }
+
+        private void btnGalerie_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Galerie().Show();
+        }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ContactForm().Show();
+        }
     }
 }

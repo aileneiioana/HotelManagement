@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
-using System.Net.Mail;
+using EASendMail;
 
 namespace HotelManagement
 {
@@ -26,23 +25,74 @@ namespace HotelManagement
 
         private void trimitereMailbtn_Click(object sender, EventArgs e)
         {
-            MailMessage mm = new MailMessage("vambarus@yahoo.com", toContacttxt.Text);
-            mm.Subject = subiectContacttxt.Text;
-            mm.Body = mesajContacttxt.Text;
-            SmtpClient smtp = new SmtpClient();
-            smtp.Host = "smtp.mail.yahoo.com";
-            smtp.Port = 465;
-            System.Net.NetworkCredential nc = new NetworkCredential("vambarus@yahoo.com", "raxhfnppeiupihyg");
-            smtp.UseDefaultCredentials = false;
-            smtp.Credentials = nc;
-            smtp.EnableSsl = true;
-            smtp.Send(mm);
-            label9.Text = "Mesajul dumneavoastra a fost trimis catre \r\n" + toContacttxt.Text;
+            try
+            {
+                SmtpMail oMail = new SmtpMail("TryIt");
+                oMail.From = "vambarus@yahoo.com";
+                oMail.To = toContacttxt.Text;
+                oMail.Subject = subiectContacttxt.Text;
+                oMail.TextBody = mesajContacttxt.Text;
+                SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
+                oServer.User = "vambarus@yahoo.com";
+                oServer.Password = "szechcdsoxgkkthr";
+                oServer.Port = 465;
+                oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                Console.WriteLine("start to send email over SSL ...");
+                SmtpClient oSmtp = new SmtpClient();
+                oSmtp.SendMail(oServer, oMail);
+                Console.WriteLine("email was sent successfully!");
+            }
+            catch (Exception ep)
+            {
+                Console.WriteLine("failed to send email with the following error:");
+                Console.WriteLine(ep.Message);
+            }
+            toContacttxt.Clear();
+            subiectContacttxt.Clear();
+            mesajContacttxt.Clear();
+            
+
+            //MailMessage mm = new MailMessage("vambarus@yahoo.com", toContacttxt.Text);
+            //mm.Subject = subiectContacttxt.Text;
+            //mm.Body = mesajContacttxt.Text;
+            //SmtpClient smtp = new SmtpClient();
+            //smtp.Host = "smtp.mail.yahoo.com";
+            //smtp.Port = 465;
+            //System.Net.NetworkCredential nc = new NetworkCredential("vambarus@yahoo.com", "raxhfnppeiupihyg");
+            //smtp.UseDefaultCredentials = false;
+            //smtp.Credentials = nc;
+            //smtp.EnableSsl = true;
+            //smtp.Send(mm);
+            //label9.Text = "Mesajul dumneavoastra a fost trimis catre \r\n" + toContacttxt.Text;
         }
 
         private void ContactForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDespreHotel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AboutForm().Show();
+        }
+
+        private void btnFacilitati_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FacilitatiForrm().Show();
+        }
+
+        private void btnGalerie_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Galerie().Show();
+        }
+
+        private void btnTarife_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new PricesPage().Show();
         }
     }
 }

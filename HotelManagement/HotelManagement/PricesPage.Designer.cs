@@ -70,17 +70,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(336, 956);
+            this.panel1.Size = new System.Drawing.Size(299, 765);
             this.panel1.TabIndex = 9;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(39, 119);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(35, 95);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(207, 188);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(184, 150);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 50;
             this.guna2PictureBox1.TabStop = false;
@@ -88,7 +88,7 @@
             // guna2TextBox1
             // 
             this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BorderRadius = 59;
+            this.guna2TextBox1.BorderRadius = 47;
             this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "LIAV Hotel";
@@ -101,14 +101,14 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(28, 281);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.guna2TextBox1.Location = new System.Drawing.Point(25, 225);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.SelectionStart = 10;
-            this.guna2TextBox1.Size = new System.Drawing.Size(254, 121);
+            this.guna2TextBox1.Size = new System.Drawing.Size(226, 97);
             this.guna2TextBox1.TabIndex = 17;
             // 
             // btnBack
@@ -117,10 +117,10 @@
             this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(0, 779);
+            this.btnBack.Location = new System.Drawing.Point(0, 623);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(336, 71);
+            this.btnBack.Size = new System.Drawing.Size(299, 57);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -128,9 +128,9 @@
             // LogInUsernameLbl
             // 
             this.LogInUsernameLbl.AutoSize = true;
-            this.LogInUsernameLbl.Location = new System.Drawing.Point(80, 335);
+            this.LogInUsernameLbl.Location = new System.Drawing.Point(71, 268);
             this.LogInUsernameLbl.Name = "LogInUsernameLbl";
-            this.LogInUsernameLbl.Size = new System.Drawing.Size(48, 20);
+            this.LogInUsernameLbl.Size = new System.Drawing.Size(41, 16);
             this.LogInUsernameLbl.TabIndex = 3;
             this.LogInUsernameLbl.Text = "Email";
             // 
@@ -140,10 +140,10 @@
             this.btnContact.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnContact.ForeColor = System.Drawing.Color.White;
-            this.btnContact.Location = new System.Drawing.Point(1238, 0);
+            this.btnContact.Location = new System.Drawing.Point(1100, 0);
             this.btnContact.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnContact.Name = "btnContact";
-            this.btnContact.Size = new System.Drawing.Size(214, 61);
+            this.btnContact.Size = new System.Drawing.Size(190, 49);
             this.btnContact.TabIndex = 32;
             this.btnContact.Text = "Contact";
             this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
@@ -154,10 +154,10 @@
             this.btnTarife.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTarife.ForeColor = System.Drawing.Color.White;
-            this.btnTarife.Location = new System.Drawing.Point(1054, 0);
+            this.btnTarife.Location = new System.Drawing.Point(937, 0);
             this.btnTarife.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnTarife.Name = "btnTarife";
-            this.btnTarife.Size = new System.Drawing.Size(183, 61);
+            this.btnTarife.Size = new System.Drawing.Size(163, 49);
             this.btnTarife.TabIndex = 31;
             this.btnTarife.Text = "Tarife";
             this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
@@ -168,10 +168,10 @@
             this.btnGalerie.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGalerie.ForeColor = System.Drawing.Color.White;
-            this.btnGalerie.Location = new System.Drawing.Point(874, 0);
+            this.btnGalerie.Location = new System.Drawing.Point(777, 0);
             this.btnGalerie.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnGalerie.Name = "btnGalerie";
-            this.btnGalerie.Size = new System.Drawing.Size(182, 61);
+            this.btnGalerie.Size = new System.Drawing.Size(162, 49);
             this.btnGalerie.TabIndex = 30;
             this.btnGalerie.Text = "Galerie";
             this.btnGalerie.Click += new System.EventHandler(this.btnGalerie_Click);
@@ -182,10 +182,10 @@
             this.btnFacilitati.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFacilitati.ForeColor = System.Drawing.Color.White;
-            this.btnFacilitati.Location = new System.Drawing.Point(694, 0);
+            this.btnFacilitati.Location = new System.Drawing.Point(617, 0);
             this.btnFacilitati.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnFacilitati.Name = "btnFacilitati";
-            this.btnFacilitati.Size = new System.Drawing.Size(180, 61);
+            this.btnFacilitati.Size = new System.Drawing.Size(160, 49);
             this.btnFacilitati.TabIndex = 29;
             this.btnFacilitati.Text = "Facilitati";
             this.btnFacilitati.Click += new System.EventHandler(this.btnFacilitati_Click);
@@ -196,10 +196,10 @@
             this.btnCamere.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCamere.ForeColor = System.Drawing.Color.White;
-            this.btnCamere.Location = new System.Drawing.Point(511, 0);
+            this.btnCamere.Location = new System.Drawing.Point(454, 0);
             this.btnCamere.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnCamere.Name = "btnCamere";
-            this.btnCamere.Size = new System.Drawing.Size(183, 61);
+            this.btnCamere.Size = new System.Drawing.Size(163, 49);
             this.btnCamere.TabIndex = 28;
             this.btnCamere.Text = "Camere";
             this.btnCamere.Click += new System.EventHandler(this.btnCamere_Click);
@@ -210,10 +210,10 @@
             this.btnDespreHotel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDespreHotel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDespreHotel.ForeColor = System.Drawing.Color.White;
-            this.btnDespreHotel.Location = new System.Drawing.Point(333, 0);
+            this.btnDespreHotel.Location = new System.Drawing.Point(296, 0);
             this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnDespreHotel.Name = "btnDespreHotel";
-            this.btnDespreHotel.Size = new System.Drawing.Size(180, 61);
+            this.btnDespreHotel.Size = new System.Drawing.Size(160, 49);
             this.btnDespreHotel.TabIndex = 27;
             this.btnDespreHotel.Text = "Despre Hotel";
             this.btnDespreHotel.Click += new System.EventHandler(this.btnDespreHotel_Click);
@@ -224,11 +224,10 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox1.Location = new System.Drawing.Point(389, 170);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox1.Location = new System.Drawing.Point(346, 136);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(305, 70);
+            this.richTextBox1.Size = new System.Drawing.Size(271, 56);
             this.richTextBox1.TabIndex = 33;
             this.richTextBox1.Text = "Cameră Dublă Standard\n         540 Lei/Noapte";
             // 
@@ -237,10 +236,9 @@
             this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(701, 184);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(623, 147);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 44);
+            this.button1.Size = new System.Drawing.Size(144, 35);
             this.button1.TabIndex = 34;
             this.button1.Text = "Select";
             this.button1.UseVisualStyleBackColor = false;
@@ -251,11 +249,10 @@
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox2.Location = new System.Drawing.Point(389, 281);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox2.Location = new System.Drawing.Point(346, 225);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox2.Size = new System.Drawing.Size(305, 78);
+            this.richTextBox2.Size = new System.Drawing.Size(271, 62);
             this.richTextBox2.TabIndex = 35;
             this.richTextBox2.Text = "Cameră Dublă Superioară\n         560 Lei/Noapte\n";
             // 
@@ -264,10 +261,9 @@
             this.button2.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(701, 281);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(623, 225);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 44);
+            this.button2.Size = new System.Drawing.Size(144, 35);
             this.button2.TabIndex = 36;
             this.button2.Text = "Select";
             this.button2.UseVisualStyleBackColor = false;
@@ -278,11 +274,10 @@
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox3.Location = new System.Drawing.Point(389, 390);
-            this.richTextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox3.Location = new System.Drawing.Point(346, 312);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox3.Size = new System.Drawing.Size(305, 78);
+            this.richTextBox3.Size = new System.Drawing.Size(271, 62);
             this.richTextBox3.TabIndex = 37;
             this.richTextBox3.Text = "Cameră Dublă Deluxe\n     580 Lei/Noapte\n";
             // 
@@ -291,10 +286,9 @@
             this.button3.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(701, 390);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(623, 312);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 44);
+            this.button3.Size = new System.Drawing.Size(144, 35);
             this.button3.TabIndex = 38;
             this.button3.Text = "Select";
             this.button3.UseVisualStyleBackColor = false;
@@ -305,11 +299,10 @@
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox4.Location = new System.Drawing.Point(389, 488);
-            this.richTextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox4.Location = new System.Drawing.Point(346, 390);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox4.Size = new System.Drawing.Size(305, 78);
+            this.richTextBox4.Size = new System.Drawing.Size(271, 62);
             this.richTextBox4.TabIndex = 39;
             this.richTextBox4.Text = "Family Room\n1100 Lei/Noapte\n";
             // 
@@ -318,10 +311,9 @@
             this.button4.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(701, 499);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Location = new System.Drawing.Point(623, 399);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 44);
+            this.button4.Size = new System.Drawing.Size(144, 35);
             this.button4.TabIndex = 40;
             this.button4.Text = "Select";
             this.button4.UseVisualStyleBackColor = false;
@@ -332,23 +324,22 @@
             this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox5.Location = new System.Drawing.Point(389, 605);
-            this.richTextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox5.Location = new System.Drawing.Point(346, 484);
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox5.Size = new System.Drawing.Size(305, 78);
+            this.richTextBox5.Size = new System.Drawing.Size(271, 62);
             this.richTextBox5.TabIndex = 41;
             this.richTextBox5.Text = "Tirol\n1100 Lei/Noapte\n";
+            this.richTextBox5.TextChanged += new System.EventHandler(this.richTextBox5_TextChanged);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(701, 605);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Location = new System.Drawing.Point(623, 484);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 44);
+            this.button5.Size = new System.Drawing.Size(144, 35);
             this.button5.TabIndex = 42;
             this.button5.Text = "Select";
             this.button5.UseVisualStyleBackColor = false;
@@ -359,11 +350,10 @@
             this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox6.Location = new System.Drawing.Point(596, 85);
-            this.richTextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox6.Location = new System.Drawing.Point(530, 68);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox6.Size = new System.Drawing.Size(183, 51);
+            this.richTextBox6.Size = new System.Drawing.Size(163, 41);
             this.richTextBox6.TabIndex = 43;
             this.richTextBox6.Text = "Tarif Camere";
             // 
@@ -373,11 +363,10 @@
             this.richTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox7.Location = new System.Drawing.Point(1088, 85);
-            this.richTextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox7.Location = new System.Drawing.Point(967, 68);
             this.richTextBox7.Name = "richTextBox7";
             this.richTextBox7.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox7.Size = new System.Drawing.Size(217, 51);
+            this.richTextBox7.Size = new System.Drawing.Size(193, 41);
             this.richTextBox7.TabIndex = 44;
             this.richTextBox7.Text = "Tarife Facilități";
             // 
@@ -387,11 +376,10 @@
             this.richTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox8.Location = new System.Drawing.Point(1098, 170);
-            this.richTextBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox8.Location = new System.Drawing.Point(976, 136);
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox8.Size = new System.Drawing.Size(220, 70);
+            this.richTextBox8.Size = new System.Drawing.Size(196, 56);
             this.richTextBox8.TabIndex = 45;
             this.richTextBox8.Text = "          SPA \n50 Minute / 200 Lei";
             // 
@@ -401,11 +389,10 @@
             this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox9.Location = new System.Drawing.Point(1098, 288);
-            this.richTextBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox9.Location = new System.Drawing.Point(976, 230);
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox9.Size = new System.Drawing.Size(220, 70);
+            this.richTextBox9.Size = new System.Drawing.Size(196, 56);
             this.richTextBox9.TabIndex = 46;
             this.richTextBox9.Text = "          Piscina \n60 Minute / 50 Lei";
             // 
@@ -415,11 +402,10 @@
             this.richTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox10.Location = new System.Drawing.Point(1098, 390);
-            this.richTextBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox10.Location = new System.Drawing.Point(976, 312);
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox10.Size = new System.Drawing.Size(220, 70);
+            this.richTextBox10.Size = new System.Drawing.Size(196, 56);
             this.richTextBox10.TabIndex = 47;
             this.richTextBox10.Text = "          Jacuzzi \n30 Minute / 60 Lei";
             // 
@@ -429,11 +415,10 @@
             this.richTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox11.Location = new System.Drawing.Point(1098, 499);
-            this.richTextBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox11.Location = new System.Drawing.Point(976, 399);
             this.richTextBox11.Name = "richTextBox11";
             this.richTextBox11.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox11.Size = new System.Drawing.Size(220, 70);
+            this.richTextBox11.Size = new System.Drawing.Size(196, 56);
             this.richTextBox11.TabIndex = 48;
             this.richTextBox11.Text = "    Sală de jocuri \n60 Minute / 50 Lei";
             // 
@@ -443,19 +428,18 @@
             this.richTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox12.Location = new System.Drawing.Point(1088, 625);
-            this.richTextBox12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox12.Location = new System.Drawing.Point(967, 500);
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox12.Size = new System.Drawing.Size(220, 70);
+            this.richTextBox12.Size = new System.Drawing.Size(196, 56);
             this.richTextBox12.TabIndex = 49;
             this.richTextBox12.Text = "     Sală de Fitness \n       1 Zi / 40 Lei";
             // 
             // PricesPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1448, 956);
+            this.ClientSize = new System.Drawing.Size(1287, 765);
             this.Controls.Add(this.richTextBox12);
             this.Controls.Add(this.richTextBox11);
             this.Controls.Add(this.richTextBox10);
@@ -481,7 +465,6 @@
             this.Controls.Add(this.btnDespreHotel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PricesPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PricesPage";
