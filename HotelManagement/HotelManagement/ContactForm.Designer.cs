@@ -34,8 +34,6 @@
             this.btnFacilitati = new Guna.UI2.WinForms.Guna2Button();
             this.btnCamere = new Guna.UI2.WinForms.Guna2Button();
             this.staffGB = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.fromContacttxt = new System.Windows.Forms.TextBox();
             this.trimitereMailbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label7 = new System.Windows.Forms.Label();
             this.mesajContacttxt = new System.Windows.Forms.TextBox();
@@ -135,8 +133,6 @@
             this.staffGB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.staffGB.Controls.Add(this.label8);
-            this.staffGB.Controls.Add(this.fromContacttxt);
             this.staffGB.Controls.Add(this.trimitereMailbtn);
             this.staffGB.Controls.Add(this.label7);
             this.staffGB.Controls.Add(this.mesajContacttxt);
@@ -152,25 +148,6 @@
             this.staffGB.TabIndex = 15;
             this.staffGB.TabStop = false;
             // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(29, 53);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 37);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "From (Email):";
-            this.label8.Visible = false;
-            // 
-            // fromContacttxt
-            // 
-            this.fromContacttxt.Location = new System.Drawing.Point(34, 93);
-            this.fromContacttxt.Multiline = true;
-            this.fromContacttxt.Name = "fromContacttxt";
-            this.fromContacttxt.Size = new System.Drawing.Size(334, 27);
-            this.fromContacttxt.TabIndex = 36;
-            this.fromContacttxt.Visible = false;
-            // 
             // trimitereMailbtn
             // 
             this.trimitereMailbtn.AutoRoundedCorners = true;
@@ -180,7 +157,7 @@
             this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
             this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
-            this.trimitereMailbtn.Location = new System.Drawing.Point(136, 526);
+            this.trimitereMailbtn.Location = new System.Drawing.Point(132, 480);
             this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.trimitereMailbtn.Name = "trimitereMailbtn";
             this.trimitereMailbtn.Size = new System.Drawing.Size(143, 36);
@@ -191,7 +168,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 301);
+            this.label7.Location = new System.Drawing.Point(27, 228);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 37);
             this.label7.TabIndex = 34;
@@ -199,7 +176,7 @@
             // 
             // mesajContacttxt
             // 
-            this.mesajContacttxt.Location = new System.Drawing.Point(34, 341);
+            this.mesajContacttxt.Location = new System.Drawing.Point(32, 268);
             this.mesajContacttxt.Multiline = true;
             this.mesajContacttxt.Name = "mesajContacttxt";
             this.mesajContacttxt.Size = new System.Drawing.Size(334, 175);
@@ -208,7 +185,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 220);
+            this.label3.Location = new System.Drawing.Point(27, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 37);
             this.label3.TabIndex = 32;
@@ -216,7 +193,7 @@
             // 
             // subiectContacttxt
             // 
-            this.subiectContacttxt.Location = new System.Drawing.Point(34, 260);
+            this.subiectContacttxt.Location = new System.Drawing.Point(32, 187);
             this.subiectContacttxt.Multiline = true;
             this.subiectContacttxt.Name = "subiectContacttxt";
             this.subiectContacttxt.Size = new System.Drawing.Size(334, 27);
@@ -225,7 +202,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 129);
+            this.label1.Location = new System.Drawing.Point(27, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 37);
             this.label1.TabIndex = 30;
@@ -233,7 +210,7 @@
             // 
             // toContacttxt
             // 
-            this.toContacttxt.Location = new System.Drawing.Point(34, 169);
+            this.toContacttxt.Location = new System.Drawing.Point(32, 96);
             this.toContacttxt.Multiline = true;
             this.toContacttxt.Name = "toContacttxt";
             this.toContacttxt.Size = new System.Drawing.Size(334, 27);
@@ -394,7 +371,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(484, 37);
             this.label6.TabIndex = 34;
-            this.label6.Text = "Paznic - vambarus@yahoo.com";
+            this.label6.Text = "Paznic - ambarusvictor.gmail.com";
             // 
             // label5
             // 
@@ -403,7 +380,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(484, 37);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Relatii Clienti - Sf. Anton_Laura@com.ro";
+            this.label5.Text = "Relatii Clienti - <sa completezi>";
             // 
             // label4
             // 
@@ -412,7 +389,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(399, 37);
             this.label4.TabIndex = 32;
-            this.label4.Text = "CEO - ailenei.ioana@ceva.com";
+            this.label4.Text = "CEO - <completati>";
             // 
             // label2
             // 
@@ -421,7 +398,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(484, 37);
             this.label2.TabIndex = 31;
-            this.label2.Text = "Manager - antonia.chelemen@sighisoara.ro";
+            this.label2.Text = "Manager - <completati>";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ContactForm
@@ -472,8 +449,6 @@
         private System.Windows.Forms.TextBox mesajContacttxt;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2GradientButton trimitereMailbtn;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox fromContacttxt;
         private System.Windows.Forms.Label label9;
     }
 }
