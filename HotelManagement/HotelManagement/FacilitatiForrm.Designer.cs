@@ -95,16 +95,16 @@
             this.guna2Panel1.Controls.Add(this.btnFacilitati);
             this.guna2Panel1.Controls.Add(this.btnCamere);
             this.guna2Panel1.Controls.Add(this.btnDespreHotel);
-            this.guna2Panel1.Location = new System.Drawing.Point(289, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(325, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(969, 676);
+            this.guna2Panel1.Size = new System.Drawing.Size(1090, 845);
             this.guna2Panel1.TabIndex = 12;
             // 
             // guna2TextBox9
             // 
             this.guna2TextBox9.AutoRoundedCorners = true;
-            this.guna2TextBox9.BorderRadius = 29;
+            this.guna2TextBox9.BorderRadius = 36;
             this.guna2TextBox9.BorderThickness = 0;
             this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox9.DefaultText = "Televizor Retro (nefunctional)";
@@ -117,22 +117,23 @@
             this.guna2TextBox9.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox9.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(611, 405);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox9.Location = new System.Drawing.Point(683, 581);
+            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PasswordChar = '\0';
             this.guna2TextBox9.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox9.PlaceholderText = "";
             this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(345, 60);
+            this.guna2TextBox9.Size = new System.Drawing.Size(388, 75);
             this.guna2TextBox9.TabIndex = 48;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(539, 405);
+            this.pictureBox8.Location = new System.Drawing.Point(602, 581);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox8.Size = new System.Drawing.Size(74, 80);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 47;
             this.pictureBox8.TabStop = false;
@@ -140,7 +141,7 @@
             // guna2TextBox8
             // 
             this.guna2TextBox8.AutoRoundedCorners = true;
-            this.guna2TextBox8.BorderRadius = 29;
+            this.guna2TextBox8.BorderRadius = 36;
             this.guna2TextBox8.BorderThickness = 0;
             this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox8.DefaultText = "Modul Dus + Cada (contra cost) ";
@@ -153,22 +154,23 @@
             this.guna2TextBox8.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox8.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(611, 317);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox8.Location = new System.Drawing.Point(683, 471);
+            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
             this.guna2TextBox8.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox8.PlaceholderText = "";
             this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(408, 60);
+            this.guna2TextBox8.Size = new System.Drawing.Size(459, 75);
             this.guna2TextBox8.TabIndex = 46;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(539, 313);
+            this.pictureBox7.Location = new System.Drawing.Point(602, 466);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox7.Size = new System.Drawing.Size(74, 80);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 45;
             this.pictureBox7.TabStop = false;
@@ -176,7 +178,7 @@
             // guna2TextBox7
             // 
             this.guna2TextBox7.AutoRoundedCorners = true;
-            this.guna2TextBox7.BorderRadius = 29;
+            this.guna2TextBox7.BorderRadius = 36;
             this.guna2TextBox7.BorderThickness = 0;
             this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox7.DefaultText = "Ciubar cu apa rece inclus";
@@ -189,22 +191,23 @@
             this.guna2TextBox7.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(611, 224);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox7.Location = new System.Drawing.Point(683, 355);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
             this.guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox7.PlaceholderText = "";
             this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(305, 60);
+            this.guna2TextBox7.Size = new System.Drawing.Size(343, 75);
             this.guna2TextBox7.TabIndex = 44;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(539, 220);
+            this.pictureBox6.Location = new System.Drawing.Point(602, 350);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox6.Size = new System.Drawing.Size(74, 80);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 43;
             this.pictureBox6.TabStop = false;
@@ -212,7 +215,7 @@
             // guna2TextBox6
             // 
             this.guna2TextBox6.AutoRoundedCorners = true;
-            this.guna2TextBox6.BorderRadius = 29;
+            this.guna2TextBox6.BorderRadius = 36;
             this.guna2TextBox6.BorderThickness = 0;
             this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox6.DefaultText = "Geamuri Rabatabile";
@@ -225,22 +228,23 @@
             this.guna2TextBox6.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(611, 130);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox6.Location = new System.Drawing.Point(683, 237);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox6.PlaceholderText = "";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(249, 60);
+            this.guna2TextBox6.Size = new System.Drawing.Size(280, 75);
             this.guna2TextBox6.TabIndex = 42;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(539, 126);
+            this.pictureBox5.Location = new System.Drawing.Point(602, 233);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox5.Size = new System.Drawing.Size(74, 80);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 41;
             this.pictureBox5.TabStop = false;
@@ -248,7 +252,7 @@
             // guna2TextBox5
             // 
             this.guna2TextBox5.AutoRoundedCorners = true;
-            this.guna2TextBox5.BorderRadius = 29;
+            this.guna2TextBox5.BorderRadius = 36;
             this.guna2TextBox5.BorderThickness = 0;
             this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox5.DefaultText = "Mic dejun inclus (contra cost)";
@@ -261,22 +265,23 @@
             this.guna2TextBox5.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(139, 405);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox5.Location = new System.Drawing.Point(152, 581);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(344, 60);
+            this.guna2TextBox5.Size = new System.Drawing.Size(387, 75);
             this.guna2TextBox5.TabIndex = 40;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(65, 405);
+            this.pictureBox4.Location = new System.Drawing.Point(69, 581);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(74, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 39;
             this.pictureBox4.TabStop = false;
@@ -284,7 +289,7 @@
             // guna2TextBox4
             // 
             this.guna2TextBox4.AutoRoundedCorners = true;
-            this.guna2TextBox4.BorderRadius = 29;
+            this.guna2TextBox4.BorderRadius = 36;
             this.guna2TextBox4.BorderThickness = 0;
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox4.DefaultText = "Incarcare masina\r\n electrica inclus";
@@ -297,22 +302,23 @@
             this.guna2TextBox4.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(139, 317);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox4.Location = new System.Drawing.Point(152, 471);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(394, 60);
+            this.guna2TextBox4.Size = new System.Drawing.Size(443, 75);
             this.guna2TextBox4.TabIndex = 38;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(65, 313);
+            this.pictureBox3.Location = new System.Drawing.Point(69, 466);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox3.Size = new System.Drawing.Size(74, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
@@ -320,7 +326,7 @@
             // guna2TextBox3
             // 
             this.guna2TextBox3.AutoRoundedCorners = true;
-            this.guna2TextBox3.BorderRadius = 29;
+            this.guna2TextBox3.BorderRadius = 36;
             this.guna2TextBox3.BorderThickness = 0;
             this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox3.DefaultText = "Parcare asigurata";
@@ -333,22 +339,23 @@
             this.guna2TextBox3.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(139, 224);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox3.Location = new System.Drawing.Point(152, 355);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(186, 60);
+            this.guna2TextBox3.Size = new System.Drawing.Size(209, 75);
             this.guna2TextBox3.TabIndex = 36;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(65, 220);
+            this.pictureBox2.Location = new System.Drawing.Point(69, 350);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(74, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
@@ -356,7 +363,7 @@
             // guna2TextBox2
             // 
             this.guna2TextBox2.AutoRoundedCorners = true;
-            this.guna2TextBox2.BorderRadius = 29;
+            this.guna2TextBox2.BorderRadius = 36;
             this.guna2TextBox2.BorderThickness = 0;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "Wi-fi 5G gratis";
@@ -369,22 +376,23 @@
             this.guna2TextBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(139, 126);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox2.Location = new System.Drawing.Point(152, 233);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(186, 60);
+            this.guna2TextBox2.Size = new System.Drawing.Size(209, 75);
             this.guna2TextBox2.TabIndex = 34;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(65, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 233);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(74, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -395,10 +403,10 @@
             this.btnContact.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnContact.ForeColor = System.Drawing.Color.White;
-            this.btnContact.Location = new System.Drawing.Point(804, 1);
+            this.btnContact.Location = new System.Drawing.Point(904, 1);
             this.btnContact.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnContact.Name = "btnContact";
-            this.btnContact.Size = new System.Drawing.Size(160, 49);
+            this.btnContact.Size = new System.Drawing.Size(180, 61);
             this.btnContact.TabIndex = 14;
             this.btnContact.Text = "Contact";
             this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
@@ -409,10 +417,10 @@
             this.btnTarife.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTarife.ForeColor = System.Drawing.Color.White;
-            this.btnTarife.Location = new System.Drawing.Point(644, 1);
+            this.btnTarife.Location = new System.Drawing.Point(724, 1);
             this.btnTarife.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnTarife.Name = "btnTarife";
-            this.btnTarife.Size = new System.Drawing.Size(160, 49);
+            this.btnTarife.Size = new System.Drawing.Size(180, 61);
             this.btnTarife.TabIndex = 13;
             this.btnTarife.Text = "Tarife";
             this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
@@ -423,10 +431,10 @@
             this.btnGalerie.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGalerie.ForeColor = System.Drawing.Color.White;
-            this.btnGalerie.Location = new System.Drawing.Point(483, 1);
+            this.btnGalerie.Location = new System.Drawing.Point(543, 1);
             this.btnGalerie.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnGalerie.Name = "btnGalerie";
-            this.btnGalerie.Size = new System.Drawing.Size(160, 49);
+            this.btnGalerie.Size = new System.Drawing.Size(180, 61);
             this.btnGalerie.TabIndex = 12;
             this.btnGalerie.Text = "Galerie";
             this.btnGalerie.Click += new System.EventHandler(this.btnGalerie_Click);
@@ -437,10 +445,10 @@
             this.btnFacilitati.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFacilitati.ForeColor = System.Drawing.Color.White;
-            this.btnFacilitati.Location = new System.Drawing.Point(321, 1);
+            this.btnFacilitati.Location = new System.Drawing.Point(361, 1);
             this.btnFacilitati.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnFacilitati.Name = "btnFacilitati";
-            this.btnFacilitati.Size = new System.Drawing.Size(160, 49);
+            this.btnFacilitati.Size = new System.Drawing.Size(180, 61);
             this.btnFacilitati.TabIndex = 11;
             this.btnFacilitati.Text = "Facilitati";
             this.btnFacilitati.Click += new System.EventHandler(this.btnFacilitati_Click);
@@ -451,10 +459,10 @@
             this.btnCamere.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCamere.ForeColor = System.Drawing.Color.White;
-            this.btnCamere.Location = new System.Drawing.Point(161, 1);
+            this.btnCamere.Location = new System.Drawing.Point(181, 1);
             this.btnCamere.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnCamere.Name = "btnCamere";
-            this.btnCamere.Size = new System.Drawing.Size(160, 49);
+            this.btnCamere.Size = new System.Drawing.Size(180, 61);
             this.btnCamere.TabIndex = 10;
             this.btnCamere.Text = "Camere";
             // 
@@ -467,7 +475,7 @@
             this.btnDespreHotel.Location = new System.Drawing.Point(0, 1);
             this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnDespreHotel.Name = "btnDespreHotel";
-            this.btnDespreHotel.Size = new System.Drawing.Size(160, 49);
+            this.btnDespreHotel.Size = new System.Drawing.Size(180, 61);
             this.btnDespreHotel.TabIndex = 9;
             this.btnDespreHotel.Text = "Despre Hotel";
             this.btnDespreHotel.Click += new System.EventHandler(this.btnDespreHotel_Click);
@@ -482,13 +490,13 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 678);
+            this.panel1.Size = new System.Drawing.Size(332, 848);
             this.panel1.TabIndex = 11;
             // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BorderRadius = 47;
+            this.guna2TextBox1.BorderRadius = 59;
             this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "LIAV Hotel";
@@ -501,14 +509,14 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(42, 247);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.guna2TextBox1.Location = new System.Drawing.Point(47, 309);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.SelectionStart = 10;
-            this.guna2TextBox1.Size = new System.Drawing.Size(248, 97);
+            this.guna2TextBox1.Size = new System.Drawing.Size(279, 121);
             this.guna2TextBox1.TabIndex = 18;
             // 
             // btnBooking
@@ -517,10 +525,10 @@
             this.btnBooking.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBooking.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.ForeColor = System.Drawing.Color.White;
-            this.btnBooking.Location = new System.Drawing.Point(0, 502);
+            this.btnBooking.Location = new System.Drawing.Point(0, 628);
             this.btnBooking.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(289, 57);
+            this.btnBooking.Size = new System.Drawing.Size(325, 71);
             this.btnBooking.TabIndex = 16;
             this.btnBooking.Text = "Booking";
             // 
@@ -530,10 +538,10 @@
             this.btnLogIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(0, 580);
+            this.btnLogIn.Location = new System.Drawing.Point(0, 725);
             this.btnLogIn.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(289, 57);
+            this.btnLogIn.Size = new System.Drawing.Size(325, 71);
             this.btnLogIn.TabIndex = 15;
             this.btnLogIn.Text = "LogIn";
             // 
@@ -541,22 +549,23 @@
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(49, 68);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(55, 85);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(184, 150);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(207, 188);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
             // 
             // FacilitatiForrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 676);
+            this.ClientSize = new System.Drawing.Size(1412, 845);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FacilitatiForrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FacilitatiForrm";

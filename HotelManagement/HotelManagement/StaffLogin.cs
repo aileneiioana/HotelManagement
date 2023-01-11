@@ -83,5 +83,10 @@ namespace HotelManagement
             login.Show();
             this.Hide();
         }
+
+        private void StaffLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
