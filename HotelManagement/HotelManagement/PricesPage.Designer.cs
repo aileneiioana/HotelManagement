@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogIn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBooking = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.LogInUsernameLbl = new System.Windows.Forms.Label();
             this.btnContact = new Guna.UI2.WinForms.Guna2Button();
             this.btnTarife = new Guna.UI2.WinForms.Guna2Button();
@@ -63,15 +64,44 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.btnLogIn);
+            this.panel1.Controls.Add(this.btnBooking);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.guna2TextBox1);
-            this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.LogInUsernameLbl);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(299, 765);
             this.panel1.TabIndex = 9;
+            // 
+            // btnLogIn
+            // 
+            this.btnLogIn.BorderThickness = 2;
+            this.btnLogIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogIn.ForeColor = System.Drawing.Color.White;
+            this.btnLogIn.Location = new System.Drawing.Point(3, 667);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(289, 57);
+            this.btnLogIn.TabIndex = 52;
+            this.btnLogIn.Text = "Staff LogIn ";
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            // 
+            // btnBooking
+            // 
+            this.btnBooking.BorderThickness = 2;
+            this.btnBooking.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBooking.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
+            this.btnBooking.Location = new System.Drawing.Point(3, 608);
+            this.btnBooking.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(289, 57);
+            this.btnBooking.TabIndex = 51;
+            this.btnBooking.Text = "Booking";
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // guna2PictureBox1
             // 
@@ -110,20 +140,6 @@
             this.guna2TextBox1.SelectionStart = 10;
             this.guna2TextBox1.Size = new System.Drawing.Size(226, 97);
             this.guna2TextBox1.TabIndex = 17;
-            // 
-            // btnBack
-            // 
-            this.btnBack.BorderThickness = 2;
-            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBack.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(0, 623);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(299, 57);
-            this.btnBack.TabIndex = 15;
-            this.btnBack.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // LogInUsernameLbl
             // 
@@ -350,12 +366,12 @@
             this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox6.Location = new System.Drawing.Point(530, 68);
+            this.richTextBox6.Location = new System.Drawing.Point(515, 68);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox6.Size = new System.Drawing.Size(163, 41);
+            this.richTextBox6.Size = new System.Drawing.Size(179, 41);
             this.richTextBox6.TabIndex = 43;
-            this.richTextBox6.Text = "Tarif Camere";
+            this.richTextBox6.Text = "Tarife Camere";
             // 
             // richTextBox7
             // 
@@ -479,7 +495,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Button btnBack;
         private System.Windows.Forms.Label LogInUsernameLbl;
         private Guna.UI2.WinForms.Guna2Button btnContact;
         private Guna.UI2.WinForms.Guna2Button btnTarife;
@@ -505,5 +520,7 @@
         private System.Windows.Forms.RichTextBox richTextBox11;
         private System.Windows.Forms.RichTextBox richTextBox12;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnBooking;
+        private Guna.UI2.WinForms.Guna2Button btnLogIn;
     }
 }

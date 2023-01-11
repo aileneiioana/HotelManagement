@@ -144,7 +144,7 @@
             this.staffGB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.staffGB.Name = "staffGB";
             this.staffGB.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.staffGB.Size = new System.Drawing.Size(412, 576);
+            this.staffGB.Size = new System.Drawing.Size(409, 576);
             this.staffGB.TabIndex = 15;
             this.staffGB.TabStop = false;
             // 
@@ -326,7 +326,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(289, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(969, 676);
+            this.guna2Panel1.Size = new System.Drawing.Size(966, 676);
             this.guna2Panel1.TabIndex = 10;
             // 
             // label9
@@ -354,14 +354,14 @@
             this.guna2TextBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(528, 137);
+            this.guna2TextBox2.Location = new System.Drawing.Point(515, 137);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(135, 97);
+            this.guna2TextBox2.Size = new System.Drawing.Size(181, 97);
             this.guna2TextBox2.TabIndex = 33;
             // 
             // label6
@@ -410,6 +410,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ContactForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ContactForm";
             this.Load += new System.EventHandler(this.ContactForm_Load);
             this.staffGB.ResumeLayout(false);

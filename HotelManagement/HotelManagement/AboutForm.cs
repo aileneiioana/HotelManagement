@@ -36,7 +36,8 @@ namespace HotelManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new FacilitatiForrm().Show();
         }
 
         private void btnDespreHotel_Click(object sender, EventArgs e)
@@ -60,6 +61,18 @@ namespace HotelManagement
         {
             this.Hide();
             new ContactForm().Show();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new StaffLogin().Show();
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ClientLogIn().Show();
         }
     }
 }
