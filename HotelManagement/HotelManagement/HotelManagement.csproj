@@ -76,6 +76,21 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ado.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ado.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ado.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ado.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Booking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,14 +109,14 @@
     <Compile Include="Clientinfo.Designer.cs">
       <DependentUpon>Clientinfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Client_tbl.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="ClientLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientLogIn.Designer.cs">
       <DependentUpon>ClientLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client_tbl.cs">
+      <DependentUpon>ado.tt</DependentUpon>
     </Compile>
     <Compile Include="ContactForm.cs">
       <SubType>Form</SubType>
@@ -121,6 +136,11 @@
     <Compile Include="Galerie.Designer.cs">
       <DependentUpon>Galerie.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoteldbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoteldbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PricesPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +151,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation_tbl.cs">
+      <DependentUpon>ado.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Room_tbl.cs">
+      <DependentUpon>ado.tt</DependentUpon>
     </Compile>
     <Compile Include="StaffLogin.cs">
       <SubType>Form</SubType>
@@ -150,21 +176,6 @@
     <Compile Include="MainStaff.Designer.cs">
       <DependentUpon>MainStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservationInformation.cs">
@@ -173,17 +184,11 @@
     <Compile Include="ReservationInformation.Designer.cs">
       <DependentUpon>ReservationInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reservation_tbl.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="RoomInformation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RoomInformation.Designer.cs">
       <DependentUpon>RoomInformation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Room_tbl.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Services\ClientServices.cs" />
     <Compile Include="Services\Facade.cs" />
@@ -197,7 +202,7 @@
       <DependentUpon>StaffInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff_tbl.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>ado.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -249,12 +254,23 @@
     <EmbeddedResource Include="StaffInformation.resx">
       <DependentUpon>StaffInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Model1.edmx">
+    <EntityDeploy Include="ado.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>ado.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="ado.edmx.diagram">
+      <DependentUpon>ado.edmx</DependentUpon>
+    </None>
+    <None Include="HoteldbDataSet.xsc">
+      <DependentUpon>HoteldbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HoteldbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HoteldbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HoteldbDataSet.xss">
+      <DependentUpon>HoteldbDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -281,16 +297,6 @@
     <None Include="imagini\room2.png" />
     <None Include="imagini\spa.png" />
     <None Include="imagini\terrace.png" />
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <None Include="Properties\username.jpeg" />
     <None Include="Properties\staff.png" />
     <None Include="Properties\room.png" />
@@ -305,6 +311,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ado.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ado.edmx</DependentUpon>
+      <LastGenOutput>ado.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ado.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ado.edmx</DependentUpon>
+      <LastGenOutput>ado.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

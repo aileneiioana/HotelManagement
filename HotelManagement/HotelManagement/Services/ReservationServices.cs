@@ -11,7 +11,7 @@ namespace HotelManagement.Services
     {
         public void AddRes(Reservation_tbl model)
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 db.Reservation_tbl.Add(model);
                 db.SaveChanges();
@@ -20,7 +20,7 @@ namespace HotelManagement.Services
 
         public Reservation_tbl GetResById(int id)
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 return db.Reservation_tbl.Where(x => x.ResId == id).FirstOrDefault();
             }
@@ -28,7 +28,7 @@ namespace HotelManagement.Services
 
         public void EditRes(Reservation_tbl model)
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 db.Entry(model).State = EntityState.Modified;
                 db.SaveChanges();
@@ -37,7 +37,7 @@ namespace HotelManagement.Services
 
         public void DeleteRes(Reservation_tbl model)
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 var entity = db.Entry(model);
                 if (entity.State == EntityState.Detached)
@@ -49,7 +49,7 @@ namespace HotelManagement.Services
 
         public List<Reservation_tbl> GetRes()
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 return db.Reservation_tbl.ToList<Reservation_tbl>();
             }
@@ -57,7 +57,7 @@ namespace HotelManagement.Services
 
         public List<Reservation_tbl> GetReservationsById(int id)
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 return db.Reservation_tbl.Where(x => x.ResId == id).ToList();
             }

@@ -34,6 +34,7 @@
             this.btnFacilitati = new Guna.UI2.WinForms.Guna2Button();
             this.btnCamere = new Guna.UI2.WinForms.Guna2Button();
             this.staffGB = new System.Windows.Forms.GroupBox();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.trimitereMailbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label7 = new System.Windows.Forms.Label();
             this.mesajContacttxt = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.staffGB.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -150,6 +150,26 @@
             this.staffGB.TabIndex = 15;
             this.staffGB.TabStop = false;
             // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "ailenei.ioana@yahoo.com",
+            "chelemenantonia@gmail.com",
+            "laura.antonn@yahoo.com",
+            "ambarusvictor@gmail.com"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(24, 79);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(252, 36);
+            this.guna2ComboBox1.TabIndex = 36;
+            // 
             // trimitereMailbtn
             // 
             this.trimitereMailbtn.AutoRoundedCorners = true;
@@ -180,7 +200,7 @@
             // mesajContacttxt
             // 
             this.mesajContacttxt.Location = new System.Drawing.Point(24, 218);
-            this.mesajContacttxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mesajContacttxt.Margin = new System.Windows.Forms.Padding(2);
             this.mesajContacttxt.Multiline = true;
             this.mesajContacttxt.Name = "mesajContacttxt";
             this.mesajContacttxt.Size = new System.Drawing.Size(252, 143);
@@ -199,7 +219,7 @@
             // subiectContacttxt
             // 
             this.subiectContacttxt.Location = new System.Drawing.Point(24, 152);
-            this.subiectContacttxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.subiectContacttxt.Margin = new System.Windows.Forms.Padding(2);
             this.subiectContacttxt.Multiline = true;
             this.subiectContacttxt.Name = "subiectContacttxt";
             this.subiectContacttxt.Size = new System.Drawing.Size(252, 23);
@@ -380,17 +400,17 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(332, 262);
+            this.label5.Location = new System.Drawing.Point(333, 232);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(363, 30);
+            this.label5.Size = new System.Drawing.Size(391, 30);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Relatii Clienti - <sa completezi>";
+            this.label5.Text = "Manager - chelemenantonia@gmail.com";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(332, 202);
+            this.label4.Location = new System.Drawing.Point(333, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(299, 30);
@@ -400,33 +420,13 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(332, 232);
+            this.label2.Location = new System.Drawing.Point(333, 262);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(363, 30);
             this.label2.TabIndex = 31;
-            this.label2.Text = "Manager - laura.antonn@yahoo.com";
+            this.label2.Text = "Relatii Clienti - laura.antonn@yahoo.com";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "ailenei.ioana@yahoo.com",
-            "chelemenantonia@gmail.com",
-            "laura.antonn@yahoo.com",
-            "ambarusvictor@gmail.com"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(24, 79);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(252, 36);
-            this.guna2ComboBox1.TabIndex = 36;
             // 
             // ContactForm
             // 
@@ -436,7 +436,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ContactForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ContactForm";

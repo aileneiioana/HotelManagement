@@ -23,33 +23,6 @@ namespace HotelManagement
         {
 
         }
-
-        private void guna2CheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new AboutForm().Show();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void trimitereMailbtn_Click(object sender, EventArgs e)
         {
             try
@@ -80,8 +53,21 @@ namespace HotelManagement
                 data1 = guna2DateTimePicker1.Value;
                 data2 = guna2DateTimePicker2.Value;
                 TimeSpan t = data2.Subtract(data1);
-                pret = pret + (250 * ((int)t.TotalDays));
-                oMail.TextBody = "Clientul cu emailul "+ emaitb.Text+ " si numarul de telefon "+ textBox1.Text + " solicita o camera din data " + guna2DateTimePicker1.Text + " pana in data " + guna2DateTimePicker2.Text + " cu urmatoarele facilitati: " + s+ " \nPretul Total este: "+ pret.ToString() + " lei.";
+
+                if (comboBox1.Text == "Camera Dubla Standard")
+                    pret = pret + (540 * ((int)t.TotalDays));
+                else if (comboBox1.Text == "Camera Dubla Superioara")
+                    pret = pret + (560 * ((int)t.TotalDays));
+                else if (comboBox1.Text == "Double Deluxe Room")
+                    pret = pret + (580 * ((int)t.TotalDays));
+                else if (comboBox1.Text == "Camera pentru Familie")
+                    pret = pret + (1100 * ((int)t.TotalDays));
+                else if (comboBox1.Text == "Tirol")
+                    pret = pret + (1100 * ((int)t.TotalDays));
+                else MessageBox.Show("Selecteaza Tipul Camerei!");
+                if (emaitb.Text == "") { MessageBox.Show("Completeaza Email-ul!"); return; }
+                if (textBox1.Text == "") { MessageBox.Show("Numarul de Telefon trebuie introdus"); return; }
+                oMail.TextBody = "Clientul cu emailul "+ emaitb.Text+ " si numarul de telefon "+ textBox1.Text + " solicita o camera"+" de tipul "+ comboBox1.SelectedItem.ToString()+  " din data " + guna2DateTimePicker1.Text + " pana in data " + guna2DateTimePicker2.Text + " cu urmatoarele facilitati: " + s+ " \nPretul Total este: "+ pret.ToString() + " lei.";
                 SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
                 oServer.User = "vambarus@yahoo.com";
                 oServer.Password = "szechcdsoxgkkthr";
@@ -91,7 +77,8 @@ namespace HotelManagement
                 SmtpClient oSmtp = new SmtpClient();
                 oSmtp.SendMail(oServer, oMail);
                 Console.WriteLine("email was sent successfully!");
-                MessageBox.Show("Solicitarea a fost facuta catre receptia hotelului LIAV. Veti fi contactat prin email sau telefonic dupa ce se va verifica disponibilitatea. \nMultumim!");
+                MessageBox.Show("Solicitarea ta a fost trimisa receptiei Hotelului LIAV. Vei fi contactat telefonic sau prin email in cel mai scurt timp. \nMultumim!");
+                //MessageBox.Show(oMail.TextBody);
             }
             catch (Exception ep)
             {
@@ -101,7 +88,7 @@ namespace HotelManagement
             emaitb.Text= " ";
             textBox1.Text = " ";
         }
-         
+
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {   
             int pret = 0;
@@ -114,34 +101,20 @@ namespace HotelManagement
             data1 = guna2DateTimePicker1.Value;
             data2 = guna2DateTimePicker2.Value;
             TimeSpan t = data2.Subtract(data1);
-            pret = pret + (250 * ((int)t.TotalDays));
+            if (comboBox1.Text == "Camera Dubla Standard")
+                pret = pret + (540 * ((int)t.TotalDays));
+            else if (comboBox1.Text == "Camera Dubla Superioara")
+                pret = pret + (560 * ((int)t.TotalDays));
+            else if (comboBox1.Text == "Double Deluxe Room")
+                pret = pret + (580 * ((int)t.TotalDays));
+            else if (comboBox1.Text == "Camera pentru Familie")
+                pret = pret + (1100 * ((int)t.TotalDays));
+            else if (comboBox1.Text == "Tirol")
+                pret = pret + (1100 * ((int)t.TotalDays));
+            else MessageBox.Show("Selecteaza Tipul Camerei!");
             //MessageBox.Show(((int)t.TotalDays).ToString());
             guna2HtmlLabel4.Text = pret.ToString();  
         }
 
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2CheckBox5_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void guna2CheckBox4_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2CheckBox3_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

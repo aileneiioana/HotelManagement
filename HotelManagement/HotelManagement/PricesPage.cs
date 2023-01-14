@@ -29,10 +29,6 @@ namespace HotelManagement
             new AboutForm().Show();
         }
 
-        private void btnCamere_Click(object sender, EventArgs e)
-        {
-               
-        }
 
         private void btnFacilitati_Click(object sender, EventArgs e)
         {
@@ -46,10 +42,6 @@ namespace HotelManagement
             new Galerie().Show();
         }
 
-        private void btnTarife_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnContact_Click(object sender, EventArgs e)
         {
@@ -57,10 +49,6 @@ namespace HotelManagement
             new ContactForm().Show();
         }
 
-        private void richTextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
@@ -71,7 +59,48 @@ namespace HotelManagement
         private void btnBooking_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ClientLogIn().Show();
+            new Register().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().Show();
+        }
+
+        private void btnCamere_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new CamereForm().Show();
+        }
+
+        private void btnTarife_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

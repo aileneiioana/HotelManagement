@@ -26,6 +26,7 @@ namespace HotelManagement
         {
             roomidtbl.Text = "Room Id";
             roomphonetbl.Text = "Room Phone";
+            comboBox1.Text = "Room Type";
             //room.Text = "Room Free";
             model.RoomId = 0;
         }
@@ -38,12 +39,13 @@ namespace HotelManagement
             else
                 isfree = "busy";
             model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+            model.RoomType = comboBox1.SelectedItem.ToString();
             model.RoomPhone = roomphonetbl.Text.Trim();
             model.RoomFree = isfree;
             roomServices.AddRoom(model);
             Clear();
             PopulateDataGridView();
-            MessageBox.Show("Submitted Successfully");
+            MessageBox.Show( comboBox1.SelectedItem.ToString());
         }
 
         void PopulateDataGridView()
@@ -60,6 +62,7 @@ namespace HotelManagement
             else
                 isfree = "busy";
             model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+            model.RoomType = comboBox1.SelectedItem.ToString();
             model.RoomPhone = roomphonetbl.Text.Trim();
             model.RoomFree = isfree;
             roomServices.EditRoom(model);
@@ -74,6 +77,7 @@ namespace HotelManagement
             {
                 model.RoomId = Convert.ToInt32(RoomGridview.CurrentRow.Cells["RoomNumber"].Value);
                 model = roomServices.GetRoomById(model.RoomId);
+                comboBox1.Text = model.RoomType.ToString();
                 roomidtbl.Text = model.RoomId.ToString();
                 roomphonetbl.Text = model.RoomPhone.ToString();
             }
@@ -105,7 +109,7 @@ namespace HotelManagement
         private void Search_Click(object sender, EventArgs e)
         {
             int.TryParse(RoomSearchtbl.Text.Trim(), out int id);
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 var dataset = roomServices.GetRoomsById(id);
                 RoomGridview.DataSource = dataset;
@@ -118,21 +122,6 @@ namespace HotelManagement
             Datelbl.Text = Datelbl.Text.Trim();
             timer1.Start();
             PopulateDataGridView();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            //Datelbl.Text = DateTime.Now.ToString();
-        }
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-            //Datelbl.Text = DateTime.Now.ToString();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -150,12 +139,13 @@ namespace HotelManagement
             else
                 isfree = "busy";
             model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+            model.RoomType = comboBox1.SelectedItem.ToString();
             model.RoomPhone = roomphonetbl.Text.Trim();
             model.RoomFree = isfree;
             roomServices.AddRoom(model);
             Clear();
             PopulateDataGridView();
-            MessageBox.Show("Submitted Successfully");
+            MessageBox.Show(comboBox1.SelectedItem.ToString());
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
@@ -166,6 +156,7 @@ namespace HotelManagement
             else
                 isfree = "busy";
             model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+            model.RoomType = comboBox1.SelectedItem.ToString();
             model.RoomPhone = roomphonetbl.Text.Trim();
             model.RoomFree = isfree;
             roomServices.EditRoom(model);

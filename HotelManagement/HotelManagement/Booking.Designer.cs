@@ -51,6 +51,8 @@
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
@@ -62,7 +64,7 @@
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(19, 234);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(24, 352);
             this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -116,13 +118,12 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(19, 212);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(24, 330);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(70, 20);
@@ -133,7 +134,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(247, 212);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(252, 330);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(81, 20);
@@ -183,9 +184,6 @@
             this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
-            this.guna2CheckBox1.Click += new System.EventHandler(this.guna2HtmlLabel4_Click_1);
             // 
             // guna2CheckBox3
             // 
@@ -204,9 +202,6 @@
             this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox3.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox3.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox3.CheckedChanged += new System.EventHandler(this.guna2CheckBox3_CheckedChanged);
-            this.guna2CheckBox3.Click += new System.EventHandler(this.guna2HtmlLabel4_Click_1);
             // 
             // guna2CheckBox4
             // 
@@ -226,8 +221,6 @@
             this.guna2CheckBox4.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox4.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox4.CheckedChanged += new System.EventHandler(this.guna2CheckBox4_CheckedChanged);
-            this.guna2CheckBox4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click_1);
             // 
             // guna2CheckBox5
             // 
@@ -247,8 +240,6 @@
             this.guna2CheckBox5.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox5.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox5.CheckedChanged += new System.EventHandler(this.guna2CheckBox5_CheckedChanged);
-            this.guna2CheckBox5.Click += new System.EventHandler(this.guna2HtmlLabel4_Click_1);
             // 
             // guna2DateTimePicker2
             // 
@@ -256,14 +247,14 @@
             this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(247, 234);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(252, 352);
             this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
             this.guna2DateTimePicker2.Size = new System.Drawing.Size(215, 30);
             this.guna2DateTimePicker2.TabIndex = 44;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 11, 18, 1, 25, 84);
+            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 14, 22, 16, 22, 0);
             // 
             // guna2HtmlLabel4
             // 
@@ -275,7 +266,6 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(13, 22);
             this.guna2HtmlLabel4.TabIndex = 45;
             this.guna2HtmlLabel4.Text = "0";
-            this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click_1);
             // 
             // guna2HtmlLabel5
             // 
@@ -308,7 +298,6 @@
             this.emaitb.Name = "emaitb";
             this.emaitb.Size = new System.Drawing.Size(133, 20);
             this.emaitb.TabIndex = 48;
-            this.emaitb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -318,7 +307,6 @@
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 49;
             this.label1.Text = "Email";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2GradientButton1
             // 
@@ -327,7 +315,7 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.LightGray;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(537, 448);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(736, 397);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(198, 36);
@@ -351,12 +339,39 @@
             this.textBox1.Size = new System.Drawing.Size(133, 20);
             this.textBox1.TabIndex = 51;
             // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(24, 211);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(107, 20);
+            this.guna2HtmlLabel6.TabIndex = 53;
+            this.guna2HtmlLabel6.Text = "Tipul Camerei";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Camera Dubla Standard",
+            "Camera Dubla Superioara",
+            "Camera Dubla Deluxe",
+            "Camera pentru Familie",
+            "Triol"});
+            this.comboBox1.Location = new System.Drawing.Point(24, 236);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(215, 21);
+            this.comboBox1.TabIndex = 54;
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(966, 566);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.guna2GradientButton1);
@@ -414,5 +429,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

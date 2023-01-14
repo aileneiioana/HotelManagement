@@ -15,6 +15,7 @@ namespace HotelManagement
     public partial class Room_tbl
     {
         public int RoomId { get; set; }
+        public string RoomType { get; set; }
         public string RoomPhone { get; set; }
         public string RoomFree { get; set; }
     }

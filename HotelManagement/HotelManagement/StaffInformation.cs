@@ -103,7 +103,7 @@ namespace HotelManagement
 
         private void Search_Click(object sender, EventArgs e)
         {
-            using (HoteldbEntities db = new HoteldbEntities())
+            using (HoteldbEntities111 db = new HoteldbEntities111())
             {
                 var dataset = staffService.GetStaffByName(Searchtb.Text);
                StaffView.DataSource = dataset;
