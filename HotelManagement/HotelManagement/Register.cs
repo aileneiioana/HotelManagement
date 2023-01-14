@@ -30,7 +30,7 @@ namespace HotelManagement
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ClientLogIn().Show();
+            new AboutForm().Show();
         }
         private void LoginPageLogInbtn_Click(object sender, EventArgs e)
         {
@@ -38,9 +38,9 @@ namespace HotelManagement
             var dataset = ClientServices.validate(PhoneNrTxtbox.Text, PasswordLogInTxtBox.Text);
             if (dataset != null)
             {
-                //Main mf = new Main();
-                //mf.Show();
-                //this.Hide();
+                Booking mf = new Booking();
+                mf.Show();
+                this.Hide();
                 MessageBox.Show("Log in succesfull!");
             }
             else
@@ -75,6 +75,9 @@ namespace HotelManagement
                         model.Password = ClientPassTxt.Text.Trim();
                         clientServices.AddClient(model);
                         MessageBox.Show("Account succesfully created!");
+                        Booking mf = new Booking();
+                        mf.Show();
+                        this.Hide();
                     }
                     else MessageBox.Show("Account already created with this phone number !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

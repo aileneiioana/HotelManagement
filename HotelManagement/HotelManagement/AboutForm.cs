@@ -72,7 +72,13 @@ namespace HotelManagement
         private void btnBooking_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ClientLogIn().Show();
+            new Register().Show();
+        }
+
+        private void btnCamere_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new CamereForm().Show();
         }
     }
 }

@@ -29,7 +29,7 @@ namespace HotelManagement
             {
                 SmtpMail oMail = new SmtpMail("TryIt");
                 oMail.From = "vambarus@yahoo.com";
-                oMail.To = toContacttxt.Text;
+                oMail.To = guna2ComboBox1.SelectedItem.ToString();
                 oMail.Subject = subiectContacttxt.Text;
                 oMail.TextBody = mesajContacttxt.Text;
                 SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
@@ -41,13 +41,14 @@ namespace HotelManagement
                 SmtpClient oSmtp = new SmtpClient();
                 oSmtp.SendMail(oServer, oMail);
                 Console.WriteLine("email was sent successfully!");
+                MessageBox.Show("Email was sent successfully!");
             }
             catch (Exception ep)
             {
                 Console.WriteLine("failed to send email with the following error:");
                 Console.WriteLine(ep.Message);
             }
-            toContacttxt.Clear();
+            guna2ComboBox1.Text = " ";
             subiectContacttxt.Clear();
             mesajContacttxt.Clear();
             
@@ -93,6 +94,33 @@ namespace HotelManagement
         {
             this.Hide();
             new PricesPage().Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().Show();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new StaffLogin().Show();
+        }
+
+        private void btnCamere_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

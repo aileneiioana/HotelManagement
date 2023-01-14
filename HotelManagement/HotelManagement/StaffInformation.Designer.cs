@@ -33,6 +33,7 @@ namespace HotelManagement
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffInformation));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.Datelb = new System.Windows.Forms.Label();
             this.StaffIdtb = new System.Windows.Forms.TextBox();
             this.StaffNametb = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@ namespace HotelManagement
             this.BtnDeleteStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnAddStaff = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaffView)).BeginInit();
@@ -73,6 +73,16 @@ namespace HotelManagement
             this.panel1.Size = new System.Drawing.Size(1436, 133);
             this.panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(428, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(397, 57);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Staff Information";
+            // 
             // Datelb
             // 
             this.Datelb.AutoSize = true;
@@ -80,10 +90,11 @@ namespace HotelManagement
             this.Datelb.Location = new System.Drawing.Point(1138, 81);
             this.Datelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Datelb.Name = "Datelb";
-            this.Datelb.Size = new System.Drawing.Size(84, 37);
+            this.Datelb.Size = new System.Drawing.Size(57, 25);
             this.Datelb.TabIndex = 1;
             this.Datelb.Text = "Date";
             this.Datelb.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Datelb.Click += new System.EventHandler(this.Datelb_Click);
             // 
             // StaffIdtb
             // 
@@ -128,7 +139,7 @@ namespace HotelManagement
             this.Gendercb.Location = new System.Drawing.Point(95, 580);
             this.Gendercb.Margin = new System.Windows.Forms.Padding(4);
             this.Gendercb.Name = "Gendercb";
-            this.Gendercb.Size = new System.Drawing.Size(321, 37);
+            this.Gendercb.Size = new System.Drawing.Size(321, 28);
             this.Gendercb.TabIndex = 4;
             this.Gendercb.Text = "Gender";
             // 
@@ -301,19 +312,9 @@ namespace HotelManagement
             this.BtnAddStaff.Text = "Add";
             this.BtnAddStaff.Click += new System.EventHandler(this.BtnAddStaff_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(428, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(581, 85);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Staff Information";
-            // 
             // StaffInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1436, 900);

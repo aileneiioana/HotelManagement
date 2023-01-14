@@ -79,7 +79,7 @@ namespace HotelManagement
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            ClientLogIn login = new ClientLogIn();
+            AboutForm login = new AboutForm();
             login.Show();
             this.Hide();
         }
