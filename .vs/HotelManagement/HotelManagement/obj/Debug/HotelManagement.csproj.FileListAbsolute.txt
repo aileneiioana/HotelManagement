@@ -1,0 +1,272 @@
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+D:\Laura\Facultate\Anul 4\ISW\Proiect\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\laura\source\repos\Proiect ISW\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FirstPage.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.LogIn.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInfo.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInfo.resources
+C:\Users\ailen\Desktop\isw\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Form1.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\Antonia\Desktop\HotelApp\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ClientLogIn.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainStaff.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffLogin.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInformation.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\ailen\Desktop\HotelHotelos\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ClientLogIn.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainStaff.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffLogin.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInformation.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\hotel\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AboutForm.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AboutForm.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ClientLogIn.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainStaff.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffLogin.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInformation.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\Antonia\Desktop\hotel1\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.PricesPage.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AboutForm.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ClientLogIn.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Galerie.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainStaff.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.PricesPage.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffLogin.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInformation.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ContactForm.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FacilitatiForrm.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.CamereForm.resources
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EASendMail.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\admin\Desktop\HotelAppISW\HotelManagement\HotelManagement\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EASendMail.dll
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AboutForm.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.CamereForm.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ClientLogIn.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ContactForm.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FacilitatiForrm.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Galerie.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainStaff.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.PricesPage.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffLogin.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInformation.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\Antonia\HotelManagement\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\EASendMail.dll
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\EntityFramework.dll
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\EntityFramework.xml
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AboutForm.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Booking.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.CamereForm.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Clientinfo.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ClientLogIn.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ContactForm.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.FacilitatiForrm.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Galerie.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainStaff.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.PricesPage.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffLogin.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Register.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.ReservationInformation.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.RoomInformation.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.StaffInformation.resources
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\ailen\Desktop\isw\HotelManagement-main\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
