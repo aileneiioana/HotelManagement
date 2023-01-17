@@ -55,14 +55,13 @@
             this.BtnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnDelete = new Guna.UI2.WinForms.Guna2GradientButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.hoteldbDataSet = new HotelManagement.HoteldbDataSet();
+
             this.hoteldbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RoomGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoteldbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoteldbDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -345,13 +344,10 @@
             this.comboBox1.Text = "Tipul Camerei";
             // 
             // hoteldbDataSet
-            // 
-            this.hoteldbDataSet.DataSetName = "HoteldbDataSet";
-            this.hoteldbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // hoteldbDataSetBindingSource
             // 
-            this.hoteldbDataSetBindingSource.DataSource = this.hoteldbDataSet;
             this.hoteldbDataSetBindingSource.Position = 0;
             // 
             // label3
@@ -398,7 +394,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.RoomGridview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoteldbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoteldbDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -429,7 +424,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton BtnAdd;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.BindingSource hoteldbDataSetBindingSource;
-        private HoteldbDataSet hoteldbDataSet;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomType;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomPhone;

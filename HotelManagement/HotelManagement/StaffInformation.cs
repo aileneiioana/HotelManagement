@@ -104,7 +104,7 @@ namespace HotelManagement
 
         private void Search_Click(object sender, EventArgs e)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 var dataset = staffService.GetStaffByName(Searchtb.Text);
                StaffView.DataSource = dataset;
@@ -132,7 +132,7 @@ namespace HotelManagement
             {
                 if (isValidPhone(PhoneNumbertb.Text)) 
                 {
-                model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
+                //model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
                 model.Staffname = StaffNametb.Text.Trim();
                 model.Staffphone = PhoneNumbertb.Text.Trim();
                 model.Staffpassword = Passwordtb.Text.Trim();
@@ -153,7 +153,7 @@ namespace HotelManagement
             {
                 if (isValidPhone(PhoneNumbertb.Text))
                 {
-                    model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
+                    //model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
                     model.Staffname = StaffNametb.Text.Trim();
                     model.Staffphone = PhoneNumbertb.Text.Trim();
                     model.Staffpassword = Passwordtb.Text.Trim();

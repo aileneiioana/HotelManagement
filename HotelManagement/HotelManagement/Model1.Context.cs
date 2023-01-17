@@ -13,10 +13,10 @@ namespace HotelManagement
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class HoteldbEntities111 : DbContext
+    public partial class HoteldbEntities : DbContext
     {
-        public HoteldbEntities111()
-            : base("name=HoteldbEntities111")
+        public HoteldbEntities()
+            : base("name=HoteldbEntities")
         {
         }
     
@@ -26,8 +26,8 @@ namespace HotelManagement
         }
     
         public virtual DbSet<Client_tbl> Client_tbl { get; set; }
+        public virtual DbSet<Reservation_tbl> Reservation_tbl { get; set; }
         public virtual DbSet<Room_tbl> Room_tbl { get; set; }
         public virtual DbSet<Staff_tbl> Staff_tbl { get; set; }
-        public virtual DbSet<Reservation_tbl> Reservation_tbl { get; set; }
     }
 }

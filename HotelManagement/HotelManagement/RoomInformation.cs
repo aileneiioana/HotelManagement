@@ -110,7 +110,7 @@ namespace HotelManagement
         private void Search_Click(object sender, EventArgs e)
         {
             int.TryParse(RoomSearchtbl.Text.Trim(), out int id);
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 var dataset = roomServices.GetRoomsById(id);
                 RoomGridview.DataSource = dataset;

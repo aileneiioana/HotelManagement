@@ -12,7 +12,7 @@ namespace HotelManagement {
     {
         public Client_tbl validate(string phoneNr, string pass)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Client_tbl.Where(x => x.ClientPhone == phoneNr && x.Password == pass).FirstOrDefault();
             }
@@ -20,7 +20,7 @@ namespace HotelManagement {
 
         public void AddClient(Client_tbl client)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 db.Client_tbl.Add(client);
                 db.SaveChanges();
@@ -29,7 +29,7 @@ namespace HotelManagement {
 
         public List<String> GetClientsNames()
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Client_tbl.Select(x => x.ClientName).ToList();
             }
@@ -37,7 +37,7 @@ namespace HotelManagement {
 
         public List<Client_tbl> GetClientsByName(string name)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Client_tbl.Where(x => x.ClientName == name).ToList();
             }
@@ -45,7 +45,7 @@ namespace HotelManagement {
 
         public List<Client_tbl> GetClients()
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Client_tbl.ToList<Client_tbl>();
             }
@@ -53,7 +53,7 @@ namespace HotelManagement {
 
         public Client_tbl GetClientById(int id)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Client_tbl.Where(x => x.ClientId == id).FirstOrDefault();
             }
@@ -61,14 +61,14 @@ namespace HotelManagement {
 
         public Client_tbl GetClientByPhone(String nr)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Client_tbl.Where(x => x.ClientPhone == nr).FirstOrDefault();
             }
         }
         public void DeleteClient(Client_tbl model)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 var entity = db.Entry(model);
                 if (entity.State == EntityState.Detached)
@@ -80,7 +80,7 @@ namespace HotelManagement {
 
         public void UpdateClient(Client_tbl model)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 db.Entry(model).State = EntityState.Modified;
                 db.SaveChanges();

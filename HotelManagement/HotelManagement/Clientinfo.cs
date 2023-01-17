@@ -127,7 +127,7 @@ namespace HotelManagement
         private void Search_Click(object sender, EventArgs e)
         {
               
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 var dataset = clientServices.GetClientsByName(ClientSearchtb.Text);
                 ClientGridview.DataSource = dataset;

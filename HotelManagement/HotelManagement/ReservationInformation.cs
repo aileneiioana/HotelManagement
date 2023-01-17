@@ -170,8 +170,8 @@ namespace HotelManagement
                     ResId = int.Parse(ReservationIdtb.Text),
                     Client = clientcb.Text,
                     Room = int.Parse(roomnumbercb.Text),
-                    DateIn = dateInTimePicker.Text,
-                    DateOut = dateOutTimePicker.Text
+                    DateIn = dateInTimePicker.Value.ToString(),
+                    DateOut = dateOutTimePicker.Value.ToString()
                 };
                 resServices.AddRes(model);
                 Clear();

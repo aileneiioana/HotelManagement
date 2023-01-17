@@ -15,14 +15,14 @@ namespace HotelManagement
 
         public Staff_tbl validate(string user, string pass)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Staff_tbl.Where(x => x.Staffname == user && x.Staffpassword == pass).FirstOrDefault();
             }
         }
         public void AddStaff(Staff_tbl model)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 db.Staff_tbl.Add(model);
                 db.SaveChanges();
@@ -31,7 +31,7 @@ namespace HotelManagement
 
         public List<Staff_tbl> Getstaff()
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Staff_tbl.ToList<Staff_tbl>();
             }
@@ -39,7 +39,7 @@ namespace HotelManagement
 
         public Staff_tbl GetStaffById(int id)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Staff_tbl.Where(x => x.StaffId == id).FirstOrDefault();
             }
@@ -47,7 +47,7 @@ namespace HotelManagement
 
         public List<Staff_tbl> GetStaffByName(String name)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Staff_tbl.Where(x => x.Staffname == name).ToList();
 
@@ -56,7 +56,7 @@ namespace HotelManagement
 
         public void EditStaff(Staff_tbl model)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 db.Entry(model).State = EntityState.Modified;
                 db.SaveChanges();
@@ -65,7 +65,7 @@ namespace HotelManagement
 
         public void DeleteStaff(Staff_tbl model)
         {
-            using (HoteldbEntities111 db = new HoteldbEntities111())
+            using (HoteldbEntities db = new HoteldbEntities())
             {
                 var entity = db.Entry(model);
                 if (entity.State == EntityState.Detached)

@@ -10,13 +10,11 @@
     <Property Name="ClientCountry" Type="varchar" MaxLength="30" />
     <Property Name="Password" Type="varchar" MaxLength="30" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'Hoteldb.dbo.Reservation_tbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Reservation_tbl">
     <Key>
       <PropertyRef Name="ResId" />
     </Key>
-    <Property Name="ResId" Type="int" Nullable="false" />
+    <Property Name="ResId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Client" Type="varchar" MaxLength="30" />
     <Property Name="Room" Type="int" />
     <Property Name="DateIn" Type="varchar" MaxLength="30" />
@@ -27,16 +25,15 @@ warning 6002: The table/view 'Hoteldb.dbo.Reservation_tbl' does not have a prima
       <PropertyRef Name="RoomId" />
     </Key>
     <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="RoomType" Type="varchar" MaxLength="30" />
     <Property Name="RoomPhone" Type="varchar" MaxLength="30" />
     <Property Name="RoomFree" Type="varchar" MaxLength="30" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'Hoteldb.dbo.Staff_tbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Staff_tbl">
     <Key>
       <PropertyRef Name="StaffId" />
     </Key>
-    <Property Name="StaffId" Type="int" Nullable="false" />
+    <Property Name="StaffId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Staffname" Type="varchar" MaxLength="30" />
     <Property Name="Staffphone" Type="varchar" MaxLength="30" />
     <Property Name="Gender" Type="varchar" MaxLength="30" />
@@ -44,8 +41,8 @@ warning 6002: The table/view 'Hoteldb.dbo.Staff_tbl' does not have a primary key
   </EntityType>
   <EntityContainer Name="HoteldbModelStoreContainer">
     <EntitySet Name="Client_tbl" EntityType="Self.Client_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reservation_tbl" EntityType="Self.Reservation_tbl" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Room_tbl" EntityType="Self.Room_tbl" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Reservation_tbl" EntityType="Self.Reservation_tbl" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Staff_tbl" EntityType="Self.Staff_tbl" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Staff_tbl" EntityType="Self.Staff_tbl" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

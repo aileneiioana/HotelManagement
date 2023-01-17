@@ -12,15 +12,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Room_tbl">
-      <EntityTypeMapping TypeName="HoteldbModel.Room_tbl">
-        <MappingFragment StoreEntitySet="Room_tbl">
-          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
-          <ScalarProperty Name="RoomPhone" ColumnName="RoomPhone" />
-          <ScalarProperty Name="RoomFree" ColumnName="RoomFree" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Reservation_tbl">
       <EntityTypeMapping TypeName="HoteldbModel.Reservation_tbl">
         <MappingFragment StoreEntitySet="Reservation_tbl">
@@ -29,6 +20,16 @@
           <ScalarProperty Name="Room" ColumnName="Room" />
           <ScalarProperty Name="DateIn" ColumnName="DateIn" />
           <ScalarProperty Name="DateOut" ColumnName="DateOut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Room_tbl">
+      <EntityTypeMapping TypeName="HoteldbModel.Room_tbl">
+        <MappingFragment StoreEntitySet="Room_tbl">
+          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="RoomType" ColumnName="RoomType" />
+          <ScalarProperty Name="RoomPhone" ColumnName="RoomPhone" />
+          <ScalarProperty Name="RoomFree" ColumnName="RoomFree" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
