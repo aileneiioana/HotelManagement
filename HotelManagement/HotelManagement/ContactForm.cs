@@ -41,7 +41,7 @@ namespace HotelManagement
                 SmtpClient oSmtp = new SmtpClient();
                 oSmtp.SendMail(oServer, oMail);
                 Console.WriteLine("email was sent successfully!");
-                MessageBox.Show("Email was sent successfully!");
+                MessageBox.Show("Email a fost trimis cu succes!");
             }
             catch (Exception ep)
             {

@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,13 +26,19 @@ namespace HotelManagement
 
         void Clear()
         {
-            clientIdTxtbox.Text = "Client Id";
-            clientnametbl.Text = "Client Name";
-            clientphonetb.Text = "Client Phone";
-            clientctrytb.Text = "Country";
-            passwordTb.Text = "Password";
+            clientIdTxtbox.Text = "Id";
+            clientnametbl.Text = "Nume";
+            clientphonetb.Text = "Număr Telefon";
+            clientctrytb.Text = "Ţara";
+            passwordTb.Text = "Parola";
         }
 
+        public static bool isValidPhone(string phone)
+        {
+            Regex emailReges = new Regex("^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$");
+
+            return (emailReges.IsMatch(phone) && phone.Length==10);
+        }
         private void Clientinfo_Load(object sender, EventArgs e)
         {
             Datelbl.Text = Datelbl.Text.Trim();
@@ -45,7 +52,9 @@ namespace HotelManagement
             //facade design
             Facade facade = new Facade();
             model.ClientName = clientnametbl.Text.Trim();
+            if(isValidPhone(clientphonetb.Text))
             model.ClientPhone = clientphonetb.Text.Trim();
+            else MessageBox.Show("Numar de telefon introdus in format incorect!");
             model.ClientCountry = clientctrytb.Text.Trim();
             model.Password = passwordTb.Text.Trim();
 
@@ -138,40 +147,56 @@ namespace HotelManagement
             //facade design
             Facade facade = new Facade();
             model.ClientName = clientnametbl.Text.Trim();
-            model.ClientPhone = clientphonetb.Text.Trim();
+          
             model.ClientCountry = clientctrytb.Text.Trim();
             model.Password = passwordTb.Text.Trim();
+            if (clientnametbl.Text != "Nume" && clientphonetb.Text != "Număr Telefon" && clientctrytb.Text != "Ţara" && passwordTb.Text != "Parola"&& clientnametbl.Text != "" && clientphonetb.Text != ""  && passwordTb.Text != "")
+            {
+                if (isValidPhone(clientphonetb.Text))
+                {
+                    model.ClientPhone = clientphonetb.Text.Trim();
+                    //facade design
+                    facade.addClient(model);
+                    Clear();
+                    PopulateDataGridView();
+                    MessageBox.Show("Adăugat cu Succes");
+                }
+                else
+                {
+                    MessageBox.Show("Introduceti corect numaul de telefon!");
 
-            //facade design
-            facade.addClient(model);
+                } 
+            }
+            else MessageBox.Show("Introduceti date in toate campurile");
 
-            Clear();
-            PopulateDataGridView();
-            MessageBox.Show("Submitted Successfully");
-
-        }
+          }  
 
         private void BtnEditStaff_Click(object sender, EventArgs e)
         {
-
-            model.ClientName = clientnametbl.Text.Trim();
-            model.ClientPhone = clientphonetb.Text.Trim();
-            model.ClientCountry = clientctrytb.Text.Trim();
-            model.Password = passwordTb.Text.Trim();
-            clientServices.UpdateClient(model);
-            Clear();
-            MessageBox.Show("Client Successfully Updated");
-            PopulateDataGridView();
+            if (clientnametbl.Text != "Nume" && clientphonetb.Text != "Număr Telefon" && clientctrytb.Text != "Ţara" && passwordTb.Text != "Parola" && clientnametbl.Text != "" && clientphonetb.Text != "" && passwordTb.Text != "") {
+                if (isValidPhone(clientphonetb.Text)) {
+                    model.ClientName = clientnametbl.Text.Trim();
+                    model.ClientCountry = clientctrytb.Text.Trim();
+                    model.Password = passwordTb.Text.Trim();
+                    model.ClientPhone = clientphonetb.Text.Trim();
+                    clientServices.UpdateClient(model);
+                    Clear();
+                    MessageBox.Show("Client Actualizat cu Succes!");
+                    PopulateDataGridView();
+                }
+                else MessageBox.Show("Introdu numarul de telefon corect!");
+            }
+            else MessageBox.Show("Introdu date in toate campurile!");
         }
 
         private void BtnDeleteStaff_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to delete this Record?", "Client Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Eşti sigur ca vrei să ştergi aceasta înregistrare?", "Informaţii Client", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 clientServices.DeleteClient(model);
                 PopulateDataGridView();
                 Clear();
-                MessageBox.Show("Client Successfully Deleted");
+                MessageBox.Show("Client Şters cu Succes");
             }
         }
     }

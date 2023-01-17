@@ -39,11 +39,6 @@ namespace HotelManagement
             this.clientphonetb = new System.Windows.Forms.RichTextBox();
             this.clientctrytb = new System.Windows.Forms.ComboBox();
             this.ClientGridview = new System.Windows.Forms.DataGridView();
-            this.ClientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhoneNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientSearchtb = new System.Windows.Forms.RichTextBox();
             this.Search = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -54,6 +49,11 @@ namespace HotelManagement
             this.BtnDeleteStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnAddStaff = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ClientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClientGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,9 +80,9 @@ namespace HotelManagement
             this.label2.Location = new System.Drawing.Point(285, 13);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(430, 57);
+            this.label2.Size = new System.Drawing.Size(398, 57);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Client Information";
+            this.label2.Text = "Informaţii Clienţi";
             // 
             // Datelbl
             // 
@@ -104,7 +104,7 @@ namespace HotelManagement
             this.clientnametbl.Name = "clientnametbl";
             this.clientnametbl.Size = new System.Drawing.Size(215, 35);
             this.clientnametbl.TabIndex = 2;
-            this.clientnametbl.Text = "ClientName";
+            this.clientnametbl.Text = "Nume";
             // 
             // clientphonetb
             // 
@@ -115,7 +115,7 @@ namespace HotelManagement
             this.clientphonetb.Name = "clientphonetb";
             this.clientphonetb.Size = new System.Drawing.Size(215, 35);
             this.clientphonetb.TabIndex = 3;
-            this.clientphonetb.Text = "Phone Number";
+            this.clientphonetb.Text = "Număr Telefon";
             // 
             // clientctrytb
             // 
@@ -134,7 +134,7 @@ namespace HotelManagement
             this.clientctrytb.Name = "clientctrytb";
             this.clientctrytb.Size = new System.Drawing.Size(215, 28);
             this.clientctrytb.TabIndex = 4;
-            this.clientctrytb.Text = "Country";
+            this.clientctrytb.Text = "Ţara";
             // 
             // ClientGridview
             // 
@@ -142,7 +142,7 @@ namespace HotelManagement
             this.ClientGridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClientId,
             this.ClientName,
-            this.PhoneNum,
+            this.ClientPhone,
             this.Country,
             this.Password});
             this.ClientGridview.Location = new System.Drawing.Point(355, 101);
@@ -154,46 +154,6 @@ namespace HotelManagement
             this.ClientGridview.TabIndex = 5;
             this.ClientGridview.DoubleClick += new System.EventHandler(this.ClientGridview_DoubleClick);
             // 
-            // ClientId
-            // 
-            this.ClientId.DataPropertyName = "ClientId";
-            this.ClientId.HeaderText = "ClientId";
-            this.ClientId.MinimumWidth = 6;
-            this.ClientId.Name = "ClientId";
-            this.ClientId.Width = 125;
-            // 
-            // ClientName
-            // 
-            this.ClientName.DataPropertyName = "ClientName";
-            this.ClientName.HeaderText = "ClientName";
-            this.ClientName.MinimumWidth = 6;
-            this.ClientName.Name = "ClientName";
-            this.ClientName.Width = 125;
-            // 
-            // PhoneNum
-            // 
-            this.PhoneNum.DataPropertyName = "ClientPhone";
-            this.PhoneNum.HeaderText = "PhoneNum";
-            this.PhoneNum.MinimumWidth = 6;
-            this.PhoneNum.Name = "PhoneNum";
-            this.PhoneNum.Width = 125;
-            // 
-            // Country
-            // 
-            this.Country.DataPropertyName = "ClientCountry";
-            this.Country.HeaderText = "Country";
-            this.Country.MinimumWidth = 6;
-            this.Country.Name = "Country";
-            this.Country.Width = 125;
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "Password";
-            this.Password.HeaderText = "Password";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
-            this.Password.Width = 125;
-            // 
             // ClientSearchtb
             // 
             this.ClientSearchtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -203,7 +163,7 @@ namespace HotelManagement
             this.ClientSearchtb.Name = "ClientSearchtb";
             this.ClientSearchtb.Size = new System.Drawing.Size(160, 30);
             this.ClientSearchtb.TabIndex = 9;
-            this.ClientSearchtb.Text = "ClientSearch";
+            this.ClientSearchtb.Text = "Caută după nume";
             // 
             // Search
             // 
@@ -217,7 +177,7 @@ namespace HotelManagement
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(106, 29);
             this.Search.TabIndex = 10;
-            this.Search.Text = "SEARCH";
+            this.Search.Text = "Caută";
             this.Search.UseVisualStyleBackColor = false;
             this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
@@ -254,7 +214,7 @@ namespace HotelManagement
             this.passwordTb.Name = "passwordTb";
             this.passwordTb.Size = new System.Drawing.Size(215, 35);
             this.passwordTb.TabIndex = 13;
-            this.passwordTb.Text = "Password";
+            this.passwordTb.Text = "Parola";
             // 
             // clientIdTxtbox
             // 
@@ -266,7 +226,7 @@ namespace HotelManagement
             this.clientIdTxtbox.Name = "clientIdTxtbox";
             this.clientIdTxtbox.Size = new System.Drawing.Size(215, 35);
             this.clientIdTxtbox.TabIndex = 14;
-            this.clientIdTxtbox.Text = "Client Id";
+            this.clientIdTxtbox.Text = "Id";
             // 
             // BtnDeleteStaff
             // 
@@ -280,9 +240,9 @@ namespace HotelManagement
             this.BtnDeleteStaff.Location = new System.Drawing.Point(242, 469);
             this.BtnDeleteStaff.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnDeleteStaff.Name = "BtnDeleteStaff";
-            this.BtnDeleteStaff.Size = new System.Drawing.Size(78, 36);
+            this.BtnDeleteStaff.Size = new System.Drawing.Size(96, 36);
             this.BtnDeleteStaff.TabIndex = 36;
-            this.BtnDeleteStaff.Text = "Delete";
+            this.BtnDeleteStaff.Text = "Şterge";
             this.BtnDeleteStaff.Click += new System.EventHandler(this.BtnDeleteStaff_Click);
             // 
             // BtnEditStaff
@@ -294,12 +254,12 @@ namespace HotelManagement
             this.BtnEditStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnEditStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnEditStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditStaff.Location = new System.Drawing.Point(155, 469);
+            this.BtnEditStaff.Location = new System.Drawing.Point(142, 469);
             this.BtnEditStaff.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnEditStaff.Name = "BtnEditStaff";
-            this.BtnEditStaff.Size = new System.Drawing.Size(78, 36);
+            this.BtnEditStaff.Size = new System.Drawing.Size(96, 36);
             this.BtnEditStaff.TabIndex = 35;
-            this.BtnEditStaff.Text = "Edit";
+            this.BtnEditStaff.Text = "Editează";
             this.BtnEditStaff.Click += new System.EventHandler(this.BtnEditStaff_Click);
             // 
             // BtnAddStaff
@@ -311,13 +271,53 @@ namespace HotelManagement
             this.BtnAddStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnAddStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnAddStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnAddStaff.Location = new System.Drawing.Point(69, 469);
+            this.BtnAddStaff.Location = new System.Drawing.Point(42, 469);
             this.BtnAddStaff.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnAddStaff.Name = "BtnAddStaff";
-            this.BtnAddStaff.Size = new System.Drawing.Size(78, 36);
+            this.BtnAddStaff.Size = new System.Drawing.Size(96, 36);
             this.BtnAddStaff.TabIndex = 34;
-            this.BtnAddStaff.Text = "Add";
+            this.BtnAddStaff.Text = "Adaugă";
             this.BtnAddStaff.Click += new System.EventHandler(this.BtnAddStaff_Click);
+            // 
+            // ClientId
+            // 
+            this.ClientId.DataPropertyName = "ClientId";
+            this.ClientId.HeaderText = "ClientId";
+            this.ClientId.MinimumWidth = 6;
+            this.ClientId.Name = "ClientId";
+            this.ClientId.Width = 125;
+            // 
+            // ClientName
+            // 
+            this.ClientName.DataPropertyName = "ClientName";
+            this.ClientName.HeaderText = "Nume";
+            this.ClientName.MinimumWidth = 6;
+            this.ClientName.Name = "ClientName";
+            this.ClientName.Width = 125;
+            // 
+            // ClientPhone
+            // 
+            this.ClientPhone.DataPropertyName = "ClientPhone";
+            this.ClientPhone.HeaderText = "NumărTelefon";
+            this.ClientPhone.MinimumWidth = 6;
+            this.ClientPhone.Name = "ClientPhone";
+            this.ClientPhone.Width = 125;
+            // 
+            // Country
+            // 
+            this.Country.DataPropertyName = "ClientCountry";
+            this.Country.HeaderText = "Ţara";
+            this.Country.MinimumWidth = 6;
+            this.Country.Name = "Country";
+            this.Country.Width = 125;
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Parola";
+            this.Password.MinimumWidth = 6;
+            this.Password.Name = "Password";
+            this.Password.Width = 125;
             // 
             // Clientinfo
             // 
@@ -368,14 +368,14 @@ namespace HotelManagement
         private PictureBox pictureBox1;
         private RichTextBox passwordTb;
         private RichTextBox clientIdTxtbox;
-        private DataGridViewTextBoxColumn ClientId;
-        private DataGridViewTextBoxColumn ClientName;
-        private DataGridViewTextBoxColumn PhoneNum;
-        private DataGridViewTextBoxColumn Country;
-        private DataGridViewTextBoxColumn Password;
         private Guna.UI2.WinForms.Guna2GradientButton BtnDeleteStaff;
         private Guna.UI2.WinForms.Guna2GradientButton BtnEditStaff;
         private Guna.UI2.WinForms.Guna2GradientButton BtnAddStaff;
         private Label label2;
+        private DataGridViewTextBoxColumn ClientId;
+        private DataGridViewTextBoxColumn ClientName;
+        private DataGridViewTextBoxColumn ClientPhone;
+        private DataGridViewTextBoxColumn Country;
+        private DataGridViewTextBoxColumn Password;
     }
 }

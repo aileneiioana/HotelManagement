@@ -233,7 +233,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 30);
             this.label1.TabIndex = 30;
-            this.label1.Text = "To (Email):";
+            this.label1.Text = "Către (Email):";
             // 
             // guna2TextBox1
             // 
@@ -272,7 +272,7 @@
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(217, 46);
             this.btnBooking.TabIndex = 16;
-            this.btnBooking.Text = "Booking";
+            this.btnBooking.Text = "Rezervă";
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // btnLogIn
@@ -286,7 +286,7 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(217, 46);
             this.btnLogIn.TabIndex = 15;
-            this.btnLogIn.Text = "LogIn";
+            this.btnLogIn.Text = "Staff: Intră în cont";
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // panel1
@@ -425,7 +425,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(363, 30);
             this.label2.TabIndex = 31;
-            this.label2.Text = "Relatii Clienti - laura.antonn@yahoo.com";
+            this.label2.Text = "Relaţii Clienti - laura.antonn@yahoo.com";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ContactForm

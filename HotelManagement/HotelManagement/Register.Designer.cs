@@ -76,7 +76,6 @@
             this.PhoneNrTxtbox.Name = "PhoneNrTxtbox";
             this.PhoneNrTxtbox.Size = new System.Drawing.Size(257, 40);
             this.PhoneNrTxtbox.TabIndex = 1;
-            this.PhoneNrTxtbox.TextChanged += new System.EventHandler(this.PhoneNrTxtbox_TextChanged);
             // 
             // PasswordLogInTxtBox
             // 
@@ -87,7 +86,6 @@
             this.PasswordLogInTxtBox.Name = "PasswordLogInTxtBox";
             this.PasswordLogInTxtBox.Size = new System.Drawing.Size(257, 40);
             this.PasswordLogInTxtBox.TabIndex = 2;
-            this.PasswordLogInTxtBox.TextChanged += new System.EventHandler(this.PasswordLogInTxtBox_TextChanged);
             // 
             // LogInUsernameLbl
             // 
@@ -98,7 +96,6 @@
             this.LogInUsernameLbl.Size = new System.Drawing.Size(32, 13);
             this.LogInUsernameLbl.TabIndex = 3;
             this.LogInUsernameLbl.Text = "Email";
-            this.LogInUsernameLbl.Click += new System.EventHandler(this.LogInUsernameLbl_Click);
             // 
             // LogInPasswordLabel
             // 
@@ -110,7 +107,6 @@
             this.LogInPasswordLabel.Size = new System.Drawing.Size(77, 17);
             this.LogInPasswordLabel.TabIndex = 4;
             this.LogInPasswordLabel.Text = "Password";
-            this.LogInPasswordLabel.Click += new System.EventHandler(this.LogInPasswordLabel_Click);
             // 
             // guna2TextBox1
             // 
@@ -118,7 +114,7 @@
             this.guna2TextBox1.BorderRadius = 38;
             this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "LIAV Hotel";
+            this.guna2TextBox1.DefaultText = "Hotel LIAV";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -128,16 +124,14 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(36, 183);
+            this.guna2TextBox1.Location = new System.Drawing.Point(25, 182);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 10;
-            this.guna2TextBox1.Size = new System.Drawing.Size(160, 79);
+            this.guna2TextBox1.Size = new System.Drawing.Size(176, 79);
             this.guna2TextBox1.TabIndex = 17;
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // panel1
             // 
@@ -151,7 +145,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 551);
             this.panel1.TabIndex = 7;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnBack
             // 
@@ -164,7 +157,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(221, 46);
             this.btnBack.TabIndex = 15;
-            this.btnBack.Text = "Back";
+            this.btnBack.Text = "Înapoi";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // guna2PictureBox1
@@ -178,7 +171,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2Panel1
             // 
@@ -205,7 +197,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(723, 551);
             this.guna2Panel1.TabIndex = 9;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // RegisterGpBx
             // 
@@ -233,7 +224,6 @@
             this.RegisterGpBx.TabIndex = 25;
             this.RegisterGpBx.TabStop = false;
             this.RegisterGpBx.Visible = false;
-            this.RegisterGpBx.Enter += new System.EventHandler(this.RegisterGpBx_Enter);
             // 
             // guna2TextBox2
             // 
@@ -241,7 +231,7 @@
             this.guna2TextBox2.BorderRadius = 38;
             this.guna2TextBox2.BorderThickness = 0;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "Register Client";
+            this.guna2TextBox2.DefaultText = "Înregistrare Client";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -251,16 +241,15 @@
             this.guna2TextBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(105, -14);
+            this.guna2TextBox2.Location = new System.Drawing.Point(92, -14);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(210, 79);
+            this.guna2TextBox2.Size = new System.Drawing.Size(244, 79);
             this.guna2TextBox2.TabIndex = 24;
-            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // cancelRegisterbtn
             // 
@@ -276,7 +265,7 @@
             this.cancelRegisterbtn.Name = "cancelRegisterbtn";
             this.cancelRegisterbtn.Size = new System.Drawing.Size(120, 29);
             this.cancelRegisterbtn.TabIndex = 23;
-            this.cancelRegisterbtn.Text = "Cancel";
+            this.cancelRegisterbtn.Text = "Anulează";
             this.cancelRegisterbtn.Click += new System.EventHandler(this.cancelRegisterbtn_Click);
             // 
             // registerBtn
@@ -293,7 +282,7 @@
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(120, 29);
             this.registerBtn.TabIndex = 22;
-            this.registerBtn.Text = "Register";
+            this.registerBtn.Text = "Înregistrare";
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // ClientCountryTxtbox
@@ -305,19 +294,17 @@
             this.ClientCountryTxtbox.Name = "ClientCountryTxtbox";
             this.ClientCountryTxtbox.Size = new System.Drawing.Size(257, 25);
             this.ClientCountryTxtbox.TabIndex = 16;
-            this.ClientCountryTxtbox.TextChanged += new System.EventHandler(this.ClientCountryTxtbox_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(89, 156);
+            this.label5.Location = new System.Drawing.Point(93, 156);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 17);
+            this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Country";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Text = "Ţara";
             // 
             // label4
             // 
@@ -326,10 +313,9 @@
             this.label4.Location = new System.Drawing.Point(92, 66);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Name";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Text = "Nume ";
             // 
             // clientNametxtBox
             // 
@@ -340,7 +326,6 @@
             this.clientNametxtBox.Name = "clientNametxtBox";
             this.clientNametxtBox.Size = new System.Drawing.Size(257, 25);
             this.clientNametxtBox.TabIndex = 14;
-            this.clientNametxtBox.TextChanged += new System.EventHandler(this.clientNametxtBox_TextChanged);
             // 
             // confirmPasstxtbox
             // 
@@ -351,7 +336,6 @@
             this.confirmPasstxtbox.Name = "confirmPasstxtbox";
             this.confirmPasstxtbox.Size = new System.Drawing.Size(257, 25);
             this.confirmPasstxtbox.TabIndex = 12;
-            this.confirmPasstxtbox.TextChanged += new System.EventHandler(this.confirmPasstxtbox_TextChanged);
             // 
             // label3
             // 
@@ -360,10 +344,9 @@
             this.label3.Location = new System.Drawing.Point(89, 261);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 17);
+            this.label3.Size = new System.Drawing.Size(152, 17);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Confirm Password";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Text = "Confirmarea Parolei";
             // 
             // label1
             // 
@@ -372,10 +355,9 @@
             this.label1.Location = new System.Drawing.Point(92, 110);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 17);
+            this.label1.Size = new System.Drawing.Size(110, 17);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Phone Number";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Număr telefon";
             // 
             // ClientPassTxt
             // 
@@ -386,7 +368,6 @@
             this.ClientPassTxt.Name = "ClientPassTxt";
             this.ClientPassTxt.Size = new System.Drawing.Size(257, 25);
             this.ClientPassTxt.TabIndex = 8;
-            this.ClientPassTxt.TextChanged += new System.EventHandler(this.ClientPassTxt_TextChanged);
             // 
             // label2
             // 
@@ -395,10 +376,9 @@
             this.label2.Location = new System.Drawing.Point(91, 207);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 17);
+            this.label2.Size = new System.Drawing.Size(55, 17);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "Parola";
             // 
             // clientPhoneNr
             // 
@@ -409,7 +389,6 @@
             this.clientPhoneNr.Name = "clientPhoneNr";
             this.clientPhoneNr.Size = new System.Drawing.Size(257, 25);
             this.clientPhoneNr.TabIndex = 7;
-            this.clientPhoneNr.TextChanged += new System.EventHandler(this.clientPhoneNr_TextChanged);
             // 
             // linkRegister
             // 
@@ -420,10 +399,10 @@
             this.linkRegister.Location = new System.Drawing.Point(195, 493);
             this.linkRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(324, 18);
+            this.linkRegister.Size = new System.Drawing.Size(332, 18);
             this.linkRegister.TabIndex = 24;
             this.linkRegister.TabStop = true;
-            this.linkRegister.Text = "Are you a new client? Please register here";
+            this.linkRegister.Text = "Esti client nou? Apasă ca să te înregistrezi!";
             this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
             // 
             // btnContact
@@ -438,7 +417,6 @@
             this.btnContact.Size = new System.Drawing.Size(120, 40);
             this.btnContact.TabIndex = 20;
             this.btnContact.Text = "Contact";
-            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
             // 
             // btnTarife
             // 
@@ -452,7 +430,6 @@
             this.btnTarife.Size = new System.Drawing.Size(120, 40);
             this.btnTarife.TabIndex = 19;
             this.btnTarife.Text = "Tarife";
-            this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
             // 
             // btnGalerie
             // 
@@ -466,7 +443,6 @@
             this.btnGalerie.Size = new System.Drawing.Size(120, 40);
             this.btnGalerie.TabIndex = 18;
             this.btnGalerie.Text = "Galerie";
-            this.btnGalerie.Click += new System.EventHandler(this.btnGalerie_Click);
             // 
             // btnFacilitati
             // 
@@ -480,7 +456,6 @@
             this.btnFacilitati.Size = new System.Drawing.Size(120, 40);
             this.btnFacilitati.TabIndex = 17;
             this.btnFacilitati.Text = "Facilitati";
-            this.btnFacilitati.Click += new System.EventHandler(this.btnFacilitati_Click);
             // 
             // btnCamere
             // 
@@ -494,7 +469,6 @@
             this.btnCamere.Size = new System.Drawing.Size(120, 40);
             this.btnCamere.TabIndex = 16;
             this.btnCamere.Text = "Camere";
-            this.btnCamere.Click += new System.EventHandler(this.btnCamere_Click);
             // 
             // btnDespreHotel
             // 
@@ -508,7 +482,6 @@
             this.btnDespreHotel.Size = new System.Drawing.Size(120, 40);
             this.btnDespreHotel.TabIndex = 15;
             this.btnDespreHotel.Text = "Despre Hotel";
-            this.btnDespreHotel.Click += new System.EventHandler(this.btnDespreHotel_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -520,7 +493,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(78, 32);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Log In";
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // LogInEmailLbl
             // 
@@ -532,7 +504,6 @@
             this.LogInEmailLbl.Size = new System.Drawing.Size(115, 17);
             this.LogInEmailLbl.TabIndex = 5;
             this.LogInEmailLbl.Text = "Phone Number";
-            this.LogInEmailLbl.Click += new System.EventHandler(this.LogInEmailLbl_Click);
             // 
             // LoginPageLogInbtn
             // 

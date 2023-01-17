@@ -107,7 +107,7 @@
             this.guna2TextBox9.BorderRadius = 23;
             this.guna2TextBox9.BorderThickness = 0;
             this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "Televizor Retro (nefunctional)";
+            this.guna2TextBox9.DefaultText = "Televizor Retro (nefuncţional)";
             this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -144,7 +144,7 @@
             this.guna2TextBox8.BorderRadius = 23;
             this.guna2TextBox8.BorderThickness = 0;
             this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "Modul Dus + Cada (contra cost) ";
+            this.guna2TextBox8.DefaultText = "Modul Duş + Cadă (contra cost) ";
             this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -181,7 +181,7 @@
             this.guna2TextBox7.BorderRadius = 23;
             this.guna2TextBox7.BorderThickness = 0;
             this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "Ciubar cu apa rece inclus";
+            this.guna2TextBox7.DefaultText = "Ciubăr cu apa rece inclus";
             this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -292,7 +292,7 @@
             this.guna2TextBox4.BorderRadius = 23;
             this.guna2TextBox4.BorderThickness = 0;
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "Incarcare masina\r\n electrica inclus";
+            this.guna2TextBox4.DefaultText = "Încărcare maşină\r\n electrică inclus";
             this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -329,7 +329,7 @@
             this.guna2TextBox3.BorderRadius = 23;
             this.guna2TextBox3.BorderThickness = 0;
             this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "Parcare asigurata";
+            this.guna2TextBox3.DefaultText = "Parcare asigurată";
             this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -346,7 +346,7 @@
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(139, 49);
+            this.guna2TextBox3.Size = new System.Drawing.Size(148, 49);
             this.guna2TextBox3.TabIndex = 36;
             // 
             // pictureBox2
@@ -530,7 +530,7 @@
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(217, 46);
             this.btnBooking.TabIndex = 16;
-            this.btnBooking.Text = "Booking";
+            this.btnBooking.Text = "Rezervă";
             // 
             // btnLogIn
             // 
@@ -543,7 +543,7 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(217, 46);
             this.btnLogIn.TabIndex = 15;
-            this.btnLogIn.Text = "LogIn";
+            this.btnLogIn.Text = "Staff: Intră în cont";
             // 
             // guna2PictureBox1
             // 

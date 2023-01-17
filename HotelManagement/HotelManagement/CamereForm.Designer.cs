@@ -171,7 +171,7 @@
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(217, 46);
             this.btnBooking.TabIndex = 16;
-            this.btnBooking.Text = "Booking";
+            this.btnBooking.Text = "Rezervă";
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // btnCamere
@@ -242,7 +242,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 29);
             this.button4.TabIndex = 55;
-            this.button4.Text = "More Images";
+            this.button4.Text = "Mai multe imagini";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // pictureBox5
@@ -280,7 +280,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 29);
             this.button3.TabIndex = 52;
-            this.button3.Text = "More Images";
+            this.button3.Text = "Mai multe imagini";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
@@ -306,7 +306,7 @@
             this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox4.Size = new System.Drawing.Size(156, 20);
             this.richTextBox4.TabIndex = 50;
-            this.richTextBox4.Text = "Cameră Family Room";
+            this.richTextBox4.Text = "Cameră de Familie";
             // 
             // button2
             // 
@@ -318,7 +318,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 29);
             this.button2.TabIndex = 49;
-            this.button2.Text = "More Images";
+            this.button2.Text = "Mai multe imagini";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
@@ -356,7 +356,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 29);
             this.button1.TabIndex = 46;
-            this.button1.Text = "More Images";
+            this.button1.Text = "Mai multe imagini";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
@@ -408,7 +408,7 @@
             this.CameraDSmoreBtn.Name = "CameraDSmoreBtn";
             this.CameraDSmoreBtn.Size = new System.Drawing.Size(108, 29);
             this.CameraDSmoreBtn.TabIndex = 37;
-            this.CameraDSmoreBtn.Text = "More Images";
+            this.CameraDSmoreBtn.Text = "Mai multe imagini";
             this.CameraDSmoreBtn.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -433,7 +433,7 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(217, 46);
             this.btnLogIn.TabIndex = 15;
-            this.btnLogIn.Text = "LogIn";
+            this.btnLogIn.Text = "Staff: Intră în cont";
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // panel1

@@ -153,19 +153,19 @@
             this.trimitereMailbtn.Name = "trimitereMailbtn";
             this.trimitereMailbtn.Size = new System.Drawing.Size(135, 49);
             this.trimitereMailbtn.TabIndex = 36;
-            this.trimitereMailbtn.Text = "Rezerva";
+            this.trimitereMailbtn.Text = "Rezervă";
             this.trimitereMailbtn.Click += new System.EventHandler(this.trimitereMailbtn_Click);
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(484, 167);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(506, 160);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(386, 22);
             this.guna2HtmlLabel3.TabIndex = 37;
-            this.guna2HtmlLabel3.Text = "Facilitati extra - pentru toata perioada rezervata";
+            this.guna2HtmlLabel3.Text = "Facilităţi extra - pentru toată perioada rezervată";
             // 
             // guna2CheckBox1
             // 
@@ -216,7 +216,7 @@
             this.guna2CheckBox4.Name = "guna2CheckBox4";
             this.guna2CheckBox4.Size = new System.Drawing.Size(144, 21);
             this.guna2CheckBox4.TabIndex = 41;
-            this.guna2CheckBox4.Text = "Sauna - 150 LEI";
+            this.guna2CheckBox4.Text = "Saună - 150 LEI";
             this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox4.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox4.UncheckedState.BorderThickness = 0;
@@ -235,7 +235,7 @@
             this.guna2CheckBox5.Name = "guna2CheckBox5";
             this.guna2CheckBox5.Size = new System.Drawing.Size(150, 21);
             this.guna2CheckBox5.TabIndex = 42;
-            this.guna2CheckBox5.Text = "Piscina - 100 LEI";
+            this.guna2CheckBox5.Text = "Piscină - 100 LEI";
             this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox5.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox5.UncheckedState.BorderThickness = 0;
@@ -320,7 +320,7 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(198, 36);
             this.guna2GradientButton1.TabIndex = 50;
-            this.guna2GradientButton1.Text = "Calculeaza Pret Total";
+            this.guna2GradientButton1.Text = "Calculează Preţ Total";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // label3

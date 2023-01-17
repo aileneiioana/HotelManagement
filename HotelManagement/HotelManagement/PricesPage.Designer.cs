@@ -89,7 +89,7 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(217, 46);
             this.btnLogIn.TabIndex = 52;
-            this.btnLogIn.Text = "Staff LogIn ";
+            this.btnLogIn.Text = "Staff: Intră în cont";
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnBooking
@@ -103,14 +103,14 @@
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(217, 46);
             this.btnBooking.TabIndex = 51;
-            this.btnBooking.Text = "Booking";
+            this.btnBooking.Text = "Rezervă";
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(26, 77);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(41, 68);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
@@ -124,7 +124,7 @@
             this.guna2TextBox1.BorderRadius = 38;
             this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "LIAV Hotel";
+            this.guna2TextBox1.DefaultText = "Hotel LIAV";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -140,7 +140,6 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 10;
             this.guna2TextBox1.Size = new System.Drawing.Size(170, 79);
             this.guna2TextBox1.TabIndex = 17;
             // 
@@ -262,7 +261,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 28);
             this.button1.TabIndex = 34;
-            this.button1.Text = "Select";
+            this.button1.Text = "Selectează";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -290,7 +289,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 28);
             this.button2.TabIndex = 36;
-            this.button2.Text = "Select";
+            this.button2.Text = "Selectează";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -318,7 +317,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 28);
             this.button3.TabIndex = 38;
-            this.button3.Text = "Select";
+            this.button3.Text = "Selectează";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -346,7 +345,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 28);
             this.button4.TabIndex = 40;
-            this.button4.Text = "Select";
+            this.button4.Text = "Selectează";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -374,7 +373,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(108, 28);
             this.button5.TabIndex = 42;
-            this.button5.Text = "Select";
+            this.button5.Text = "Selectează";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -432,7 +431,7 @@
             this.richTextBox9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox9.Size = new System.Drawing.Size(100, 28);
             this.richTextBox9.TabIndex = 46;
-            this.richTextBox9.Text = " Piscina";
+            this.richTextBox9.Text = " Piscină";
             // 
             // richTextBox10
             // 
@@ -460,7 +459,7 @@
             this.richTextBox11.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox11.Size = new System.Drawing.Size(93, 31);
             this.richTextBox11.TabIndex = 48;
-            this.richTextBox11.Text = "Sauna";
+            this.richTextBox11.Text = "Saună";
             // 
             // richTextBox12
             // 

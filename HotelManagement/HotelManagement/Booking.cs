@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EASendMail;
@@ -13,12 +16,74 @@ namespace HotelManagement
 {
     public partial class Booking : Form
     {
+
+
+
+        // Valid email addresses based on regex defined
+        // "tony@example.com",
+        // "tony.stark@example.net",
+        // "tony.stark@example.gov",
+        // "TONY@EXAMPLE.GOV",
+
+        // Invalid email addresses based on regex defined
+        // "tony@example",
+        // "tony@example.co.uk",
+        // "tony@example.me"
+        public static bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                // Normalize the domain
+                email = Regex.Replace(email, @"(@)(.+)$", DomainMapper,
+                                      RegexOptions.None, TimeSpan.FromMilliseconds(200));
+
+                // Examines the domain part of the email and normalizes it.
+                string DomainMapper(Match match)
+                {
+                    // Use IdnMapping class to convert Unicode domain names.
+                    var idn = new IdnMapping();
+
+                    // Pull out and process domain name (throws ArgumentException on invalid)
+                    string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                    return match.Groups[1].Value + domainName;
+                }
+            }
+            catch (RegexMatchTimeoutException e)
+            {
+                return false;
+            }
+            catch (ArgumentException e)
+            {
+                return false;
+            }
+
+            try
+            {
+                return Regex.IsMatch(email,
+                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        public static bool isValidPhone(string phone)
+        {
+            Regex emailReges = new Regex("^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$");
+
+            return emailReges.IsMatch(phone);
+        }
         public Booking()
         {
             InitializeComponent();
             Datelbl.Text = DateTime.Today.Day.ToString() + " - " + DateTime.Today.Month.ToString() + " - " + DateTime.Today.Year.ToString();
         }
-
         private void Booking_Load(object sender, EventArgs e)
         {
 
@@ -47,7 +112,7 @@ namespace HotelManagement
                     s = s + "Spa ";
                     pret = pret + 100;
                 }
-                if (s == " ") s = "Fara Facilitati Extra";
+                if (s == " ") s = "Fară Facilităţi Extra";
                 DateTime data1 = new DateTime();
                 DateTime data2 = new DateTime();
                 data1 = guna2DateTimePicker1.Value;
@@ -64,21 +129,26 @@ namespace HotelManagement
                     pret = pret + (1100 * ((int)t.TotalDays));
                 else if (comboBox1.Text == "Tirol")
                     pret = pret + (1100 * ((int)t.TotalDays));
-                else MessageBox.Show("Selecteaza Tipul Camerei!");
-                if (emaitb.Text == "") { MessageBox.Show("Completeaza Email-ul!"); return; }
-                if (textBox1.Text == "") { MessageBox.Show("Numarul de Telefon trebuie introdus"); return; }
-                oMail.TextBody = "Clientul cu emailul "+ emaitb.Text+ " si numarul de telefon "+ textBox1.Text + " solicita o camera"+" de tipul "+ comboBox1.SelectedItem.ToString()+  " din data " + guna2DateTimePicker1.Text + " pana in data " + guna2DateTimePicker2.Text + " cu urmatoarele facilitati: " + s+ " \nPretul Total este: "+ pret.ToString() + " lei.";
-                SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
-                oServer.User = "vambarus@yahoo.com";
-                oServer.Password = "szechcdsoxgkkthr";
-                oServer.Port = 465;
-                oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
-                Console.WriteLine("start to send email over SSL ...");
-                SmtpClient oSmtp = new SmtpClient();
-                oSmtp.SendMail(oServer, oMail);
-                Console.WriteLine("email was sent successfully!");
-                MessageBox.Show("Solicitarea ta a fost trimisa receptiei Hotelului LIAV. Vei fi contactat telefonic sau prin email in cel mai scurt timp. \nMultumim!");
-                //MessageBox.Show(oMail.TextBody);
+                else MessageBox.Show("Selectează Tipul Camerei!");
+                 if (textBox1.Text == ""|| emaitb.Text == "") { MessageBox.Show("Numărul de Telefon şi Email-ul trebuie introduse") ; textBox1.Text = ""; emaitb.Text = ""; }
+                else if ((!isValidPhone(textBox1.Text))||(!IsValidEmail(emaitb.Text))) { MessageBox.Show("Email-ul şi numărul de telefon trebuie introduse în formatul corect"); textBox1.Text = ""; }
+                else if((data2 < data1)||(data1<DateTime.Today)) { MessageBox.Show("Introduceţi perioada de rezervare corect"); }
+               
+                else
+                {
+                    oMail.TextBody = "Clientul cu emailul " + emaitb.Text + " şi numarul de telefon " + textBox1.Text + " solicita o camera" + " de tipul " + comboBox1.SelectedItem.ToString() + " din data " + guna2DateTimePicker1.Text + " pana in data " + guna2DateTimePicker2.Text + " cu urmatoarele facilitati: " + s + " \nPretul Total este: " + pret.ToString() + " lei.";
+                    SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
+                    oServer.User = "vambarus@yahoo.com";
+                    oServer.Password = "szechcdsoxgkkthr";
+                    oServer.Port = 465;
+                    oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                    Console.WriteLine("start to send email over SSL ...");
+                    SmtpClient oSmtp = new SmtpClient();
+                    oSmtp.SendMail(oServer, oMail);
+                    Console.WriteLine("email was sent successfully!");
+                    MessageBox.Show("Solicitarea ta a fost trimisă recepţiei Hotelului LIAV. Vei fi contactat telefonic sau prin email în cel mai scurt timp. \nMultumim!");
+                    //MessageBox.Show(oMail.TextBody);
+                }
             }
             catch (Exception ep)
             {

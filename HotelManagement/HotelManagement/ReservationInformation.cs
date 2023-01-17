@@ -156,21 +156,34 @@ namespace HotelManagement
 
         private void BtnAddRes_Click(object sender, EventArgs e)
         {
-            var model = new Reservation_tbl
-            {
-                ResId = int.Parse(ReservationIdtb.Text),
-                Client = clientcb.Text,
-                Room = int.Parse(roomnumbercb.Text),
-                DateIn = dateInTimePicker.Text,
-                DateOut = dateOutTimePicker.Text
-            };
-            resServices.AddRes(model);
-            Clear();
-            MessageBox.Show("Reservation Successfully Added");
-            int.TryParse(model.Room.ToString(), out int id);
-            roomServices.updateRoomState(id, "busy");
-            fillRoomcb();
-            PopulateDataGridView();
+            DateTime data1 = new DateTime();
+            DateTime data2 = new DateTime();
+            data1 = dateInTimePicker.Value;
+            data2 = dateOutTimePicker.Value;
+            
+            if (clientcb.Text != "Numele Clientului" && roomnumbercb.Text != "Numărul Camerei")
+               {    
+                if ((data2 < data1) || (data1 < DateTime.Today)) 
+                {
+                var model = new Reservation_tbl
+                {
+                    ResId = int.Parse(ReservationIdtb.Text),
+                    Client = clientcb.Text,
+                    Room = int.Parse(roomnumbercb.Text),
+                    DateIn = dateInTimePicker.Text,
+                    DateOut = dateOutTimePicker.Text
+                };
+                resServices.AddRes(model);
+                Clear();
+                MessageBox.Show("Rezervare adăugată cu succes!");
+                int.TryParse(model.Room.ToString(), out int id);
+                roomServices.updateRoomState(id, "busy");
+                fillRoomcb();
+                PopulateDataGridView();
+                } 
+               else MessageBox.Show("Perioada trebuie introdusă corect!");
+            }
+            else MessageBox.Show("Numele Clientului şi Numărul Camerei trebuie introduse!");
         }
 
         private void EditResfBtn_Click_1(object sender, EventArgs e)
@@ -180,12 +193,12 @@ namespace HotelManagement
 
         private void BtnDeleteRes_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to delete this Record?", "Reservation Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Eşti sigur că vrei să ştergi această rezervare_", "Informaţii Rezervări", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 resServices.DeleteRes(model);
                 PopulateDataGridView();
                 Clear();
-                MessageBox.Show("Reservation Successfully Deleted");
+                MessageBox.Show("Rezervare Ştersă cu Succes");
                 int.TryParse(model.Room.ToString(), out int id);
                 roomServices.updateRoomState(id, "free");
                 fillRoomcb();
@@ -194,25 +207,46 @@ namespace HotelManagement
 
         private void BtnEditRes_Click(object sender, EventArgs e)
         {
-            var model = new Reservation_tbl
+            DateTime data1 = new DateTime();
+            DateTime data2 = new DateTime();
+            data1 = dateInTimePicker.Value;
+            data2 = dateOutTimePicker.Value;
+
+            if (clientcb.Text != "Numele Clientului" && roomnumbercb.Text != "Numărul Camerei")
             {
-                ResId = int.Parse(ReservationIdtb.Text),
-                Client = clientcb.Text,
-                Room = int.Parse(roomnumbercb.Text),
-                DateIn = dateInTimePicker.Text,
-                DateOut = dateOutTimePicker.Text
-            };
-            resServices.EditRes(model);
-            Clear();
-            MessageBox.Show("Reservation Successfully Edited");
-            PopulateDataGridView();
+                if ((data2 < data1) || (data1 < DateTime.Today))
+                {
+
+                    var model = new Reservation_tbl
+                    {
+                        ResId = int.Parse(ReservationIdtb.Text),
+                        Client = clientcb.Text,
+                        Room = int.Parse(roomnumbercb.Text),
+                        DateIn = dateInTimePicker.Text,
+                        DateOut = dateOutTimePicker.Text
+                    };
+                    resServices.EditRes(model);
+                    Clear();
+                    MessageBox.Show("Rezervare Editată cu Succes");
+                    PopulateDataGridView();
+                }
+                else MessageBox.Show("Perioada trebuie introdusă corect!");
+            }
+            else MessageBox.Show("Numele Clientului şi Numărul Camerei trebuie introduse!");
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+            private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             MainStaff main = new MainStaff();
             main.Show();
             this.Hide();
+        }
+
+        private void Search_Click_1(object sender, EventArgs e)
+        {
+            int.TryParse(Searchtb.Text.Trim(), out int id);
+            var dataset = resServices.GetReservationsById(id);
+            ResView.DataSource = dataset;
         }
     }
 }
