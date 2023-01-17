@@ -77,7 +77,7 @@ namespace HotelManagement
         {
             Regex emailReges = new Regex("^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$");
 
-            return emailReges.IsMatch(phone);
+            return (emailReges.IsMatch(phone) && phone.Length==10);
         }
         public Booking()
         {

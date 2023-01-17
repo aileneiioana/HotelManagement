@@ -34,6 +34,10 @@
             this.Datelbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.RoomGridview = new System.Windows.Forms.DataGridView();
+            this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomFree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Search = new System.Windows.Forms.Button();
             this.RoomSearchtbl = new System.Windows.Forms.RichTextBox();
             this.roomphonetbl = new System.Windows.Forms.RichTextBox();
@@ -53,10 +57,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.hoteldbDataSet = new HotelManagement.HoteldbDataSet();
             this.hoteldbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomFree = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RoomGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,9 +97,9 @@
             this.label1.Location = new System.Drawing.Point(279, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(428, 57);
+            this.label1.Size = new System.Drawing.Size(421, 57);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Room Information";
+            this.label1.Text = "Informaţii Camere";
             // 
             // RoomGridview
             // 
@@ -117,6 +118,30 @@
             this.RoomGridview.TabIndex = 6;
             this.RoomGridview.DoubleClick += new System.EventHandler(this.RoomGridview_DoubleClick);
             // 
+            // RoomNumber
+            // 
+            this.RoomNumber.DataPropertyName = "RoomId";
+            this.RoomNumber.HeaderText = "RoomNumber";
+            this.RoomNumber.Name = "RoomNumber";
+            // 
+            // RoomType
+            // 
+            this.RoomType.DataPropertyName = "RoomType";
+            this.RoomType.HeaderText = "Tip";
+            this.RoomType.Name = "RoomType";
+            // 
+            // RoomPhone
+            // 
+            this.RoomPhone.DataPropertyName = "RoomPhone";
+            this.RoomPhone.HeaderText = "NumărTelefon";
+            this.RoomPhone.Name = "RoomPhone";
+            // 
+            // RoomFree
+            // 
+            this.RoomFree.DataPropertyName = "RoomFree";
+            this.RoomFree.HeaderText = "Liberă?";
+            this.RoomFree.Name = "RoomFree";
+            // 
             // Search
             // 
             this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -129,7 +154,7 @@
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(106, 29);
             this.Search.TabIndex = 13;
-            this.Search.Text = "SEARCH";
+            this.Search.Text = "Caută";
             this.Search.UseVisualStyleBackColor = false;
             this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
@@ -142,7 +167,7 @@
             this.RoomSearchtbl.Name = "RoomSearchtbl";
             this.RoomSearchtbl.Size = new System.Drawing.Size(160, 30);
             this.RoomSearchtbl.TabIndex = 12;
-            this.RoomSearchtbl.Text = "RoomSearch";
+            this.RoomSearchtbl.Text = "Caută Cameră";
             // 
             // roomphonetbl
             // 
@@ -153,7 +178,7 @@
             this.roomphonetbl.Name = "roomphonetbl";
             this.roomphonetbl.Size = new System.Drawing.Size(215, 45);
             this.roomphonetbl.TabIndex = 16;
-            this.roomphonetbl.Text = "Room Phone";
+            this.roomphonetbl.Text = "Număr Telefon";
             // 
             // roomidtbl
             // 
@@ -164,7 +189,7 @@
             this.roomidtbl.Name = "roomidtbl";
             this.roomidtbl.Size = new System.Drawing.Size(215, 45);
             this.roomidtbl.TabIndex = 15;
-            this.roomidtbl.Text = "Room Number";
+            this.roomidtbl.Text = "Număr Cameră";
             // 
             // label2
             // 
@@ -174,9 +199,9 @@
             this.label2.Location = new System.Drawing.Point(91, 386);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 24);
+            this.label2.Size = new System.Drawing.Size(68, 24);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Free";
+            this.label2.Text = "Liberă";
             // 
             // Yesbtn
             // 
@@ -206,9 +231,9 @@
             this.Yesradio.Location = new System.Drawing.Point(174, 389);
             this.Yesradio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Yesradio.Name = "Yesradio";
-            this.Yesradio.Size = new System.Drawing.Size(37, 20);
+            this.Yesradio.Size = new System.Drawing.Size(30, 20);
             this.Yesradio.TabIndex = 20;
-            this.Yesradio.Text = "Yes";
+            this.Yesradio.Text = "Da";
             // 
             // label4
             // 
@@ -220,7 +245,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 20);
             this.label4.TabIndex = 21;
-            this.label4.Text = "No";
+            this.label4.Text = "Nu";
             // 
             // pictureBox1
             // 
@@ -261,12 +286,12 @@
             this.BtnAdd.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnAdd.ForeColor = System.Drawing.Color.Black;
-            this.BtnAdd.Location = new System.Drawing.Point(49, 467);
+            this.BtnAdd.Location = new System.Drawing.Point(18, 467);
             this.BtnAdd.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(78, 36);
+            this.BtnAdd.Size = new System.Drawing.Size(96, 36);
             this.BtnAdd.TabIndex = 28;
-            this.BtnAdd.Text = "Add";
+            this.BtnAdd.Text = "Adaugă";
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEdit
@@ -278,12 +303,12 @@
             this.BtnEdit.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnEdit.ForeColor = System.Drawing.Color.Black;
-            this.BtnEdit.Location = new System.Drawing.Point(136, 467);
+            this.BtnEdit.Location = new System.Drawing.Point(118, 467);
             this.BtnEdit.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(78, 36);
+            this.BtnEdit.Size = new System.Drawing.Size(96, 36);
             this.BtnEdit.TabIndex = 29;
-            this.BtnEdit.Text = "Edit";
+            this.BtnEdit.Text = "Editeză";
             this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // BtnDelete
@@ -295,12 +320,12 @@
             this.BtnDelete.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnDelete.ForeColor = System.Drawing.Color.Black;
-            this.BtnDelete.Location = new System.Drawing.Point(223, 467);
+            this.BtnDelete.Location = new System.Drawing.Point(218, 467);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(78, 36);
+            this.BtnDelete.Size = new System.Drawing.Size(96, 36);
             this.BtnDelete.TabIndex = 30;
-            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.Text = "Şterge";
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // comboBox1
@@ -317,7 +342,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(215, 28);
             this.comboBox1.TabIndex = 31;
-            this.comboBox1.Text = "Room Type";
+            this.comboBox1.Text = "Tipul Camerei";
             // 
             // hoteldbDataSet
             // 
@@ -329,35 +354,22 @@
             this.hoteldbDataSetBindingSource.DataSource = this.hoteldbDataSet;
             this.hoteldbDataSetBindingSource.Position = 0;
             // 
-            // RoomNumber
+            // label3
             // 
-            this.RoomNumber.DataPropertyName = "RoomId";
-            this.RoomNumber.HeaderText = "RoomNumber";
-            this.RoomNumber.Name = "RoomNumber";
-            // 
-            // RoomType
-            // 
-            this.RoomType.DataPropertyName = "RoomType";
-            this.RoomType.HeaderText = "RoomType";
-            this.RoomType.Name = "RoomType";
-            // 
-            // RoomPhone
-            // 
-            this.RoomPhone.DataPropertyName = "RoomPhone";
-            this.RoomPhone.HeaderText = "RoomPhone";
-            this.RoomPhone.Name = "RoomPhone";
-            // 
-            // RoomFree
-            // 
-            this.RoomFree.DataPropertyName = "RoomFree";
-            this.RoomFree.HeaderText = "RoomFree";
-            this.RoomFree.Name = "RoomFree";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(416, 563);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(519, 13);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Atenţie! Dacă vrei să modifici numărul unei camere, trebuie să o ştergi şi să o a" +
+    "daugi din nou cu numărul nou!";
             // 
             // RoomInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 585);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnEdit);
@@ -422,5 +434,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomType;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomFree;
+        private System.Windows.Forms.Label label3;
     }
 }

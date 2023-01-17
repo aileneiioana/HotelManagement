@@ -36,6 +36,11 @@
             this.Search = new System.Windows.Forms.Button();
             this.Searchtb = new System.Windows.Forms.TextBox();
             this.ResView = new System.Windows.Forms.DataGridView();
+            this.ResId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Client = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOutTimePicker = new System.Windows.Forms.DateTimePicker();
             this.dateInTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ReservationIdtb = new System.Windows.Forms.TextBox();
@@ -46,11 +51,7 @@
             this.BtnDeleteRes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEditRes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnAddRes = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ResId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Client = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ResView)).BeginInit();
@@ -148,6 +149,46 @@
             this.ResView.RowTemplate.Height = 25;
             this.ResView.Size = new System.Drawing.Size(538, 417);
             this.ResView.TabIndex = 33;
+            // 
+            // ResId
+            // 
+            this.ResId.DataPropertyName = "ResId";
+            this.ResId.HeaderText = "ResId";
+            this.ResId.MinimumWidth = 6;
+            this.ResId.Name = "ResId";
+            this.ResId.Width = 125;
+            // 
+            // Client
+            // 
+            this.Client.DataPropertyName = "Client";
+            this.Client.HeaderText = "Client";
+            this.Client.MinimumWidth = 6;
+            this.Client.Name = "Client";
+            this.Client.Width = 125;
+            // 
+            // Room
+            // 
+            this.Room.DataPropertyName = "Room";
+            this.Room.HeaderText = "Cameră";
+            this.Room.MinimumWidth = 6;
+            this.Room.Name = "Room";
+            this.Room.Width = 125;
+            // 
+            // DateIn
+            // 
+            this.DateIn.DataPropertyName = "DateIn";
+            this.DateIn.HeaderText = "Check-In";
+            this.DateIn.MinimumWidth = 6;
+            this.DateIn.Name = "DateIn";
+            this.DateIn.Width = 125;
+            // 
+            // DateOut
+            // 
+            this.DateOut.DataPropertyName = "DateOut";
+            this.DateOut.HeaderText = "Check-Out";
+            this.DateOut.MinimumWidth = 6;
+            this.DateOut.Name = "DateOut";
+            this.DateOut.Width = 125;
             // 
             // dateOutTimePicker
             // 
@@ -278,51 +319,21 @@
             this.BtnAddRes.Text = "Adaugă";
             this.BtnAddRes.Click += new System.EventHandler(this.BtnAddRes_Click);
             // 
-            // ResId
+            // label2
             // 
-            this.ResId.DataPropertyName = "ResId";
-            this.ResId.HeaderText = "ResId";
-            this.ResId.MinimumWidth = 6;
-            this.ResId.Name = "ResId";
-            this.ResId.Width = 125;
-            // 
-            // Client
-            // 
-            this.Client.DataPropertyName = "Client";
-            this.Client.HeaderText = "Client";
-            this.Client.MinimumWidth = 6;
-            this.Client.Name = "Client";
-            this.Client.Width = 125;
-            // 
-            // Room
-            // 
-            this.Room.DataPropertyName = "Room";
-            this.Room.HeaderText = "Cameră";
-            this.Room.MinimumWidth = 6;
-            this.Room.Name = "Room";
-            this.Room.Width = 125;
-            // 
-            // DateIn
-            // 
-            this.DateIn.DataPropertyName = "DateIn";
-            this.DateIn.HeaderText = "Check-In";
-            this.DateIn.MinimumWidth = 6;
-            this.DateIn.Name = "DateIn";
-            this.DateIn.Width = 125;
-            // 
-            // DateOut
-            // 
-            this.DateOut.DataPropertyName = "DateOut";
-            this.DateOut.HeaderText = "Check-Out";
-            this.DateOut.MinimumWidth = 6;
-            this.DateOut.Name = "DateOut";
-            this.DateOut.Width = 125;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "label2";
             // 
             // ReservationInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 549);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnDeleteRes);
             this.Controls.Add(this.BtnEditRes);
             this.Controls.Add(this.BtnAddRes);
@@ -379,5 +390,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Room;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateIn;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateOut;
+        private System.Windows.Forms.Label label2;
     }
 }

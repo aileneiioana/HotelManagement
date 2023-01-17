@@ -6,6 +6,7 @@ using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -131,21 +132,35 @@ namespace HotelManagement
             this.Hide();
         }
 
+        public static bool isValidPhone(string phone)
+        {
+            Regex emailReges = new Regex("^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$");
+
+            return (emailReges.IsMatch(phone) && phone.Length == 10);
+        }
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             string isfree;
-            if (Yesbtn.Checked == true)
-                isfree = "free";
-            else
-                isfree = "busy";
-            model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
-            model.RoomType = comboBox1.SelectedItem.ToString();
-            model.RoomPhone = roomphonetbl.Text.Trim();
-            model.RoomFree = isfree;
-            roomServices.AddRoom(model);
-            Clear();
-            PopulateDataGridView();
-            MessageBox.Show(comboBox1.SelectedItem.ToString());
+            if (roomidtbl.Text != "Număr Cameră" && roomphonetbl.Text != "Număr Telefon" && comboBox1.Text != "Tipul Camerei")
+            {
+                if (isValidPhone(roomphonetbl.Text))
+                {
+                    if (Yesbtn.Checked == true)
+                        isfree = "free";
+                    else
+                        isfree = "busy";
+                    model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+                    model.RoomType = comboBox1.SelectedItem.ToString();
+                    model.RoomPhone = roomphonetbl.Text.Trim();
+                    model.RoomFree = isfree;
+                    roomServices.AddRoom(model);
+                    Clear();
+                    PopulateDataGridView();
+                    MessageBox.Show("Cameră adăugată cu Succes!");
+                }
+                else MessageBox.Show("Numărul de Telefon trebuie introdus în formatul corect!");
+            }
+            else MessageBox.Show("Toate câmpurile trebuie completate!");
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
@@ -155,24 +170,32 @@ namespace HotelManagement
                 isfree = "free";
             else
                 isfree = "busy";
-            model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
-            model.RoomType = comboBox1.SelectedItem.ToString();
-            model.RoomPhone = roomphonetbl.Text.Trim();
-            model.RoomFree = isfree;
-            roomServices.EditRoom(model);
-            Clear();
-            MessageBox.Show("Room Successfully Updated");
-            PopulateDataGridView();
+            if (roomidtbl.Text != "Număr Cameră" && roomphonetbl.Text != "Număr Telefon" && comboBox1.Text != "Tipul Camerei")
+            {
+                if (isValidPhone(roomphonetbl.Text))
+                {
+                  model.RoomId = Convert.ToInt32(roomidtbl.Text.Trim());
+                  model.RoomType = comboBox1.SelectedItem.ToString();
+                  model.RoomPhone = roomphonetbl.Text.Trim();
+                  model.RoomFree = isfree;
+                  roomServices.EditRoom(model);
+                  Clear();
+                  MessageBox.Show("Cameră actualizată cu Succes!");
+                  PopulateDataGridView();
+                }
+                else MessageBox.Show("Numărul de Telefon trebuie introdus în formatul corect!");
+            }
+            else MessageBox.Show("Toate câmpurile trebuie completate!");
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to delete this Record?", "Room Info", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Eşti sigur(ă) că vrei să ştergi această cameră?", "Informaţii Camere", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 roomServices.DeleteRoom(model);
                 PopulateDataGridView();
                 Clear();
-                MessageBox.Show("Room Successfully Deleted");
+                MessageBox.Show("Cameră Ştearsă cu Succes!");
             }
         }
     }

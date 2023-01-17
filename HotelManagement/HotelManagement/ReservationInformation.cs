@@ -248,5 +248,10 @@ namespace HotelManagement
             var dataset = resServices.GetReservationsById(id);
             ResView.DataSource = dataset;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

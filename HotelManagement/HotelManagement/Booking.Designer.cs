@@ -93,9 +93,9 @@
             this.label2.Location = new System.Drawing.Point(334, 13);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 57);
+            this.label2.Size = new System.Drawing.Size(241, 57);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Booking";
+            this.label2.Text = "Rezervare";
             // 
             // Datelbl
             // 
@@ -148,7 +148,7 @@
             this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
             this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
-            this.trimitereMailbtn.Location = new System.Drawing.Point(352, 469);
+            this.trimitereMailbtn.Location = new System.Drawing.Point(406, 466);
             this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.trimitereMailbtn.Name = "trimitereMailbtn";
             this.trimitereMailbtn.Size = new System.Drawing.Size(135, 49);
