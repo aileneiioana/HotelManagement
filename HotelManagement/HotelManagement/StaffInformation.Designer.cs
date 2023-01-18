@@ -33,6 +33,8 @@ namespace HotelManagement
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffInformation));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Datelb = new System.Windows.Forms.Label();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.StaffIdtb = new System.Windows.Forms.TextBox();
             this.StaffNametb = new System.Windows.Forms.TextBox();
@@ -53,13 +55,11 @@ namespace HotelManagement
             this.BtnDeleteStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnAddStaff = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.exit = new System.Windows.Forms.PictureBox();
-            this.Datelb = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaffView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,13 +76,37 @@ namespace HotelManagement
             this.panel1.Size = new System.Drawing.Size(1500, 142);
             this.panel1.TabIndex = 0;
             // 
+            // Datelb
+            // 
+            this.Datelb.AutoSize = true;
+            this.Datelb.Font = new System.Drawing.Font("Century", 15.75F);
+            this.Datelb.Location = new System.Drawing.Point(1159, 83);
+            this.Datelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Datelb.Name = "Datelb";
+            this.Datelb.Size = new System.Drawing.Size(59, 25);
+            this.Datelb.TabIndex = 52;
+            this.Datelb.Text = "Date";
+            this.Datelb.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // exit
+            // 
+            this.exit.Image = global::HotelManagement.Properties.Resources.close;
+            this.exit.Location = new System.Drawing.Point(4, 5);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(46, 45);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.exit.TabIndex = 51;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(461, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(520, 85);
+            this.label2.Size = new System.Drawing.Size(354, 57);
             this.label2.TabIndex = 2;
             this.label2.Text = "Informaţii Staff";
             // 
@@ -130,7 +154,7 @@ namespace HotelManagement
             this.Gendercb.Location = new System.Drawing.Point(91, 593);
             this.Gendercb.Margin = new System.Windows.Forms.Padding(4);
             this.Gendercb.Name = "Gendercb";
-            this.Gendercb.Size = new System.Drawing.Size(321, 37);
+            this.Gendercb.Size = new System.Drawing.Size(321, 28);
             this.Gendercb.TabIndex = 4;
             this.Gendercb.Text = "Gen";
             // 
@@ -305,33 +329,9 @@ namespace HotelManagement
             this.BtnAddStaff.Text = "Adaugă";
             this.BtnAddStaff.Click += new System.EventHandler(this.BtnAddStaff_Click);
             // 
-            // exit
-            // 
-            this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(4, 5);
-            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(46, 45);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.exit.TabIndex = 51;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // Datelb
-            // 
-            this.Datelb.AutoSize = true;
-            this.Datelb.Font = new System.Drawing.Font("Century", 15.75F);
-            this.Datelb.Location = new System.Drawing.Point(1159, 83);
-            this.Datelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Datelb.Name = "Datelb";
-            this.Datelb.Size = new System.Drawing.Size(88, 38);
-            this.Datelb.TabIndex = 52;
-            this.Datelb.Text = "Date";
-            this.Datelb.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // StaffInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1500, 900);
@@ -358,10 +358,10 @@ namespace HotelManagement
             this.Load += new System.EventHandler(this.StaffInformation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaffView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

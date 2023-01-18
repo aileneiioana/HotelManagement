@@ -20,7 +20,7 @@ namespace HotelManagement
         {
             InitializeComponent();
             PopulateDataGridView();
-            Datelbl.Text = DateTime.Today.Day.ToString() + " - " + DateTime.Today.Month.ToString() + " - " + DateTime.Today.Year.ToString();
+            Datelb.Text = DateTime.Today.Day.ToString() + " - " + DateTime.Today.Month.ToString() + " - " + DateTime.Today.Year.ToString();
         }
 
         void Clear()
@@ -120,7 +120,7 @@ namespace HotelManagement
 
         private void RoomInfo_Load(object sender, EventArgs e)
         {
-            Datelbl.Text = Datelbl.Text.Trim();
+            Datelb.Text = Datelb.Text.Trim();
             timer1.Start();
             PopulateDataGridView();
         }

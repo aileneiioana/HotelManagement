@@ -54,10 +54,9 @@ namespace HotelManagement
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(171, 162);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(114, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 66);
+            this.label3.Size = new System.Drawing.Size(124, 44);
             this.label3.TabIndex = 8;
             this.label3.Text = "Client";
             // 
@@ -67,10 +66,9 @@ namespace HotelManagement
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(350, 418);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(233, 272);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 66);
+            this.label4.Size = new System.Drawing.Size(151, 44);
             this.label4.TabIndex = 9;
             this.label4.Text = "Camere";
             // 
@@ -80,10 +78,9 @@ namespace HotelManagement
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1188, 162);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(792, 105);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 66);
+            this.label5.Size = new System.Drawing.Size(98, 44);
             this.label5.TabIndex = 10;
             this.label5.Text = "Staff";
             // 
@@ -93,20 +90,18 @@ namespace HotelManagement
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Imprint MT Shadow", 28F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(891, 418);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(594, 272);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(271, 66);
+            this.label6.Size = new System.Drawing.Size(186, 44);
             this.label6.TabIndex = 11;
             this.label6.Text = "Rezervări";
             // 
             // exit
             // 
             this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(3, 2);
-            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exit.Location = new System.Drawing.Point(2, 1);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(46, 45);
+            this.exit.Size = new System.Drawing.Size(31, 29);
             this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.exit.TabIndex = 6;
             this.exit.TabStop = false;
@@ -115,10 +110,9 @@ namespace HotelManagement
             // singoutpb
             // 
             this.singoutpb.Image = global::HotelManagement.Properties.Resources.log_out;
-            this.singoutpb.Location = new System.Drawing.Point(661, 684);
-            this.singoutpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.singoutpb.Location = new System.Drawing.Point(441, 445);
             this.singoutpb.Name = "singoutpb";
-            this.singoutpb.Size = new System.Drawing.Size(207, 166);
+            this.singoutpb.Size = new System.Drawing.Size(138, 108);
             this.singoutpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.singoutpb.TabIndex = 5;
             this.singoutpb.TabStop = false;
@@ -127,10 +121,9 @@ namespace HotelManagement
             // reservationpb
             // 
             this.reservationpb.Image = global::HotelManagement.Properties.Resources.reservation;
-            this.reservationpb.Location = new System.Drawing.Point(933, 489);
-            this.reservationpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reservationpb.Location = new System.Drawing.Point(622, 318);
             this.reservationpb.Name = "reservationpb";
-            this.reservationpb.Size = new System.Drawing.Size(207, 166);
+            this.reservationpb.Size = new System.Drawing.Size(138, 108);
             this.reservationpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.reservationpb.TabIndex = 4;
             this.reservationpb.TabStop = false;
@@ -139,10 +132,9 @@ namespace HotelManagement
             // roompb
             // 
             this.roompb.Image = global::HotelManagement.Properties.Resources.room;
-            this.roompb.Location = new System.Drawing.Point(361, 489);
-            this.roompb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.roompb.Location = new System.Drawing.Point(241, 318);
             this.roompb.Name = "roompb";
-            this.roompb.Size = new System.Drawing.Size(207, 166);
+            this.roompb.Size = new System.Drawing.Size(138, 108);
             this.roompb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.roompb.TabIndex = 3;
             this.roompb.TabStop = false;
@@ -151,10 +143,9 @@ namespace HotelManagement
             // clientpb
             // 
             this.clientpb.Image = global::HotelManagement.Properties.Resources.client;
-            this.clientpb.Location = new System.Drawing.Point(159, 232);
-            this.clientpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clientpb.Location = new System.Drawing.Point(106, 151);
             this.clientpb.Name = "clientpb";
-            this.clientpb.Size = new System.Drawing.Size(192, 175);
+            this.clientpb.Size = new System.Drawing.Size(128, 114);
             this.clientpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.clientpb.TabIndex = 2;
             this.clientpb.TabStop = false;
@@ -163,10 +154,9 @@ namespace HotelManagement
             // staffpb
             // 
             this.staffpb.Image = global::HotelManagement.Properties.Resources.staff;
-            this.staffpb.Location = new System.Drawing.Point(1158, 241);
-            this.staffpb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.staffpb.Location = new System.Drawing.Point(772, 157);
             this.staffpb.Name = "staffpb";
-            this.staffpb.Size = new System.Drawing.Size(196, 166);
+            this.staffpb.Size = new System.Drawing.Size(131, 108);
             this.staffpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.staffpb.TabIndex = 1;
             this.staffpb.TabStop = false;
@@ -175,20 +165,21 @@ namespace HotelManagement
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 40F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(499, 75);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(373, 49);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(514, 115);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(290, 64);
             this.guna2HtmlLabel1.TabIndex = 39;
             this.guna2HtmlLabel1.Text = "Hotel LIAV";
             // 
             // MainStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1500, 900);
+            this.ClientSize = new System.Drawing.Size(1000, 585);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -201,7 +192,6 @@ namespace HotelManagement
             this.Controls.Add(this.clientpb);
             this.Controls.Add(this.staffpb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
