@@ -149,6 +149,7 @@
             this.ResView.RowTemplate.Height = 25;
             this.ResView.Size = new System.Drawing.Size(538, 417);
             this.ResView.TabIndex = 33;
+            this.ResView.DoubleClick += new System.EventHandler(this.ResView_DoubleClick);
             // 
             // ResId
             // 
@@ -219,6 +220,7 @@
             this.ReservationIdtb.Location = new System.Drawing.Point(76, 198);
             this.ReservationIdtb.Multiline = true;
             this.ReservationIdtb.Name = "ReservationIdtb";
+            this.ReservationIdtb.ReadOnly = true;
             this.ReservationIdtb.Size = new System.Drawing.Size(215, 35);
             this.ReservationIdtb.TabIndex = 29;
             this.ReservationIdtb.Text = "Id";
@@ -267,6 +269,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // BtnDeleteRes
             // 

@@ -103,6 +103,7 @@ namespace HotelManagement
             this.StaffIdtb.Margin = new System.Windows.Forms.Padding(4);
             this.StaffIdtb.Multiline = true;
             this.StaffIdtb.Name = "StaffIdtb";
+            this.StaffIdtb.ReadOnly = true;
             this.StaffIdtb.Size = new System.Drawing.Size(321, 52);
             this.StaffIdtb.TabIndex = 1;
             this.StaffIdtb.Text = "Staff Id";
@@ -177,6 +178,7 @@ namespace HotelManagement
             this.Passwordtb.Margin = new System.Windows.Forms.Padding(4);
             this.Passwordtb.Multiline = true;
             this.Passwordtb.Name = "Passwordtb";
+            this.Passwordtb.PasswordChar = '*';
             this.Passwordtb.Size = new System.Drawing.Size(321, 52);
             this.Passwordtb.TabIndex = 11;
             this.Passwordtb.Text = "Parolă";
@@ -310,6 +312,7 @@ namespace HotelManagement
             this.Staffpassword.HeaderText = "Parolă";
             this.Staffpassword.MinimumWidth = 6;
             this.Staffpassword.Name = "Staffpassword";
+            this.Staffpassword.Visible = false;
             this.Staffpassword.Width = 125;
             // 
             // StaffInformation
