@@ -8,15 +8,13 @@ using System.Threading.Tasks;
 
 namespace HotelManagementApplication
 {
-    public interface IStaff
+    public interface IReservation
     {
-        int StaffId { get; set; }
-
-        string Staffname { get; set; }
-
-        string Staffpassword { get; set; }
-
-        string Gender { get; set; }
+        int ResId { get; set; }
+        string Client { get; set; }
+        Nullable<int> Room { get; set; }
+        string DateIn { get; set; }
+        string DateOut { get; set; }
 
 
     }
