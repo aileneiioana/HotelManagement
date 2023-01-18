@@ -29,7 +29,7 @@ namespace HotelManagement
         // "tony@example",
         // "tony@example.co.uk",
         // "tony@example.me"
-        public static bool IsValidEmail(string email)
+        public bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
                 return false;
@@ -73,7 +73,7 @@ namespace HotelManagement
             }
         }
 
-        public static bool isValidPhone(string phone)
+        public bool isValidPhone(string phone)
         {
             Regex emailReges = new Regex("^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$");
 
@@ -87,6 +87,19 @@ namespace HotelManagement
         private void Booking_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public int getTotalDays (DateTime data1, DateTime data2)
+        {
+            TimeSpan t = data2.Subtract(data1);
+            return (int)t.TotalDays;
+        }
+
+        public bool checkPediod(DateTime data1, DateTime data2)
+        {
+            TimeSpan t = data2.Subtract(data1);
+            if ( (data2 < data1) || (data1 < DateTime.Today)) return false;
+            else return true;
         }
         private void trimitereMailbtn_Click(object sender, EventArgs e)
         {
@@ -120,19 +133,19 @@ namespace HotelManagement
                 TimeSpan t = data2.Subtract(data1);
 
                 if (comboBox1.Text == "Camera Dubla Standard")
-                    pret = pret + (540 * ((int)t.TotalDays));
+                    pret = pret + (540 * (getTotalDays(data1,data2)));
                 else if (comboBox1.Text == "Camera Dubla Superioara")
-                    pret = pret + (560 * ((int)t.TotalDays));
+                    pret = pret + (560 * (getTotalDays(data1, data2)));
                 else if (comboBox1.Text == "Double Deluxe Room")
-                    pret = pret + (580 * ((int)t.TotalDays));
+                    pret = pret + (580 * (getTotalDays(data1, data2)));
                 else if (comboBox1.Text == "Camera pentru Familie")
-                    pret = pret + (1100 * ((int)t.TotalDays));
+                    pret = pret + (1100 * (getTotalDays(data1, data2)));
                 else if (comboBox1.Text == "Tirol")
-                    pret = pret + (1100 * ((int)t.TotalDays));
+                    pret = pret + (1100 * (getTotalDays(data1, data2)));
                 else MessageBox.Show("Selectează Tipul Camerei!");
                  if (textBox1.Text == ""|| emaitb.Text == "") { MessageBox.Show("Numărul de Telefon şi Email-ul trebuie introduse") ; textBox1.Text = ""; emaitb.Text = ""; }
                 else if ((!isValidPhone(textBox1.Text))||(!IsValidEmail(emaitb.Text))) { MessageBox.Show("Email-ul şi numărul de telefon trebuie introduse în formatul corect"); textBox1.Text = ""; }
-                else if((data2 < data1)||(data1<DateTime.Today)) { MessageBox.Show("Introduceţi perioada de rezervare corect"); }
+                else if(checkPediod(data1,data2)) { MessageBox.Show("Introduceţi perioada de rezervare corect"); }
                
                 else
                 {
