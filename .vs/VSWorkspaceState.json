@@ -4,8 +4,9 @@
     "\\HotelManagement",
     "\\HotelManagement\\HotelManagement",
     "\\HotelManagement\\HotelManagement\\obj",
-    "\\HotelManagement\\HotelManagement\\Properties"
+    "\\HotelManagement\\packages",
+    "\\HotelManagement\\UnitTestProject1"
   ],
-  "SelectedNode": "\\HotelManagement\\HotelManagement.sln",
+  "SelectedNode": "\\HotelManagement\\UnitTestProject1\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }

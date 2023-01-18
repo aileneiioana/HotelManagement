@@ -113,7 +113,8 @@ namespace HotelManagement
 
         private void btnGalerie_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Galerie().Show();
         }
 
         private void btnFacilitati_Click(object sender, EventArgs e)
@@ -124,12 +125,18 @@ namespace HotelManagement
 
         private void btnCamere_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new CamereForm().Show();
         }
 
         private void ClientLogIn_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

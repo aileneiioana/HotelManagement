@@ -63,5 +63,10 @@ namespace HotelManagement
             this.Hide();
             new StaffLogin().Show();
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -120,12 +120,18 @@ namespace HotelManagement
 
         private void btnCamere_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new CamereForm().Show();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

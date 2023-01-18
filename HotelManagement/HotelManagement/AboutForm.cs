@@ -80,5 +80,10 @@ namespace HotelManagement
             this.Hide();
             new CamereForm().Show();
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
