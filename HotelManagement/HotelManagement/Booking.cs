@@ -199,5 +199,9 @@ namespace HotelManagement
             guna2HtmlLabel4.Text = pret.ToString();  
         }
 
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

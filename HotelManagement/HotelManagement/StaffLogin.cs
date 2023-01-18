@@ -43,6 +43,7 @@ namespace HotelManagement
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Application.Exit();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

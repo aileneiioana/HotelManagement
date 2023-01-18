@@ -198,5 +198,10 @@ namespace HotelManagement
                 MessageBox.Show("Cameră Ştearsă cu Succes!");
             }
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

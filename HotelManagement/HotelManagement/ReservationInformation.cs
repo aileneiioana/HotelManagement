@@ -194,5 +194,15 @@ namespace HotelManagement
         {
             PopulateDataGridView();
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Datelb_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

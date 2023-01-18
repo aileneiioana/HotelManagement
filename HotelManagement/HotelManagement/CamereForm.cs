@@ -68,5 +68,16 @@ namespace HotelManagement
         {
             Application.Exit();
         }
+
+        private void CameraDSmoreBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void richTextBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
