@@ -121,6 +121,9 @@
     <Compile Include="Galerie.Designer.cs">
       <DependentUpon>Galerie.cs</DependentUpon>
     </Compile>
+    <Compile Include="IClient.cs" />
+    <Compile Include="IReservation.cs" />
+    <Compile Include="IRoom.cs" />
     <Compile Include="IStaff.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
