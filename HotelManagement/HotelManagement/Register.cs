@@ -92,5 +92,14 @@ namespace HotelManagement
             } else MessageBox.Show("Toate campurile trebuie completate!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

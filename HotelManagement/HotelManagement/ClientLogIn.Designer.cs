@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.btnBooking = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -46,14 +49,11 @@
             this.btnFacilitati = new Guna.UI2.WinForms.Guna2Button();
             this.btnCamere = new Guna.UI2.WinForms.Guna2Button();
             this.btnDespreHotel = new Guna.UI2.WinForms.Guna2Button();
-            this.exit = new System.Windows.Forms.PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.staffGB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,6 +70,41 @@
             this.panel1.Size = new System.Drawing.Size(303, 931);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(19, 338);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(265, 59);
+            this.guna2HtmlLabel1.TabIndex = 38;
+            this.guna2HtmlLabel1.Text = "Hotel LIAV";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(47, 114);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(207, 188);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 37;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // exit
+            // 
+            this.exit.Image = global::HotelManagement.Properties.Resources.close;
+            this.exit.Location = new System.Drawing.Point(0, 0);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(46, 45);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.exit.TabIndex = 36;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // btnBooking
             // 
@@ -327,41 +362,6 @@
             this.btnDespreHotel.Text = "Despre Hotel";
             this.btnDespreHotel.Click += new System.EventHandler(this.btnDespreHotel_Click);
             // 
-            // exit
-            // 
-            this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(0, 0);
-            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(46, 45);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.exit.TabIndex = 36;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(47, 114);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(207, 188);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 37;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(19, 338);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(265, 59);
-            this.guna2HtmlLabel1.TabIndex = 38;
-            this.guna2HtmlLabel1.Text = "Hotel LIAV";
-            // 
             // ClientLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -377,11 +377,11 @@
             this.Load += new System.EventHandler(this.ClientLogIn_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.staffGB.ResumeLayout(false);
             this.staffGB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
