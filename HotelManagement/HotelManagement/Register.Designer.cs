@@ -71,6 +71,7 @@
             // PhoneNrTxtbox
             // 
             this.PhoneNrTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PhoneNrTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneNrTxtbox.Location = new System.Drawing.Point(270, 214);
             this.PhoneNrTxtbox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PhoneNrTxtbox.Multiline = true;
@@ -206,7 +207,7 @@
             this.RegisterGpBx.Controls.Add(this.ClientPassTxt);
             this.RegisterGpBx.Controls.Add(this.label2);
             this.RegisterGpBx.Controls.Add(this.clientPhoneNr);
-            this.RegisterGpBx.Location = new System.Drawing.Point(163, 105);
+            this.RegisterGpBx.Location = new System.Drawing.Point(170, 105);
             this.RegisterGpBx.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.RegisterGpBx.Name = "RegisterGpBx";
             this.RegisterGpBx.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -231,7 +232,7 @@
             this.guna2TextBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(112, 5);
+            this.guna2TextBox2.Location = new System.Drawing.Point(88, 7);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';

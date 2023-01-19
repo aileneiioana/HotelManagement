@@ -34,7 +34,7 @@ namespace HotelManagement
                 oMail.TextBody = mesajContacttxt.Text;
                 SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
                 oServer.User = "vambarus@yahoo.com";
-                oServer.Password = "szechcdsoxgkkthr";
+                oServer.Password = "nkqfgoqzkpoymzik";
                 oServer.Port = 465;
                 oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
                 Console.WriteLine("start to send email over SSL ...");

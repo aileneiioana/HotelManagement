@@ -12,8 +12,8 @@ C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProje
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\Guna.UI2.dll
-C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\EntityFramework.dll
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\EASendMail.dll
+C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\EntityFramework.dll
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\HotelManagement.pdb
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\HotelManagement.exe.config
 C:\Users\ailen\Desktop\isw\Proiect\HotelManagement\HotelManagement\UnitTestProject1\bin\Debug\Castle.Core.xml

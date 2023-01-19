@@ -34,11 +34,9 @@ namespace HotelManagement
             if (string.IsNullOrWhiteSpace(email))
                 return false;
 
-            try
-            {
                 // Normalize the domain
                 email = Regex.Replace(email, @"(@)(.+)$", DomainMapper,
-                                      RegexOptions.None, TimeSpan.FromMilliseconds(200));
+                                      RegexOptions.None);
 
                 // Examines the domain part of the email and normalizes it.
                 string DomainMapper(Match match)
@@ -51,26 +49,12 @@ namespace HotelManagement
 
                     return match.Groups[1].Value + domainName;
                 }
-            }
-            catch (RegexMatchTimeoutException e)
-            {
-                return false;
-            }
-            catch (ArgumentException e)
-            {
-                return false;
-            }
 
-            try
-            {
-                return Regex.IsMatch(email,
-                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
-                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
-            }
-            catch (RegexMatchTimeoutException)
-            {
-                return false;
-            }
+
+  
+                return Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$",RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+
+            
         }
 
         public bool isValidPhone(string phone)
@@ -133,43 +117,60 @@ namespace HotelManagement
                 TimeSpan t = data2.Subtract(data1);
 
                 if (comboBox1.Text == "Camera Dubla Standard")
-                    pret = pret + (540 * (getTotalDays(data1,data2)));
+                    pret = pret + (540 * ((int)t.TotalDays));
                 else if (comboBox1.Text == "Camera Dubla Superioara")
-                    pret = pret + (560 * (getTotalDays(data1, data2)));
+                    pret = pret + (560 * ((int)t.TotalDays));
                 else if (comboBox1.Text == "Double Deluxe Room")
-                    pret = pret + (580 * (getTotalDays(data1, data2)));
+                    pret = pret + (580 * ((int)t.TotalDays));
                 else if (comboBox1.Text == "Camera pentru Familie")
-                    pret = pret + (1100 * (getTotalDays(data1, data2)));
+                    pret = pret + (1100 * ((int)t.TotalDays));
                 else if (comboBox1.Text == "Tirol")
-                    pret = pret + (1100 * (getTotalDays(data1, data2)));
-                else MessageBox.Show("Selectează Tipul Camerei!");
-                 if (textBox1.Text == ""|| emaitb.Text == "") { MessageBox.Show("Numărul de Telefon şi Email-ul trebuie introduse") ; textBox1.Text = ""; emaitb.Text = ""; }
-                else if ((!isValidPhone(textBox1.Text))||(!IsValidEmail(emaitb.Text))) { MessageBox.Show("Email-ul şi numărul de telefon trebuie introduse în formatul corect"); textBox1.Text = ""; }
-                else if(checkPediod(data1,data2)) { MessageBox.Show("Introduceţi perioada de rezervare corect"); }
-               
-                else
+                    pret = pret + (1100 * ((int)t.TotalDays));
+
+                if (comboBox1.Text != "")
                 {
-                    oMail.TextBody = "Clientul cu emailul " + emaitb.Text + " şi numarul de telefon " + textBox1.Text + " solicita o camera" + " de tipul " + comboBox1.SelectedItem.ToString() + " din data " + guna2DateTimePicker1.Text + " pana in data " + guna2DateTimePicker2.Text + " cu urmatoarele facilitati: " + s + " \nPretul Total este: " + pret.ToString() + " lei.";
-                    SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
-                    oServer.User = "vambarus@yahoo.com";
-                    oServer.Password = "szechcdsoxgkkthr";
-                    oServer.Port = 465;
-                    oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
-                    Console.WriteLine("start to send email over SSL ...");
-                    SmtpClient oSmtp = new SmtpClient();
-                    oSmtp.SendMail(oServer, oMail);
-                    Console.WriteLine("email was sent successfully!");
-                    MessageBox.Show("Solicitarea ta a fost trimisă recepţiei Hotelului LIAV. Vei fi contactat telefonic sau prin email în cel mai scurt timp. \nMultumim!");
-                    //MessageBox.Show(oMail.TextBody);
+                    if (textBox1.Text != " " && textBox1.Text != "")
+                    {
+                        if (emaitb.Text != " " && emaitb.Text != "")
+                        {
+                            if (IsValidEmail(emaitb.Text))
+                            {
+                                if (isValidPhone(textBox1.Text))
+                                {
+                                    if ((data2 > data1) && (data1 > DateTime.Today))
+                                    {
+                                        oMail.TextBody = "Clientul cu emailul " + emaitb.Text + " şi numarul de telefon " + textBox1.Text + " solicita o camera" + " de tipul " + comboBox1.SelectedItem.ToString() + " din data " + guna2DateTimePicker1.Text + " pana in data " + guna2DateTimePicker2.Text + " cu urmatoarele facilitati: " + s + " \nPretul Total este: " + pret.ToString() + " lei.";
+                                        SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
+                                        oServer.User = "vambarus@yahoo.com";
+                                        oServer.Password = "nkqfgoqzkpoymzik";
+                                        oServer.Port = 465;
+                                        oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                                        Console.WriteLine("start to send email over SSL ...");
+                                        SmtpClient oSmtp = new SmtpClient();  
+                                        oSmtp.SendMail(oServer, oMail);
+                                        Console.WriteLine("email was sent successfully!");
+                                        MessageBox.Show("Solicitarea ta a fost trimisă recepţiei Hotelului LIAV. Vei fi contactat telefonic sau prin email în cel mai scurt timp. \nMultumim!");
+                                    }
+                                    else MessageBox.Show("Perioada rezervarii trebuie introdusa corect!");
+                                }
+                                else MessageBox.Show("Numarul de Telefon trebuie introdus in formatul corect!");
+                            }
+                            else MessageBox.Show("Email-ul trebuie introdus in formatul corect!");
+                        }
+                        else MessageBox.Show("Email-ul trebuie introdus! ");
+                    }
+                    else  MessageBox.Show("Numarul de telefon trebuie introdus!");
                 }
+                else MessageBox.Show("Tipul camerei trebuie selectat!");
+                  
             }
             catch (Exception ep)
             {
                 Console.WriteLine("failed to send email with the following error:");
                 Console.WriteLine(ep.Message);
             }
-            emaitb.Text= " ";
-            textBox1.Text = " ";
+            emaitb.Text= "";
+            textBox1.Text = "";
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -196,12 +197,23 @@ namespace HotelManagement
                 pret = pret + (1100 * ((int)t.TotalDays));
             else MessageBox.Show("Selecteaza Tipul Camerei!");
             //MessageBox.Show(((int)t.TotalDays).ToString());
-            guna2HtmlLabel4.Text = pret.ToString();  
+            if ((data2 > data1) && (data1 > DateTime.Today))
+            {
+                guna2HtmlLabel4.Text = pret.ToString();
+            }
+            else MessageBox.Show("Perioada rezervarii trebuie introdusa corect!");
         }
 
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AboutForm main = new AboutForm();
+            main.Show();
+            this.Hide();
         }
     }
 }
