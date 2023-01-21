@@ -64,16 +64,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(202, 587);
+            this.panel1.Size = new System.Drawing.Size(245, 802);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 216);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(40, 223);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 34);
             this.guna2HtmlLabel1.TabIndex = 36;
@@ -96,7 +97,7 @@
             this.btnLogIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(1, 506);
+            this.btnLogIn.Location = new System.Drawing.Point(21, 692);
             this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(200, 46);
@@ -110,7 +111,7 @@
             this.btnBooking.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBooking.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.ForeColor = System.Drawing.Color.White;
-            this.btnBooking.Location = new System.Drawing.Point(1, 453);
+            this.btnBooking.Location = new System.Drawing.Point(21, 639);
             this.btnBooking.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(200, 46);
@@ -122,7 +123,7 @@
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(31, 74);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(51, 81);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
@@ -136,10 +137,10 @@
             this.btnContact.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnContact.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnContact.ForeColor = System.Drawing.Color.White;
-            this.btnContact.Location = new System.Drawing.Point(867, 0);
+            this.btnContact.Location = new System.Drawing.Point(1070, 0);
             this.btnContact.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnContact.Name = "btnContact";
-            this.btnContact.Size = new System.Drawing.Size(133, 46);
+            this.btnContact.Size = new System.Drawing.Size(165, 46);
             this.btnContact.TabIndex = 26;
             this.btnContact.Text = "Contact";
             this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
@@ -150,10 +151,10 @@
             this.btnTarife.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnTarife.ForeColor = System.Drawing.Color.White;
-            this.btnTarife.Location = new System.Drawing.Point(733, 0);
+            this.btnTarife.Location = new System.Drawing.Point(905, 0);
             this.btnTarife.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnTarife.Name = "btnTarife";
-            this.btnTarife.Size = new System.Drawing.Size(133, 46);
+            this.btnTarife.Size = new System.Drawing.Size(165, 46);
             this.btnTarife.TabIndex = 25;
             this.btnTarife.Text = "Tarife";
             this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
@@ -164,10 +165,10 @@
             this.btnGalerie.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnGalerie.ForeColor = System.Drawing.Color.White;
-            this.btnGalerie.Location = new System.Drawing.Point(601, 0);
+            this.btnGalerie.Location = new System.Drawing.Point(740, 0);
             this.btnGalerie.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnGalerie.Name = "btnGalerie";
-            this.btnGalerie.Size = new System.Drawing.Size(133, 46);
+            this.btnGalerie.Size = new System.Drawing.Size(165, 46);
             this.btnGalerie.TabIndex = 24;
             this.btnGalerie.Text = "Galerie";
             this.btnGalerie.Click += new System.EventHandler(this.btnGalerie_Click);
@@ -178,10 +179,10 @@
             this.btnFacilitati.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnFacilitati.ForeColor = System.Drawing.Color.White;
-            this.btnFacilitati.Location = new System.Drawing.Point(467, 0);
+            this.btnFacilitati.Location = new System.Drawing.Point(575, 0);
             this.btnFacilitati.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnFacilitati.Name = "btnFacilitati";
-            this.btnFacilitati.Size = new System.Drawing.Size(133, 46);
+            this.btnFacilitati.Size = new System.Drawing.Size(165, 46);
             this.btnFacilitati.TabIndex = 23;
             this.btnFacilitati.Text = "Facilitati";
             this.btnFacilitati.Click += new System.EventHandler(this.btnFacilitati_Click);
@@ -192,10 +193,10 @@
             this.btnCamere.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCamere.ForeColor = System.Drawing.Color.White;
-            this.btnCamere.Location = new System.Drawing.Point(334, 0);
+            this.btnCamere.Location = new System.Drawing.Point(410, 0);
             this.btnCamere.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnCamere.Name = "btnCamere";
-            this.btnCamere.Size = new System.Drawing.Size(133, 46);
+            this.btnCamere.Size = new System.Drawing.Size(165, 46);
             this.btnCamere.TabIndex = 22;
             this.btnCamere.Text = "Camere";
             this.btnCamere.Click += new System.EventHandler(this.btnCamere_Click);
@@ -206,10 +207,10 @@
             this.btnDespreHotel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDespreHotel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDespreHotel.ForeColor = System.Drawing.Color.White;
-            this.btnDespreHotel.Location = new System.Drawing.Point(201, 0);
+            this.btnDespreHotel.Location = new System.Drawing.Point(245, 0);
             this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnDespreHotel.Name = "btnDespreHotel";
-            this.btnDespreHotel.Size = new System.Drawing.Size(133, 46);
+            this.btnDespreHotel.Size = new System.Drawing.Size(165, 46);
             this.btnDespreHotel.TabIndex = 21;
             this.btnDespreHotel.Text = "Despre Hotel";
             this.btnDespreHotel.Click += new System.EventHandler(this.btnDespreHotel_Click);
@@ -220,8 +221,8 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox1.Location = new System.Drawing.Point(220, 342);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(370, 427);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(351, 237);
             this.richTextBox1.TabIndex = 34;
@@ -230,8 +231,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HotelManagement.Properties.Resources.terrace;
-            this.pictureBox1.Location = new System.Drawing.Point(226, 74);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(376, 159);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(336, 218);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -241,8 +242,8 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HotelManagement.Properties.Resources.spa;
-            this.pictureBox3.Location = new System.Drawing.Point(603, 322);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(753, 407);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(372, 213);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -252,8 +253,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HotelManagement.Properties.Resources.room1;
-            this.pictureBox2.Location = new System.Drawing.Point(603, 74);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(753, 159);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(372, 218);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 585);
+            this.ClientSize = new System.Drawing.Size(1236, 800);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
@@ -276,8 +277,8 @@
             this.Controls.Add(this.btnCamere);
             this.Controls.Add(this.btnDespreHotel);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AboutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AboutForm";
