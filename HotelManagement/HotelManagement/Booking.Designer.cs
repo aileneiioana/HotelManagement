@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Datelbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,7 +54,6 @@
             this.emaitb = new System.Windows.Forms.TextBox();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,48 +64,35 @@
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(35, 162);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(47, 199);
+            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(267, 30);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(356, 37);
             this.guna2DateTimePicker1.TabIndex = 13;
             this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 19, 22, 27, 54, 0);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Datelbl);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 81);
+            this.panel1.Size = new System.Drawing.Size(1500, 100);
             this.panel1.TabIndex = 15;
-            // 
-            // exit
-            // 
-            this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(0, 0);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(31, 29);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.exit.TabIndex = 55;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(491, 13);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(655, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 57);
+            this.label2.Size = new System.Drawing.Size(296, 71);
             this.label2.TabIndex = 3;
             this.label2.Text = "Rezervare";
             // 
@@ -115,20 +100,19 @@
             // 
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.Datelbl.Location = new System.Drawing.Point(996, 44);
-            this.Datelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Datelbl.Location = new System.Drawing.Point(1328, 54);
             this.Datelbl.Name = "Datelbl";
-            this.Datelbl.Size = new System.Drawing.Size(57, 25);
+            this.Datelbl.Size = new System.Drawing.Size(72, 31);
             this.Datelbl.TabIndex = 1;
             this.Datelbl.Text = "Date";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 700);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 791);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(89, 77);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -138,10 +122,10 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(67, 120);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(89, 148);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(70, 20);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(82, 24);
             this.guna2HtmlLabel1.TabIndex = 17;
             this.guna2HtmlLabel1.Text = "Check-in";
             // 
@@ -149,10 +133,10 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(369, 120);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(492, 148);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(81, 20);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(94, 24);
             this.guna2HtmlLabel2.TabIndex = 18;
             this.guna2HtmlLabel2.Text = "Check-out";
             // 
@@ -163,10 +147,10 @@
             this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
             this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
-            this.trimitereMailbtn.Location = new System.Drawing.Point(450, 700);
-            this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.trimitereMailbtn.Location = new System.Drawing.Point(618, 786);
+            this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.trimitereMailbtn.Name = "trimitereMailbtn";
-            this.trimitereMailbtn.Size = new System.Drawing.Size(250, 73);
+            this.trimitereMailbtn.Size = new System.Drawing.Size(333, 90);
             this.trimitereMailbtn.TabIndex = 36;
             this.trimitereMailbtn.Text = "Rezervă";
             this.trimitereMailbtn.Click += new System.EventHandler(this.trimitereMailbtn_Click);
@@ -175,10 +159,10 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(724, 162);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(965, 199);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(386, 22);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(458, 27);
             this.guna2HtmlLabel3.TabIndex = 37;
             this.guna2HtmlLabel3.Text = "Facilităţi extra - pentru toată perioada rezervată";
             // 
@@ -190,10 +174,10 @@
             this.guna2CheckBox3.CheckedState.BorderThickness = 0;
             this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox3.Location = new System.Drawing.Point(806, 305);
-            this.guna2CheckBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CheckBox3.Location = new System.Drawing.Point(1075, 375);
+            this.guna2CheckBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CheckBox3.Name = "guna2CheckBox3";
-            this.guna2CheckBox3.Size = new System.Drawing.Size(164, 29);
+            this.guna2CheckBox3.Size = new System.Drawing.Size(201, 33);
             this.guna2CheckBox3.TabIndex = 40;
             this.guna2CheckBox3.Text = "Spa - 100 LEI";
             this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -208,10 +192,10 @@
             this.guna2CheckBox4.CheckedState.BorderThickness = 0;
             this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox4.Location = new System.Drawing.Point(806, 270);
-            this.guna2CheckBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CheckBox4.Location = new System.Drawing.Point(1075, 332);
+            this.guna2CheckBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CheckBox4.Name = "guna2CheckBox4";
-            this.guna2CheckBox4.Size = new System.Drawing.Size(188, 29);
+            this.guna2CheckBox4.Size = new System.Drawing.Size(231, 33);
             this.guna2CheckBox4.TabIndex = 41;
             this.guna2CheckBox4.Text = "Saună - 150 LEI";
             this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -227,10 +211,10 @@
             this.guna2CheckBox5.CheckedState.BorderThickness = 0;
             this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox5.Location = new System.Drawing.Point(806, 233);
-            this.guna2CheckBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CheckBox5.Location = new System.Drawing.Point(1075, 287);
+            this.guna2CheckBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CheckBox5.Name = "guna2CheckBox5";
-            this.guna2CheckBox5.Size = new System.Drawing.Size(195, 29);
+            this.guna2CheckBox5.Size = new System.Drawing.Size(243, 33);
             this.guna2CheckBox5.TabIndex = 42;
             this.guna2CheckBox5.Text = "Piscină - 100 LEI";
             this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -244,12 +228,12 @@
             this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(353, 162);
-            this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(471, 199);
+            this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(267, 30);
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(356, 37);
             this.guna2DateTimePicker2.TabIndex = 44;
             this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 19, 22, 27, 50, 0);
             // 
@@ -257,10 +241,10 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(55, 12);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(73, 15);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(13, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(15, 27);
             this.guna2HtmlLabel4.TabIndex = 45;
             this.guna2HtmlLabel4.Text = "0";
             // 
@@ -268,10 +252,10 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(972, 358);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(1296, 441);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(150, 27);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(186, 31);
             this.guna2HtmlLabel5.TabIndex = 46;
             this.guna2HtmlLabel5.Text = "Cost total(LEI):";
             // 
@@ -284,19 +268,20 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.DarkGray;
             this.guna2CustomGradientPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2CustomGradientPanel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(972, 396);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(1296, 487);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(123, 44);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(164, 54);
             this.guna2CustomGradientPanel1.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(64, 273);
+            this.label1.Location = new System.Drawing.Point(85, 336);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 18);
+            this.label1.Size = new System.Drawing.Size(62, 24);
             this.label1.TabIndex = 49;
             this.label1.Text = "Email";
             // 
@@ -307,10 +292,10 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.LightGray;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(734, 396);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(979, 487);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(177, 44);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(236, 54);
             this.guna2GradientButton1.TabIndex = 50;
             this.guna2GradientButton1.Text = "Calculează Preţ Total";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
@@ -319,28 +304,30 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(366, 270);
+            this.label3.Location = new System.Drawing.Point(488, 332);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 18);
+            this.label3.Size = new System.Drawing.Size(81, 24);
             this.label3.TabIndex = 52;
             this.label3.Text = "Telefon";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(353, 305);
+            this.textBox1.Location = new System.Drawing.Point(471, 375);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 29);
+            this.textBox1.Size = new System.Drawing.Size(355, 35);
             this.textBox1.TabIndex = 51;
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(218, 374);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(291, 460);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(107, 20);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(128, 24);
             this.guna2HtmlLabel6.TabIndex = 53;
             this.guna2HtmlLabel6.Text = "Tipul Camerei";
             // 
@@ -353,17 +340,19 @@
             "Camera Dubla Deluxe",
             "Camera pentru Familie",
             "Triol"});
-            this.comboBox1.Location = new System.Drawing.Point(203, 415);
+            this.comboBox1.Location = new System.Drawing.Point(271, 511);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 21);
+            this.comboBox1.Size = new System.Drawing.Size(328, 24);
             this.comboBox1.TabIndex = 54;
             // 
             // emaitb
             // 
-            this.emaitb.Location = new System.Drawing.Point(35, 305);
+            this.emaitb.Location = new System.Drawing.Point(47, 375);
+            this.emaitb.Margin = new System.Windows.Forms.Padding(4);
             this.emaitb.Multiline = true;
             this.emaitb.Name = "emaitb";
-            this.emaitb.Size = new System.Drawing.Size(267, 29);
+            this.emaitb.Size = new System.Drawing.Size(355, 35);
             this.emaitb.TabIndex = 55;
             // 
             // guna2CheckBox1
@@ -373,23 +362,23 @@
             this.guna2CheckBox1.CheckedState.BorderRadius = 0;
             this.guna2CheckBox1.CheckedState.BorderThickness = 0;
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(824, 208);
-            this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.guna2CheckBox1.Location = new System.Drawing.Point(1075, 249);
+            this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(177, 21);
+            this.guna2CheckBox1.Size = new System.Drawing.Size(225, 33);
             this.guna2CheckBox1.TabIndex = 56;
-            this.guna2CheckBox1.Text = "Sky Resort - 250 LEI";
+            this.guna2CheckBox1.Text = "Sală de Fitness";
             this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
             // 
             // Booking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1203, 800);
+            this.ClientSize = new System.Drawing.Size(1500, 900);
             this.Controls.Add(this.guna2CheckBox1);
             this.Controls.Add(this.emaitb);
             this.Controls.Add(this.comboBox1);
@@ -412,14 +401,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Booking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Booking";
             this.Load += new System.EventHandler(this.Booking_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
@@ -451,7 +439,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox exit;
         private System.Windows.Forms.TextBox emaitb;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
     }

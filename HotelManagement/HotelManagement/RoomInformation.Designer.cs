@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomInformation));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Datelb = new System.Windows.Forms.Label();
-            this.exit = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.RoomGridview = new System.Windows.Forms.DataGridView();
             this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +58,6 @@
             this.hoteldbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RoomGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
@@ -70,46 +68,34 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.Datelb);
-            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 81);
+            this.panel1.Size = new System.Drawing.Size(1500, 142);
             this.panel1.TabIndex = 1;
             // 
             // Datelb
             // 
             this.Datelb.AutoSize = true;
             this.Datelb.Font = new System.Drawing.Font("Century", 15.75F);
-            this.Datelb.Location = new System.Drawing.Point(774, 47);
+            this.Datelb.Location = new System.Drawing.Point(1159, 83);
+            this.Datelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Datelb.Name = "Datelb";
-            this.Datelb.Size = new System.Drawing.Size(59, 25);
+            this.Datelb.Size = new System.Drawing.Size(76, 33);
             this.Datelb.TabIndex = 54;
             this.Datelb.Text = "Date";
             this.Datelb.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // exit
-            // 
-            this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(0, 0);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(31, 29);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.exit.TabIndex = 53;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(279, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(512, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(421, 57);
+            this.label1.Size = new System.Drawing.Size(521, 71);
             this.label1.TabIndex = 0;
             this.label1.Text = "Informaţii Camere";
             // 
@@ -121,12 +107,12 @@
             this.RoomType,
             this.RoomPhone,
             this.RoomFree});
-            this.RoomGridview.Location = new System.Drawing.Point(351, 101);
-            this.RoomGridview.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.RoomGridview.Location = new System.Drawing.Point(524, 158);
+            this.RoomGridview.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.RoomGridview.Name = "RoomGridview";
             this.RoomGridview.RowHeadersWidth = 51;
             this.RoomGridview.RowTemplate.Height = 29;
-            this.RoomGridview.Size = new System.Drawing.Size(630, 448);
+            this.RoomGridview.Size = new System.Drawing.Size(840, 616);
             this.RoomGridview.TabIndex = 6;
             this.RoomGridview.DoubleClick += new System.EventHandler(this.RoomGridview_DoubleClick);
             // 
@@ -169,10 +155,10 @@
             this.Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Search.Location = new System.Drawing.Point(195, 123);
-            this.Search.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Search.Location = new System.Drawing.Point(265, 168);
+            this.Search.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(106, 29);
+            this.Search.Size = new System.Drawing.Size(141, 36);
             this.Search.TabIndex = 13;
             this.Search.Text = "Caută";
             this.Search.UseVisualStyleBackColor = false;
@@ -182,10 +168,10 @@
             // 
             this.RoomSearchtbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomSearchtbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.RoomSearchtbl.Location = new System.Drawing.Point(31, 123);
-            this.RoomSearchtbl.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.RoomSearchtbl.Location = new System.Drawing.Point(38, 171);
+            this.RoomSearchtbl.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.RoomSearchtbl.Name = "RoomSearchtbl";
-            this.RoomSearchtbl.Size = new System.Drawing.Size(160, 30);
+            this.RoomSearchtbl.Size = new System.Drawing.Size(212, 36);
             this.RoomSearchtbl.TabIndex = 12;
             this.RoomSearchtbl.Text = "Caută Cameră";
             // 
@@ -193,10 +179,10 @@
             // 
             this.roomphonetbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomphonetbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roomphonetbl.Location = new System.Drawing.Point(68, 322);
-            this.roomphonetbl.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.roomphonetbl.Location = new System.Drawing.Point(91, 396);
+            this.roomphonetbl.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.roomphonetbl.Name = "roomphonetbl";
-            this.roomphonetbl.Size = new System.Drawing.Size(215, 45);
+            this.roomphonetbl.Size = new System.Drawing.Size(285, 54);
             this.roomphonetbl.TabIndex = 16;
             this.roomphonetbl.Text = "Număr Telefon";
             // 
@@ -204,76 +190,73 @@
             // 
             this.roomidtbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomidtbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roomidtbl.Location = new System.Drawing.Point(68, 250);
-            this.roomidtbl.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.roomidtbl.Location = new System.Drawing.Point(91, 308);
+            this.roomidtbl.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.roomidtbl.Name = "roomidtbl";
-            this.roomidtbl.Size = new System.Drawing.Size(215, 45);
+            this.roomidtbl.Size = new System.Drawing.Size(285, 54);
             this.roomidtbl.TabIndex = 15;
             this.roomidtbl.Text = "Număr Cameră";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(91, 386);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(96, 475);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 24);
+            this.label2.Size = new System.Drawing.Size(89, 29);
             this.label2.TabIndex = 17;
             this.label2.Text = "Liberă";
             // 
             // Yesbtn
             // 
             this.Yesbtn.AutoSize = true;
-            this.Yesbtn.Location = new System.Drawing.Point(157, 393);
-            this.Yesbtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Yesbtn.Location = new System.Drawing.Point(209, 484);
+            this.Yesbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Yesbtn.Name = "Yesbtn";
-            this.Yesbtn.Size = new System.Drawing.Size(14, 13);
+            this.Yesbtn.Size = new System.Drawing.Size(17, 16);
             this.Yesbtn.TabIndex = 18;
             this.Yesbtn.UseVisualStyleBackColor = true;
             // 
             // Noradio
             // 
             this.Noradio.AutoSize = true;
-            this.Noradio.Location = new System.Drawing.Point(213, 393);
-            this.Noradio.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Noradio.Location = new System.Drawing.Point(284, 484);
+            this.Noradio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Noradio.Name = "Noradio";
-            this.Noradio.Size = new System.Drawing.Size(14, 13);
+            this.Noradio.Size = new System.Drawing.Size(17, 16);
             this.Noradio.TabIndex = 19;
             this.Noradio.UseVisualStyleBackColor = true;
             // 
             // Yesradio
             // 
             this.Yesradio.AutoSize = true;
-            this.Yesradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Yesradio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Yesradio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Yesradio.Location = new System.Drawing.Point(174, 389);
-            this.Yesradio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Yesradio.Location = new System.Drawing.Point(232, 479);
             this.Yesradio.Name = "Yesradio";
-            this.Yesradio.Size = new System.Drawing.Size(30, 20);
+            this.Yesradio.Size = new System.Drawing.Size(43, 29);
             this.Yesradio.TabIndex = 20;
             this.Yesradio.Text = "Da";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(231, 389);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(308, 479);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 20);
+            this.label4.Size = new System.Drawing.Size(44, 29);
             this.label4.TabIndex = 21;
             this.label4.Text = "Nu";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 514);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 791);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(89, 77);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
@@ -282,10 +265,10 @@
             // refreshpb
             // 
             this.refreshpb.Image = ((System.Drawing.Image)(resources.GetObject("refreshpb.Image")));
-            this.refreshpb.Location = new System.Drawing.Point(305, 119);
-            this.refreshpb.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.refreshpb.Location = new System.Drawing.Point(412, 163);
+            this.refreshpb.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.refreshpb.Name = "refreshpb";
-            this.refreshpb.Size = new System.Drawing.Size(31, 34);
+            this.refreshpb.Size = new System.Drawing.Size(41, 42);
             this.refreshpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.refreshpb.TabIndex = 14;
             this.refreshpb.TabStop = false;
@@ -300,16 +283,16 @@
             // BtnAdd
             // 
             this.BtnAdd.AutoRoundedCorners = true;
-            this.BtnAdd.BorderRadius = 17;
+            this.BtnAdd.BorderRadius = 27;
             this.BtnAdd.BorderThickness = 1;
             this.BtnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnAdd.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnAdd.ForeColor = System.Drawing.Color.Black;
-            this.BtnAdd.Location = new System.Drawing.Point(18, 467);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BtnAdd.Location = new System.Drawing.Point(46, 578);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(96, 36);
+            this.BtnAdd.Size = new System.Drawing.Size(117, 56);
             this.BtnAdd.TabIndex = 28;
             this.BtnAdd.Text = "Adaugă";
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
@@ -317,16 +300,16 @@
             // BtnEdit
             // 
             this.BtnEdit.AutoRoundedCorners = true;
-            this.BtnEdit.BorderRadius = 17;
+            this.BtnEdit.BorderRadius = 27;
             this.BtnEdit.BorderThickness = 1;
             this.BtnEdit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnEdit.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnEdit.ForeColor = System.Drawing.Color.Black;
-            this.BtnEdit.Location = new System.Drawing.Point(118, 467);
-            this.BtnEdit.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BtnEdit.Location = new System.Drawing.Point(179, 578);
+            this.BtnEdit.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(96, 36);
+            this.BtnEdit.Size = new System.Drawing.Size(117, 56);
             this.BtnEdit.TabIndex = 29;
             this.BtnEdit.Text = "Editeză";
             this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
@@ -334,16 +317,16 @@
             // BtnDelete
             // 
             this.BtnDelete.AutoRoundedCorners = true;
-            this.BtnDelete.BorderRadius = 17;
+            this.BtnDelete.BorderRadius = 27;
             this.BtnDelete.BorderThickness = 1;
             this.BtnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnDelete.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnDelete.ForeColor = System.Drawing.Color.Black;
-            this.BtnDelete.Location = new System.Drawing.Point(218, 467);
-            this.BtnDelete.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BtnDelete.Location = new System.Drawing.Point(313, 578);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(96, 36);
+            this.BtnDelete.Size = new System.Drawing.Size(117, 56);
             this.BtnDelete.TabIndex = 30;
             this.BtnDelete.Text = "Şterge";
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
@@ -358,9 +341,10 @@
             "Camera Dubla Deluxe",
             "Camera pentru Familie",
             "Triol"});
-            this.comboBox1.Location = new System.Drawing.Point(68, 197);
+            this.comboBox1.Location = new System.Drawing.Point(91, 242);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 28);
+            this.comboBox1.Size = new System.Drawing.Size(285, 33);
             this.comboBox1.TabIndex = 31;
             this.comboBox1.Text = "Tipul Camerei";
             // 
@@ -368,18 +352,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(276, 561);
+            this.label3.Location = new System.Drawing.Point(367, 835);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(712, 15);
+            this.label3.Size = new System.Drawing.Size(829, 18);
             this.label3.TabIndex = 52;
             this.label3.Text = "Atenţie! Dacă vrei să modifici numărul unei camere, trebuie să o ştergi şi să o a" +
     "daugi din nou cu numărul nou!";
             // 
             // RoomInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 585);
+            this.ClientSize = new System.Drawing.Size(1500, 900);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.BtnDelete);
@@ -398,15 +383,14 @@
             this.Controls.Add(this.RoomSearchtbl);
             this.Controls.Add(this.RoomGridview);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RoomInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoomInfo";
             this.Load += new System.EventHandler(this.RoomInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RoomGridview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).EndInit();
@@ -444,7 +428,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomFree;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox exit;
         private System.Windows.Forms.Label Datelb;
     }
 }
