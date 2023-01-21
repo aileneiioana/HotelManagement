@@ -26,6 +26,7 @@ namespace HotelManagement.Services
             }
         }
 
+
         public void EditRes(Reservation_tbl model)
         {
             using (HoteldbEntities db = new HoteldbEntities())
@@ -60,6 +61,14 @@ namespace HotelManagement.Services
             using (HoteldbEntities db = new HoteldbEntities())
             {
                 return db.Reservation_tbl.Where(x => x.ResId == id).ToList();
+            }
+        }
+
+        public List<Reservation_tbl> GetReservationsByName(string name)
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Reservation_tbl.Where(x => x.Client == name).ToList();
             }
         }
 

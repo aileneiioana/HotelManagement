@@ -185,8 +185,7 @@ namespace HotelManagement
 
         private void Search_Click_1(object sender, EventArgs e)
         {
-            int.TryParse(Searchtb.Text.Trim(), out int id);
-            var dataset = resServices.GetReservationsById(id);
+            var dataset = resServices.GetReservationsByName(Searchtb.Text.Trim());
             ResView.DataSource = dataset;
         }
 

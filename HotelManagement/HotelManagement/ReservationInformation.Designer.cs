@@ -117,7 +117,7 @@
             this.Searchtb.Name = "Searchtb";
             this.Searchtb.Size = new System.Drawing.Size(160, 30);
             this.Searchtb.TabIndex = 34;
-            this.Searchtb.Text = "Caută Rezervare";
+            this.Searchtb.Text = "Caută Client";
             // 
             // ResView
             // 
