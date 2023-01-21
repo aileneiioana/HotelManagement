@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HoteldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="HoteldbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Client_tbl">
           <Key>
             <PropertyRef Name="ClientId" />
@@ -41,6 +41,9 @@
           <Property Name="StaffId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Staffname" Type="varchar" MaxLength="30" />
           <Property Name="Staffphone" Type="varchar" MaxLength="30" />
+          <Property Name="Staffemail" Type="varchar" MaxLength="30" />
+          <Property Name="Staffaddress" Type="varchar" MaxLength="30" />
+          <Property Name="Stafffunction" Type="varchar" MaxLength="30" />
           <Property Name="Gender" Type="varchar" MaxLength="30" />
           <Property Name="Staffpassword" Type="varchar" MaxLength="30" />
         </EntityType>
@@ -50,8 +53,7 @@
           <EntitySet Name="Room_tbl" EntityType="Self.Room_tbl" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Staff_tbl" EntityType="Self.Staff_tbl" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HoteldbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -93,6 +95,9 @@
           <Property Name="Staffphone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Gender" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Staffpassword" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Staffemail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Staffaddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Stafffunction" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="HoteldbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Client_tbl" EntityType="Self.Client_tbl" />
@@ -141,6 +146,9 @@
           <EntitySetMapping Name="Staff_tbl">
             <EntityTypeMapping TypeName="HoteldbModel.Staff_tbl">
               <MappingFragment StoreEntitySet="Staff_tbl">
+                <ScalarProperty Name="Stafffunction" ColumnName="Stafffunction" />
+                <ScalarProperty Name="Staffaddress" ColumnName="Staffaddress" />
+                <ScalarProperty Name="Staffemail" ColumnName="Staffemail" />
                 <ScalarProperty Name="StaffId" ColumnName="StaffId" />
                 <ScalarProperty Name="Staffname" ColumnName="Staffname" />
                 <ScalarProperty Name="Staffphone" ColumnName="Staffphone" />

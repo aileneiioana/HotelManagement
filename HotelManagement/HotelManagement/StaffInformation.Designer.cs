@@ -42,19 +42,25 @@ namespace HotelManagement
             this.Gendercb = new System.Windows.Forms.ComboBox();
             this.Searchtb = new System.Windows.Forms.TextBox();
             this.Search = new System.Windows.Forms.Button();
-            this.Passwordtb = new System.Windows.Forms.TextBox();
             this.refreshpb = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.StaffView = new System.Windows.Forms.DataGridView();
-            this.StaffId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffphone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffpassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnDeleteStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnAddStaff = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.emailtb = new System.Windows.Forms.TextBox();
+            this.adresatb = new System.Windows.Forms.TextBox();
+            this.functietb = new System.Windows.Forms.TextBox();
+            this.parolatb = new System.Windows.Forms.TextBox();
+            this.StaffId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffaddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stafffunction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffphone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffpassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
@@ -113,7 +119,7 @@ namespace HotelManagement
             // StaffIdtb
             // 
             this.StaffIdtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StaffIdtb.Location = new System.Drawing.Point(91, 279);
+            this.StaffIdtb.Location = new System.Drawing.Point(91, 245);
             this.StaffIdtb.Margin = new System.Windows.Forms.Padding(4);
             this.StaffIdtb.Multiline = true;
             this.StaffIdtb.Name = "StaffIdtb";
@@ -125,7 +131,7 @@ namespace HotelManagement
             // StaffNametb
             // 
             this.StaffNametb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StaffNametb.Location = new System.Drawing.Point(91, 355);
+            this.StaffNametb.Location = new System.Drawing.Point(91, 305);
             this.StaffNametb.Margin = new System.Windows.Forms.Padding(4);
             this.StaffNametb.Multiline = true;
             this.StaffNametb.Name = "StaffNametb";
@@ -136,7 +142,7 @@ namespace HotelManagement
             // PhoneNumbertb
             // 
             this.PhoneNumbertb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PhoneNumbertb.Location = new System.Drawing.Point(91, 438);
+            this.PhoneNumbertb.Location = new System.Drawing.Point(91, 365);
             this.PhoneNumbertb.Margin = new System.Windows.Forms.Padding(4);
             this.PhoneNumbertb.Multiline = true;
             this.PhoneNumbertb.Name = "PhoneNumbertb";
@@ -151,7 +157,7 @@ namespace HotelManagement
             this.Gendercb.Items.AddRange(new object[] {
             "BĂRBAT",
             "FEMEIE"});
-            this.Gendercb.Location = new System.Drawing.Point(91, 593);
+            this.Gendercb.Location = new System.Drawing.Point(91, 663);
             this.Gendercb.Margin = new System.Windows.Forms.Padding(4);
             this.Gendercb.Name = "Gendercb";
             this.Gendercb.Size = new System.Drawing.Size(321, 28);
@@ -185,18 +191,6 @@ namespace HotelManagement
             this.Search.UseVisualStyleBackColor = false;
             this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
-            // Passwordtb
-            // 
-            this.Passwordtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Passwordtb.Location = new System.Drawing.Point(91, 523);
-            this.Passwordtb.Margin = new System.Windows.Forms.Padding(4);
-            this.Passwordtb.Multiline = true;
-            this.Passwordtb.Name = "Passwordtb";
-            this.Passwordtb.PasswordChar = '*';
-            this.Passwordtb.Size = new System.Drawing.Size(321, 52);
-            this.Passwordtb.TabIndex = 11;
-            this.Passwordtb.Text = "Parolă";
-            // 
             // refreshpb
             // 
             this.refreshpb.Image = ((System.Drawing.Image)(resources.GetObject("refreshpb.Image")));
@@ -214,7 +208,10 @@ namespace HotelManagement
             this.StaffView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StaffId,
             this.Staffname,
+            this.Staffaddress,
+            this.Stafffunction,
             this.Staffphone,
+            this.Staffemail,
             this.Gender,
             this.Staffpassword});
             this.StaffView.Location = new System.Drawing.Point(524, 158);
@@ -225,47 +222,6 @@ namespace HotelManagement
             this.StaffView.Size = new System.Drawing.Size(937, 710);
             this.StaffView.TabIndex = 5;
             this.StaffView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StaffView_DoubleClick);
-            // 
-            // StaffId
-            // 
-            this.StaffId.DataPropertyName = "StaffId";
-            this.StaffId.HeaderText = "StaffId";
-            this.StaffId.MinimumWidth = 6;
-            this.StaffId.Name = "StaffId";
-            this.StaffId.Width = 125;
-            // 
-            // Staffname
-            // 
-            this.Staffname.DataPropertyName = "Staffname";
-            this.Staffname.HeaderText = "Nume";
-            this.Staffname.MinimumWidth = 6;
-            this.Staffname.Name = "Staffname";
-            this.Staffname.Width = 125;
-            // 
-            // Staffphone
-            // 
-            this.Staffphone.DataPropertyName = "Staffphone";
-            this.Staffphone.HeaderText = "NumărTelefon";
-            this.Staffphone.MinimumWidth = 6;
-            this.Staffphone.Name = "Staffphone";
-            this.Staffphone.Width = 125;
-            // 
-            // Gender
-            // 
-            this.Gender.DataPropertyName = "Gender";
-            this.Gender.HeaderText = "Gen";
-            this.Gender.MinimumWidth = 6;
-            this.Gender.Name = "Gender";
-            this.Gender.Width = 125;
-            // 
-            // Staffpassword
-            // 
-            this.Staffpassword.DataPropertyName = "Staffpassword";
-            this.Staffpassword.HeaderText = "Parolă";
-            this.Staffpassword.MinimumWidth = 6;
-            this.Staffpassword.Name = "Staffpassword";
-            this.Staffpassword.Visible = false;
-            this.Staffpassword.Width = 125;
             // 
             // pictureBox1
             // 
@@ -287,7 +243,7 @@ namespace HotelManagement
             this.BtnDeleteStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnDeleteStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnDeleteStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnDeleteStaff.Location = new System.Drawing.Point(337, 710);
+            this.BtnDeleteStaff.Location = new System.Drawing.Point(337, 727);
             this.BtnDeleteStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDeleteStaff.Name = "BtnDeleteStaff";
             this.BtnDeleteStaff.Size = new System.Drawing.Size(117, 56);
@@ -304,7 +260,7 @@ namespace HotelManagement
             this.BtnEditStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnEditStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnEditStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditStaff.Location = new System.Drawing.Point(207, 710);
+            this.BtnEditStaff.Location = new System.Drawing.Point(207, 727);
             this.BtnEditStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnEditStaff.Name = "BtnEditStaff";
             this.BtnEditStaff.Size = new System.Drawing.Size(117, 56);
@@ -321,7 +277,7 @@ namespace HotelManagement
             this.BtnAddStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnAddStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnAddStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnAddStaff.Location = new System.Drawing.Point(77, 710);
+            this.BtnAddStaff.Location = new System.Drawing.Point(77, 727);
             this.BtnAddStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnAddStaff.Name = "BtnAddStaff";
             this.BtnAddStaff.Size = new System.Drawing.Size(117, 56);
@@ -329,18 +285,125 @@ namespace HotelManagement
             this.BtnAddStaff.Text = "Adaugă";
             this.BtnAddStaff.Click += new System.EventHandler(this.BtnAddStaff_Click);
             // 
+            // emailtb
+            // 
+            this.emailtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.emailtb.Location = new System.Drawing.Point(91, 425);
+            this.emailtb.Margin = new System.Windows.Forms.Padding(4);
+            this.emailtb.Multiline = true;
+            this.emailtb.Name = "emailtb";
+            this.emailtb.Size = new System.Drawing.Size(321, 52);
+            this.emailtb.TabIndex = 34;
+            this.emailtb.Text = "Email";
+            // 
+            // adresatb
+            // 
+            this.adresatb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.adresatb.Location = new System.Drawing.Point(91, 485);
+            this.adresatb.Margin = new System.Windows.Forms.Padding(4);
+            this.adresatb.Multiline = true;
+            this.adresatb.Name = "adresatb";
+            this.adresatb.Size = new System.Drawing.Size(321, 52);
+            this.adresatb.TabIndex = 35;
+            this.adresatb.Text = "Adresă";
+            // 
+            // functietb
+            // 
+            this.functietb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.functietb.Location = new System.Drawing.Point(91, 545);
+            this.functietb.Margin = new System.Windows.Forms.Padding(4);
+            this.functietb.Multiline = true;
+            this.functietb.Name = "functietb";
+            this.functietb.Size = new System.Drawing.Size(321, 52);
+            this.functietb.TabIndex = 36;
+            this.functietb.Text = "Funcţie";
+            // 
+            // parolatb
+            // 
+            this.parolatb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.parolatb.Location = new System.Drawing.Point(91, 605);
+            this.parolatb.Margin = new System.Windows.Forms.Padding(4);
+            this.parolatb.Multiline = true;
+            this.parolatb.Name = "parolatb";
+            this.parolatb.PasswordChar = '*';
+            this.parolatb.Size = new System.Drawing.Size(321, 52);
+            this.parolatb.TabIndex = 37;
+            this.parolatb.Text = "Parolă";
+            // 
+            // StaffId
+            // 
+            this.StaffId.DataPropertyName = "StaffId";
+            this.StaffId.HeaderText = "StaffId";
+            this.StaffId.MinimumWidth = 6;
+            this.StaffId.Name = "StaffId";
+            this.StaffId.Width = 125;
+            // 
+            // Staffname
+            // 
+            this.Staffname.DataPropertyName = "Staffname";
+            this.Staffname.HeaderText = "Nume";
+            this.Staffname.MinimumWidth = 6;
+            this.Staffname.Name = "Staffname";
+            this.Staffname.Width = 125;
+            // 
+            // Staffaddress
+            // 
+            this.Staffaddress.DataPropertyName = "Staffaddress";
+            this.Staffaddress.HeaderText = "Adresă";
+            this.Staffaddress.Name = "Staffaddress";
+            // 
+            // Stafffunction
+            // 
+            this.Stafffunction.DataPropertyName = "Stafffunction";
+            this.Stafffunction.HeaderText = "Funcţie";
+            this.Stafffunction.Name = "Stafffunction";
+            // 
+            // Staffphone
+            // 
+            this.Staffphone.DataPropertyName = "Staffphone";
+            this.Staffphone.HeaderText = "NumărTelefon";
+            this.Staffphone.MinimumWidth = 6;
+            this.Staffphone.Name = "Staffphone";
+            this.Staffphone.Width = 125;
+            // 
+            // Staffemail
+            // 
+            this.Staffemail.DataPropertyName = "Staffemail";
+            this.Staffemail.HeaderText = "Email";
+            this.Staffemail.Name = "Staffemail";
+            // 
+            // Gender
+            // 
+            this.Gender.DataPropertyName = "Gender";
+            this.Gender.HeaderText = "Gen";
+            this.Gender.MinimumWidth = 6;
+            this.Gender.Name = "Gender";
+            this.Gender.Width = 125;
+            // 
+            // Staffpassword
+            // 
+            this.Staffpassword.DataPropertyName = "Staffpassword";
+            this.Staffpassword.HeaderText = "Parolă";
+            this.Staffpassword.MinimumWidth = 6;
+            this.Staffpassword.Name = "Staffpassword";
+            this.Staffpassword.Visible = false;
+            this.Staffpassword.Width = 125;
+            // 
             // StaffInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1500, 900);
+            this.Controls.Add(this.parolatb);
+            this.Controls.Add(this.functietb);
+            this.Controls.Add(this.adresatb);
+            this.Controls.Add(this.emailtb);
             this.Controls.Add(this.BtnDeleteStaff);
             this.Controls.Add(this.BtnEditStaff);
             this.Controls.Add(this.BtnAddStaff);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.refreshpb);
-            this.Controls.Add(this.Passwordtb);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.Searchtb);
             this.Controls.Add(this.StaffView);
@@ -376,7 +439,6 @@ namespace HotelManagement
         private ComboBox Gendercb;
         private TextBox Searchtb;
         private Button Search;
-        private TextBox Passwordtb;
         private PictureBox refreshpb;
         private System.Windows.Forms.Timer timer1;
         private DataGridView StaffView;
@@ -386,12 +448,19 @@ namespace HotelManagement
         private Guna.UI2.WinForms.Guna2GradientButton BtnEditStaff;
         private Guna.UI2.WinForms.Guna2GradientButton BtnAddStaff;
         private Label label2;
-        private DataGridViewTextBoxColumn StaffId;
-        private DataGridViewTextBoxColumn Staffname;
-        private DataGridViewTextBoxColumn Staffphone;
-        private DataGridViewTextBoxColumn Gender;
-        private DataGridViewTextBoxColumn Staffpassword;
         private PictureBox exit;
         private Label Datelb;
+        private TextBox emailtb;
+        private TextBox adresatb;
+        private TextBox functietb;
+        private TextBox parolatb;
+        private DataGridViewTextBoxColumn StaffId;
+        private DataGridViewTextBoxColumn Staffname;
+        private DataGridViewTextBoxColumn Staffaddress;
+        private DataGridViewTextBoxColumn Stafffunction;
+        private DataGridViewTextBoxColumn Staffphone;
+        private DataGridViewTextBoxColumn Staffemail;
+        private DataGridViewTextBoxColumn Gender;
+        private DataGridViewTextBoxColumn Staffpassword;
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -29,24 +30,14 @@ namespace HotelManagement
             StaffIdtb.Text = "Staff Id";
             StaffNametb.Text = "Staff Name";
             PhoneNumbertb.Text = "Phone Number";
-            Passwordtb.Text = "Password";
-            Gendercb.Text = "Gender";   
+            parolatb.Text = "Password";
+            Gendercb.Text = "Gender";
+            functietb.Text = "Funcţie";
+            adresatb.Text = "Adresă";
+            emailtb.Text = "Email";
             model.StaffId = 0;
         }
-        private void AddStaffBtn_Click(object sender, EventArgs e)
-        {
-           
-            model.StaffId= Convert.ToInt32(StaffIdtb.Text.Trim());
-            model.Staffname= StaffNametb.Text.Trim();
-            model.Staffphone=PhoneNumbertb.Text.Trim();
-            model.Staffpassword=Passwordtb.Text.Trim();
-            model.Gender=Gendercb.Text.Trim();
-            staffService.AddStaff(model);
-            Clear();
-            MessageBox.Show("Staff Successfully Added");
-            PopulateDataGridView();
 
-        }
          void PopulateDataGridView()
         {
               StaffView.DataSource = staffService.Getstaff();
@@ -61,24 +52,15 @@ namespace HotelManagement
                 StaffIdtb.Text = model.StaffId.ToString();
                 StaffNametb.Text = model.Staffname;
                 PhoneNumbertb.Text = model.Staffphone;
-                Passwordtb.Text= model.Staffpassword;
+                parolatb.Text= model.Staffpassword;
                 Gendercb.Text = model.Gender;
+                emailtb.Text = model.Staffemail;
+                functietb.Text = model.Stafffunction;
+                adresatb.Text = model.Staffaddress;
 
             } 
         }
 
-        private void EditStaffBtn_Click(object sender, EventArgs e)
-        {
-            model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
-            model.Staffname = StaffNametb.Text.Trim();
-            model.Staffphone = PhoneNumbertb.Text.Trim();
-            model.Staffpassword = Passwordtb.Text.Trim();
-            model.Gender = Gendercb.Text.Trim();
-            staffService.EditStaff(model);
-            Clear();
-            MessageBox.Show("Staff Successfully Updated");
-            PopulateDataGridView();
-        }
 
         private void DeleteStaffBtn_Click(object sender, EventArgs e)
         {
@@ -125,45 +107,86 @@ namespace HotelManagement
 
             return (emailReges.IsMatch(phone) && phone.Length == 10);
         }
+        public bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            // Normalize the domain
+            email = Regex.Replace(email, @"(@)(.+)$", DomainMapper,
+                                  RegexOptions.None);
+
+            // Examines the domain part of the email and normalizes it.
+            string DomainMapper(Match match)
+            {
+                // Use IdnMapping class to convert Unicode domain names.
+                var idn = new IdnMapping();
+
+                // Pull out and process domain name (throws ArgumentException on invalid)
+                string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                return match.Groups[1].Value + domainName;
+            }
+
+
+
+            return Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+
+
+        }
 
         private void BtnAddStaff_Click(object sender, EventArgs e)
         {
-            if(StaffNametb.Text != "Nume" && PhoneNumbertb.Text!= "Număr Telefon"&& Passwordtb.Text!="Parolă"&& Gendercb.Text!="Gen")
+            if(StaffNametb.Text != "Nume" && PhoneNumbertb.Text!= "Număr Telefon"&& parolatb.Text!="Parolă"&& Gendercb.Text!="Gen" && functietb.Text!= "Funcţie" && adresatb.Text != "Adresă" && emailtb.Text != "Email")
             {
-                if (isValidPhone(PhoneNumbertb.Text)) 
+                if (isValidPhone(PhoneNumbertb.Text))
                 {
-                //model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
-                model.Staffname = StaffNametb.Text.Trim();
-                model.Staffphone = PhoneNumbertb.Text.Trim();
-                model.Staffpassword = Passwordtb.Text.Trim();
-                model.Gender = Gendercb.Text.Trim();
-                staffService.AddStaff(model);
-                Clear();
-                MessageBox.Show("Staff adăugat cu Succes");
-                PopulateDataGridView();
+                    if (IsValidEmail(emailtb.Text))
+                    {
+                        //model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
+                        model.Staffname = StaffNametb.Text.Trim();
+                        model.Staffphone = PhoneNumbertb.Text.Trim();
+                        model.Staffpassword = parolatb.Text.Trim();
+                        model.Staffemail = emailtb.Text.Trim();
+                        model.Stafffunction = functietb.Text.Trim();
+                        model.Staffaddress = adresatb.Text.Trim();
+                        model.Gender = Gendercb.Text.Trim();
+                        staffService.AddStaff(model);
+                        Clear();
+                        MessageBox.Show("Staff adăugat cu Succes");
+                        PopulateDataGridView();
+                    }
+                    else MessageBox.Show("Email-ul trebuie introdus corect! Exemplu format corect: email@email.com");
                 }
-                else MessageBox.Show("Număr Telefon trebuie introdus corect!");
+                else MessageBox.Show("Număr Telefon trebuie introdus corect! Trebuie să contină doar cifre!");
             }
             else MessageBox.Show("Toate câmpurile trebuie completate!");
         }
 
         private void BtnEditStaff_Click(object sender, EventArgs e)
         {
-            if (StaffNametb.Text != "Nume" && PhoneNumbertb.Text != "Număr Telefon" && Passwordtb.Text != "Parolă" && Gendercb.Text != "Gen")
+            if (StaffNametb.Text != "Nume" && PhoneNumbertb.Text != "Număr Telefon" && parolatb.Text != "Parolă" && Gendercb.Text != "Gen" && functietb.Text != "Funcţie" && adresatb.Text != "Adresă" && emailtb.Text != "Email")
             {
                 if (isValidPhone(PhoneNumbertb.Text))
                 {
+                    if (IsValidEmail(emailtb.Text))
+                    {
                     //model.StaffId = Convert.ToInt32(StaffIdtb.Text.Trim());
                     model.Staffname = StaffNametb.Text.Trim();
                     model.Staffphone = PhoneNumbertb.Text.Trim();
-                    model.Staffpassword = Passwordtb.Text.Trim();
+                    model.Staffpassword = parolatb.Text.Trim();
+                    model.Staffemail = emailtb.Text.Trim();
+                    model.Stafffunction = functietb.Text.Trim();
+                    model.Staffaddress = adresatb.Text.Trim();
                     model.Gender = Gendercb.Text.Trim();
                     staffService.EditStaff(model);
                     Clear();
                     MessageBox.Show("Staff actualizat cu Succes");
                     PopulateDataGridView();
+                    }
+                    else MessageBox.Show("Email-ul trebuie introdus corect! Exemplu format corect: email@email.com");
                 }
-                else MessageBox.Show("Număr Telefon trebuie introdus corect!");
+                else MessageBox.Show("Număr Telefon trebuie introdus corect! Trebuie să contină doar cifre!");
             }
             else MessageBox.Show("Toate câmpurile trebuie completate!");
         }

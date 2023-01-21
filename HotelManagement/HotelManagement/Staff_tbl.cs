@@ -19,5 +19,8 @@ namespace HotelManagement
         public string Staffphone { get; set; }
         public string Gender { get; set; }
         public string Staffpassword { get; set; }
+        public string Staffemail { get; set; }
+        public string Staffaddress { get; set; }
+        public string Stafffunction { get; set; }
     }
 }
