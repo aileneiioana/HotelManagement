@@ -36,6 +36,9 @@
     <Property Name="StaffId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Staffname" Type="varchar" MaxLength="30" />
     <Property Name="Staffphone" Type="varchar" MaxLength="30" />
+    <Property Name="Staffemail" Type="varchar" MaxLength="30" />
+    <Property Name="Staffaddress" Type="varchar" MaxLength="30" />
+    <Property Name="Stafffunction" Type="varchar" MaxLength="30" />
     <Property Name="Gender" Type="varchar" MaxLength="30" />
     <Property Name="Staffpassword" Type="varchar" MaxLength="30" />
   </EntityType>

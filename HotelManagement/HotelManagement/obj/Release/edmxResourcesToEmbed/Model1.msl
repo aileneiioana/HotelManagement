@@ -36,6 +36,9 @@
     <EntitySetMapping Name="Staff_tbl">
       <EntityTypeMapping TypeName="HoteldbModel.Staff_tbl">
         <MappingFragment StoreEntitySet="Staff_tbl">
+          <ScalarProperty Name="Stafffunction" ColumnName="Stafffunction" />
+          <ScalarProperty Name="Staffaddress" ColumnName="Staffaddress" />
+          <ScalarProperty Name="Staffemail" ColumnName="Staffemail" />
           <ScalarProperty Name="StaffId" ColumnName="StaffId" />
           <ScalarProperty Name="Staffname" ColumnName="Staffname" />
           <ScalarProperty Name="Staffphone" ColumnName="Staffphone" />

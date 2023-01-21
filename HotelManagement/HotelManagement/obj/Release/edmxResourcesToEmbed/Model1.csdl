@@ -38,6 +38,9 @@
     <Property Name="Staffphone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="Gender" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="Staffpassword" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Staffemail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Staffaddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Stafffunction" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="HoteldbEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Client_tbl" EntityType="Self.Client_tbl" />
