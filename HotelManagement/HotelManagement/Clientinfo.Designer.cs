@@ -39,6 +39,11 @@ namespace HotelManagement
             this.clientphonetb = new System.Windows.Forms.RichTextBox();
             this.clientctrytb = new System.Windows.Forms.ComboBox();
             this.ClientGridview = new System.Windows.Forms.DataGridView();
+            this.ClientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientSearchtb = new System.Windows.Forms.RichTextBox();
             this.Search = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -49,11 +54,6 @@ namespace HotelManagement
             this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnAddStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.passwordTb = new System.Windows.Forms.TextBox();
-            this.ClientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClientPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Country = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClientGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +70,7 @@ namespace HotelManagement
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 81);
+            this.panel1.Size = new System.Drawing.Size(1236, 81);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -150,9 +150,50 @@ namespace HotelManagement
             this.ClientGridview.Name = "ClientGridview";
             this.ClientGridview.RowHeadersWidth = 51;
             this.ClientGridview.RowTemplate.Height = 29;
-            this.ClientGridview.Size = new System.Drawing.Size(554, 461);
+            this.ClientGridview.Size = new System.Drawing.Size(870, 689);
             this.ClientGridview.TabIndex = 5;
             this.ClientGridview.DoubleClick += new System.EventHandler(this.ClientGridview_DoubleClick);
+            // 
+            // ClientId
+            // 
+            this.ClientId.DataPropertyName = "ClientId";
+            this.ClientId.HeaderText = "ClientId";
+            this.ClientId.MinimumWidth = 6;
+            this.ClientId.Name = "ClientId";
+            this.ClientId.Width = 125;
+            // 
+            // ClientName
+            // 
+            this.ClientName.DataPropertyName = "ClientName";
+            this.ClientName.HeaderText = "Nume";
+            this.ClientName.MinimumWidth = 6;
+            this.ClientName.Name = "ClientName";
+            this.ClientName.Width = 125;
+            // 
+            // ClientPhone
+            // 
+            this.ClientPhone.DataPropertyName = "ClientPhone";
+            this.ClientPhone.HeaderText = "NumărTelefon";
+            this.ClientPhone.MinimumWidth = 6;
+            this.ClientPhone.Name = "ClientPhone";
+            this.ClientPhone.Width = 125;
+            // 
+            // Country
+            // 
+            this.Country.DataPropertyName = "ClientCountry";
+            this.Country.HeaderText = "Ţara";
+            this.Country.MinimumWidth = 6;
+            this.Country.Name = "Country";
+            this.Country.Width = 125;
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Parola";
+            this.Password.MinimumWidth = 6;
+            this.Password.Name = "Password";
+            this.Password.Visible = false;
+            this.Password.Width = 125;
             // 
             // ClientSearchtb
             // 
@@ -278,52 +319,11 @@ namespace HotelManagement
             this.passwordTb.TabIndex = 37;
             this.passwordTb.Text = "Parolă";
             // 
-            // ClientId
-            // 
-            this.ClientId.DataPropertyName = "ClientId";
-            this.ClientId.HeaderText = "ClientId";
-            this.ClientId.MinimumWidth = 6;
-            this.ClientId.Name = "ClientId";
-            this.ClientId.Width = 125;
-            // 
-            // ClientName
-            // 
-            this.ClientName.DataPropertyName = "ClientName";
-            this.ClientName.HeaderText = "Nume";
-            this.ClientName.MinimumWidth = 6;
-            this.ClientName.Name = "ClientName";
-            this.ClientName.Width = 125;
-            // 
-            // ClientPhone
-            // 
-            this.ClientPhone.DataPropertyName = "ClientPhone";
-            this.ClientPhone.HeaderText = "NumărTelefon";
-            this.ClientPhone.MinimumWidth = 6;
-            this.ClientPhone.Name = "ClientPhone";
-            this.ClientPhone.Width = 125;
-            // 
-            // Country
-            // 
-            this.Country.DataPropertyName = "ClientCountry";
-            this.Country.HeaderText = "Ţara";
-            this.Country.MinimumWidth = 6;
-            this.Country.Name = "Country";
-            this.Country.Width = 125;
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "Password";
-            this.Password.HeaderText = "Parola";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
-            this.Password.Visible = false;
-            this.Password.Width = 125;
-            // 
             // Clientinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 605);
+            this.ClientSize = new System.Drawing.Size(1236, 800);
             this.Controls.Add(this.passwordTb);
             this.Controls.Add(this.BtnDeleteStaff);
             this.Controls.Add(this.BtnEditStaff);
@@ -338,7 +338,7 @@ namespace HotelManagement
             this.Controls.Add(this.clientphonetb);
             this.Controls.Add(this.clientnametbl);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Clientinfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

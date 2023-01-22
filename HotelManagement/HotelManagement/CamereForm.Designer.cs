@@ -438,7 +438,6 @@
             this.groupBoxC1.Size = new System.Drawing.Size(985, 747);
             this.groupBoxC1.TabIndex = 63;
             this.groupBoxC1.TabStop = false;
-            this.groupBoxC1.Text = "gp1";
             this.groupBoxC1.Visible = false;
             // 
             // pictureBox20
@@ -460,7 +459,6 @@
             this.groupBoxC2.Size = new System.Drawing.Size(985, 747);
             this.groupBoxC2.TabIndex = 64;
             this.groupBoxC2.TabStop = false;
-            this.groupBoxC2.Text = "gp2";
             this.groupBoxC2.Visible = false;
             // 
             // pictureBox6
@@ -482,7 +480,6 @@
             this.groupBoxC3.Size = new System.Drawing.Size(985, 747);
             this.groupBoxC3.TabIndex = 65;
             this.groupBoxC3.TabStop = false;
-            this.groupBoxC3.Text = "gp3";
             this.groupBoxC3.Visible = false;
             // 
             // pictureBox7
@@ -504,7 +501,6 @@
             this.groupBoxC4.Size = new System.Drawing.Size(985, 747);
             this.groupBoxC4.TabIndex = 66;
             this.groupBoxC4.TabStop = false;
-            this.groupBoxC4.Text = "gp4";
             this.groupBoxC4.Visible = false;
             // 
             // pictureBox8
@@ -526,7 +522,6 @@
             this.groupBoxC5.Size = new System.Drawing.Size(985, 747);
             this.groupBoxC5.TabIndex = 67;
             this.groupBoxC5.TabStop = false;
-            this.groupBoxC5.Text = "gp5";
             this.groupBoxC5.Visible = false;
             // 
             // pictureBox9
@@ -576,7 +571,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "CamereForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CamereForm";
             this.Load += new System.EventHandler(this.CamereForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

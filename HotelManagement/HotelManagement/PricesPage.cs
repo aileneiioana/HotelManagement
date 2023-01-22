@@ -102,5 +102,10 @@ namespace HotelManagement
         {
 
         }
+
+        private void PricesPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

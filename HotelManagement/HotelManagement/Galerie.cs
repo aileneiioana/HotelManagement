@@ -32,7 +32,7 @@ namespace HotelManagement
         private void btnCamere_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ClientLogIn().Show();
+            new CamereForm().Show();
         }
 
         private void btnTarife_Click(object sender, EventArgs e)

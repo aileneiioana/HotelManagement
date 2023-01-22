@@ -49,8 +49,6 @@ namespace HotelManagement
                 Console.WriteLine(ep.Message);
             }
             guna2ComboBox1.Text = " ";
-            subiectContacttxt.Clear();
-            mesajContacttxt.Clear();
             
 
             //MailMessage mm = new MailMessage("vambarus@yahoo.com", toContacttxt.Text);
