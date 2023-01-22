@@ -79,5 +79,60 @@ namespace HotelManagement
         {
 
         }
+
+        private void CamereForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            groupBoxC1.Show();
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            groupBoxC1.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            groupBoxC2.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            groupBoxC2.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            groupBoxC3.Show();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            groupBoxC3.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            groupBoxC4.Show();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            groupBoxC4.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            groupBoxC5.Show();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            groupBoxC5.Hide();
+        }
     }
 }

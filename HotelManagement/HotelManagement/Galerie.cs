@@ -75,5 +75,112 @@ namespace HotelManagement
         {
             Application.Exit();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            groupBox1.Hide();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            groupBox2.Show();
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            groupBox2.Hide();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            groupBox3.Show();
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            groupBox3.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            groupBox4.Show();
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            groupBox4.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            groupBox5.Show();
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            groupBox5.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            groupBox6.Show();
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            groupBox6.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            groupBox7.Show();
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            groupBox7.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            groupBox8.Show();
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            groupBox8.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            groupBox9.Show();
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            groupBox9.Hide();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            groupBox10.Show();
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            groupBox10.Hide();
+        }
+
+        private void Galerie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
