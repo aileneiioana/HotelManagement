@@ -65,7 +65,7 @@ namespace HotelManagement
         private void registerBtn_Click(object sender, EventArgs e)
         {
             if (clientNametxtBox.Text != string.Empty && clientPhoneNr.Text != string.Empty
-                && ClientCountryTxtbox.Text != string.Empty && ClientPassTxt.Text != string.Empty && confirmPasstxtbox.Text != string.Empty)
+                && guna2ComboBox1.Text != string.Empty && ClientPassTxt.Text != string.Empty && confirmPasstxtbox.Text != string.Empty)
               { if (isValidPhone(clientPhoneNr.Text))
                
                  {
@@ -75,7 +75,7 @@ namespace HotelManagement
                           {
                                 model.ClientName = clientNametxtBox.Text.Trim();
                                 model.ClientPhone = clientPhoneNr.Text.Trim();
-                                model.ClientCountry = ClientCountryTxtbox.Text.Trim();
+                                model.ClientCountry = guna2ComboBox1.Text.Trim();
                                 model.Password = ClientPassTxt.Text.Trim();
                                 clientServices.AddClient(model);
                                 MessageBox.Show("Cont creat cu succes!");
@@ -98,6 +98,21 @@ namespace HotelManagement
         }
 
         private void btnContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientPhoneNr_TextChanged(object sender, EventArgs e)
         {
 
         }

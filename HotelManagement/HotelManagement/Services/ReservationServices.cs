@@ -4,6 +4,10 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
+using HotelManagementApplication;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace HotelManagement.Services
 {
@@ -70,6 +74,16 @@ namespace HotelManagement.Services
             {
                 return db.Reservation_tbl.Where(x => x.Client == name).ToList();
             }
+        }
+
+        public List<Reservation_tbl> GetRoomsByFree( DateTime checkin, DateTime checkout)
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Reservation_tbl.Where(x => ((checkin < x.DateIn && checkout < x.DateIn)
+                                                      || (checkin > x.DateOut && checkout > x.DateOut))).ToList();
+            }
+
         }
 
 

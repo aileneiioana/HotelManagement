@@ -4,6 +4,7 @@ using Moq;
 using System;
 using HotelManagementApplication;
 using System.Collections.Generic;
+using HotelManagement.Services;
 
 namespace UnitTestProject1
 {
@@ -101,6 +102,8 @@ namespace UnitTestProject1
             bool result = m.isValidPhone("0745963556");
             Assert.AreEqual(true, result);
         }
+
+      
 
 
     }

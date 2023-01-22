@@ -17,7 +17,7 @@ namespace HotelManagement
         public int ResId { get; set; }
         public string Client { get; set; }
         public Nullable<int> Room { get; set; }
-        public string DateIn { get; set; }
-        public string DateOut { get; set; }
+        public Nullable<System.DateTime> DateIn { get; set; }
+        public Nullable<System.DateTime> DateOut { get; set; }
     }
 }

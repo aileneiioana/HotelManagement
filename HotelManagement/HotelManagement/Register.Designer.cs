@@ -41,7 +41,6 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.cancelRegisterbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.registerBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ClientCountryTxtbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.clientNametxtBox = new System.Windows.Forms.TextBox();
@@ -61,6 +60,7 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LogInEmailLbl = new System.Windows.Forms.Label();
             this.LoginPageLogInbtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
@@ -120,7 +120,7 @@
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(19, 220);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(155, 34);
             this.guna2HtmlLabel2.TabIndex = 39;
@@ -194,10 +194,10 @@
             this.RegisterGpBx.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.RegisterGpBx.Controls.Add(this.guna2ComboBox1);
             this.RegisterGpBx.Controls.Add(this.guna2TextBox2);
             this.RegisterGpBx.Controls.Add(this.cancelRegisterbtn);
             this.RegisterGpBx.Controls.Add(this.registerBtn);
-            this.RegisterGpBx.Controls.Add(this.ClientCountryTxtbox);
             this.RegisterGpBx.Controls.Add(this.label5);
             this.RegisterGpBx.Controls.Add(this.label4);
             this.RegisterGpBx.Controls.Add(this.clientNametxtBox);
@@ -232,7 +232,7 @@
             this.guna2TextBox2.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(88, 7);
+            this.guna2TextBox2.Location = new System.Drawing.Point(112, -12);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -276,21 +276,11 @@
             this.registerBtn.Text = "Înregistrare";
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
-            // ClientCountryTxtbox
-            // 
-            this.ClientCountryTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ClientCountryTxtbox.Location = new System.Drawing.Point(105, 194);
-            this.ClientCountryTxtbox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.ClientCountryTxtbox.Multiline = true;
-            this.ClientCountryTxtbox.Name = "ClientCountryTxtbox";
-            this.ClientCountryTxtbox.Size = new System.Drawing.Size(257, 25);
-            this.ClientCountryTxtbox.TabIndex = 16;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(113, 176);
+            this.label5.Location = new System.Drawing.Point(113, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 17);
@@ -301,17 +291,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(112, 86);
+            this.label4.Location = new System.Drawing.Point(112, 65);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 15;
             this.label4.Text = "Nume ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // clientNametxtBox
             // 
             this.clientNametxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clientNametxtBox.Location = new System.Drawing.Point(105, 103);
+            this.clientNametxtBox.Location = new System.Drawing.Point(108, 82);
             this.clientNametxtBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.clientNametxtBox.Multiline = true;
             this.clientNametxtBox.Name = "clientNametxtBox";
@@ -321,7 +312,7 @@
             // confirmPasstxtbox
             // 
             this.confirmPasstxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.confirmPasstxtbox.Location = new System.Drawing.Point(105, 298);
+            this.confirmPasstxtbox.Location = new System.Drawing.Point(107, 299);
             this.confirmPasstxtbox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.confirmPasstxtbox.Multiline = true;
             this.confirmPasstxtbox.Name = "confirmPasstxtbox";
@@ -344,7 +335,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 129);
+            this.label1.Location = new System.Drawing.Point(112, 108);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 17);
@@ -376,12 +367,13 @@
             // clientPhoneNr
             // 
             this.clientPhoneNr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clientPhoneNr.Location = new System.Drawing.Point(105, 148);
+            this.clientPhoneNr.Location = new System.Drawing.Point(107, 129);
             this.clientPhoneNr.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.clientPhoneNr.Multiline = true;
             this.clientPhoneNr.Name = "clientPhoneNr";
             this.clientPhoneNr.Size = new System.Drawing.Size(257, 25);
             this.clientPhoneNr.TabIndex = 7;
+            this.clientPhoneNr.TextChanged += new System.EventHandler(this.clientPhoneNr_TextChanged);
             // 
             // linkRegister
             // 
@@ -516,6 +508,29 @@
             this.LoginPageLogInbtn.Text = "Log In";
             this.LoginPageLogInbtn.Click += new System.EventHandler(this.LoginPageLogInbtn_Click);
             // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "ROMANIA",
+            "SPAIN",
+            "USA",
+            "CHINA",
+            "FRANCE",
+            "ITALY"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(107, 178);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(255, 36);
+            this.guna2ComboBox1.TabIndex = 25;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -565,7 +580,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox clientPhoneNr;
         public System.Windows.Forms.LinkLabel linkRegister;
-        private System.Windows.Forms.TextBox ClientCountryTxtbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox clientNametxtBox;
@@ -577,6 +591,7 @@
         private System.Windows.Forms.PictureBox exit;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }
 

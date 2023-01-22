@@ -129,7 +129,7 @@
             this.Room,
             this.DateIn,
             this.DateOut});
-            this.ResView.Location = new System.Drawing.Point(358, 121);
+            this.ResView.Location = new System.Drawing.Point(361, 110);
             this.ResView.Name = "ResView";
             this.ResView.RowHeadersWidth = 51;
             this.ResView.RowTemplate.Height = 25;
@@ -198,6 +198,7 @@
             this.dateInTimePicker.Name = "dateInTimePicker";
             this.dateInTimePicker.Size = new System.Drawing.Size(215, 27);
             this.dateInTimePicker.TabIndex = 30;
+            this.dateInTimePicker.ValueChanged += new System.EventHandler(this.dateInTimePicker_ValueChanged);
             // 
             // ReservationIdtb
             // 
