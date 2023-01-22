@@ -90,5 +90,20 @@ namespace HotelManagement
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Size s1 = new Size(526, 319);
+            Size s2 = new Size(600, 350);
+            if (pictureBox1.Size == s1)
+            {
+                pictureBox1.Size = s2;
+            }
+
+            if (pictureBox1.Size == s2)
+            {
+                pictureBox1.Size = s1;
+            }
+        }
     }
 }

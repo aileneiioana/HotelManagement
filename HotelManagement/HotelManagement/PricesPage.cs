@@ -102,5 +102,10 @@ namespace HotelManagement
         {
 
         }
+
+        private void richTextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
