@@ -68,6 +68,8 @@ namespace HotelManagement
                 ReservationIdtb.Text = model.ResId.ToString();
                 clientcb.Text = model.Client;
                 roomnumbercb.Text = model.Room.ToString();
+                dateInTimePicker.Text = model.DateIn.ToString();
+                dateOutTimePicker.Text = model.DateOut.ToString();
             }
         }
 
@@ -115,8 +117,8 @@ namespace HotelManagement
                 {
                     Client = clientcb.Text,
                     Room = int.Parse(roomnumbercb.Text),
-                    DateIn = dateInTimePicker.Value.ToString(),
-                    DateOut = dateOutTimePicker.Value.ToString()
+                    DateIn = dateInTimePicker.Value,
+                    DateOut = dateOutTimePicker.Value
                 };
                 resServices.AddRes(model);
                 MessageBox.Show("Rezervare adăugată cu succes!");
@@ -163,8 +165,8 @@ namespace HotelManagement
                         ResId = int.Parse(ReservationIdtb.Text),
                         Client = clientcb.Text,
                         Room = int.Parse(roomnumbercb.Text),
-                        DateIn = dateInTimePicker.Text,
-                        DateOut = dateOutTimePicker.Text
+                        DateIn = dateInTimePicker.Value,
+                        DateOut = dateOutTimePicker.Value
                     };
                     resServices.EditRes(model);
                     Clear();
@@ -185,8 +187,7 @@ namespace HotelManagement
 
         private void Search_Click_1(object sender, EventArgs e)
         {
-            int.TryParse(Searchtb.Text.Trim(), out int id);
-            var dataset = resServices.GetReservationsById(id);
+            var dataset = resServices.GetReservationsByName(Searchtb.Text.Trim());
             ResView.DataSource = dataset;
         }
 
@@ -201,6 +202,11 @@ namespace HotelManagement
         }
 
         private void Datelb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateInTimePicker_ValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -36,6 +36,15 @@ namespace HotelManagement
             }
         }
 
+        public List<Room_tbl> GetFreeRooms()
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Room_tbl.Where(x => x.RoomFree == "free").ToList();
+
+            }
+        }
+
         public List<Room_tbl> GetRoomsById(int id)
         {
             using (HoteldbEntities db = new HoteldbEntities())
@@ -71,6 +80,7 @@ namespace HotelManagement
             }
         }
 
+
         public void updateRoomState(int id, string state)
         {
             using (HoteldbEntities db = new HoteldbEntities())
@@ -85,5 +95,5 @@ namespace HotelManagement
             }
         }
 
-    };
+    }
 }

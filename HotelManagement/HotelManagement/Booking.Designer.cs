@@ -46,14 +46,14 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.emaitb = new System.Windows.Forms.TextBox();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.numetb = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.emailtb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -163,7 +163,7 @@
             this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
             this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
-            this.trimitereMailbtn.Location = new System.Drawing.Point(450, 700);
+            this.trimitereMailbtn.Location = new System.Drawing.Point(461, 600);
             this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.trimitereMailbtn.Name = "trimitereMailbtn";
             this.trimitereMailbtn.Size = new System.Drawing.Size(250, 73);
@@ -175,7 +175,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(724, 162);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(715, 222);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(386, 22);
@@ -190,7 +190,7 @@
             this.guna2CheckBox3.CheckedState.BorderThickness = 0;
             this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox3.Location = new System.Drawing.Point(806, 305);
+            this.guna2CheckBox3.Location = new System.Drawing.Point(797, 365);
             this.guna2CheckBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CheckBox3.Name = "guna2CheckBox3";
             this.guna2CheckBox3.Size = new System.Drawing.Size(164, 29);
@@ -208,7 +208,7 @@
             this.guna2CheckBox4.CheckedState.BorderThickness = 0;
             this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox4.Location = new System.Drawing.Point(806, 270);
+            this.guna2CheckBox4.Location = new System.Drawing.Point(797, 330);
             this.guna2CheckBox4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CheckBox4.Name = "guna2CheckBox4";
             this.guna2CheckBox4.Size = new System.Drawing.Size(188, 29);
@@ -227,7 +227,7 @@
             this.guna2CheckBox5.CheckedState.BorderThickness = 0;
             this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox5.Location = new System.Drawing.Point(806, 233);
+            this.guna2CheckBox5.Location = new System.Drawing.Point(797, 293);
             this.guna2CheckBox5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CheckBox5.Name = "guna2CheckBox5";
             this.guna2CheckBox5.Size = new System.Drawing.Size(195, 29);
@@ -268,7 +268,7 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(972, 358);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(963, 418);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(150, 27);
@@ -284,21 +284,11 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.DarkGray;
             this.guna2CustomGradientPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2CustomGradientPanel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(972, 396);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(963, 456);
             this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(123, 44);
             this.guna2CustomGradientPanel1.TabIndex = 47;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(64, 273);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 18);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Email";
             // 
             // guna2GradientButton1
             // 
@@ -307,7 +297,7 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.LightGray;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(734, 396);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(725, 456);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(177, 44);
@@ -315,29 +305,11 @@
             this.guna2GradientButton1.Text = "Calculează Preţ Total";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(366, 270);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 18);
-            this.label3.TabIndex = 52;
-            this.label3.Text = "Telefon";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(353, 305);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 29);
-            this.textBox1.TabIndex = 51;
-            // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(218, 374);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(47, 224);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(107, 20);
@@ -353,18 +325,10 @@
             "Camera Dubla Deluxe",
             "Camera pentru Familie",
             "Triol"});
-            this.comboBox1.Location = new System.Drawing.Point(203, 415);
+            this.comboBox1.Location = new System.Drawing.Point(32, 265);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 21);
+            this.comboBox1.Size = new System.Drawing.Size(253, 21);
             this.comboBox1.TabIndex = 54;
-            // 
-            // emaitb
-            // 
-            this.emaitb.Location = new System.Drawing.Point(35, 305);
-            this.emaitb.Multiline = true;
-            this.emaitb.Name = "emaitb";
-            this.emaitb.Size = new System.Drawing.Size(267, 29);
-            this.emaitb.TabIndex = 55;
             // 
             // guna2CheckBox1
             // 
@@ -373,16 +337,52 @@
             this.guna2CheckBox1.CheckedState.BorderRadius = 0;
             this.guna2CheckBox1.CheckedState.BorderThickness = 0;
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(824, 208);
+            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.guna2CheckBox1.Location = new System.Drawing.Point(797, 260);
             this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(177, 21);
+            this.guna2CheckBox1.Size = new System.Drawing.Size(183, 29);
             this.guna2CheckBox1.TabIndex = 56;
-            this.guna2CheckBox1.Text = "Sky Resort - 250 LEI";
+            this.guna2CheckBox1.Text = "Masaj - 250 LEI";
             this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            // 
+            // numetb
+            // 
+            this.numetb.Location = new System.Drawing.Point(35, 337);
+            this.numetb.Multiline = true;
+            this.numetb.Name = "numetb";
+            this.numetb.Size = new System.Drawing.Size(250, 29);
+            this.numetb.TabIndex = 58;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(64, 305);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 18);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "Nume";
+            // 
+            // emailtb
+            // 
+            this.emailtb.Location = new System.Drawing.Point(35, 406);
+            this.emailtb.Multiline = true;
+            this.emailtb.Name = "emailtb";
+            this.emailtb.Size = new System.Drawing.Size(250, 29);
+            this.emailtb.TabIndex = 60;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(64, 374);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 18);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Email";
             // 
             // Booking
             // 
@@ -390,14 +390,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1203, 800);
+            this.Controls.Add(this.emailtb);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numetb);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2CheckBox1);
-            this.Controls.Add(this.emaitb);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2DateTimePicker2);
@@ -445,14 +445,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox exit;
-        private System.Windows.Forms.TextBox emaitb;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private System.Windows.Forms.TextBox numetb;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox emailtb;
+        private System.Windows.Forms.Label label1;
     }
 }

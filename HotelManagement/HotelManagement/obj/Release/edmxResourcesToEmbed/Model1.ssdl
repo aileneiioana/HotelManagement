@@ -17,8 +17,8 @@
     <Property Name="ResId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Client" Type="varchar" MaxLength="30" />
     <Property Name="Room" Type="int" />
-    <Property Name="DateIn" Type="varchar" MaxLength="30" />
-    <Property Name="DateOut" Type="varchar" MaxLength="30" />
+    <Property Name="DateIn" Type="datetime" />
+    <Property Name="DateOut" Type="datetime" />
   </EntityType>
   <EntityType Name="Room_tbl">
     <Key>
