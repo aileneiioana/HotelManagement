@@ -70,7 +70,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(40, 223);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 241);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 34);
@@ -86,7 +86,7 @@
             this.btnLogIn.Location = new System.Drawing.Point(21, 692);
             this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(200, 46);
+            this.btnLogIn.Size = new System.Drawing.Size(207, 46);
             this.btnLogIn.TabIndex = 19;
             this.btnLogIn.Text = "Staff: Intră în cont";
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -97,10 +97,10 @@
             this.btnBooking.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBooking.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.ForeColor = System.Drawing.Color.White;
-            this.btnBooking.Location = new System.Drawing.Point(21, 639);
+            this.btnBooking.Location = new System.Drawing.Point(21, 630);
             this.btnBooking.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(200, 46);
+            this.btnBooking.Size = new System.Drawing.Size(207, 46);
             this.btnBooking.TabIndex = 18;
             this.btnBooking.Text = "Rezervă";
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
@@ -109,10 +109,10 @@
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(51, 81);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(32, 68);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 152);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;

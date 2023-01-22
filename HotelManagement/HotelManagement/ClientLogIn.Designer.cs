@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.exit = new System.Windows.Forms.PictureBox();
             this.btnBooking = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -51,7 +50,6 @@
             this.btnDespreHotel = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.staffGB.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +59,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Controls.Add(this.guna2PictureBox1);
-            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.btnBooking);
             this.panel1.Controls.Add(this.btnLogIn);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
@@ -76,7 +73,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 220);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(33, 246);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(179, 40);
@@ -87,24 +84,13 @@
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(45, 74);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(35, 67);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 152);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 37;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // exit
-            // 
-            this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(0, 0);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(31, 29);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.exit.TabIndex = 36;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // btnBooking
             // 
@@ -376,12 +362,10 @@
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "ClientLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FirstPage";
             this.Load += new System.EventHandler(this.ClientLogIn_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.staffGB.ResumeLayout(false);
             this.staffGB.PerformLayout();
@@ -409,7 +393,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientButton staffCancelbtn;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private System.Windows.Forms.PictureBox exit;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }

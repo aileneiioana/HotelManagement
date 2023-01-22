@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Datelbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,7 +54,6 @@
             this.emailtb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +76,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Datelbl);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,17 +85,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1203, 81);
             this.panel1.TabIndex = 15;
-            // 
-            // exit
-            // 
-            this.exit.Image = global::HotelManagement.Properties.Resources.close;
-            this.exit.Location = new System.Drawing.Point(0, 0);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(31, 29);
-            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.exit.TabIndex = 55;
-            this.exit.TabStop = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // label2
             // 
@@ -416,11 +402,9 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Booking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Booking";
             this.Load += new System.EventHandler(this.Booking_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
@@ -449,7 +433,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox exit;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
         private System.Windows.Forms.TextBox numetb;
         private System.Windows.Forms.Label label4;

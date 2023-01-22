@@ -63,5 +63,10 @@ namespace HotelManagement
             res.Show();
             this.Hide();
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

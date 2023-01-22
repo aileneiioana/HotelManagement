@@ -46,7 +46,7 @@ namespace HotelManagement
         void fillRoomcb()
         {
             RoomServices roomServices = new RoomServices();
-            var dataset = roomServices.GetFreeIDs();
+            var dataset = roomServices.GetRoomsIds();
             roomnumbercb.DataSource = dataset;
         }
         void PopulateDataGridView()

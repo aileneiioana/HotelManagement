@@ -40,18 +40,18 @@
             this.btnCamere = new Guna.UI2.WinForms.Guna2Button();
             this.btnFacilitati = new Guna.UI2.WinForms.Guna2Button();
             this.staffGB = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.subiectContacttxt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.mesajContacttxt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.trimitereMailbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.trimitereMailbtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mesajContacttxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.subiectContacttxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
@@ -106,7 +106,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(40, 223);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 242);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 34);
@@ -117,10 +117,10 @@
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(51, 81);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(30, 59);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 152);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
@@ -233,73 +233,6 @@
             this.staffGB.TabIndex = 15;
             this.staffGB.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(77, 106);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 30);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Către (Email):";
-            // 
-            // subiectContacttxt
-            // 
-            this.subiectContacttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.subiectContacttxt.Location = new System.Drawing.Point(81, 228);
-            this.subiectContacttxt.Margin = new System.Windows.Forms.Padding(2);
-            this.subiectContacttxt.Multiline = true;
-            this.subiectContacttxt.Name = "subiectContacttxt";
-            this.subiectContacttxt.Size = new System.Drawing.Size(252, 44);
-            this.subiectContacttxt.TabIndex = 31;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label3.Location = new System.Drawing.Point(77, 187);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 30);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Subiect:";
-            // 
-            // mesajContacttxt
-            // 
-            this.mesajContacttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.mesajContacttxt.Location = new System.Drawing.Point(81, 347);
-            this.mesajContacttxt.Margin = new System.Windows.Forms.Padding(2);
-            this.mesajContacttxt.Multiline = true;
-            this.mesajContacttxt.Name = "mesajContacttxt";
-            this.mesajContacttxt.Size = new System.Drawing.Size(873, 143);
-            this.mesajContacttxt.TabIndex = 33;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label7.Location = new System.Drawing.Point(77, 291);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 30);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Mesaj:";
-            // 
-            // trimitereMailbtn
-            // 
-            this.trimitereMailbtn.AutoRoundedCorners = true;
-            this.trimitereMailbtn.BorderRadius = 27;
-            this.trimitereMailbtn.BorderThickness = 1;
-            this.trimitereMailbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
-            this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
-            this.trimitereMailbtn.Location = new System.Drawing.Point(416, 541);
-            this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.trimitereMailbtn.Name = "trimitereMailbtn";
-            this.trimitereMailbtn.Size = new System.Drawing.Size(150, 56);
-            this.trimitereMailbtn.TabIndex = 35;
-            this.trimitereMailbtn.Text = "Trimitere";
-            this.trimitereMailbtn.Click += new System.EventHandler(this.trimitereMailbtn_Click);
-            // 
             // guna2ComboBox1
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
@@ -319,47 +252,6 @@
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(252, 36);
             this.guna2ComboBox1.TabIndex = 36;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.Location = new System.Drawing.Point(382, 239);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(565, 43);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Relaţii Clienti - laura.anton@student.unitbv.ro";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label4.Location = new System.Drawing.Point(382, 154);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(496, 42);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "CEO - ioana.ailenei@student.unitbv.ro";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label5.Location = new System.Drawing.Point(382, 196);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(595, 43);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Manager - antonia.chelemen@student.unitbv.ro";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label6.Location = new System.Drawing.Point(382, 282);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(500, 39);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "PR - victor.ambarus@student.unitbv.ro";
             // 
             // guna2TextBox2
             // 
@@ -386,6 +278,114 @@
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(195, 79);
             this.guna2TextBox2.TabIndex = 33;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label6.Location = new System.Drawing.Point(382, 282);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(500, 39);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "PR - victor.ambarus@student.unitbv.ro";
+            // 
+            // trimitereMailbtn
+            // 
+            this.trimitereMailbtn.AutoRoundedCorners = true;
+            this.trimitereMailbtn.BorderRadius = 27;
+            this.trimitereMailbtn.BorderThickness = 1;
+            this.trimitereMailbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
+            this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
+            this.trimitereMailbtn.Location = new System.Drawing.Point(416, 541);
+            this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.trimitereMailbtn.Name = "trimitereMailbtn";
+            this.trimitereMailbtn.Size = new System.Drawing.Size(150, 56);
+            this.trimitereMailbtn.TabIndex = 35;
+            this.trimitereMailbtn.Text = "Trimitere";
+            this.trimitereMailbtn.Click += new System.EventHandler(this.trimitereMailbtn_Click);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label5.Location = new System.Drawing.Point(382, 196);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(595, 43);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Manager - antonia.chelemen@student.unitbv.ro";
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label7.Location = new System.Drawing.Point(77, 291);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 30);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Mesaj:";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label4.Location = new System.Drawing.Point(382, 154);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(496, 42);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "CEO - ioana.ailenei@student.unitbv.ro";
+            // 
+            // mesajContacttxt
+            // 
+            this.mesajContacttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.mesajContacttxt.Location = new System.Drawing.Point(81, 347);
+            this.mesajContacttxt.Margin = new System.Windows.Forms.Padding(2);
+            this.mesajContacttxt.Multiline = true;
+            this.mesajContacttxt.Name = "mesajContacttxt";
+            this.mesajContacttxt.Size = new System.Drawing.Size(873, 143);
+            this.mesajContacttxt.TabIndex = 33;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2.Location = new System.Drawing.Point(382, 239);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(565, 43);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Relaţii Clienti - laura.anton@student.unitbv.ro";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label3.Location = new System.Drawing.Point(77, 187);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 30);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Subiect:";
+            // 
+            // subiectContacttxt
+            // 
+            this.subiectContacttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.subiectContacttxt.Location = new System.Drawing.Point(81, 228);
+            this.subiectContacttxt.Margin = new System.Windows.Forms.Padding(2);
+            this.subiectContacttxt.Multiline = true;
+            this.subiectContacttxt.Name = "subiectContacttxt";
+            this.subiectContacttxt.Size = new System.Drawing.Size(252, 44);
+            this.subiectContacttxt.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Location = new System.Drawing.Point(77, 106);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 30);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Către (Email):";
             // 
             // label9
             // 

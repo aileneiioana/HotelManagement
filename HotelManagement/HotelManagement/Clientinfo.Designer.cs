@@ -77,7 +77,7 @@ namespace HotelManagement
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(285, 13);
+            this.label2.Location = new System.Drawing.Point(395, 12);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(398, 57);
@@ -88,7 +88,7 @@ namespace HotelManagement
             // 
             this.Datelbl.AutoSize = true;
             this.Datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.Datelbl.Location = new System.Drawing.Point(797, 44);
+            this.Datelbl.Location = new System.Drawing.Point(1035, 44);
             this.Datelbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(57, 25);
@@ -99,10 +99,10 @@ namespace HotelManagement
             // 
             this.clientnametbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientnametbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.clientnametbl.Location = new System.Drawing.Point(81, 229);
+            this.clientnametbl.Location = new System.Drawing.Point(123, 279);
             this.clientnametbl.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.clientnametbl.Name = "clientnametbl";
-            this.clientnametbl.Size = new System.Drawing.Size(215, 35);
+            this.clientnametbl.Size = new System.Drawing.Size(230, 58);
             this.clientnametbl.TabIndex = 2;
             this.clientnametbl.Text = "Nume";
             // 
@@ -110,10 +110,10 @@ namespace HotelManagement
             // 
             this.clientphonetb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientphonetb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.clientphonetb.Location = new System.Drawing.Point(81, 280);
+            this.clientphonetb.Location = new System.Drawing.Point(123, 355);
             this.clientphonetb.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.clientphonetb.Name = "clientphonetb";
-            this.clientphonetb.Size = new System.Drawing.Size(215, 35);
+            this.clientphonetb.Size = new System.Drawing.Size(230, 58);
             this.clientphonetb.TabIndex = 3;
             this.clientphonetb.Text = "Număr Telefon";
             // 
@@ -129,10 +129,10 @@ namespace HotelManagement
             "CHINA",
             "FRANCE",
             "ITALY"});
-            this.clientctrytb.Location = new System.Drawing.Point(81, 378);
+            this.clientctrytb.Location = new System.Drawing.Point(123, 481);
             this.clientctrytb.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.clientctrytb.Name = "clientctrytb";
-            this.clientctrytb.Size = new System.Drawing.Size(215, 28);
+            this.clientctrytb.Size = new System.Drawing.Size(230, 28);
             this.clientctrytb.TabIndex = 4;
             this.clientctrytb.Text = "Ţara";
             // 
@@ -145,12 +145,12 @@ namespace HotelManagement
             this.ClientPhone,
             this.Country,
             this.Password});
-            this.ClientGridview.Location = new System.Drawing.Point(355, 101);
+            this.ClientGridview.Location = new System.Drawing.Point(565, 101);
             this.ClientGridview.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.ClientGridview.Name = "ClientGridview";
             this.ClientGridview.RowHeadersWidth = 51;
             this.ClientGridview.RowTemplate.Height = 29;
-            this.ClientGridview.Size = new System.Drawing.Size(870, 689);
+            this.ClientGridview.Size = new System.Drawing.Size(551, 689);
             this.ClientGridview.TabIndex = 5;
             this.ClientGridview.DoubleClick += new System.EventHandler(this.ClientGridview_DoubleClick);
             // 
@@ -199,7 +199,7 @@ namespace HotelManagement
             // 
             this.ClientSearchtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClientSearchtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSearchtb.Location = new System.Drawing.Point(33, 101);
+            this.ClientSearchtb.Location = new System.Drawing.Point(98, 130);
             this.ClientSearchtb.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.ClientSearchtb.Name = "ClientSearchtb";
             this.ClientSearchtb.Size = new System.Drawing.Size(160, 30);
@@ -213,7 +213,7 @@ namespace HotelManagement
             this.Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Search.Location = new System.Drawing.Point(197, 101);
+            this.Search.Location = new System.Drawing.Point(262, 130);
             this.Search.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(106, 29);
@@ -225,7 +225,7 @@ namespace HotelManagement
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(19, 523);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 723);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 50);
@@ -237,7 +237,7 @@ namespace HotelManagement
             // refreshpb
             // 
             this.refreshpb.Image = ((System.Drawing.Image)(resources.GetObject("refreshpb.Image")));
-            this.refreshpb.Location = new System.Drawing.Point(307, 97);
+            this.refreshpb.Location = new System.Drawing.Point(372, 126);
             this.refreshpb.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.refreshpb.Name = "refreshpb";
             this.refreshpb.Size = new System.Drawing.Size(31, 34);
@@ -251,26 +251,26 @@ namespace HotelManagement
             this.clientIdTxtbox.Enabled = false;
             this.clientIdTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientIdTxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.clientIdTxtbox.Location = new System.Drawing.Point(81, 176);
+            this.clientIdTxtbox.Location = new System.Drawing.Point(123, 202);
             this.clientIdTxtbox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.clientIdTxtbox.Name = "clientIdTxtbox";
-            this.clientIdTxtbox.Size = new System.Drawing.Size(215, 35);
+            this.clientIdTxtbox.Size = new System.Drawing.Size(230, 58);
             this.clientIdTxtbox.TabIndex = 14;
             this.clientIdTxtbox.Text = "Id";
             // 
             // BtnDeleteStaff
             // 
             this.BtnDeleteStaff.AutoRoundedCorners = true;
-            this.BtnDeleteStaff.BorderRadius = 17;
+            this.BtnDeleteStaff.BorderRadius = 25;
             this.BtnDeleteStaff.BorderThickness = 1;
             this.BtnDeleteStaff.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnDeleteStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnDeleteStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnDeleteStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnDeleteStaff.Location = new System.Drawing.Point(242, 469);
+            this.BtnDeleteStaff.Location = new System.Drawing.Point(342, 598);
             this.BtnDeleteStaff.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnDeleteStaff.Name = "BtnDeleteStaff";
-            this.BtnDeleteStaff.Size = new System.Drawing.Size(96, 36);
+            this.BtnDeleteStaff.Size = new System.Drawing.Size(112, 53);
             this.BtnDeleteStaff.TabIndex = 36;
             this.BtnDeleteStaff.Text = "Şterge";
             this.BtnDeleteStaff.Click += new System.EventHandler(this.BtnDeleteStaff_Click);
@@ -278,16 +278,16 @@ namespace HotelManagement
             // BtnEditStaff
             // 
             this.BtnEditStaff.AutoRoundedCorners = true;
-            this.BtnEditStaff.BorderRadius = 17;
+            this.BtnEditStaff.BorderRadius = 25;
             this.BtnEditStaff.BorderThickness = 1;
             this.BtnEditStaff.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnEditStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnEditStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnEditStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnEditStaff.Location = new System.Drawing.Point(142, 469);
+            this.BtnEditStaff.Location = new System.Drawing.Point(205, 598);
             this.BtnEditStaff.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnEditStaff.Name = "BtnEditStaff";
-            this.BtnEditStaff.Size = new System.Drawing.Size(96, 36);
+            this.BtnEditStaff.Size = new System.Drawing.Size(112, 53);
             this.BtnEditStaff.TabIndex = 35;
             this.BtnEditStaff.Text = "Editează";
             this.BtnEditStaff.Click += new System.EventHandler(this.BtnEditStaff_Click);
@@ -295,16 +295,16 @@ namespace HotelManagement
             // BtnAddStaff
             // 
             this.BtnAddStaff.AutoRoundedCorners = true;
-            this.BtnAddStaff.BorderRadius = 17;
+            this.BtnAddStaff.BorderRadius = 25;
             this.BtnAddStaff.BorderThickness = 1;
             this.BtnAddStaff.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnAddStaff.FillColor2 = System.Drawing.Color.LightGray;
             this.BtnAddStaff.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.BtnAddStaff.ForeColor = System.Drawing.Color.Black;
-            this.BtnAddStaff.Location = new System.Drawing.Point(42, 469);
+            this.BtnAddStaff.Location = new System.Drawing.Point(63, 598);
             this.BtnAddStaff.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BtnAddStaff.Name = "BtnAddStaff";
-            this.BtnAddStaff.Size = new System.Drawing.Size(96, 36);
+            this.BtnAddStaff.Size = new System.Drawing.Size(112, 53);
             this.BtnAddStaff.TabIndex = 34;
             this.BtnAddStaff.Text = "Adaugă";
             this.BtnAddStaff.Click += new System.EventHandler(this.BtnAddStaff_Click);
@@ -312,10 +312,10 @@ namespace HotelManagement
             // passwordTb
             // 
             this.passwordTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.passwordTb.Location = new System.Drawing.Point(81, 335);
+            this.passwordTb.Location = new System.Drawing.Point(123, 435);
             this.passwordTb.Name = "passwordTb";
             this.passwordTb.PasswordChar = '*';
-            this.passwordTb.Size = new System.Drawing.Size(215, 26);
+            this.passwordTb.Size = new System.Drawing.Size(230, 26);
             this.passwordTb.TabIndex = 37;
             this.passwordTb.Text = "Parolă";
             // 
@@ -342,7 +342,6 @@ namespace HotelManagement
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Clientinfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Clientinfo";
             this.Load += new System.EventHandler(this.Clientinfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

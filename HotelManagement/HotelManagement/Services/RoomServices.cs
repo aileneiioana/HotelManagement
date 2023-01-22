@@ -27,6 +27,14 @@ namespace HotelManagement
             }
         }
 
+        public List<int> GetRoomsIds()
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Room_tbl.Select(x => x.RoomId).ToList();
+            }
+        }
+
         public List<int> GetFreeIDs()
         {
             using (HoteldbEntities db = new HoteldbEntities())

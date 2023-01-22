@@ -49,9 +49,9 @@ namespace HotelManagement
             // usernametb
             // 
             this.usernametb.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
-            this.usernametb.Location = new System.Drawing.Point(643, 323);
+            this.usernametb.Location = new System.Drawing.Point(593, 313);
             this.usernametb.Name = "usernametb";
-            this.usernametb.Size = new System.Drawing.Size(182, 41);
+            this.usernametb.Size = new System.Drawing.Size(324, 41);
             this.usernametb.TabIndex = 2;
             this.usernametb.UseWaitCursor = true;
             this.usernametb.TextChanged += new System.EventHandler(this.usernametb_TextChanged);
@@ -59,10 +59,10 @@ namespace HotelManagement
             // passwordtb
             // 
             this.passwordtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
-            this.passwordtb.Location = new System.Drawing.Point(643, 403);
+            this.passwordtb.Location = new System.Drawing.Point(593, 393);
             this.passwordtb.Name = "passwordtb";
             this.passwordtb.PasswordChar = '*';
-            this.passwordtb.Size = new System.Drawing.Size(182, 41);
+            this.passwordtb.Size = new System.Drawing.Size(324, 41);
             this.passwordtb.TabIndex = 3;
             this.passwordtb.UseSystemPasswordChar = true;
             // 
@@ -83,7 +83,7 @@ namespace HotelManagement
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(40, 223);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(42, 236);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 34);
@@ -96,7 +96,7 @@ namespace HotelManagement
             this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(21, 639);
+            this.btnBack.Location = new System.Drawing.Point(20, 685);
             this.btnBack.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(200, 46);
@@ -109,10 +109,10 @@ namespace HotelManagement
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(51, 81);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(30, 68);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 152);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
@@ -133,16 +133,16 @@ namespace HotelManagement
             // registerBtn
             // 
             this.registerBtn.AutoRoundedCorners = true;
-            this.registerBtn.BorderRadius = 20;
+            this.registerBtn.BorderRadius = 30;
             this.registerBtn.BorderThickness = 1;
             this.registerBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.registerBtn.FillColor2 = System.Drawing.Color.LightGray;
             this.registerBtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerBtn.ForeColor = System.Drawing.Color.Black;
-            this.registerBtn.Location = new System.Drawing.Point(629, 506);
+            this.registerBtn.Location = new System.Drawing.Point(645, 505);
             this.registerBtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(161, 43);
+            this.registerBtn.Size = new System.Drawing.Size(173, 62);
             this.registerBtn.TabIndex = 23;
             this.registerBtn.Text = "Intră în cont";
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
@@ -150,9 +150,9 @@ namespace HotelManagement
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HotelManagement.Properties.Resources.password;
-            this.pictureBox3.Location = new System.Drawing.Point(590, 403);
+            this.pictureBox3.Location = new System.Drawing.Point(540, 393);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -160,9 +160,9 @@ namespace HotelManagement
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HotelManagement.Properties.Resources.username;
-            this.pictureBox2.Location = new System.Drawing.Point(591, 323);
+            this.pictureBox2.Location = new System.Drawing.Point(541, 313);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -184,7 +184,6 @@ namespace HotelManagement
             this.MaximizeBox = false;
             this.Name = "StaffLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.StaffLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
