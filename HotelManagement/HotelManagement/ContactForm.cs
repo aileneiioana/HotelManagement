@@ -96,16 +96,7 @@ namespace HotelManagement
             new PricesPage().Show();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnContact_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void btnBooking_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -124,14 +115,11 @@ namespace HotelManagement
             new CamereForm().Show();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
     }
 }

@@ -68,6 +68,14 @@ namespace HotelManagement.Services
             }
         }
 
+        public List<Reservation_tbl> GetReservationsByRoom(int room)
+        {
+            using (HoteldbEntities db = new HoteldbEntities())
+            {
+                return db.Reservation_tbl.Where(x => x.Room == room).ToList();
+            }
+        }
+
         public List<Reservation_tbl> GetReservationsByName(string name)
         {
             using (HoteldbEntities db = new HoteldbEntities())

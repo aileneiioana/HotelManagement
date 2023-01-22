@@ -11,8 +11,10 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EASendMail;
+using Guna.UI2.WinForms;
 using HotelManagement.Services;
 using HotelManagementApplication;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HotelManagement
 {
@@ -140,68 +142,125 @@ namespace HotelManagement
                 {
 
                     if (data2 > data1)
-                   {
-                    if (data1 > DateTime.Today)
                     {
-                        rooms = roomServices.GetFreeRooms();
-                        for (int i = 0; i < rooms.Count; i++)
+                        if (data1 > DateTime.Today)
                         {
-                            if (rooms[i].RoomType.ToString() == comboBox1.SelectedItem.ToString() && x == 0)
+                            rooms = roomServices.GetFreeRooms();
+                            for (int i = 0; i < rooms.Count; i++)
                             {
-                                MessageBox.Show("A fost facut" + rooms[i].RoomId.ToString() + comboBox1.SelectedItem.ToString() + "1");
-                                var model = new Reservation_tbl
+                                if (rooms[i].RoomType.ToString() == comboBox1.SelectedItem.ToString() && x == 0)
                                 {
-                                    Client = numetb.Text,
-                                    Room = rooms[i].RoomId,
-                                    DateIn = guna2DateTimePicker1.Value,
-                                    DateOut = guna2DateTimePicker2.Value
+                                   // MessageBox.Show("A fost facut" + rooms[i].RoomId.ToString() + comboBox1.SelectedItem.ToString() + "1");
+                                    var model = new Reservation_tbl
+                                    {
+                                        Client = numetb.Text,
+                                        Room = rooms[i].RoomId,
+                                        DateIn = guna2DateTimePicker1.Value,
+                                        DateOut = guna2DateTimePicker2.Value
 
-                                };
-                                resServices.AddRes(model);
-                                MessageBox.Show("Rezervare adăugată cu succes!");
-                                x = 1;
+                                    };
+                                    resServices.AddRes(model);
+                                    int.TryParse(model.Room.ToString(), out int id);
+                                    roomServices.updateRoomState(id, "busy");
+
+
+                                    try
+                                    {
+                                        SmtpMail oMail = new SmtpMail("TryIt");
+                                        oMail.From = "vambarus@yahoo.com";
+                                        oMail.To = emailtb.Text;
+                                        oMail.Subject = "Confirmare Rezervare";
+                                        oMail.TextBody = "Ati fost cazat in camera "+ rooms[i].RoomId.ToString() +" avand facilitatile extra " + s 
+                                            + "\n Costul pe care il aveti de achitat este " + pret.ToString()+"\n Multumim, Hotel LIAV!";
+                                        SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
+                                        oServer.User = "vambarus@yahoo.com";
+                                        oServer.Password = "nkqfgoqzkpoymzik";
+                                        oServer.Port = 465;
+                                        oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                                        Console.WriteLine("start to send email over SSL ...");
+                                        SmtpClient oSmtp = new SmtpClient();
+                                        oSmtp.SendMail(oServer, oMail);
+                                        Console.WriteLine("email was sent successfully!");
+                                        //MessageBox.Show("Email a fost trimis cu succes!");
+                                    }
+                                    catch (Exception ep)
+                                    {
+                                        Console.WriteLine("failed to send email with the following error:");
+                                        Console.WriteLine(ep.Message);
+                                    }
+
+                                    MessageBox.Show("Ai fost cazat in camera " +rooms[i].RoomId.ToString());
+                                    x = 1;
+                                }
                             }
-                        }
 
 
 
-                        resList = resServices.GetRoomsByFree(guna2DateTimePicker1.Value, guna2DateTimePicker2.Value);
-                        for (int i = 0; i < resList.Count; i++)
-                        {
-                            Reservation_tbl r = resList[i];
-                            RoomIds.Add((int)r.Room);
-                        }
-                        for (int i = 0; i < RoomIds.Count; i++)
-                        {
-                            Room_tbl room = roomServices.GetRoomById(RoomIds[i]);
-                            if (room.RoomType.ToString() == comboBox1.SelectedItem.ToString() && x == 0)
+                            resList = resServices.GetRoomsByFree(guna2DateTimePicker1.Value, guna2DateTimePicker2.Value);
+                            for (int i = 0; i < resList.Count; i++)
                             {
-                                MessageBox.Show("A fost facut" + room.RoomId.ToString() + comboBox1.SelectedItem.ToString());
-                                var model = new Reservation_tbl
+                                Reservation_tbl r = resList[i];
+                                RoomIds.Add((int)r.Room);
+                            }
+                            for (int i = 0; i < RoomIds.Count; i++)
+                            {
+                                Room_tbl room = roomServices.GetRoomById(RoomIds[i]);
+                                if (room.RoomType.ToString() == comboBox1.SelectedItem.ToString() && x == 0)
                                 {
-                                    Client = numetb.Text,
-                                    Room = rooms[i].RoomId,
-                                    DateIn = guna2DateTimePicker1.Value,
-                                    DateOut = guna2DateTimePicker2.Value
+                                   // MessageBox.Show("A fost facut" + room.RoomId.ToString() + comboBox1.SelectedItem.ToString());
+                                    var model = new Reservation_tbl
+                                    {
+                                        Client = numetb.Text,
+                                        Room = room.RoomId,
+                                        DateIn = guna2DateTimePicker1.Value,
+                                        DateOut = guna2DateTimePicker2.Value
 
-                                };
+                                    };
+                                   // MessageBox.Show("A fost facut"  +model.Room.ToString());
+                                    resServices.AddRes(model);
+                                    int.TryParse(model.Room.ToString(), out int id);
+                                    roomServices.updateRoomState(id, "busy");
 
-                                resServices.AddRes(model);
-                                MessageBox.Show("Rezervare adăugată cu succes!");
-                                numetb.Text = "";
-                                comboBox1.Text = "";
-                                x = 1;
+                                    try
+                                    {
+                                        SmtpMail oMail = new SmtpMail("TryIt");
+                                        oMail.From = "vambarus@yahoo.com";
+                                        oMail.To = emailtb.Text;
+                                        oMail.Subject = "Confirmare Rezervare";
+                                        oMail.TextBody = "Ati fost cazat in camera " + model.Room.ToString() + " avand facilitatile extra " + s
+                                            + "\n Costul pe care il aveti de achitat este " + pret.ToString() + "\n Multumim, Hotel LIAV!";
+                                        SmtpServer oServer = new SmtpServer("smtp.mail.yahoo.com");
+                                        oServer.User = "vambarus@yahoo.com";
+                                        oServer.Password = "nkqfgoqzkpoymzik";
+                                        oServer.Port = 465;
+                                        oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                                        Console.WriteLine("start to send email over SSL ...");
+                                        SmtpClient oSmtp = new SmtpClient();
+                                        oSmtp.SendMail(oServer, oMail);
+                                        Console.WriteLine("email was sent successfully!");
+                                        //MessageBox.Show("Email a fost trimis cu succes!");
+                                    }
+                                    catch (Exception ep)
+                                    {
+                                        Console.WriteLine("failed to send email with the following error:");
+                                        Console.WriteLine(ep.Message);
+                                    }
+
+                                    MessageBox.Show("Ai fost cazat in camera "+ model.Room.ToString());
+                                    numetb.Text = "";
+                                    comboBox1.Text = "";
+                                    x = 1;
+                                }
+
                             }
 
+
+                            if (x == 0) MessageBox.Show("Nu s-a putut face rezervarea. Va rugam incercati alta perioada sau alt tip de camera. Multumim!");
+
                         }
-
-
-                        if (x == 0) MessageBox.Show("Nu s-a putut face rezervarea. Va rugam incercati alta perioada sau alt tip de camera. Multumim!");
-                   
-                     }
-                    else MessageBox.Show("Perioada rezervarii trebuie introdusa corect! Data CheckIn trebuie sa fie dupa data de astazi!");
-                }
-                else MessageBox.Show("Perioada rezervarii trebuie introdusa corect! Data CheckOut trebuie sa fie dupa data CheckIn!");
+                        else MessageBox.Show("Perioada rezervarii trebuie introdusa corect! Data CheckIn trebuie sa fie dupa data de astazi!");
+                    }
+                    else MessageBox.Show("Perioada rezervarii trebuie introdusa corect! Data CheckOut trebuie sa fie dupa data CheckIn!");
 
                 }
                 else MessageBox.Show("Email-ul trebuie introdus in formatul corect! exemplu: email@email.com");
@@ -260,5 +319,9 @@ namespace HotelManagement
             this.Hide();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -73,7 +73,7 @@
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(267, 30);
             this.guna2DateTimePicker1.TabIndex = 13;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 19, 22, 27, 54, 0);
+            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 22, 0, 0, 0, 0);
             // 
             // panel1
             // 
@@ -251,7 +251,7 @@
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
             this.guna2DateTimePicker2.Size = new System.Drawing.Size(267, 30);
             this.guna2DateTimePicker2.TabIndex = 44;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 19, 22, 27, 50, 0);
+            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 22, 0, 0, 0, 0);
             // 
             // guna2HtmlLabel4
             // 
@@ -325,7 +325,7 @@
             "Camera Dubla Deluxe",
             "Camera pentru Familie",
             "Triol"});
-            this.comboBox1.Location = new System.Drawing.Point(32, 265);
+            this.comboBox1.Location = new System.Drawing.Point(35, 260);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(253, 21);
             this.comboBox1.TabIndex = 54;
@@ -360,7 +360,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(64, 305);
+            this.label4.Location = new System.Drawing.Point(44, 304);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 18);
             this.label4.TabIndex = 57;
@@ -378,11 +378,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(64, 374);
+            this.label1.Location = new System.Drawing.Point(44, 376);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 18);
             this.label1.TabIndex = 59;
             this.label1.Text = "Email";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Booking
             // 

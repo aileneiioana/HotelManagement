@@ -163,7 +163,7 @@ namespace HotelManagement
                 }
                 else
                 {
-                    MessageBox.Show("Introduceti corect numaul de telefon!");
+                    MessageBox.Show("Introduceti corect numarul de telefon! Trebuie sa contina 10 cifre!");
 
                 } 
             }
@@ -184,7 +184,7 @@ namespace HotelManagement
                     MessageBox.Show("Client Actualizat cu Succes!");
                     PopulateDataGridView();
                 }
-                else MessageBox.Show("Introdu numarul de telefon corect!");
+                else MessageBox.Show("Introdu numarul de telefon corect! Trebuie sa contina 10 cifre!");
             }
             else MessageBox.Show("Introdu date in toate campurile!");
         }

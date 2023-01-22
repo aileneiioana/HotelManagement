@@ -297,7 +297,6 @@
             this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 15;
             this.label4.Text = "Nume ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // clientNametxtBox
             // 
@@ -373,7 +372,6 @@
             this.clientPhoneNr.Name = "clientPhoneNr";
             this.clientPhoneNr.Size = new System.Drawing.Size(257, 25);
             this.clientPhoneNr.TabIndex = 7;
-            this.clientPhoneNr.TextChanged += new System.EventHandler(this.clientPhoneNr_TextChanged);
             // 
             // linkRegister
             // 
@@ -402,7 +400,6 @@
             this.btnContact.Size = new System.Drawing.Size(133, 46);
             this.btnContact.TabIndex = 20;
             this.btnContact.Text = "Contact";
-            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
             // 
             // btnTarife
             // 
@@ -529,7 +526,6 @@
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(255, 36);
             this.guna2ComboBox1.TabIndex = 25;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // Register
             // 

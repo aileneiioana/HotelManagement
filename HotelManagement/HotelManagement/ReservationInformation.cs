@@ -128,7 +128,7 @@ namespace HotelManagement
                 PopulateDataGridView();
                 Clear();
                 } 
-               else MessageBox.Show("Perioada trebuie introdusă corect!");
+               else MessageBox.Show("Perioada trebuie introdusă corect! \nCheckIn-ul trebuie facut dupa data de astazi, iar Checkout trebuie facut dupa CheckIn!");
             }
             else MessageBox.Show("Numele Clientului şi Numărul Camerei trebuie introduse!");
         }
@@ -136,13 +136,16 @@ namespace HotelManagement
 
         private void BtnDeleteRes_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Eşti sigur că vrei să ştergi această rezervare_", "Informaţii Rezervări", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Eşti sigur că vrei să ştergi această rezervare?", "Informaţii Rezervări", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 resServices.DeleteRes(model);
                 PopulateDataGridView();
                 MessageBox.Show("Rezervare Ştersă cu Succes");
                 int.TryParse(model.Room.ToString(), out int id);
-                roomServices.updateRoomState(id, "free");
+                List < Reservation_tbl > reservations= new List<Reservation_tbl>();
+                reservations = resServices.GetReservationsByRoom(id);
+                if (reservations.Count == 0)
+                  roomServices.updateRoomState(id, "free");
                 fillRoomcb(); 
                 Clear();
             }

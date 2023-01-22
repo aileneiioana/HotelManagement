@@ -87,7 +87,7 @@ namespace HotelManagement
                       }
                         else MessageBox.Show("Parolele trebuie introduse la fel in ambele campuri", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                  }
-                 else MessageBox.Show("Introdu corect numarul de telefon!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 else MessageBox.Show("Introdu corect numarul de telefon! Trebuie sa contina 10 cifre!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             } else MessageBox.Show("Toate campurile trebuie completate!", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
@@ -97,24 +97,5 @@ namespace HotelManagement
             Application.Exit();
         }
 
-        private void btnContact_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void clientPhoneNr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
