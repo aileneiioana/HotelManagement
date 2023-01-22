@@ -69,7 +69,7 @@
             // PhoneNrTxtbox
             // 
             this.PhoneNrTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhoneNrTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNrTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.PhoneNrTxtbox.Location = new System.Drawing.Point(415, 297);
             this.PhoneNrTxtbox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PhoneNrTxtbox.Multiline = true;
@@ -80,6 +80,7 @@
             // PasswordLogInTxtBox
             // 
             this.PasswordLogInTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordLogInTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.PasswordLogInTxtBox.Location = new System.Drawing.Point(415, 405);
             this.PasswordLogInTxtBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PasswordLogInTxtBox.Multiline = true;

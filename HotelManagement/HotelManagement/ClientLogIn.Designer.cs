@@ -230,6 +230,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.textBox1.Location = new System.Drawing.Point(224, 290);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBox1.Multiline = true;
@@ -242,6 +243,7 @@
             // UsernameLogInTxtBox
             // 
             this.UsernameLogInTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsernameLogInTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.UsernameLogInTxtBox.Location = new System.Drawing.Point(223, 214);
             this.UsernameLogInTxtBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.UsernameLogInTxtBox.Multiline = true;

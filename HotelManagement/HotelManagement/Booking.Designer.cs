@@ -62,14 +62,14 @@
             // 
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(35, 162);
             this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(267, 30);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(333, 30);
             this.guna2DateTimePicker1.TabIndex = 13;
             this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 22, 0, 0, 0, 0);
             // 
@@ -123,22 +123,22 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(67, 120);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 120);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(70, 20);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(119, 33);
             this.guna2HtmlLabel1.TabIndex = 17;
             this.guna2HtmlLabel1.Text = "Check-in";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(369, 120);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(450, 120);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(81, 20);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(137, 33);
             this.guna2HtmlLabel2.TabIndex = 18;
             this.guna2HtmlLabel2.Text = "Check-out";
             // 
@@ -147,7 +147,7 @@
             this.trimitereMailbtn.BorderThickness = 1;
             this.trimitereMailbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
-            this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
             this.trimitereMailbtn.Location = new System.Drawing.Point(461, 600);
             this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
@@ -160,11 +160,11 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(715, 222);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(685, 224);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(386, 22);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(507, 27);
             this.guna2HtmlLabel3.TabIndex = 37;
             this.guna2HtmlLabel3.Text = "Facilităţi extra - pentru toată perioada rezervată";
             // 
@@ -228,14 +228,14 @@
             // 
             this.guna2DateTimePicker2.Checked = true;
             this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(353, 162);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(434, 162);
             this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(267, 30);
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(405, 30);
             this.guna2DateTimePicker2.TabIndex = 44;
             this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 22, 0, 0, 0, 0);
             // 
@@ -294,16 +294,17 @@
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(47, 224);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(107, 20);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(149, 27);
             this.guna2HtmlLabel6.TabIndex = 53;
             this.guna2HtmlLabel6.Text = "Tipul Camerei";
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Camera Dubla Standard",
@@ -313,7 +314,7 @@
             "Triol"});
             this.comboBox1.Location = new System.Drawing.Point(35, 260);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(253, 21);
+            this.comboBox1.Size = new System.Drawing.Size(253, 39);
             this.comboBox1.TabIndex = 54;
             // 
             // guna2CheckBox1
@@ -336,37 +337,39 @@
             // 
             // numetb
             // 
-            this.numetb.Location = new System.Drawing.Point(35, 337);
+            this.numetb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.numetb.Location = new System.Drawing.Point(35, 365);
             this.numetb.Multiline = true;
             this.numetb.Name = "numetb";
-            this.numetb.Size = new System.Drawing.Size(250, 29);
+            this.numetb.Size = new System.Drawing.Size(250, 36);
             this.numetb.TabIndex = 58;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(44, 304);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(44, 336);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 18);
+            this.label4.Size = new System.Drawing.Size(75, 26);
             this.label4.TabIndex = 57;
             this.label4.Text = "Nume";
             // 
             // emailtb
             // 
-            this.emailtb.Location = new System.Drawing.Point(35, 406);
+            this.emailtb.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.emailtb.Location = new System.Drawing.Point(35, 477);
             this.emailtb.Multiline = true;
             this.emailtb.Name = "emailtb";
-            this.emailtb.Size = new System.Drawing.Size(250, 29);
+            this.emailtb.Size = new System.Drawing.Size(250, 43);
             this.emailtb.TabIndex = 60;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(44, 376);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(44, 438);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 18);
+            this.label1.Size = new System.Drawing.Size(73, 26);
             this.label1.TabIndex = 59;
             this.label1.Text = "Email";
             this.label1.Click += new System.EventHandler(this.label1_Click);
