@@ -34,6 +34,7 @@ namespace HotelManagement
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffInformation));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Datelb = new System.Windows.Forms.Label();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.StaffIdtb = new System.Windows.Forms.TextBox();
             this.StaffNametb = new System.Windows.Forms.TextBox();
@@ -44,14 +45,6 @@ namespace HotelManagement
             this.refreshpb = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.StaffView = new System.Windows.Forms.DataGridView();
-            this.StaffId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffaddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stafffunction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffphone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Staffpassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnDeleteStaff = new Guna.UI2.WinForms.Guna2GradientButton();
             this.BtnEditStaff = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -60,7 +53,16 @@ namespace HotelManagement
             this.adresatb = new System.Windows.Forms.TextBox();
             this.functietb = new System.Windows.Forms.TextBox();
             this.parolatb = new System.Windows.Forms.TextBox();
+            this.StaffId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffaddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stafffunction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffphone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Staffpassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaffView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +72,7 @@ namespace HotelManagement
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.Datelb);
+            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -86,10 +89,22 @@ namespace HotelManagement
             this.Datelb.Location = new System.Drawing.Point(1159, 83);
             this.Datelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Datelb.Name = "Datelb";
-            this.Datelb.Size = new System.Drawing.Size(76, 33);
+            this.Datelb.Size = new System.Drawing.Size(59, 25);
             this.Datelb.TabIndex = 52;
             this.Datelb.Text = "Date";
             this.Datelb.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // exit
+            // 
+            this.exit.Image = global::HotelManagement.Properties.Resources.close;
+            this.exit.Location = new System.Drawing.Point(4, 5);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(46, 45);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.exit.TabIndex = 51;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // label2
             // 
@@ -97,7 +112,7 @@ namespace HotelManagement
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(461, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(437, 71);
+            this.label2.Size = new System.Drawing.Size(354, 57);
             this.label2.TabIndex = 2;
             this.label2.Text = "Informaţii Staff";
             // 
@@ -145,7 +160,7 @@ namespace HotelManagement
             this.Gendercb.Location = new System.Drawing.Point(91, 663);
             this.Gendercb.Margin = new System.Windows.Forms.Padding(4);
             this.Gendercb.Name = "Gendercb";
-            this.Gendercb.Size = new System.Drawing.Size(321, 33);
+            this.Gendercb.Size = new System.Drawing.Size(321, 28);
             this.Gendercb.TabIndex = 4;
             this.Gendercb.Text = "Gen";
             // 
@@ -208,75 +223,10 @@ namespace HotelManagement
             this.StaffView.TabIndex = 5;
             this.StaffView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StaffView_DoubleClick);
             // 
-            // StaffId
-            // 
-            this.StaffId.DataPropertyName = "StaffId";
-            this.StaffId.HeaderText = "StaffId";
-            this.StaffId.MinimumWidth = 6;
-            this.StaffId.Name = "StaffId";
-            this.StaffId.Width = 125;
-            // 
-            // Staffname
-            // 
-            this.Staffname.DataPropertyName = "Staffname";
-            this.Staffname.HeaderText = "Nume";
-            this.Staffname.MinimumWidth = 6;
-            this.Staffname.Name = "Staffname";
-            this.Staffname.Width = 125;
-            // 
-            // Staffaddress
-            // 
-            this.Staffaddress.DataPropertyName = "Staffaddress";
-            this.Staffaddress.HeaderText = "Adresă";
-            this.Staffaddress.MinimumWidth = 6;
-            this.Staffaddress.Name = "Staffaddress";
-            this.Staffaddress.Width = 125;
-            // 
-            // Stafffunction
-            // 
-            this.Stafffunction.DataPropertyName = "Stafffunction";
-            this.Stafffunction.HeaderText = "Funcţie";
-            this.Stafffunction.MinimumWidth = 6;
-            this.Stafffunction.Name = "Stafffunction";
-            this.Stafffunction.Width = 125;
-            // 
-            // Staffphone
-            // 
-            this.Staffphone.DataPropertyName = "Staffphone";
-            this.Staffphone.HeaderText = "NumărTelefon";
-            this.Staffphone.MinimumWidth = 6;
-            this.Staffphone.Name = "Staffphone";
-            this.Staffphone.Width = 125;
-            // 
-            // Staffemail
-            // 
-            this.Staffemail.DataPropertyName = "Staffemail";
-            this.Staffemail.HeaderText = "Email";
-            this.Staffemail.MinimumWidth = 6;
-            this.Staffemail.Name = "Staffemail";
-            this.Staffemail.Width = 125;
-            // 
-            // Gender
-            // 
-            this.Gender.DataPropertyName = "Gender";
-            this.Gender.HeaderText = "Gen";
-            this.Gender.MinimumWidth = 6;
-            this.Gender.Name = "Gender";
-            this.Gender.Width = 125;
-            // 
-            // Staffpassword
-            // 
-            this.Staffpassword.DataPropertyName = "Staffpassword";
-            this.Staffpassword.HeaderText = "Parolă";
-            this.Staffpassword.MinimumWidth = 6;
-            this.Staffpassword.Name = "Staffpassword";
-            this.Staffpassword.Visible = false;
-            this.Staffpassword.Width = 125;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 811);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 791);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(89, 77);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -380,9 +330,68 @@ namespace HotelManagement
             this.parolatb.TabIndex = 37;
             this.parolatb.Text = "Parolă";
             // 
+            // StaffId
+            // 
+            this.StaffId.DataPropertyName = "StaffId";
+            this.StaffId.HeaderText = "StaffId";
+            this.StaffId.MinimumWidth = 6;
+            this.StaffId.Name = "StaffId";
+            this.StaffId.Width = 125;
+            // 
+            // Staffname
+            // 
+            this.Staffname.DataPropertyName = "Staffname";
+            this.Staffname.HeaderText = "Nume";
+            this.Staffname.MinimumWidth = 6;
+            this.Staffname.Name = "Staffname";
+            this.Staffname.Width = 125;
+            // 
+            // Staffaddress
+            // 
+            this.Staffaddress.DataPropertyName = "Staffaddress";
+            this.Staffaddress.HeaderText = "Adresă";
+            this.Staffaddress.Name = "Staffaddress";
+            // 
+            // Stafffunction
+            // 
+            this.Stafffunction.DataPropertyName = "Stafffunction";
+            this.Stafffunction.HeaderText = "Funcţie";
+            this.Stafffunction.Name = "Stafffunction";
+            // 
+            // Staffphone
+            // 
+            this.Staffphone.DataPropertyName = "Staffphone";
+            this.Staffphone.HeaderText = "NumărTelefon";
+            this.Staffphone.MinimumWidth = 6;
+            this.Staffphone.Name = "Staffphone";
+            this.Staffphone.Width = 125;
+            // 
+            // Staffemail
+            // 
+            this.Staffemail.DataPropertyName = "Staffemail";
+            this.Staffemail.HeaderText = "Email";
+            this.Staffemail.Name = "Staffemail";
+            // 
+            // Gender
+            // 
+            this.Gender.DataPropertyName = "Gender";
+            this.Gender.HeaderText = "Gen";
+            this.Gender.MinimumWidth = 6;
+            this.Gender.Name = "Gender";
+            this.Gender.Width = 125;
+            // 
+            // Staffpassword
+            // 
+            this.Staffpassword.DataPropertyName = "Staffpassword";
+            this.Staffpassword.HeaderText = "Parolă";
+            this.Staffpassword.MinimumWidth = 6;
+            this.Staffpassword.Name = "Staffpassword";
+            this.Staffpassword.Visible = false;
+            this.Staffpassword.Width = 125;
+            // 
             // StaffInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1500, 900);
@@ -404,7 +413,7 @@ namespace HotelManagement
             this.Controls.Add(this.StaffIdtb);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StaffInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -412,6 +421,7 @@ namespace HotelManagement
             this.Load += new System.EventHandler(this.StaffInformation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refreshpb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StaffView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -438,6 +448,7 @@ namespace HotelManagement
         private Guna.UI2.WinForms.Guna2GradientButton BtnEditStaff;
         private Guna.UI2.WinForms.Guna2GradientButton BtnAddStaff;
         private Label label2;
+        private PictureBox exit;
         private Label Datelb;
         private TextBox emailtb;
         private TextBox adresatb;

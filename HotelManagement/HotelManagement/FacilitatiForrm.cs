@@ -43,19 +43,12 @@ namespace HotelManagement
 
         private void btnFacilitati_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new FacilitatiForrm().Show();
+
         }
 
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btnCamere_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new CamereForm().Show();
         }
     }
 }

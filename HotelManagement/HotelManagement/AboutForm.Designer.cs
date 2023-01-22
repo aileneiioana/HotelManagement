@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.exit = new System.Windows.Forms.PictureBox();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.btnBooking = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -45,6 +46,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,13 +57,14 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.panel1.Controls.Add(this.exit);
             this.panel1.Controls.Add(this.btnLogIn);
             this.panel1.Controls.Add(this.btnBooking);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 987);
+            this.panel1.Size = new System.Drawing.Size(245, 802);
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -70,12 +73,23 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(53, 274);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(40, 223);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(185, 41);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 34);
             this.guna2HtmlLabel1.TabIndex = 36;
             this.guna2HtmlLabel1.Text = "Hotel LIAV";
+            // 
+            // exit
+            // 
+            this.exit.Image = global::HotelManagement.Properties.Resources.close;
+            this.exit.Location = new System.Drawing.Point(1, 0);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(31, 29);
+            this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.exit.TabIndex = 35;
+            this.exit.TabStop = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // btnLogIn
             // 
@@ -83,10 +97,10 @@
             this.btnLogIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(23, 786);
-            this.btnLogIn.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnLogIn.Location = new System.Drawing.Point(21, 692);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(267, 57);
+            this.btnLogIn.Size = new System.Drawing.Size(200, 46);
             this.btnLogIn.TabIndex = 19;
             this.btnLogIn.Text = "Staff: Intră în cont";
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -97,10 +111,10 @@
             this.btnBooking.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBooking.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.ForeColor = System.Drawing.Color.White;
-            this.btnBooking.Location = new System.Drawing.Point(23, 720);
-            this.btnBooking.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnBooking.Location = new System.Drawing.Point(21, 639);
+            this.btnBooking.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(267, 57);
+            this.btnBooking.Size = new System.Drawing.Size(200, 46);
             this.btnBooking.TabIndex = 18;
             this.btnBooking.Text = "Rezervă";
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
@@ -109,10 +123,10 @@
             // 
             this.guna2PictureBox1.Image = global::HotelManagement.Properties.Resources.hotel_icon;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(68, 100);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(51, 81);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(184, 150);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(138, 122);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
@@ -123,10 +137,10 @@
             this.btnContact.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnContact.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnContact.ForeColor = System.Drawing.Color.White;
-            this.btnContact.Location = new System.Drawing.Point(1304, 0);
-            this.btnContact.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnContact.Location = new System.Drawing.Point(1070, 0);
+            this.btnContact.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnContact.Name = "btnContact";
-            this.btnContact.Size = new System.Drawing.Size(196, 57);
+            this.btnContact.Size = new System.Drawing.Size(165, 46);
             this.btnContact.TabIndex = 26;
             this.btnContact.Text = "Contact";
             this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
@@ -137,10 +151,10 @@
             this.btnTarife.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTarife.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnTarife.ForeColor = System.Drawing.Color.White;
-            this.btnTarife.Location = new System.Drawing.Point(1108, 0);
-            this.btnTarife.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnTarife.Location = new System.Drawing.Point(905, 0);
+            this.btnTarife.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnTarife.Name = "btnTarife";
-            this.btnTarife.Size = new System.Drawing.Size(196, 57);
+            this.btnTarife.Size = new System.Drawing.Size(165, 46);
             this.btnTarife.TabIndex = 25;
             this.btnTarife.Text = "Tarife";
             this.btnTarife.Click += new System.EventHandler(this.btnTarife_Click);
@@ -151,10 +165,10 @@
             this.btnGalerie.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGalerie.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnGalerie.ForeColor = System.Drawing.Color.White;
-            this.btnGalerie.Location = new System.Drawing.Point(912, 0);
-            this.btnGalerie.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnGalerie.Location = new System.Drawing.Point(740, 0);
+            this.btnGalerie.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnGalerie.Name = "btnGalerie";
-            this.btnGalerie.Size = new System.Drawing.Size(196, 57);
+            this.btnGalerie.Size = new System.Drawing.Size(165, 46);
             this.btnGalerie.TabIndex = 24;
             this.btnGalerie.Text = "Galerie";
             this.btnGalerie.Click += new System.EventHandler(this.btnGalerie_Click);
@@ -165,10 +179,10 @@
             this.btnFacilitati.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnFacilitati.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnFacilitati.ForeColor = System.Drawing.Color.White;
-            this.btnFacilitati.Location = new System.Drawing.Point(716, 0);
-            this.btnFacilitati.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnFacilitati.Location = new System.Drawing.Point(575, 0);
+            this.btnFacilitati.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnFacilitati.Name = "btnFacilitati";
-            this.btnFacilitati.Size = new System.Drawing.Size(196, 57);
+            this.btnFacilitati.Size = new System.Drawing.Size(165, 46);
             this.btnFacilitati.TabIndex = 23;
             this.btnFacilitati.Text = "Facilitati";
             this.btnFacilitati.Click += new System.EventHandler(this.btnFacilitati_Click);
@@ -179,10 +193,10 @@
             this.btnCamere.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCamere.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCamere.ForeColor = System.Drawing.Color.White;
-            this.btnCamere.Location = new System.Drawing.Point(521, 0);
-            this.btnCamere.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnCamere.Location = new System.Drawing.Point(410, 0);
+            this.btnCamere.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnCamere.Name = "btnCamere";
-            this.btnCamere.Size = new System.Drawing.Size(196, 57);
+            this.btnCamere.Size = new System.Drawing.Size(165, 46);
             this.btnCamere.TabIndex = 22;
             this.btnCamere.Text = "Camere";
             this.btnCamere.Click += new System.EventHandler(this.btnCamere_Click);
@@ -193,10 +207,10 @@
             this.btnDespreHotel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDespreHotel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDespreHotel.ForeColor = System.Drawing.Color.White;
-            this.btnDespreHotel.Location = new System.Drawing.Point(327, 0);
-            this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnDespreHotel.Location = new System.Drawing.Point(245, 0);
+            this.btnDespreHotel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnDespreHotel.Name = "btnDespreHotel";
-            this.btnDespreHotel.Size = new System.Drawing.Size(196, 57);
+            this.btnDespreHotel.Size = new System.Drawing.Size(165, 46);
             this.btnDespreHotel.TabIndex = 21;
             this.btnDespreHotel.Text = "Despre Hotel";
             this.btnDespreHotel.Click += new System.EventHandler(this.btnDespreHotel_Click);
@@ -207,32 +221,31 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox1.Location = new System.Drawing.Point(401, 584);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(370, 427);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(468, 292);
+            this.richTextBox1.Size = new System.Drawing.Size(351, 237);
             this.richTextBox1.TabIndex = 34;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HotelManagement.Properties.Resources.terrace;
-            this.pictureBox1.Location = new System.Drawing.Point(369, 141);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(376, 159);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(526, 319);
+            this.pictureBox1.Size = new System.Drawing.Size(336, 218);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HotelManagement.Properties.Resources.spa;
-            this.pictureBox3.Location = new System.Drawing.Point(970, 524);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(753, 407);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(518, 319);
+            this.pictureBox3.Size = new System.Drawing.Size(372, 213);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
@@ -240,19 +253,19 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HotelManagement.Properties.Resources.room1;
-            this.pictureBox2.Location = new System.Drawing.Point(974, 141);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(753, 159);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(518, 319);
+            this.pictureBox2.Size = new System.Drawing.Size(372, 218);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
             // 
             // AboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1500, 900);
+            this.ClientSize = new System.Drawing.Size(1236, 800);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
@@ -265,12 +278,13 @@
             this.Controls.Add(this.btnDespreHotel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AboutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AboutForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -295,6 +309,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Guna.UI2.WinForms.Guna2Button btnBooking;
         private Guna.UI2.WinForms.Guna2Button btnLogIn;
+        private System.Windows.Forms.PictureBox exit;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
