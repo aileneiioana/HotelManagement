@@ -62,16 +62,16 @@
             // 
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(35, 162);
             this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(333, 30);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(405, 30);
             this.guna2DateTimePicker1.TabIndex = 13;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 22, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 23, 0, 0, 0, 0);
             // 
             // panel1
             // 
@@ -124,7 +124,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 120);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(49, 120);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(119, 33);
@@ -230,20 +230,20 @@
             this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(434, 162);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(450, 162);
             this.guna2DateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
             this.guna2DateTimePicker2.Size = new System.Drawing.Size(405, 30);
             this.guna2DateTimePicker2.TabIndex = 44;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 22, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 23, 0, 0, 0, 0);
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(55, 12);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(47, 11);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(13, 22);
@@ -314,7 +314,7 @@
             "Triol"});
             this.comboBox1.Location = new System.Drawing.Point(35, 260);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(253, 39);
+            this.comboBox1.Size = new System.Drawing.Size(405, 39);
             this.comboBox1.TabIndex = 54;
             // 
             // guna2CheckBox1
@@ -341,7 +341,7 @@
             this.numetb.Location = new System.Drawing.Point(35, 365);
             this.numetb.Multiline = true;
             this.numetb.Name = "numetb";
-            this.numetb.Size = new System.Drawing.Size(250, 36);
+            this.numetb.Size = new System.Drawing.Size(405, 36);
             this.numetb.TabIndex = 58;
             // 
             // label4
@@ -360,7 +360,7 @@
             this.emailtb.Location = new System.Drawing.Point(35, 477);
             this.emailtb.Multiline = true;
             this.emailtb.Name = "emailtb";
-            this.emailtb.Size = new System.Drawing.Size(250, 43);
+            this.emailtb.Size = new System.Drawing.Size(405, 43);
             this.emailtb.TabIndex = 60;
             // 
             // label1

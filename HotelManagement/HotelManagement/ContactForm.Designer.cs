@@ -240,7 +240,7 @@
             this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Items.AddRange(new object[] {
@@ -250,7 +250,7 @@
             "victor.ambarus@student.unitbv.ro"});
             this.guna2ComboBox1.Location = new System.Drawing.Point(81, 139);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(252, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(296, 36);
             this.guna2ComboBox1.TabIndex = 36;
             // 
             // guna2TextBox2
@@ -298,7 +298,7 @@
             this.trimitereMailbtn.FillColor2 = System.Drawing.Color.LightGray;
             this.trimitereMailbtn.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.trimitereMailbtn.ForeColor = System.Drawing.Color.Black;
-            this.trimitereMailbtn.Location = new System.Drawing.Point(416, 541);
+            this.trimitereMailbtn.Location = new System.Drawing.Point(417, 580);
             this.trimitereMailbtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.trimitereMailbtn.Name = "trimitereMailbtn";
             this.trimitereMailbtn.Size = new System.Drawing.Size(150, 56);
@@ -343,7 +343,7 @@
             this.mesajContacttxt.Margin = new System.Windows.Forms.Padding(2);
             this.mesajContacttxt.Multiline = true;
             this.mesajContacttxt.Name = "mesajContacttxt";
-            this.mesajContacttxt.Size = new System.Drawing.Size(873, 143);
+            this.mesajContacttxt.Size = new System.Drawing.Size(873, 191);
             this.mesajContacttxt.TabIndex = 33;
             // 
             // label2
@@ -374,7 +374,7 @@
             this.subiectContacttxt.Margin = new System.Windows.Forms.Padding(2);
             this.subiectContacttxt.Multiline = true;
             this.subiectContacttxt.Name = "subiectContacttxt";
-            this.subiectContacttxt.Size = new System.Drawing.Size(252, 44);
+            this.subiectContacttxt.Size = new System.Drawing.Size(296, 44);
             this.subiectContacttxt.TabIndex = 31;
             // 
             // label1
